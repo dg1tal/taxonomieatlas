@@ -217,3 +217,8 @@ footer{padding:4px 0;margin-top:6px;font-size:12px}.graph-controls{padding:6px 1
  body:has(#branch-canvas)>main,body:has(#tree-list-viewport)>main,body:has(.step-panel)>main,.workspace{min-height:0}
  .taxon-workspace:has(>.detail){grid-template-rows:minmax(0,1fr)}
 }
+/* Give the step cards a useful work area and let the page scroll to reveal it. */
+@media(min-width:1100px){
+ body:has(.step-panel){height:auto;min-height:100dvh;overflow:auto}
+ .taxon-workspace>.step-panel{flex:none;height:max(680px,78dvh);min-height:0;max-height:none}
+}
