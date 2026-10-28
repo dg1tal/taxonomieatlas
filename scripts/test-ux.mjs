@@ -79,6 +79,16 @@ vm.runInContext(`selectedId=data.nodes.find(n=>n.name==='Turdus merula').id;swit
 vm.runInContext(`openStep(data.nodes.find(n=>n.name==='Turdus torquatus').id);const persisted=JSON.stringify(viewSnapshot());restoreSnapshot(JSON.parse(persisted));switchTreeView('branches');`,ctx);
 assert.equal(vm.runInContext('idx.byid.get(selectedId).name',ctx),'Turdus torquatus');assert.ok(vm.runInContext('graphLayout.positions.has(selectedId)',ctx));
 console.log('PASS: Three-way taxon synchronization, repeated entry after changed selection, ancestor expansion, list position and navigation after reload.');
+// View changes keep the taxon navigation history in the chosen presentation.
+vm.runInContext(`scope='global';filter='all';query='';orderSelection=null;cladeView=false;subspeciesView=false;tab='tree';graphMode='step';focusId=idx.root.id;stepFocusId=idx.root.id;stepEntryId=idx.root.id;selectedId=null;open=new Set([focusId]);graphState={};viewHistory.entries=[];viewHistory.position=-1;rememberView();for(const name of ['Passeriformes','Paridae','Parus','Parus major'])openStep(data.nodes.find(n=>n.name===name).id);`,ctx);
+const depth=vm.runInContext('viewHistory.entries.length',ctx);assert.equal(depth,5);
+vm.runInContext(`switchTreeView('branches');travelView(-1);`,ctx);
+assert.equal(vm.runInContext('graphMode',ctx),'branches');assert.equal(vm.runInContext('idx.byid.get(selectedId).name',ctx),'Parus');
+vm.runInContext(`travelView(-1);`,ctx);assert.equal(vm.runInContext('idx.byid.get(selectedId).name',ctx),'Paridae');
+vm.runInContext(`travelView(1);switchTreeView('list');travelView(-1);`,ctx);
+assert.equal(vm.runInContext('graphMode',ctx),'list');assert.equal(vm.runInContext('idx.byid.get(selectedId).name',ctx),'Paridae');
+assert.equal(vm.runInContext('viewHistory.entries.length',ctx),depth);
+console.log('PASS: Back/forward traverses taxon levels without changing the chosen tree presentation.');
 // Search-result navigation retains each of the three chosen presentations.
 for(const mode of ['list','step','branches']){
  vm.runInContext(`scope='global';filter='all';orderSelection=null;subspeciesView=false;query='';graphMode='${mode}';refreshIndex();graphState={};graphCamera=null;revealTaxon(data.nodes.find(n=>n.name==='Turdus torquatus').id);`,ctx);
