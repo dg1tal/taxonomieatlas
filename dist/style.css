@@ -206,6 +206,10 @@ footer{padding:4px 0;margin-top:6px;font-size:12px}.graph-controls{padding:6px 1
 }
 .workspace{display:flex;flex-direction:column}
 [hidden]{display:none!important}
+/* Step cards are siblings in a grid; connector strokes implied a false chain. */
+.step-branches{border-left:0;margin-left:0;padding-left:0}
+.step-branches .step-item::before{content:none}
+#step-more{margin-left:0}
 @media(min-width:1100px){body:has(.step-panel)>header,body:has(.step-panel) .tabs,body:has(.step-panel) .stats{flex:none}}
 @media(min-width:1100px) and (max-height:700px){body:has(#branch-canvas),body:has(#tree-list-viewport),body:has(.step-panel){height:auto;min-height:100dvh;overflow:auto}.step-panel{height:auto;max-height:65dvh;min-height:300px}.taxon-workspace>.virtual-list{min-height:340px}.branch-panel>.detail{max-height:100%}}
 .list-work{display:flex;flex-direction:column;flex:1;min-height:0;min-width:0}.list-work>.virtual-list{flex:1;min-height:0}
