@@ -1,0 +1,20 @@
+{
+  "review": {
+    "from_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+    "to_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+    "approved": true,
+    "reviewer": "Codex metadata-only revision check",
+    "evidence": "Only dataset_revision added to distinguish App data revision from AviList taxonomy version. All taxa, labels, Germany records and source provenance unchanged.",
+    "change_reviews": []
+  },
+  "diff": {
+    "added": [],
+    "removed": [],
+    "renamed": [],
+    "moved": [],
+    "labels": [],
+    "identityErrors": [],
+    "germanyChanged": false,
+    "sourceChanged": false
+  }
+}

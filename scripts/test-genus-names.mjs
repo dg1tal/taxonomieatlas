@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import crypto from 'node:crypto';import {execFileSync} from 'node:child_process';import {validate,index,compare} from '../dist/engine.mjs';
+const b=JSON.parse(fs.readFileSync('dist/data.json')),report=JSON.parse(fs.readFileSync('sources/genus-name-supplement.json'));
+assert.deepEqual(validate(b),[]);const genera=b.nodes.filter(n=>n.rank==='genus');assert.equal(genera.filter(n=>n.de).length,1297);assert.equal(genera.filter(n=>n.en).length,1648);assert.equal(genera.filter(n=>n.vernacular_names).length,1950);
+for(const n of genera){for(const [lang,names] of Object.entries(n.vernacular_names||{})){assert.equal(n[lang],names[0].name);for(const v of names){assert.notEqual(v.name.toLowerCase(),n.name.toLowerCase());assert.ok(v.evidence.length);assert.ok(v.evidence.every(ev=>ev.url.startsWith('https://')));}}}
+const current=JSON.stringify({taxonomy:b.nodes.filter(n=>n.rank!=='subspecies').map(n=>[n.id,n.parent,n.rank,n.name]),germany:b.germany_source});assert.equal(crypto.createHash('sha256').update(current).digest('hex'),report.metadata.structure_sha256);
+assert.equal(genera.find(n=>n.name==='Parus').de,'Kohlmeisen');assert.equal(genera.find(n=>n.name==='Turdus').de,'Echte Drosseln');assert.equal(genera.find(n=>n.name==='Phoenicurus').de,'Rotschwänze');assert.equal(genera.find(n=>n.name==='Falco').en,'Falcons');
+const idx=index(b);for(const query of ['Kohlmeisen','Great Tits and Allies','Krähen & Raben'])assert.ok(index(b,'global','all',query).matches>0);
+const bad=structuredClone(b);bad.nodes.find(n=>n.vernacular_names).vernacular_names.de[0].evidence[0].url='javascript:alert(1)';assert.ok(validate(bad).length);
+const badRank=structuredClone(b);badRank.nodes.find(n=>n.rank==='species').vernacular_names={de:[{name:'example',evidence:[]}]};assert.ok(validate(badRank).length);
+const changed=structuredClone(b),n=changed.nodes.find(n=>n.vernacular_names);n.vernacular_names.de.push({name:'Neue Quellenvariante',evidence:n.vernacular_names.de[0].evidence});assert.ok(compare(b,changed).labels.some(v=>v.after.id===n.id));
+console.log('PASS: 1.950 Gattungen ergänzt; DE/EN mit Einzelbelegen, unveränderte Hierarchie und Deutschlanddaten, Varianten-Suche, Quellenvalidierung und Updatevergleich.');

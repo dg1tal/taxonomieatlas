@@ -1,0 +1,21 @@
+{
+  "review": {
+    "from_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+    "to_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+    "approved": true,
+    "reviewer": "Codex source-bound extraction and structural checks",
+    "evidence": "DOG full 2018 PDF: all 527 species and all 377 subspecies extracted. 330 exact trinomials with identical species parent mapped; 39 unresolved and 8 source (?) entries excluded from confirmed occurrences. Original rows, page references, status precedence, source checksum retained. Original AviList identities and DOG 2019 species records unchanged.",
+    "germany_review": "Use explicit subspecies status row as a complete override; otherwise source species status applies under DOG legend pp174–175. Torquatus has Z only, alpestris inherits R3 Z. Uncertain (?) records do not pass country filters. No transfer for renamed/split/lumped taxa. Names in quotation marks remain marked informal.",
+    "change_reviews": []
+  },
+  "diff": {
+    "added": [],
+    "removed": [],
+    "renamed": [],
+    "moved": [],
+    "labels": [],
+    "identityErrors": [],
+    "germanyChanged": true,
+    "sourceChanged": false
+  }
+}

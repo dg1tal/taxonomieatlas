@@ -1,0 +1,1226 @@
+Liste der Vögel Deutschlands
+Peter H. Barthel und Thorsten Krüger
+   Bitte werden Sie Mitglied der
+Deutschen Ornithologen-Gesellschaft
+      Sie erhalten kostenlos die beiden Vereins-
+      zeitschriften (gedruckt und elektronisch,
+      auch im e-Archiv) sowie weitere Informa-
+      tionen aus der Ornithologie.
+Sie können zu sehr günstigen Konditionen
+an den Jahresversammlungen teilnehmen,
+die eine Plattform für regen Austausch
+zwischen Vogelkundlern bietet ─ Proﬁs
+wie Amateuren.
+       Sie haben die Möglichkeit zur Mitwirkung
+       in verschiedenen Fachgruppen, deren
+       Arbeitstreﬀen und Kommunikation von
+       der DO-G gefördert wird.
+Als Mitglied können Sie in den Genuss einer
+Forschungsförderung für eigene Untersuchungen
+und Auswertungen und von Reisestipendien zu
+Tagungen kommen.
+   Und: Sie unterstützen damit einen Verband,
+   der schon sei 1850 für alle Aspekte der Vogel-
+   kunde eintritt. Die Ornithologie braucht eine
+   starke, gemeinsame Stimme der Amateure
+   und Proﬁs!
+
+     Aufnahmeantrag und weitere
+  Informationen unter www.do-g.de
+Aus der Kommission „Artenliste der Vögel Deutschlands“
+        der Deutschen Ornithologen-Gesellschaft
+
+
+
+
+Liste der Vögel Deutschlands
+                     Version 3. 2
+
+
+
+     Peter H. Barthel & Thorsten Krüger
+
+  unter Mitarbeit von Einhard Bezzel, Martin Päckert,
+     Frank D. Steinheimer & Hans-Günther Bauer
+
+
+
+
+          Deutsche Ornithologen-Gesellschaft
+                   Radolfzell 2019
+                                                         1
+Einführung
+   In dieser Liste werden die Vögel Deutschlands auf dem aktuellen Stand
+von ornithologischer Systematik, Taxonomie und Nomenklatur sowie auf Ba-
+sis umfassender kritischer Überprüfung der relevanten Quellen vorgestellt.
+Sie soll als Grundlage für die systematische Reihenfolge, die Verwendung
+wissenschaftlicher und deutscher Namen sowie die Einordnung von Nach-
+weisen dienlich sein. Alle Angaben sind auf dem Stand vom 30. Juni 2019.
+   Jede Art ist einer Kategorie von A bis C zugeteilt. Zudem werden Angaben
+zur Verbreitung und Häufigkeit der Brutvögel sowie zum Status außerhalb der
+Brutzeit gemacht. Seit dem Jahr 1800 wurden in Deutschland 527 Vogelarten
+nachgewiesen (Kategorien A, B und C), davon 486 seit 1950. Lediglich vor
+dem 1.1.1950 und danach nicht mehr wurden 32 Arten als Wildvögel festge-
+stellt (Kategorie B). 287 Vogelarten haben seit 1800 in Deutschland gebrütet,
+254 von ihnen sind als Bestandteil der aktuellen Brutvogelwelt einzustufen.
+Bei sieben von ihnen handelt es sich um ursprünglich nicht heimische, son-
+dern ausgesetzte und offenbar fest etablierte Arten (Kategorie C). In den An-
+hängen 1 (Kategorie D) und 2 (Kategorie E) aufgeführte Arten sind nicht
+Bestandteil der nationalen Artenliste.
+
+Vorbemerkung zu dieser Kurzfassung
+   Bei diesem für den praktischen Gebrauch bestimmten Heft handelt es sich
+um eine aktualisierte Kurzfassung der Originalveröffentlichung der ausführ-
+lichen, auch Unterarten enthaltenden offiziellen deutschen Artenliste (Barthel
+& Krüger 2018). Hinsichtlich der systematischen Reihenfolge wurden jedoch
+Änderungen nötig, da in der IOC-Weltliste (Gill & Donsker 2019) zwischen-
+zeitlich die seit einigen Jahren schwebende Verschiebung einiger Ordnungen
+weit an den Anfang der Liste umgesetzt wurde. Dieser nun in der Ornithologie
+international üblichen Anordnung soll auch in Deutschland gefolgt werden.
+Weitere Anmerkungen zu Unterschieden zwischen der hier vorliegenden
+Kurzfassung von 2019 (Version 3.2) und der ausführlichen Version 3.1 der
+Artenliste von 2018 finden sich am Ende dieser Einführung auf S. 6-7.
+
+Abkürzungen in den Spalten vor den Artnamen
+
+Spalte 1: Kategorie
+   A: Die Art wurde seit dem 1. Januar 1950 mindestens einmal als Wildvogel
+in Deutschland festgestellt (486 Arten; einschließlich Ao). Mit Ao sind die
+
+2
+fünf Arten gekennzeichnet, für deren Vorkommen in Deutschland es zwar
+keinen überprüfbaren Beleg (Balg, Foto, Film, Tonaufnahme o. ä.) gibt oder
+gab, doch mindestens eine Meldung von der Artenlisten-Kommission als aus-
+reichend dokumentierter Nachweis anerkannt wurde.
+   B: Die Art wurde lediglich im Zeitraum vom 1. Januar 1800 bis 31. De-
+zember 1949, später jedoch nicht mehr als Wildvogel in Deutschland nachge-
+wiesen (32 Arten; einschließlich der als BC, BD oder BE eingestuften Arten,
+s. unten).
+   C: Die gebietsfremde Art wurde in Deutschland als Brutvogel durch den
+Menschen beabsichtigt (Aussetzungen/Freilassungen) oder unbeabsichtigt
+(Entkommen aus Haltungen, eingeschleppt oder als in Nachbarländern eta-
+bliertes Neozoon von dort eingewandert) eingebürgert (9 Arten). Sie pflanzt
+sich dabei in voller Freiheit regelmäßig fort und hält oder vergrößert lang-
+fristig ohne jede menschliche Hilfe sowie ohne weitere Freisetzungen ihren
+Bestand. Lokale Populationen bilden dabei jeweils mehrfach neue Teilpopu-
+lationen außerhalb des Nahverbreitungsradius der Gründerpopulation. Sind
+zeitliche und populationsbiologische Faktoren erfüllt, gilt die Art als etabliert.
+Fünf Subkategorien werden unterschieden. C1: Etablierte eingebürgerte Art, deren
+Vorkommen ausschließlich auf Aussetzungen zurückgeht (6 Arten). C2: Regional etablierte,
+eingebürgerte Art, von der es in Deutschland auch autochthone Wildvogelbestände gibt (viele
+Arten, hier nicht ausgewiesen, da sie in der höheren Kategorie A geführt werden). C3: Wie-
+dereingebürgerte Art, deren Brutpopulation komplett erloschen war, nach Aussetzung im
+ehemaligen Vorkommensgebiet aber wieder dauerhaft etabliert ist (derzeit keine Art). C4:
+Verwilderte Form einer domestizierten Art mit etablierten Populationen (1 Art). C5: Art, die
+in Deutschland lediglich als Gastvogel erscheint, aber aus fest etablierten, eingebürgerten
+Brutpopulationen der Kategorie C anderer europäischer Länder stammt (2 Arten).
+   D: Die Art wurde in Deutschland festgestellt, doch bestehen begründete
+Zweifel, dass sie das Land unter natürlichen Bedingungen erreicht hat. Arten
+werden nur vorübergehend der Kategorie D zugeordnet, bis z. B. verbesserte
+Kenntnisse über ihre Brutverbreitung, Zugökologie und ihr Nachweismuster
+in Mitteleuropa oder zusätzliche Informationen zu einem spezifischen Nach-
+weis ermöglichen, sie in eine andere Kategorie zu überfuhren. Arten der Ka-
+tegorie D sind nicht Bestandteil der deutschen Artenliste und sind im Anhang
+1 aufgeführt, sofern nicht vor 1950 erbrachte Nachweise (Kategorie B) auf
+wahrscheinliche Wildvögel zurückgeführt werden (5 Arten).
+   E: Individuen der Art wurden in Deutschland nur als ausgesetzt, als wahr-
+scheinliche oder sichere Gefangenschaftsflüchtlinge, als ausschließlich oder
+
+                                                                                          3
+überwiegend mit Verkehrsmitteln (meist transatlantischer Schiffstransport)
+ins Land gelangt, als vorsätzlich freigelassen oder auf andere Weise durch
+menschliches Zutun nach Europa gekommen festgestellt. Einige Arten haben
+bereits in Freiheit in Deutschland gebrütet, werden aber nicht als etabliert
+betrachtet. Diese inzwischen fast 400 Arten umfassende Kategorie ist nicht
+Bestandteil der deutschen Artenliste. Ausgewählte Arten (60) werden jedoch
+im Anhang 2 aufgeführt, da sie entweder regelmäßig im Freiland auftreten,
+dort teilweise auch brüten oder in Nachbarländern als wahrscheinliche Wild-
+vögel aufgetreten oder eingestuft worden sind.
+   BC, BD, BE: Bei Kombination der Kategorie B mit den Buchstaben C, D
+oder E werden Nachweise vor 1950 (meist aus dem 19. Jahrhundert) als wahr-
+scheinlich auf Wildvögel zurückgehend betrachtet, während sich seit 1950
+eine den Kriterien der Kategorie C entsprechende Brutpopulation etabliert
+hat (BC1; 1 Art, in den Gesamtsummen jedoch nur in der höheren Kategorie
+C gezählt) oder Meldungen seit 1950 in die Kategorie D (BD; 7 Arten) oder E
+(BE; 5 Arten) eingestuft wurden. Vor 1950 als Brutvögel aus Deutschland ver-
+schwundene Arten, bei denen Wiedereinbürgerungsexperimente noch nicht
+zu einer den Kriterien der Kategorie C3 entsprechenden Etablierung geführt
+haben, fallen somit in die Kategorie BE.
+
+Spalte 2: Brutstatus
+   Die Angabe besteht aus der Kombination eines Buchstaben für die Verbrei-
+tung in der Fläche (N, R, L) und einer Ziffer für die Häufigkeit (1-6). Daneben
+können Buchstaben ein Vorkommen als Vermehrungsgast (V) oder als auf
+gehandicapte bzw. ausgesetzte Individuen zurückgehend (E) kennzeichnen.
+Grundlage hierfür sind die Angaben bei Gedeon et al. (2014), teilweise aktua-
+lisiert. Die Angaben zur Verbreitung in Deutschland beziehen sich ausschließ-
+lich auf regelmäßige, alljährlich vorkommende Brutvogelarten.
+   N: Brutvogel in geeigneten Lebensräumen in weiten Teilen Deutschlands
+(152 Arten).
+   R: Brutvogel nur in bestimmten Regionen (z. B. Alpenraum, Küsten) (75
+Arten).
+   L: Brutvogel, aber nur sehr lokal (z. B. in einzelnen Städten), doch hier
+teilweise in großer Dichte (z. B. Koloniebrüter auf Helgoland) (23 Arten).
+   V: Hat seit 1800 ausnahmsweise einmal oder mehrfach, jedoch nicht in
+mehr als fünf aufeinander folgenden Jahren gebrütet und ist daher nicht als re-
+gelmäßiger Brutvogel einzustufen, sondern als Vermehrungsgast (25 Arten).
+
+4
+Diejenigen, die lediglich vor 1950 ausnahmsweise gebrütet haben, sind mit
+V (B) gekennzeichnet (3 Arten).
+   0: Ausgestorbener, ehemals regelmäßiger Brutvogel, von dem es seit
+mindestens 2005 kein regelmäßiges Brutvorkommen mehr gibt (12 Arten).
+Davon sind die sechs bereits vor 1950 ausgestorbenen Arten mit 0 (B) ge-
+kennzeichnet.
+   E: Die Bruten im Freiland gehen ausschließlich auf flugunfähige bzw. an-
+derweitig in ihrer Fortbewegung teilweise bis ganz eingeschränkte oder ent-
+flogene (VE; 8 Arten) sowie ausgesetzte Vögel zurück (L1E; 4 Arten).
+
+Häufigkeitsangaben
+ 1: 1-100 Brutpaare (34 Arten).
+ 2: 101-1.000 Brutpaare (34 Arten).
+ 3: 1.001-10.000 Brutpaare (60 Arten).
+ 4: 10.001-100.000 Brutpaare (58 Arten).
+ 5: 100.001-1.000.000 Brutpaare (42 Arten).
+ 6: Mehr als 1 Million Brutpaare (22 Arten).
+
+Spalte 3: Status außerhalb der Brutzeit
+   J/j: Jahresvogel; Brutpopulation und Winterbestände sind nicht immer
+identisch; der Kleinbuchstabe weist auf eine durchschnittliche Populations-/
+Bestandsgröße von weniger als 100 Individuen hin. Z/z: Zugvogel, bei dem
+deutsche Brutvögel das Land im Winter verlassen und Vögel anderer Regi-
+onen häufig (Z) oder mit durchschnittlich weniger als 100 Individuen pro Jahr
+spärlich (z) durchziehen. W/w: Wintergast; Vögel meist nordöstlicher Her-
+kunft überwintern regelmäßig zumindest in einigen Landesteilen, besonders
+im Norden (W), jedoch mit durchschnittlich weniger als 100 Individuen (w).
+S/s: Seltenheit; seit 1980 gab es durchschnittlich weniger als fünf Nachweise
+pro Jahr (S; 103 Arten) oder es liegen seit 1950 insgesamt weniger als fünf
+deutsche Nachweise vor (s; 84 Arten). Die Kennbuchstaben J, Z und W kön-
+nen auch kombiniert sein, wenn Individuen einer Art mit unterschiedlichem
+Status vorkommen.
+
+Deutscher Name
+  Die deutschen Namen folgen den Vorgaben der dafür zuständigen Kom-
+mission „Deutsche Namen für die Vögel der Erde“ von DO-G und IOU und
+wurden hier übernommen (DO-G 2019).
+
+                                                                           5
+Wissenschaftlicher Name
+  Die wissenschaftlichen Artnamen sowie die systematische Reihenfolge
+entsprechen der Weltliste der Vögel von Gill & Donsker (2019).
+
+Anhänge
+Anhang 1: Arten der Kategorie D
+  Bei diesen fünf Arten in Kategorie D bestehen noch Zweifel, ob sie auf
+natürliche Weise nach Deutschland gelangt bzw. als reproduzierende Neo-
+zoen tatsächlich eingebürgert sind. Sie sind nicht Bestandteil der deutschen
+Artenliste.
+
+Anhang 2: Ausgewählte Arten der Kategorie E
+  Nur einige Arten werden aufgeführt, die als wahrscheinliche oder sichere
+Gefangenschaftsflüchtlinge festgestellt wurden, teilweise schon gebrütet ha-
+ben und auch in Listen anderer europäischer Länder geführt werden, dort
+manchmal in Kategorie A oder D.
+
+Unterschiede zur Artenliste 2018
+   Diese „Liste der Vögel Deutschlands“ enthält alle für den praktischen Ge-
+brauch (also für systematische Tagebuchaufzeichnungen, Jahresberichte, per-
+sönliche Listenführung, avifaunistische Arbeit usw.) nötigen Informationen,
+nämlich systematische Reihenfolge, deutsche und wissenschaftliche Namen
+sowie die Kategorisierungen und Statusangaben. Grundlage ist die ausführ-
+liche deutsche Artenliste (Barthel & Krüger 2018). Dort sind zusätzlich auch
+alle Unterarten (mit Statusangaben), bei den wissenschaftlichen Namen deren
+Autoren und das Jahr der Erstbeschreibung sowie die offiziellen englischspra-
+chigen Vogelnamen aufgeführt. Dabei handelt es sich um die Fortschreibung
+der Vorgängerversion (Barthel & Helbig 2005) der damit beauftragten Kom-
+mission der Deutschen Ornithologen-Gesellschaft. In einer separaten Publi-
+kation der Kommission finden sich ausführliche Erläuterungen und Begrün-
+dungen zu Veränderungen gegenüber der letzten Artenliste von 2005 (Barthel
+et al. 2018). Für zusätzliche Informationen sollten diese beiden auch als PDF
+auf der Webseite der DO-G frei verfügbaren Veröffentlichungen konsultiert
+werden. Ferner wird auf dieser Webseite (www.do-g.de) künftig auf Aktuali-
+sierungen hingewiesen, bevor eine neue gedruckte Version erscheint.
+   Allerdings gibt es zwischen der Version 3.1 von 2018 und der hier vorlie-
+genden Version 3.2 einen gravierenden Unterschied. Artenlisten sollen immer
+
+6
+den ungefähren Stammbaum und die Verwandtschaftsbeziehungen der Vögel
+in der systematischen Reihenfolge der Ordnungen, Familien, Gattungen und
+Arten nach aktuellem Forschungsstand widerspiegeln. Durch molekulargene-
+tische Untersuchungen gab es hier in den letzten zehn Jahren massive Umwäl-
+zungen. Sie wurden im Sommer 2019 in der internationalen IOC-Weltliste,
+welcher die DO-G strikt folgt, nach langem Zögern umgesetzt und somit kon-
+sequent auch in die aktuelle Kurzfassung der deutschen Liste übernommen.
+   Von den jetzt am Anfang der Liste stehenden Hühnervögeln wurde die
+Schwesterordnung Entenvögel auf den zweiten Platz verdrängt. Ihnen folgen
+nun die Ordnungen der so genannten „frühen Landvögel“, also Nachtschwal-
+ben, Segler, Trappen, Kuckucke, Flughühner und Tauben. Danach kommen
+die Kranichvögel und die Klade der „Kern-Wasservögel“ mit den Ordnungen
+Lappentaucher und Flamingos vor den Regenpfeifervögeln, Seetauchern usw.
+   Durch die Neufassung von Ordnungen und Familien in der Liste der Vögel
+der Erde mussten einige ihrer deutschen Bezeichnungen verändert werden.
+Die einzige Änderung eines deutschen Artnamens betrifft Hydrobates pela­
+gicus, da die Art nicht den Sturmschwalben, sondern Wellenläufern angehört
+und daher nun Sturmwellenläufer heißt. Bei den wissenschaftlichen Namen
+wurden zwei Sumpfhühner der Gattung Porzana in Zapornia umbenannt.
+   Die ausführliche Artenliste aus dem Jahr 2018 verliert dadurch nichts von
+ihrer Gültigkeit, da in dieser neuen Liste lediglich die Systematik aktualisiert
+wurde. Da empfohlen wird, dieser neuen Systematik zu folgen, sollte die klei-
+ne Liste von 2019 separat zitiert werden als:
+   Barthel PH & Krüger T 2019: Liste der Vögel Deutschlands. Version 3.2.
+Deutsche Ornithologen-Gesellschaft, Radolfzell.
+
+Literatur
+Barthel PH & Helbig AJ 2005: Artenliste der Vögel Deutschlands. Limicola 19: 89-141.
+Barthel PH & Krüger T 2018: Artenliste der Vögel Deutschlands. Vogelwarte 56: 171-203.
+Barthel PH, Bezzel E, Krüger T, Päckert M & Steinheimer FD 2018: Artenliste der Vögel
+   Deutschlands 2018: Aktualisierung und Änderungen. Vogelwarte 56: 205-224.
+Deutsche Ornithologen-Gesellschaft 2019: Kommission Deutsche Namen für die Vögel der
+   Erde. www.do-g.de.
+Gedeon K, Grüneberg C, Mitschke A, Sudfeldt C u. a. 2014: Atlas Deutscher Brutvogelarten.
+   Stiftung Vogelmonitoring Deutschland und DDA, Münster.
+Gill F & Donsker D (Hrsg) 2019: IOC World Bird List (v 9.2). doi: 10.14344/IOC.ML.9.2.
+   http://www.worldbirdnames.org.
+
+                                                                                       7
+			        HÜHNERVÖGEL – GALLIFORMES
+					
+			        Fasanverwandte   Phasianidae
+A R3   J   Haselhuhn        Tetrastes bonasia
+A R2   J   Auerhuhn         Tetrao urogallus
+A R3   J   Birkhuhn         Lyrurus tetrix
+A R2   J   Alpenschneehuhn  Lagopus muta
+A L1   j   Steinhuhn        Alectoris graeca
+A N4   J   Rebhuhn          Perdix perdix
+A N4   Z   Wachtel          Coturnix coturnix
+C1 N5  J   Jagdfasan        Phasianus colchicus
+					
+					
+			        ENTENVÖGEL – ANSERIFORMES
+					
+			        Entenverwandte   Anatidae
+A		 ZW     Ringelgans       Branta bernicla
+A VE zw    Rothalsgans      Branta ruficollis
+C1 N3  JW  Kanadagans       Branta canadensis
+A R2   ZW  Weißwangengans   Branta leucopsis
+C5 L1E jw  Streifengans     Anser indicus
+A N4   JZW Graugans         Anser anser
+A		 ZW     Waldsaatgans     Anser fabalis
+A VE ZW    Kurzschnabelgans Anser brachyrhynchus
+A VE ZW    Tundrasaatgans   Anser serrirostris
+A VE ZW    Blässgans        Anser albifrons
+A		 zw     Zwerggans        Anser erythropus
+A N4   JZW Höckerschwan     Cygnus olor
+A		 ZW     Zwergschwan      Cygnus columbianus
+A R1   JZW Singschwan       Cygnus cygnus
+C1 N3  J   Nilgans          Alopochen aegyptiaca
+A R3   JZW Brandgans        Tadorna tadorna
+BC1 N2 Jw  Rostgans         Tadorna ferruginea
+C1 N2  J   Mandarinente     Aix galericulata
+A N3   Z   Knäkente         Spatula querquedula
+A		    S   Blauflügelente   Spatula discors
+A N3   JZW Löffelente       Spatula clypeata
+
+8
+A N3 JZW Schnatterente           Mareca strepera
+A R1 JZW Pfeifente               Mareca penelope
+A		 S    Kanadapfeifente         Mareca americana
+A N5 JZW Stockente               Anas platyrhynchos
+A R1 JZW Spießente               Anas acuta
+A N3 JZW Krickente               Anas crecca
+A		 S    Carolinakrickente       Anas carolinensis
+BE		 s   Marmelente              Marmaronetta angustirostris
+A R3 JZW Kolbenente              Netta rufina
+A N3 JZW Tafelente               Aythya ferina
+A L1 jzw Moorente                Aythya nyroca
+A		 S    Ringschnabelente        Aythya collaris
+A N4 JZW Reiherente              Aythya fuligula
+A L1 JZW Bergente                Aythya marila
+A VE s   Kanadabergente          Aythya affinis
+A		 S    Scheckente              Polysticta stelleri
+A		 S    Prachteiderente         Somateria spectabilis
+A R3 JZW Eiderente               Somateria mollissima
+BD		 s   Kragenente              Histrionicus histrionicus
+A		 s    Brillenente             Melanitta perspicillata
+A		 ZW   Samtente                Melanitta fusca
+A		 s    Kamtschatkasamtente     Melanitta stejnegeri
+A		 ZW   Trauerente              Melanitta nigra
+A		  s   Pazifiktrauerente       Melanitta americana
+A		 ZW   Eisente                 Clangula hyemalis
+A R3 ZW  Schellente              Bucephala clangula
+BE		 s   Spatelente              Bucephala islandica
+A VE ZW  Zwergsäger              Mergellus albellus
+A R3 ZW  Gänsesäger              Mergus merganser
+A R2 ZW  Mittelsäger             Mergus serrator
+C5 V j   Schwarzkopf-Ruderente   Oxyura jamaicensis
+BD		 S   Weißkopf-Ruderente      Oxyura leucocephala
+					
+					
+
+
+
+
+                                                               9
+			       NACHTSCHWALBENVÖGEL –
+			       CAPRIMULGIFORMES
+					
+			       Nachtschwalben         Caprimulgidae
+A N3    Z Nachtschwalbe          Caprimulgus europaeus
+B			      Pharaonennachtschwalbe Caprimulgus aegyptius
+					
+					
+			       SEGLERVÖGEL – APODIFORMES
+					
+			       Segler                 Apodidae
+A L2    Z Alpensegler            Tachymarptis melba
+A N5    Z Mauersegler            Apus apus
+A		 S     Fahlsegler             Apus pallidus
+A		     s Pazifiksegler          Apus pacificus
+A		 s     Haussegler             Apus affinis
+					
+					
+			       TRAPPEN – OTIDIFORMES
+					
+			       Trappen                Otididae
+A L1    J Großtrappe             Otis tarda
+A		 s     Steppenkragentrappe    Chlamydotis macqueenii
+A 0 (B) S Zwergtrappe            Tetrax tetrax
+					
+					
+			       KUCKUCKE – CUCULIFORMES
+					
+			       Kuckucke               Cuculidae
+A		 S     Häherkuckuck           Clamator glandarius
+A		 s     Schwarzschnabelkuckuck Coccyzus erythropthalmus
+A N4    Z Kuckuck                Cuculus canorus
+
+
+
+			
+					
+
+10
+			         FLUGHÜHNER– PTEROCLIFORMES
+					
+			         Flughühner          Pteroclidae
+A V (B) s   Steppenflughuhn     Syrrhaptes paradoxus
+B			        Sandflughuhn        Pterocles orientalis
+					
+					
+			         TAUBEN – COLUMBIFORMES
+					
+			         Tauben              Columbidae
+C4 N5   J   Straßentaube        Columba livia f. domestica
+A N4    Z   Hohltaube           Columba oenas
+A N6    JZW Ringeltaube         Columba palumbus
+A N4    Z   Turteltaube         Streptopelia turtur
+A		 s       Orientturteltaube   Streptopelia orientalis
+A N5    J   Türkentaube         Streptopelia decaocto
+A		 s       Carolinataube       Zenaida macroura
+					
+					
+			         KRANICHVÖGEL – GRUIFORMES
+					
+			         Rallen              Rallidae
+A N4    JZW Wasserralle         Rallus aquaticus
+A N3    Z   Wachtelkönig        Crex crex
+A N3    Z   Tüpfelsumpfhuhn     Porzana porzana
+A R2    Z   Kleinsumpfhuhn      Zapornia parva
+A L1    S   Zwergsumpfhuhn      Zapornia pusilla
+BD		    s   Purpurhuhn          Porphyrio porphyrio
+A		 s       Graukopf-Purpurhuhn Porphyrio poliocephalus
+BD		    s   Bronzesultanshuhn   Porphyrio alleni
+A N4    JZW Teichhuhn           Gallinula chloropus
+A N4    JZW Blässhuhn           Fulica atra
+					
+			         Kraniche            Gruidae
+A		 s       Kanadakranich       Antigone canadensis
+BD		    S   Jungfernkranich     Grus virgo
+A N3    JZW Kranich             Grus grus
+
+                                                             11
+			       LAPPENTAUCHER – PODICIPEDIFORMES
+					
+			       Lappentaucher           Podicipedidae
+A N4  JZW Zwergtaucher            Tachybaptus ruficollis
+A		 s     Bindentaucher           Podilymbus podiceps
+A R3  JZW Rothalstaucher          Podiceps grisegena
+A N4  JZW Haubentaucher           Podiceps cristatus
+A 0   ZW  Ohrentaucher            Podiceps auritus
+A N3  JZW Schwarzhalstaucher      Podiceps nigricollis
+					
+					
+			       FLAMINGOS – PHOENICOPTERIFORMES
+					
+			       Flamingos               Phoenicopteridae
+A L1E z   Rosaflamingo            Phoenicopterus roseus
+					
+					
+			       REGENPFEIFERVÖGEL – CHARADRIIFORMES
+					
+			       Triele                  Burhinidae
+A L1  z   Triel                   Burhinus oedicnemus
+					
+			       Austernfischer          Haematopodidae
+A R4  JZW Austernfischer          Haematopus ostralegus
+					
+			       Säbelschnäblerverwandte Recurvirostridae
+A N1  z   Stelzenläufer           Himantopus himantopus
+A R3  JZW Säbelschnäbler          Recurvirostra avosetta
+					
+			       Regenpfeiferverwandte Charadriidae
+A N4  Z   Kiebitz                 Vanellus vanellus
+A		 S     Steppenkiebitz          Vanellus gregarius
+A		   S   Weißschwanzkiebitz      Vanellus leucurus
+A L1  Z   Goldregenpfeifer        Pluvialis apricaria
+A		 S     Tundra-Goldregenpfeifer Pluvialis fulva
+A		 S     Prärie-Goldregenpfeifer Pluvialis dominica
+A		 Z     Kiebitzregenpfeifer     Pluvialis squatarola
+
+12
+A R3    Z  Sandregenpfeifer        Charadrius hiaticula
+A N3    Z  Flussregenpfeifer       Charadrius dubius
+A R2    Z  Seeregenpfeifer         Charadrius alexandrinus
+A		 S      Wüstenregenpfeifer      Charadrius leschenaultii
+B			       Wermutregenpfeifer      Charadrius asiaticus
+A V (B) Z  Mornellregenpfeifer     Charadrius morinellus
+					
+			        Schnepfenverwandte      Scolopacidae
+B			       Prärieläufer            Bartramia longicauda
+A VE Z     Regenbrachvogel         Numenius phaeopus
+B			       Dünnschnabel-Brachvogel Numenius tenuirostris
+A R3    Z  Brachvogel              Numenius arquata
+A		 Z      Pfuhlschnepfe           Limosa lapponica
+A R3    Z  Uferschnepfe            Limosa limosa
+A 0     ZW Steinwälzer             Arenaria interpres
+Ao		    s  Anadyrknutt             Calidris tenuirostris
+A		 ZW     Knutt                   Calidris canutus
+A R1    Z  Kampfläufer             Calidris pugnax
+A		     Z  Sumpfläufer             Calidris falcinellus
+A		 s      Spitzschwanz-Strandläufer Calidris acuminata
+A		 s      Bindenstrandläufer      Calidris himantopus
+A		 Z      Sichelstrandläufer      Calidris ferruginea
+A		 Z      Temminckstrandläufer Calidris temminckii
+A		 s      Langzehen-Strandläufer Calidris subminuta
+Ao		    s  Rotkehl-Strandläufer    Calidris ruficollis
+A		 ZW     Sanderling              Calidris alba
+A R1    ZW Alpenstrandläufer       Calidris alpina
+A		     ZW Meerstrandläufer        Calidris maritima
+A		 S      Bairdstrandläufer       Calidris bairdii
+A		 Z      Zwergstrandläufer       Calidris minuta
+A		 s      Wiesenstrandläufer      Calidris minutilla
+A		     S  Weißbürzel-Strandläufer Calidris fuscicollis
+A		 S      Grasläufer              Calidris subruficollis
+A		 z      Graubrust-Strandläufer Calidris melanotos
+A		 s      Sandstrandläufer        Calidris pusilla
+A		 S      Tundraschlammläufer     Limnodromus scolopaceus
+Ao		    s  Moorschlammläufer       Limnodromus griseus
+
+                                                              13
+A N4    JZW Waldschnepfe            Scolopax rusticola
+A V (B) ZW  Zwergschnepfe           Lymnocryptes minimus
+A 0 (B) S   Doppelschnepfe          Gallinago media
+A N3    ZW  Bekassine               Gallinago gallinago
+A		 S       Terekwasserläufer       Xenus cinereus
+A		 S       Wilsonwassertreter      Phalaropus tricolor
+A		 Z       Odinshühnchen           Phalaropus lobatus
+A		 z       Thorshühnchen           Phalaropus fulicarius
+A N2    Z   Flussuferläufer         Actitis hypoleucos
+A		 S       Drosseluferläufer       Actitis macularius
+A R3    ZW  Waldwasserläufer        Tringa ochropus
+A		 S       Gelbschenkel            Tringa flavipes
+A R3    JZW Rotschenkel             Tringa totanus
+A V     z   Teichwasserläufer       Tringa stagnatilis
+A L1    Z   Bruchwasserläufer       Tringa glareola
+A		 Z       Dunkelwasserläufer      Tringa erythropus
+A V     Z   Grünschenkel            Tringa nebularia
+					
+			         Brachschwalbenverwandte Glareolidae
+A		 s       Rennvogel               Cursorius cursor
+A		     S   Rotflügel-Brachschwalbe Glareola pratincola
+A V     S   Schwarzflügel-Brachschwalbe Glareola nordmanni
+					
+			         Möwenverwandte          Laridae
+B			        Noddi                   Anous stolidus
+A L3    JZW Dreizehenmöwe           Rissa tridactyla
+A		 S       Elfenbeinmöwe           Pagophila eburnea
+A		 z       Schwalbenmöwe           Xema sabini
+A		 s       Dünnschnabelmöwe        Chroicocephalus genei
+A		 s       Bonapartemöwe           Chroicocephalus philadelphia
+A N5    JZW Lachmöwe                Chroicocephalus ridibundus
+A L1    Z   Zwergmöwe               Hydrocoloeus minutus
+A		 S       Rosenmöwe               Rhodostethia rosea
+A		 S       Aztekenmöwe             Leucophaeus atricilla
+A		 S       Präriemöwe              Leucophaeus pipixcan
+A		 S       Korallenmöwe            Ichthyaetus audouinii
+A N2    Zw  Schwarzkopfmöwe         Ichthyaetus melanocephalus
+
+14
+A		 S       Fischmöwe              Ichthyaetus ichthyaetus
+A R4    JZW Sturmmöwe              Larus canus
+A		 S       Ringschnabelmöwe       Larus delawarensis
+A R1    JZW Mantelmöwe             Larus marinus
+A		 w       Eismöwe                Larus hyperboreus
+A		 w       Polarmöwe              Larus glaucoides
+A R4    JZW Silbermöwe             Larus argentatus
+A		 s       Kanadamöwe             Larus smithsonianus
+A R1    ZW  Steppenmöwe            Larus cachinnans
+A R2    ZW  Mittelmeermöwe         Larus michahellis
+A R4    ZW  Heringsmöwe            Larus fuscus
+A L1    z   Lachseeschwalbe        Gelochelidon nilotica
+A L1    Z   Raubseeschwalbe        Hydroprogne caspia
+A		 s       Rüppellseeschwalbe     Thalasseus bengalensis
+A R3    Z   Brandseeschwalbe       Thalasseus sandvicensis
+A		 s       Schmuckseeschwalbe     Thalasseus elegans
+A R2    Z   Zwergseeschwalbe       Sternula albifrons
+A		 s       Zügelseeschwalbe       Onychoprion anaethetus
+A		     s   Rußseeschwalbe         Onychoprion fuscatus
+A 0 (B) S   Rosenseeschwalbe       Sterna dougallii
+A N3    Z   Flussseeschwalbe       Sterna hirundo
+A R3    Z   Küstenseeschwalbe      Sterna paradisaea
+A R1    z   Weißbart-Seeschwalbe Chlidonias hybrida
+A R1    z   Weißflügel-Seeschwalbe Chlidonias leucopterus
+A R2    Z   Trauerseeschwalbe      Chlidonias niger
+					
+			         Raubmöwen              Stercorariidae
+A		 z       Skua                   Stercorarius skua
+A		 z       Spatelraubmöwe         Stercorarius pomarinus
+A		 Z       Schmarotzerraubmöwe Stercorarius parasiticus
+A		 z       Falkenraubmöwe         Stercorarius longicaudus
+					
+			         Alke                   Alcidae
+A		 Zw      Krabbentaucher         Alle alle
+A		 s       Dickschnabellumme      Uria lomvia
+A L3    JZW Trottellumme           Uria aalge
+A L1    JZW Tordalk                Alca torda
+
+                                                              15
+A V     zw  Gryllteiste           Cepphus grylle
+A 0 (B) Z   Papageitaucher        Fratercula arctica
+					
+					
+			         SEETAUCHER – GAVIIFORMES
+					
+			         Seetaucher            Gaviidae
+A		 ZW      Sterntaucher          Gavia stellata
+A		 ZW      Prachttaucher         Gavia arctica
+A		 zw      Eistaucher            Gavia immer
+A		 S       Gelbschnabeltaucher   Gavia adamsii
+					
+					
+			         RÖHRENNASEN – PROCELLARIIFORMES
+					
+			         Sturmschwalben        Oceanitidae
+A		     s   Buntfuß-Sturmschwalbe Oceanites oceanicus
+					
+			         Albatrosse            Diomedeidae
+A		 s       Schwarzbrauenalbatros Thalassarche melanophris
+					
+			         Wellenläufer          Hydrobatidae
+A		 S       Sturmwellenläufer     Hydrobates pelagicus
+A		 z       Wellenläufer          Oceanodroma leucorhoa
+					
+			         Sturmvögel            Procellariidae
+A L1    JZW Eissturmvogel         Fulmarus glacialis
+B			        Sepiasturmtaucher     Calonectris diomedea
+A		 s       Corysturmtaucher      Calonectris borealis
+A		 z       Dunkelsturmtaucher    Ardenna grisea
+A		 s       Kappensturmtaucher    Ardenna gravis
+A		 S       Atlantiksturmtaucher  Puffinus puffinus
+A		 S       Balearensturmtaucher  Puffinus mauretanicus
+A		 s       Barolosturmtaucher    Puffinus baroli
+A		 s       Bulwersturmvogel      Bulweria bulwerii
+				
+					
+
+16
+			       STÖRCHE– CICONIIFORMES
+					
+			       Störche           Ciconiidae
+A N2  Z   Schwarzstorch     Ciconia nigra
+A N3  ZJ  Weißstorch        Ciconia ciconia
+					
+					
+			       RUDERFÜSSER – SULIFORMES
+					
+			       Tölpel            Sulidae
+A L2  JZW Basstölpel        Morus bassanus
+A		   s   Weißbauchtölpel   Sula leucogaster
+					
+			       Scharben          Phalacrocoracidae
+A		 S     Zwergscharbe      Microcarbo pygmaeus
+A		 j     Krähenscharbe     Phalacrocorax aristotelis
+A N4  JZW Kormoran          Phalacrocorax carbo
+					
+					
+			       PELIKANVÖGEL – PELECANIFORMES
+					
+			       Ibisse            Threskiornithidae
+A		 S     Sichler           Plegadis falcinellus
+A R2  Z   Löffler           Platalea leucorodia
+					
+			       Reiher            Ardeidae
+A R2  JZW Rohrdommel        Botaurus stellaris
+A R2  Z   Zwergdommel       Ixobrychus minutus
+A L1  z   Nachtreiher       Nycticorax nycticorax
+A		 S     Rallenreiher      Ardeola ralloides
+A L1E j   Kuhreiher         Bubulcus ibis
+A N4  JZW Graureiher        Ardea cinerea
+A L1  z   Purpurreiher      Ardea purpurea
+A L1  JZW Silberreiher      Ardea alba
+A V   z   Seidenreiher      Egretta garzetta
+
+					
+
+                                                        17
+			         Pelikane           Pelecanidae
+BD		    S   Rosapelikan        Pelecanus onocrotalus
+A		 s       Krauskopfpelikan   Pelecanus crispus
+					
+					
+			         GREIFVÖGEL – ACCIPITRIFORMES
+					
+			         Fischadler         Pandionidae
+A R2    Z   Fischadler         Pandion haliaetus
+					
+			         Habichtverwandte   Accipitridae
+A		 S       Gleitaar           Elanus caeruleus
+BE		    S   Bartgeier          Gypaetus barbatus
+A		 S       Schmutzgeier       Neophron percnopterus
+A N3    Z   Wespenbussard      Pernis apivorus
+A		 S       Gänsegeier         Gyps fulvus
+BE		    s   Mönchsgeier        Aegypius monachus
+A 0 (B) z   Schlangenadler     Circaetus gallicus
+A R1    Z   Schreiadler        Clanga pomarina
+A V     S   Schelladler        Clanga clanga
+A V     S   Zwergadler         Hieraaetus pennatus
+A		 s       Steppenadler       Aquila nipalensis
+A		 s       Kaiseradler        Aquila heliaca
+A R1    J   Steinadler         Aquila chrysaetos
+A		 s       Habichtsadler      Aquila fasciata
+A N4    JZW Sperber            Accipiter nisus
+A N4    JZW Habicht            Accipiter gentilis
+A N3    Z   Rohrweihe          Circus aeruginosus
+A R1    JZW Kornweihe          Circus cyaneus
+A V     z   Steppenweihe       Circus macrourus
+A N2    Z   Wiesenweihe        Circus pygargus
+A N4    JZW Rotmilan           Milvus milvus
+A N3    Z   Schwarzmilan       Milvus migrans
+A R2    JW  Seeadler           Haliaeetus albicilla
+A V     W   Raufußbussard      Buteo lagopus
+A		 S       Adlerbussard       Buteo rufinus
+A N4    JZW Mäusebussard       Buteo buteo
+
+18
+			        EULEN – STRIGIFORMES
+					
+			        Schleiereulen     Tytonidae
+A N4   J   Schleiereule      Tyto alba
+					
+			        Eulen             Strigidae
+A V    S   Zwergohreule      Otus scops
+A		 S      Schneeeule        Bubo scandiacus
+A N3   J   Uhu               Bubo bubo
+A N4   J   Waldkauz          Strix aluco
+BE L1E j   Habichtskauz      Strix uralensis
+A		 S      Sperbereule       Surnia ulula
+A N3   J   Sperlingskauz     Glaucidium passerinum
+A N3   J   Steinkauz         Athene noctua
+A N3   J   Raufußkauz        Aegolius funereus
+A N4   JZW Waldohreule       Asio otus
+A R1   ZW  Sumpfohreule      Asio flammeus
+					
+					
+			        HORNVÖGEL – BUCEROTIFORMES
+					
+			        Wiedehopfe        Upupidae
+A R2   Z   Wiedehopf         Upupa epops
+					
+					
+			        RACKENVÖGEL – CORACIIFORMES
+					
+			        Racken            Coraciidae
+A 0    S   Blauracke         Coracias garrulus
+					
+			        Eisvögel          Alcedinidae
+A N4   JZW Eisvogel          Alcedo atthis
+					
+			        Spinte            Meropidae
+A		 S      Blauwangenspint   Merops persicus
+A N3   Z   Bienenfresser     Merops apiaster
+					
+
+                                                     19
+			       SPECHTVÖGEL – PICIFORMES
+					
+			       Spechte            Picidae
+A N4  Z   Wendehals          Jynx torquilla
+A R2  J   Dreizehenspecht    Picoides tridactylus
+A N4  J   Mittelspecht       Dendrocoptes medius
+A N4  JW  Kleinspecht        Dryobates minor
+A		 s     Blutspecht         Dendrocopos syriacus
+A N5  JZW Buntspecht         Dendrocopos major
+A R2  J   Weißrückenspecht   Dendrocopos leucotos
+A N4  J   Schwarzspecht      Dryocopus martius
+A N4  J   Grünspecht         Picus viridis
+A N4  J   Grauspecht         Picus canus
+					
+					
+			       FALKEN – FALCONIFORMES
+					
+			       Falken             Falconidae
+A		 S     Rötelfalke         Falco naumanni
+A N4  JZW Turmfalke          Falco tinnunculus
+A V   z   Rotfußfalke        Falco vespertinus
+A		 s     Eleonorenfalke     Falco eleonorae
+A		   ZW  Merlin             Falco columbarius
+A N3  Z   Baumfalke          Falco subbuteo
+A 0   S   Würgfalke          Falco cherrug
+A		 S     Gerfalke           Falco rusticolus
+A N3  JZW Wanderfalke        Falco peregrinus
+					
+					
+			       PAPAGEIEN – PSITTACIFORMES
+					
+			       Altweltpapageien   Psittaculidae
+C1 R3 J   Halsbandsittich    Psittacula krameri
+					
+
+
+					
+
+20
+			      SPERLINGSVÖGEL – PASSERIFORMES
+					
+			      Würger             Laniidae
+A		 s    Braunwürger        Lanius cristatus
+A N5 Z   Neuntöter          Lanius collurio
+A		 S    Isabellwürger      Lanius isabellinus
+A		 s    Rotschwanzwürger   Lanius phoenicuroides
+A 0  S   Schwarzstirnwürger Lanius minor
+A N3 JZW Raubwürger         Lanius excubitor
+A 0  z   Rotkopfwürger      Lanius senator
+A		  s   Maskenwürger       Lanius nubicus
+					
+			      Vireos             Vireonidae
+Ao		 s   Gelbkehlvireo      Vireo flavifrons
+A		 s    Rotaugenvireo      Vireo olivaceus
+					
+			      Pirole             Oriolidae
+A N4 Z   Pirol              Oriolus oriolus
+					
+			      Krähenverwandte    Corvidae
+A N5 JZW Eichelhäher        Garrulus glandarius
+A N5 J   Elster             Pica pica
+A R3 JZW Tannenhäher        Nucifraga caryocatactes
+B			     Alpenkrähe         Pyrrhocorax pyrrhocorax
+A R2 J   Alpendohle         Pyrrhocorax graculus
+A N5 JZW Dohle              Coloeus monedula
+A N4 JZW Saatkrähe          Corvus frugilegus
+A R5 JZW Rabenkrähe         Corvus corone
+A R4 JZW Nebelkrähe         Corvus cornix
+A N4 J   Kolkrabe           Corvus corax
+					
+			      Seidenschwänze     Bombycillidae
+A		 ZW   Seidenschwanz      Bombycilla garrulus
+					
+			      Meisen             Paridae
+A N6 JZW Tannenmeise        Periparus ater
+A N5 J   Haubenmeise        Lophophanes cristatus
+
+                                                      21
+A N5 J   Sumpfmeise            Poecile palustris
+A N5 J   Weidenmeise           Poecile montanus
+A N6 JZW Blaumeise             Cyanistes caeruleus
+A		 s    Lasurmeise            Cyanistes cyanus
+A N6 JZW Kohlmeise             Parus major
+					
+			      Beutelmeisen          Remizidae
+A N3 Z   Beutelmeise           Remiz pendulinus
+					
+			      Bartmeisen            Panuridae
+A N3 JZ  Bartmeise             Panurus biarmicus
+					
+			      Lerchen               Alaudidae
+A N4 Z   Heidelerche           Lullula arborea
+B			     Weißflügellerche      Alauda leucoptera
+A N6 JZW Feldlerche            Alauda arvensis
+A N3 J   Haubenlerche          Galerida cristata
+A		 ZW   Ohrenlerche           Eremophila alpestris
+A		 S    Kurzzehenlerche       Calandrella brachydactyla
+A		 S    Kalanderlerche        Melanocorypha calandra
+B			     Schwarzsteppenlerche  Melanocorypha yeltoniensis
+B			     Stummellerche         Alaudala rufescens
+					
+			      Schwalben             Hirundinidae
+A N5 Z   Uferschwalbe          Riparia riparia
+A N5 Z   Rauchschwalbe         Hirundo rustica
+A R1 Z   Felsenschwalbe        Ptyonoprogne rupestris
+A N5 Z   Mehlschwalbe          Delichon urbicum
+A		 S    Rötelschwalbe         Cecropis daurica
+					
+			      Seidensängerverwandte Cettiidae
+A V  S   Seidensänger          Cettia cetti
+					
+			      Schwanzmeisen         Aegithalidae
+A N5 JZW Schwanzmeise          Aegithalos caudatus
+
+					
+
+22
+			    Laubsänger             Phylloscopidae
+A N5 Z Waldlaubsänger         Phylloscopus sibilatrix
+A R3 Z Berglaubsänger         Phylloscopus bonelli
+A		 S  Tienschan-Laubsänger Phylloscopus humei
+A		 z  Gelbbrauen-Laubsänger Phylloscopus inornatus
+A		 S  Goldhähnchen-Laubsänger Phylloscopus proregulus
+A		 S  Bartlaubsänger         Phylloscopus schwarzi
+A		 S  Dunkellaubsänger       Phylloscopus fuscatus
+A N6 Z Fitis                  Phylloscopus trochilus
+A N6 Z Zilpzalp               Phylloscopus collybita
+A		 S  Iberienzilpzalp        Phylloscopus ibericus
+A		 s  Kronenlaubsänger       Phylloscopus coronatus
+A		 s  Wacholderlaubsänger    Phylloscopus nitidus
+A		  s Middendorff-Laubsänger Phylloscopus plumbeitarsus
+A L1 z Grünlaubsänger         Phylloscopus trochiloides
+A		 S  Wanderlaubsänger       Phylloscopus borealis
+					
+			    Rohrsängerverwandte Acrocephalidae
+A N4 Z Drosselrohrsänger      Acrocephalus arundinaceus
+A		  S Mariskenrohrsänger     Acrocephalus melanopogon
+A L1 z Seggenrohrsänger       Acrocephalus paludicola
+A N4 Z Schilfrohrsänger       Acrocephalus schoenobaenus
+A		 S  Feldrohrsänger         Acrocephalus agricola
+A V  S Buschrohrsänger        Acrocephalus dumetorum
+A N5 Z Teichrohrsänger        Acrocephalus scirpaceus
+A N5 Z Sumpfrohrsänger        Acrocephalus palustris
+A		 s  Buschspötter           Iduna caligata
+A		 s  Steppenspötter         Iduna rama
+A		 s  Blassspötter           Iduna pallida
+A R2 Z Orpheusspötter         Hippolais polyglotta
+A N5 Z Gelbspötter            Hippolais icterina
+					
+			    Schwirlverwandte       Locustellidae
+B			   Streifenschwirl        Helopsaltes certhiola
+A		 s  Strichelschwirl        Locustella lanceolata
+A N4 Z Feldschwirl            Locustella naevia
+A R3 Z Schlagschwirl          Locustella fluviatilis
+
+                                                       23
+A N3 Z   Rohrschwirl            Locustella luscinioides
+					
+			      Halmsänger             Cisticolidae
+A		 S    Zistensänger           Cisticola juncidis
+					
+			      Grasmückenverwandte Sylviidae
+A N6 Z   Mönchsgrasmücke        Sylvia atricapilla
+A N6 Z   Gartengrasmücke        Sylvia borin
+A R3 Z   Sperbergrasmücke       Sylvia nisoria
+A N5 Z   Klappergrasmücke       Sylvia curruca
+A		 s    Orpheusgrasmücke       Sylvia hortensis
+A		 s    Wüstengrasmücke        Sylvia nana
+A N5 Z   Dorngrasmücke          Sylvia communis
+A		 s    Provencegrasmücke      Sylvia undata
+A V  S   Brillengrasmücke       Sylvia conspicillata
+A		  S   Weißbart-Grasmücke     Sylvia cantillans
+A		 s    Ligurien-Bartgrasmücke Sylvia subalpina
+A		 S    Samtkopf-Grasmücke     Sylvia melanocephala
+					
+			      Goldhähnchen           Regulidae
+A N6 Z   Sommergoldhähnchen     Regulus ignicapilla
+A N6 JZW Wintergoldhähnchen     Regulus regulus
+					
+			      Zaunkönige             Troglodytidae
+A N6 JZW Zaunkönig              Troglodytes troglodytes
+					
+			      Kleiber                Sittidae
+A N6 JZW Kleiber                Sitta europaea
+					
+			      Mauerläufer            Tichodromidae
+A R2 J   Mauerläufer            Tichodroma muraria
+					
+			      Baumläufer             Certhiidae
+A N5 J   Waldbaumläufer         Certhia familiaris
+A N5 J   Gartenbaumläufer       Certhia brachydactyla
+
+					
+
+24
+			      Spottdrosseln           Mimidae
+B			     Katzenspottdrossel      Dumetella carolinensis
+					
+			      Starenverwandte         Sturnidae
+A		 S    Rosenstar               Pastor roseus
+A N6 JZ  Star                    Sturnus vulgaris
+					
+			      Drosseln                Turdidae
+A		 s    Schieferdrossel         Geokichla sibirica
+A		 S    Erddrossel              Zoothera aurea
+B			     Grauwangen-Musendrossel Catharus minimus
+A		 s    Zwergmusendrossel       Catharus ustulatus
+B			     Einsiedler-Musendrossel Catharus guttatus
+B			     Einfarbdrossel          Turdus unicolor
+A R3 Z   Ringdrossel             Turdus torquatus
+A N6 JZW Amsel                   Turdus merula
+A		  S   Weißbrauendrossel       Turdus obscurus
+A		 S    Schwarzkehldrossel      Turdus atrogularis
+A		 s    Rotkehldrossel          Turdus ruficollis
+A		 s    Rostschwanzdrossel      Turdus naumanni
+A		  s   Rostflügeldrossel       Turdus eunomus
+A N5 JZW Wacholderdrossel        Turdus pilaris
+A V  ZW  Rotdrossel              Turdus iliacus
+A N6 Z   Singdrossel             Turdus philomelos
+A N5 JZ  Misteldrossel           Turdus viscivorus
+A		 s    Wanderdrossel           Turdus migratorius
+					
+			      Schnäpperverwandte Muscicapidae
+A		 S    Heckensänger            Cercotrichas galactotes
+A N5 Z   Grauschnäpper           Muscicapa striata
+A N6 JZW Rotkehlchen             Erithacus rubecula
+A N4 Z   Blaukehlchen            Luscinia svecica
+A R4 Z   Sprosser                Luscinia luscinia
+A N5 Z   Nachtigall              Luscinia megarhynchos
+A		 s    Rubinkehlchen           Calliope calliope
+A		 S    Blauschwanz             Tarsiger cyanurus
+A N4 Z   Trauerschnäpper         Ficedula hypoleuca
+
+                                                           25
+A R3     Z   Halsbandschnäpper       Ficedula albicollis
+A R3     Z   Zwergschnäpper          Ficedula parva
+A N5     Z   Hausrotschwanz          Phoenicurus ochruros
+A N4     Z   Gartenrotschwanz        Phoenicurus phoenicurus
+A L1     S   Steinrötel              Monticola saxatilis
+A		 s        Blaumerle               Monticola solitarius
+A N4     Z   Braunkehlchen           Saxicola rubetra
+A N4     Z   Schwarzkehlchen         Saxicola rubicola
+A		 S        Pallasschwarzkehlchen Saxicola maurus
+A N3     Z   Steinschmätzer          Oenanthe oenanthe
+A		 S        Isabellsteinschmätzer   Oenanthe isabellina
+A		 S        Wüstensteinschmätzer Oenanthe deserti
+A		      S   Mittelmeer-Steinschmätzer Oenanthe hispanica
+B			         Zypernsteinschmätzer    Oenanthe cypriaca
+A		 S        Nonnensteinschmätzer Oenanthe pleschanka
+					
+			          Wasseramseln            Cinclidae
+A R4     JW  Wasseramsel             Cinclus cinclus
+					
+			          Sperlinge               Passeridae
+A N6     J   Haussperling            Passer domesticus
+A N5     J   Feldsperling            Passer montanus
+B  0 (B)		   Steinsperling           Petronia petronia
+A R2     J   Schneesperling          Montifringilla nivalis
+					
+			          Braunellen              Prunellidae
+A R2     JZ  Alpenbraunelle          Prunella collaris
+A		 s        Bergbraunelle           Prunella montanella
+A		 s        Schwarzkehlbraunelle    Prunella atrogularis
+A N6     JZW Heckenbraunelle         Prunella modularis
+					
+			          Stelzenverwandte        Motacillidae
+A N5     Z   Schafstelze             Motacilla flava
+A V      S   Zitronenstelze          Motacilla citreola
+A N4     JZW Gebirgsstelze           Motacilla cinerea
+A N5     Z   Bachstelze              Motacilla alba
+A		 z        Spornpieper             Anthus richardi
+
+26
+A		 S    Steppenpieper          Anthus godlewskii
+A R3 Z   Brachpieper            Anthus campestris
+A N4 ZW  Wiesenpieper           Anthus pratensis
+A N5 Z   Baumpieper             Anthus trivialis
+A		 S    Waldpieper             Anthus hodgsoni
+A		 s    Petschorapieper        Anthus gustavi
+A		 Z    Rotkehlpieper          Anthus cervinus
+A		  s   Pazifikpieper          Anthus rubescens
+A R3 JZW Bergpieper             Anthus spinoletta
+A V  ZW  Strandpieper           Anthus petrosus
+					
+			      Finkenverwandte        Fringillidae
+A N6 JZW Buchfink               Fringilla coelebs
+A V  ZW  Bergfink               Fringilla montifringilla
+A N5 JZW Kernbeißer             Coccothraustes coccothraustes
+A		 S    Hakengimpel            Pinicola enucleator
+A N5 JZW Gimpel                 Pyrrhula pyrrhula
+A		 s    Wüstengimpel           Bucanetes githagineus
+A R2 Z   Karmingimpel           Carpodacus erythrinus
+A N6 JZW Grünfink               Chloris chloris
+A V  W   Berghänfling           Linaria flavirostris
+A N5 JZW Bluthänfling           Linaria cannabina
+A		 W    Taigabirkenzeisig      Acanthis flammea
+A N4 JZW Alpenbirkenzeisig      Acanthis cabaret
+A		 S    Polarbirkenzeisig      Acanthis hornemanni
+A V  S   Kiefernkreuzschnabel   Loxia pytyopsittacus
+A N4 JZW Fichtenkreuzschnabel   Loxia curvirostra
+A VE S   Bindenkreuzschnabel    Loxia leucoptera
+A N5 JZW Stieglitz              Carduelis carduelis
+A R2 J   Zitronenzeisig         Carduelis citrinella
+A N5 Z   Girlitz                Serinus serinus
+A N4 JZW Erlenzeisig            Spinus spinus
+					
+			      Tundraammern           Calcariidae
+A		 ZW   Spornammer             Calcarius lapponicus
+A		 ZW   Schneeammer            Plectrophenax nivalis
+					
+
+                                                           27
+			      Ammern                Emberizidae
+A N4 JZW Grauammer             Emberiza calandra
+A N6 JZW Goldammer             Emberiza citrinella
+A		 S    Fichtenammer          Emberiza leucocephalos
+A R2 JZ  Zippammer             Emberiza cia
+A		 s    Steinortolan          Emberiza buchanani
+B			     Türkenammer           Emberiza cineracea
+A R4 Z   Ortolan               Emberiza hortulana
+A		 s    Grauortolan           Emberiza caesia
+A R2 JZ  Zaunammer             Emberiza cirlus
+A		 S    Zwergammer            Emberiza pusilla
+A		 S    Waldammer             Emberiza rustica
+A		 S    Weidenammer           Emberiza aureola
+A V  S   Kappenammer           Emberiza melanocephala
+BD		 S   Braunkopfammer        Emberiza bruniceps
+A		  s   Maskenammer           Emberiza spodocephala
+A N5 Z   Rohrammer             Emberiza schoeniclus
+					
+			      Waldsänger            Parulidae
+Ao		 s   Meisenwaldsänger      Setophaga americana
+B			     Grünmantel-Waldsänger Setophaga virens
+					
+
+
+
+
+					
+
+					
+					
+
+28
+			     Anhang 1: Kategorie D
+					
+D		 s   Gluckente             Sibirionetta formosa
+D		 S   Sichelente            Mareca falcata
+D L1E z Chileflamingo         Phoenicopterus chilensis
+D		 s   Schmuckreiher         Egretta thula
+D		 s   Singammer             Melospiza melodia
+
+					
+					
+					
+			       Anhang 2: Kategorie E (Auswahl)
+					
+E  L1E j  Nandu                   Rhea americana
+E  L1E j  Truthuhn                Meleagris gallopavo
+E  VE S   Rothuhn                 Alectoris rufa
+E		 S     Zwergkanadagans         Branta hutchinsii
+E		 S     Zwergschneegans         Anser rossii
+E  L1E Jz Schneegans              Anser caerulescens
+E  L1E J  Höckergans              Anser cygnoid f. domestica
+E  L1E J  Schwarzschwan           Cygnus atratus
+E  VE j   Moschusente             Cairina moschata
+E  L1E J  Brautente               Aix sponsa
+E  VE S   Rotschulterente         Callonetta leucophrys
+E  VE S   Indien-Fleckschnabelente Anas poecilorhyncha
+E		 s     Dunkelente              Anas rubripes
+E  VE S   Bahamaente              Anas bahamensis
+E		 s     Riesentafelente         Aythya valisineria
+E		 s     Rotkopfente             Aythya americana
+E		 S     Büffelkopfente          Bucephala albeola
+E		 S     Kappensäger             Lophodytes cucullatus
+E		    s  Spießflughuhn           Pterocles alchata
+E		 s     Palmtaube               Spilopelia senegalensis
+E  L1E z  Kubaflamingo            Phoenicopterus ruber
+E		    S  Zwergflamingo           Phoeniconaias minor
+E		 s     Spornkiebitz            Vanellus spinosus
+E		 s     Ohrenscharbe            Phalacrocorax auritus
+
+                                                               29
+E  VE    S   Pharaonenibis          Threskiornis aethiopicus
+E  L1E   S   Waldrapp               Geronticus eremita
+E		      s   Rotgesichtlöffler      Platalea alba
+E		      s   Schwarzhalsreiher      Ardea melanocephala
+E		      s   Dreifarbenreiher       Egretta tricolor
+E		      S   Küstenreiher           Egretta gularis
+E		      S   Rötelpelikan           Pelecanus rufescens
+E		      s   Sperbergeier           Gyps rueppelli
+E		      s   Bindenseeadler         Haliaeetus leucoryphus
+E		      s   Weißkopf-Seeadler      Haliaeetus leucocephalus
+E		      s   Riesenseeadler         Haliaeetus pelagicus
+E		      s   Virginiauhu            Bubo virginianus
+E		      S   Buntfalke              Falco sparverius
+E		      s   Lannerfalke            Falco biarmicus
+E  L1E   j   Gelbkopfamazone        Amazona oratrix
+E  VE    j   Blaustirnamazone       Amazona aestiva
+E  L1E   j   Alexandersittich       Psittacula eupatria
+E		      s   Azurelster             Cyanopica cyanus
+E		      s   Elsterdohle            Coloeus dauuricus
+E		      s   Bergkalanderlerche     Melanocorypha bimaculata
+E  VE    S   Hirtenmaina            Acridotheres tristis
+E		      s   Mongolenstar           Agropsar sturninus
+E		      s   Amurdrossel            Turdus hortulorum
+E		      s   Fahldrossel            Turdus pallidus
+E		      s   Rußschnäpper           Muscicapa sibirica
+E		      s   Saharasteinschmätzer   Oenanthe leucopyga
+E		      S   Meisengimpel           Carpodacus sibiricus
+E		      s   Wiesenammer            Emberiza cioides
+E		      s   Gelbkehlammer          Emberiza elegans
+E		      s   Fuchsammer             Passerella iliaca
+E		      s   Dachsammer             Zonotrichia leucophrys
+E  VE    s   Weißkehlammer          Zonotrichia albicollis
+E		      s   Braunkopf-Kuhstärling Molothrus ater
+E		      s   Rosenbrust-Kernknacker Pheucticus ludovicianus
+E		      s   Indigofink             Passerina cyanea
+E		      s   Lazulifink             Passerina amoena
+
+
+30
+Impressum
+Herausgeber und Copyright:
+© 2019 Deutsche Ornithologen-Gesellschaft, Radolfzell
+Diese Kurzfassung der „Artenliste der Vögel Deutschlands“ ist eine Beilage zu
+Band 57, Heft 3, 2019 der Mitgliederzeitschrift der Deutschen Ornitho­logen-Gesellschaft
+„Vogelwarte“, in der 2018 auch die ausführliche Veröffentlichung einschließlich der
+Erläuterungen erschienen ist.
+Die Kurzfassung kann auch separat bezogen werden bei der
+DO-G-Geschäftsstelle, Karl Falk, c/o Institut für Vogelforschung,
+An der Vogelwarte 21, 26386 Wilhelmshaven,
+E-Mail geschaeftsstelle@do-g.de
+Umschlagfoto (Blaukehlchen) © Mathias Schäf, www.living-nature.eu
+
+
+                                                                                       31
+       Internationale Medien zum
+           Thema »Natur« mit
+      Schwerpunkt »Ornithologie«
+                  Bestimmungsliteratur für
+                  Avifaunen, weltweit
+                  Art-, Gattungs- und
+                  Familienbiografien
+                  Allgemeine Fachliteratur,
+                  mehrbändige Grundlagen-
+                  werke und Handbücher
+                  Ökologie und Vogelschutz
+     Wir bieten: Informationen über Novitäten
+          und Programminformationen in
+      gedruckten Flyern und per Newsletter
+
+
+
+
+                 MEDIA NATUR
+              Hans-Josef Christ
+       Postfach 110205 · D-32405 Minden
+ Telefon (0571) 8292294 · Telefax (0571) 8292296
+           eMail: info@media-natur.de
+      ... oder besuchen Sie unsere Internetseite
+32          www.media-natur.com
+   Die zwei Zeitschriften für Mitglieder
+der Deutschen Ornithologen-Gesellschaft
+
+     Werden Sie Mitglied!
+
+
+
+
+                             www.do-g.de
+Herausgegeben von der Deutschen Ornithologen-Gesellschaft
+

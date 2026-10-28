@@ -1,0 +1,1760 @@
+Vogelwarte 56, 2018: 171 – 203
+© DO-G, IfV, MPG 2018
+
+
+Aus der Kommission „Artenliste der Vögel Deutschlands“ der Deutschen Ornithologen-Gesellschaft
+
+Artenliste der Vögel Deutschlands
+
+Peter H. Barthel & Thorsten Krüger
+
+unter Mitarbeit von Einhard Bezzel, Martin Päckert, Frank D. Steinheimer & Hans-Günther Bauer
+
+
+Barthel PH & Krüger T 2018: Checklist of the birds of Germany. Vogelwarte 56: 171-203.
+The birds of Germany are presented in a current checklist as of 30th June 2018. Each species is assigned to one of three catego-
+ries. For the first time, this checklist also includes all recorded subspecies. In addition, concise information on the distribution
+and abundance of breeding birds and the status outside the breeding season is provided. The list should be used as a reference
+in systematics and taxonomy, for scientific, German and English names as well as for the classification of records.
+   In Germany, a total of 527 bird species have been recorded since 1800 (Categories A, B and C). Those 486 species reliably
+documented in an apparently wild state since 1950 are included in Category A (Ao if no photographic or specimen documen-
+tation is available). 32 species regarded as genuine vagrants prior to 1950 only are assigned to Category B, 12 of them re-
+corded only as possible or likely escapees thereafter are indicated with BD or BE (Column 4).
+   287 species of Categories A to C in Column 5 have bred in Germany since 1800, but only 254 species form the current
+breeding avifauna, of which seven were introduced and have apparently established self-sustaining breeding populations in
+the wild (Category C).
+   Column 6 of the checklist gives the status outside the breeding season as resident (J/j), winter visitor (W/w) or migrant (Z/z).
+103 species have been classified as scarce with on average less than five records per year since 1980 (S) and 84 species as vagrants
+with less than five records in total since 1950 (s).
+   Five species listed in Appendix 1 (Category D, species with currently uncertain Category assignment) are not included in
+the German checklist. Appendix 2 gives a selection out of nearly 400 species which probably or certainly escaped from captiv-
+ity, were released or introduced to Germany, e.g. through ship-assistance (Category E). The selection is restricted to 60 species
+considered genuine vagrants in some other European countries, and some species which have bred in the wild in Germany
+but have not (yet) established populations.
+   For further explanations and comments concerning systematics, taxonomy, categories, names and other changes compared
+to the last version of the checklist, see Barthel et al. (2018).
+✉ PHB: Über dem Salzgraben 11, 37574 Einbeck. E-Mail: redaktion@limicola.de
+TK: Staatliche Vogelschutzwarte (NLWKN), Ratsherr-Schulze-Str. 10, 26122 Oldenburg.
+E-Mail: thorsten.krueger@nlwkn-h.niedersachsen.de
+
+
+
+
+Einführung
+Ornithologische Systematik, Taxonomie und Nomen-                    menstellung wurden 24 seit dem Jahr 2005 erstmals in
+klatur haben sich in den letzten 25 Jahren stärker verän-           Deutschland nachgewiesene Vogelarten aufgenommen
+dert als die Zusammensetzung der Vogelwelt Deutsch-                 und einige Kategorisierungen überarbeitet.
+lands. Dies wird besonders beim Vergleich der aktuellen                Die vorliegende Liste enthält, wie in ganz Europa üb-
+Liste mit den beiden vorherigen (Barthel 1993; Barthel              lich, die seit dem Jahr 1800 im Berichtsgebiet nachgewie-
+& Helbig 2005) der dafür verantwortlichen Kommission                senen Arten und endet mit dem 30. Juni 2018. Erneut
+der Deutschen Ornithologen-Gesellschaft (DO-G) deut-                wurde versucht, noch mehr über die Grundanforde-
+lich. Naturgemäß liegen Anspruch, Informationsgehalt                rungen einer nationalen Artenliste hinaus gehende
+und Nutzen von aktuellen Artenlisten vornehmlich im                 Informationen als bisher leicht erfassbar auf geringem
+taxonomisch-systematischen Bereich, sollen also als aktu-           Raum unterzubringen und gleichzeitig die Vergleich-
+elle Grundlage für die Reihenfolge und Benennung der                barkeit mit Listen anderer europäischer Länder durch
+Vogelarten dienen und zudem kenntlich machen, in                    konsequente Anwendung der international klar defi-
+welcher der Vorkommenskategorien sie in Deutschland                 nierten Basiskategorien zu gewährleisten.
+stehen. Selbstverständlich sind auch weiterhin wissen-                 Eine grundlegende Veränderung gegenüber der letz-
+schaftlich belegte zusätzliche avifaunistische Status-              ten Version ergibt sich aus dem im September 2017 vom
+angaben enthalten. Gegenüber der vorherigen Zusam-                  Vorstand der DO-G gefassten Beschluss, ab Januar 2018
+172                                                                P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+in allen die DO-G betreffenden Belangen konsequent der       re ihrer Beschreibung entsprechen jeweils der aktuellen
+Weltliste der Vogelarten von Gill & Donsker (2018) zu        Liste von Gill & Donsker (2018).– The scientific names
+folgen. Somit entspricht auch diese Artenliste in Reihen-    of the species and (indented) subspecies names as well as
+folge sowie wissenschaftlichen und englischsprachigen        authors and years of description correspond to those given
+Namen dieser Vorgabe. Darüber hinaus wurden etwa             in Gill & Donsker (2018).
+20 deutsche Namen an Veränderungen angepasst, die
+durch die Kommission „Deutsche Namen für die Vögel           Spalte 4: Kategorie – Category
+der Erde“ von DO-G und International Ornithologists’         Die europaweit gültige Minimalanforderung an eine
+Union (IOU; vgl. Deutsche Ornithologen-Gesellschaft          nationale Vogelliste ist die Einstufung aller seit dem Jahr
+2018) vorgegeben sind.                                       1800 in natürlichem Zustand vorgekommenen Arten
+   Neu in dieser Version ist auch die Aufnahme der 377       in eine der Kategorien A, B oder C auf belegter und
+in Deutschland nachgewiesenen Subspezies, die eben-          überprüfbarer wissenschaftlicher Grundlage (Associa-
+falls mit zusätzlichen Statusangaben und gelegentlich        tion of European Records and Rarities Committees
+(dann immer in Anführungszeichen gesetzten) um-              1999). Für die deutsche Liste werden daher die nach-
+gangssprachlichen Trivialnamen versehen wurden.              folgenden Definitionen verwendet.
+Erstmals werden auch die Autoren der wissenschaftli-         A: Die Art wurde seit dem 1. Januar 1950 mindestens
+chen Namen aufgeführt, um komplettes und korrektes               einmal als Wildvogel in Deutschland festgestellt
+Zitieren in wissenschaftlichen Publikationen zu erleich-         (486 Arten; einschließlich Ao). Mit Ao (ohne Beleg)
+tern. Der eigentlich der Kategorie vorbehaltene Buch-            sind die fünf Arten gekennzeichnet, für deren Vor-
+stabe A wurde in den letzten Versionen auch in den               kommen in Deutschland es zwar keinen überprüf-
+Spalten für Brutstatus und Status außerhalb der Brutzeit         baren Beleg (Balg, Foto, Film, Tonaufnahme o. ä.)
+mit anderen Bedeutungen benutzt, jetzt aber dort durch           gibt oder gab, doch mindestens eine Meldung von
+ein V (für „Vermehrungsgast“ statt „ausnahmsweiser               der Artenlisten-Kommission als ausreichend doku-
+Brutvogel“) bzw. S (für „Seltenheit“ statt „Ausnahmeer-          mentierter Nachweis anerkannt wurde.– Species that
+scheinung“) ersetzt, um Verwechslungen zu vermeiden.             have been recorded in an apparently natural state at
+   Erläuterungen und Kommentare zu dieser Liste fin-             least once since 1 January 1950. Five species for which
+den sich in einem separaten Beitrag (Barthel et al. 2018).       there is no specimen, photographic, video or acoustic
+Das Verständnis der Liste selbst erschließt sich jedoch          documentation, but for which at least one report has
+allein schon aus den nachfolgenden Legenden zu den               been accepted by the list committee, are indicated with
+einzelnen Spalten.                                               Ao (486 species, incl. Ao).
+   Gedruckte Fassungen der offiziellen „Artenliste der       B: Die Art wurde lediglich im Zeitraum vom 1. Januar
+Vögel Deutschlands“ sind nur in größeren Zeitabstän-             1800 bis 31. Dezember 1949, danach jedoch nicht
+den möglich. Daher wird es zukünftig auf der Websei-             mehr als Wildvogel in Deutschland nachgewiesen
+te der DO-G (www.do-g.de) zusätzlich eine digitale               (32 Arten; einschließlich der mit BC, BD oder BE
+Version geben, die in kürzeren Abständen aktualisiert            markierten Arten, s. u.).– Species that were recorded
+werden soll.                                                     in an apparently natural state at least once between
+                                                                 1 January 1800 and 31 December 1949, but have not
+                                                                 been recorded thereafter (including those indicated
+Erläuterung der Spalten und Abkürzungen
+                                                                 BC, BD or BE, see below) (32 species).
+Spalte 1: Deutscher Name – German name                       C: Die gebietsfremde Art wurde in Deutschland als
+Die deutschen Namen folgen den offiziellen Vorgaben              Brutvogel durch den Menschen beabsichtigt (Aus-
+der Kommission „Deutsche Namen für die Vögel der                 setzungen/Freilassungen) oder unbeabsichtigt (Ent-
+Erde“ von DO-G und IOU. In Anführungszeichen ge-                 kommen aus Haltungen, eingeschleppt oder als in
+nannte Bezeichnungen von Unterarten spiegeln deren               Nachbarländern etabliertes Neozoon von dort ein-
+gelegentliche Verwendung in der deutschsprachigen                gewandert) eingebürgert (9 Arten). Sie pflanzt sich
+vogelkundlichen Literatur und im ornithologischen                dabei in voller Freiheit regelmäßig fort und hält oder
+Sprachgebrauch wider, sind jedoch keine offiziellen Na-          vergrößert langfristig ohne jede menschliche Hilfe
+men.– German names follow the official guidelines of the         sowie ohne weitere Freisetzungen ihren Bestand.
+commission “German names for the birds of the world”             Lokale Populationen bilden dabei jeweils mehrfach
+of DO-G and IOU. Names of subspecies in quotes reflect           neue Teilpopulationen außerhalb des Nahverbrei-
+their common use in the German ornithological literature         tungsradius der Gründerpopulation. Sind zeitliche
+but are not official names.                                      und populationsbiologische Faktoren erfüllt, gilt die
+                                                                 Art als etabliert. Fünf Subkategorien werden unter-
+Spalte 2 und 3: Wissenschaftlicher Name und Autor                schieden. C1: Etablierte eingebürgerte Art, deren
+– Scientific name and author                                     Vorkommen ausschließlich auf Aussetzungen zu-
+Die wissenschaftlichen Namen der Arten und (einge-               rückgeht (6 Arten). C2: Regional etablierte, einge-
+rückt) der Unterarten sowie ihre Autoren und die Jah-            bürgerte Art, von der es in Deutschland auch
+Vogelwarte 56 (2018)                                                                                                  173
+
+
+
+   autochthone Wildvogelbestände gibt (viele Arten,              Category. Species assigned to Category D are excluded
+   hier nicht ausgewiesen, da sie wegen der autochtho-           from the German species list and are not added to the
+   nen Bestände in der höheren Kategorie A geführt               total number of species, unless records before 1950
+   werden). C3: Wiedereingebürgerte Art, deren Brut-             (Category B) are classified as genuine. The five species
+   population komplett erloschen war, nach Ausset-               of Category D are listed in Appendix 1.
+   zung im ehemaligen Vorkommensgebiet aber wieder           E: Individuen der Art wurden in Deutschland nur als
+   dauerhaft etabliert ist (derzeit keine Art). C4: Ver-         ausgesetzt, als wahrscheinliche oder sichere Gefan-
+   wilderte Form einer domestizierten Art mit eta-               genschaftsflüchtlinge, als ausschließlich oder über-
+   blierten Populationen (1 Art). C5: Art, die in Deutsch-       wiegend mit Verkehrsmitteln (meist transatlan-
+   land lediglich als Gastvogel erscheint, aber aus fest         tischer Schiffstransport) ins Land gelangt, als vor-
+   etablierten, eingebürgerten Brutpopulationen der              sätzlich freigelassen oder auf andere Weise durch
+   Kategorie C anderer europäischer Länder stammt                menschliches Zutun nach Europa gekommen fest-
+   (2 Arten).– Alien species naturalized as breeding birds       gestellt. Einige Arten haben bereits in Freiheit in
+   in Germany that were either deliberately introduced           Deutschland gebrütet, werden aber nicht als eta-
+   or accidentally released through human activity. They         bliert betrachtet. Diese inzwischen fast 400 Arten
+   reproduce regularly in the wild and maintain or in-           umfassende Kategorie ist nicht Bestandteil der deut-
+   crease self-sustaining populations without human              schen Artenliste. Einige Arten (60) werden jedoch
+   assistance and without further releases. Local popu-          im Anhang 2 aufgeführt, da sie entweder regelmäßig
+   lations form several new subpopulations outside the           im Freiland auftreten, dort teilweise auch brüten
+   near-distribution radius of the founder population. If        oder in Nachbarländern als wahrscheinliche Wild-
+   certain temporal and population-biological criteria           vögel aufgetreten oder eingestuft worden sind.– Spe-
+   are met the species are considered established (9 spe-        cies recorded as introductions, human-assisted va-
+   cies). Five subcategories are defined. C1: Established        grants or escapees from captivity and whose breeding
+   naturalized species whose occurrence is exclusively           populations (if any) are thought not to be self-sustai-
+   based on introductions. C2: Regionally established,           ning. The almost 400 species of Category E are not
+   naturalized species of which autochthonous wild po-           included in the German species list and are not shown.
+   pulations are also found in Germany (many species,            60 of them are listed in Appendix 2 because they can
+   not indicated and included in Category A). C3: Na-            be regularly observed in Germany, may have bred or
+   turalized re-established species with populations suc-        have started to form local breeding populations which
+   cessfully re-established through release in areas of          are not (yet) regarded established, or have occurred
+   former occurrence (currently none). C4: Naturalized           or been listed in other European countries as genuine
+   feral form of a domesticated species with established         vagrants.
+   populations in the wild (1 species). C5: Species which    BC, BD, BE: Bei Kombination der Kategorie B mit den
+   only appear in Germany as guests from established         Buchstaben C, D oder E werden Nachweise vor 1950
+   populations of alien species in Category C in other       (meist aus dem 19. Jahrhundert) als wahrscheinlich auf
+   European countries (2 species).                           Wildvögel zurückgehend betrachtet, während sich seit
+D: Die Art wurde in Deutschland festgestellt, doch           1950 eine den Kriterien der Kategorie C entsprechende
+   bestehen begründete Zweifel, dass sie das Land unter      Brutpopulation etabliert hat (BC1; 1 Art, in den Ge-
+   natürlichen Bedingungen erreicht hat. Arten werden        samtsummen jedoch nur in der höheren Kategorie C
+   nur vorübergehend der Kategorie D zugeordnet, bis         gezählt) oder Meldungen seit 1950 in die Kategorie D
+   z. B. verbesserte Kenntnisse über ihre Brutverbrei-       (BD; 7 Arten) oder E (BE; 5 Arten) eingestuft wurden.
+   tung, Zugökologie und ihr Nachweismuster in Mittel-       Vor 1950 als Brutvögel aus Deutschland verschwundene
+   europa oder zusätzliche Informationen zu einem            Arten, bei denen Wiedereinbürgerungsexperimente
+   spezifischen Nachweis ermöglichen, sie in eine an-        noch nicht zu einer den Kriterien der Kategorie C3 ent-
+   dere Kategorie zu überführen. Arten der Kategorie         sprechenden Etablierung geführt haben, fallen somit in
+   D sind nicht Bestandteil der deutschen Artenliste         die Kategorie BE.– If Category B is combined with C, D
+   und im Anhang 1 aufgeführt, sofern nicht vor 1950         or E birds recorded before 1950 are regarded as genuine
+   erbrachte Nachweise (Kategorie B) auf wahrschein-         vagrants, while after 1950 a breeding population accord-
+   liche Wildvögel zurückgeführt werden (5 Arten).–          ing to the criteria of Category C has established itself (BC;
+   Species that have been recorded in Germany but for        1 species), or birds recorded subsequently are regarded as
+   which there is reasonable doubt that they have ever       possible (BD; 7 species) or likely/definite escapees (BE;
+   occurred under natural circumstances. Species are         5 species).
+   only temporarily assigned to Category D until, for
+   example, improved knowledge of their breeding dis-        Spalte 5: Brutstatus – Breeding status
+   tribution, migratory status, pattern of occurrence in     Die Angabe besteht aus der Kombination eines Buch-
+   Central Europe, or additional information about a         staben für die Verbreitung in der Fläche (N, R, L) und
+   specific record allows them to be assigned to another     einer Ziffer für die Häufigkeit (1-6). Daneben können
+174                                                                   P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Buchstaben ein Vorkommen als Vermehrungsgast (V)                1: 1-100 Brutpaare (34 Arten). – 1-100 breeding pairs
+oder als auf gehandicapte bzw. ausgesetzte Individuen              (34 species).
+zurückgehend (E) kennzeichnen. Grundlage hierfür                2: 101-1.000 Brutpaare (34 Arten).– 101-1,000 breeding
+sind die Angaben im „Atlas Deutscher Brutvogelarten“               pairs (34 species).
+von Gedeon et al. (2014), teilweise aktualisiert. Die           3: 1.001-10.000 Brutpaare (60 Arten).– 1,001-10,000
+Angaben zur Verbreitung in Deutschland beziehen                    breeding pairs (60 species).
+sich ausschließlich auf regelmäßige, alljährlich vor-           4: 10.001-100.000 Brutpaare (58 Arten).– 10,001-
+kommende Brutvogelarten.– The information is given                 100,000 breeding pairs (58 species).
+as a combination of letters for the geographical distribu-      5: 100.001-1.000.000 Brutpaare (42 Arten).– 100,001-
+tion (N, R, L) and a categorial number for the abundance           1,000,000 breeding pairs (42 species).
+(1-6). In addition, letters may indicate an occurrence as       6: Mehr als 1 Million Brutpaare (22 Arten).– More than
+a reproductive guest (V) or as originating from handi-             1 million breeding pairs (22 species).
+capped or released individuals (E). Numbers are based
+on the data by Gedeon et al. (2014), partly updated. They       Spalte 6: Status außerhalb der Brutzeit
+refer exclusively to regular, annual breeding species.          – Status outside the breeding season
+N: Brutvogel in geeigneten Lebensräumen in weiten               J/j: Jahresvogel; Brutpopulation und Winterbestände
+    Teilen Deutschlands (152 Arten).– Regular breeding          sind nicht immer identisch; der Kleinbuchstabe weist
+    species found in suitable habitat in large parts of Ger-    auf eine durchschnittliche Populations- oder Bestands-
+    many (152 species).                                         größe von weniger als 100 Individuen hin.– Present
+R: Brutvogel nur in bestimmten Regionen (z. B. Alpen-           throughout the year, breeding and winter population not
+    raum, Küsten; 75 Arten).– Regular breeding species,         always identical (J); a small letter (j) indicates an average
+    but restricted to certain regions (e.g. the Alps, coastal   population size below 100 individuals.
+    habitats; 75 species).                                      Z/z: Zugvogel, bei dem deutsche Brutvögel das Land
+L: Brutvogel, aber nur sehr lokal (z. B. in einzelnen           im Winter verlassen und Vögel anderer Regionen häu-
+    Städten), doch hier teilweise in großer Dichte (z. B.       fig (Z) oder mit durchschnittlich weniger als 100 Indi-
+    Koloniebrüter auf Helgoland; 23 Arten).– Regular            viduen pro Jahr spärlich (z) durchziehen. – Migrant/
+    breeding species with only local distribution (e.g. in      transient; majority of breeding birds leave Germany in
+    some cities), but often occurring in high density (e.g.     winter or birds from other areas stopover in significant
+    seabirds on the island of Heligoland; 23 species).          numbers (Z) or are recorded on average with less than
+V: Hat seit 1800 ausnahmsweise einmal oder mehrfach,            100 individuals per year (z).
+    jedoch nicht in mehr als fünf aufeinander folgenden         W/w: Wintergast; Vögel meist nordöstlicher Herkunft
+    Jahren gebrütet und ist daher nicht als regelmäßiger        überwintern regelmäßig zumindest in einigen Landes-
+    Brutvogel einzustufen (vgl. Grüneberg et al. 2015),         teilen, besonders im Norden (W), jedoch mit durch-
+    sondern als Vermehrungsgast (25 Arten). Diejenigen          schnittlich weniger als 100 Individuen (w). – Winter
+    davon, die lediglich vor 1950 ausnahmsweise gebrü-          guest; birds of mainly north-eastern origin wintering
+    tet haben, sind mit V(B) gekennzeichnet (3 Arten).–         regularly at least in some parts of Germany, mainly in
+    Species has bred once or several times since 1800, but      the North (W) but on average with less than 100 indivi-
+    not more than five years in a row and is therefore not      duals per year (w).
+    regarded as regular breeding species (25 species).          S/s: Seltenheit; seit 1980 gab es durchschnittlich weniger
+    Those of them that only bred before 1950 are marked         als fünf Nachweise pro Jahr (S; 103 Arten) oder es liegen
+    V(B) (3 species).                                           seit 1950 insgesamt weniger als fünf deutsche Nachweise
+0: Ausgestorbener, ehemals regelmäßiger Brutvogel,              vor (s; 84 Arten).– Scarce or accidental vagrant; since
+    von dem es seit 2005 kein regelmäßiges Brutvor-             1980 on average less than 5 records per year (S) or since
+    kommen mehr gibt und in den letzten fünf Jahren             1950 less than 5 records in total (s).
+    keine neue Brut mehr gemeldet wurde (12 Arten).             Die Kennbuchstaben J, Z und W können auch kombi-
+    Davon sind die sechs bereits vor 1950 ausgestor-            niert sein, wenn Individuen einer Art mit unterschied-
+    benen Arten mit 0 (B) gekennzeichnet.– Former               lichem Status vorkommen.– The letters J, Z and W may
+    regular breeding species but no breeding record since       be combined to specify the different status of individuals
+    at least 2005 (12 species), for six of them indicated       of the same species.
+    with 0 (B) since at least 1950.
+E: Die Bruten im Freiland gehen ausschließlich auf              Spalten 5 und 6: Statusangaben zu den Unterarten
+    flugunfähige bzw. anderweitig in ihrer Fortbewe-            – Subspecies status
+    gung teilweise bis ganz eingeschränkte oder entflo-         Sofern von einer Vogelart lediglich eine Unterart in
+    gene (VE; 8 Arten) sowie ausgesetzte Vögel zurück           Deutschland festgestellt wurde, gelten für sie die in der
+    (L1E; 4 Arten).– Breeding records relating to flightless    Zeile darüber für die Art gemachten Statusangaben. Bei
+    or otherwise restricted or escaped (VE; 8 species) or       Arten, die in mehreren Subspezies nachgewiesen sind,
+    released birds (L1E; 4 species).                            werden deren Abweichungen von den allgemeinen
+Vogelwarte 56 (2018)                                                                                                    175
+
+
+
+Statusangaben für die Art jeweils in den Spalten 5 und         Zusammenfassung
+6 der Zeile für die Unterart angegeben. Wenn innerhalb
+                                                               Die Vögel Deutschlands werden in einer aktuellen Artenliste
+einer polytypischen Art eine der aufgeführten Unter-           (Checklist) auf dem Stand vom 30.6.2018 vorgestellt. Jede Art
+arten lediglich vor 1950 ausnahmsweise nachgewiesen            ist ihrem Vorkommen in Deutschland entsprechend einer von
+wurde, ist sie mit s (B) gekennzeichnet. Bei einzelnen         drei Kategorien zugeteilt worden. Darüber hinaus sind in
+Seltenheiten ist bislang nicht sicher, welche Subspezies       dieser Fassung erstmals auch alle nachgewiesenen Unterarten
+in Deutschland festgestellt wurde. Dann sind die ver-          aufgeführt. Zudem werden Angaben zur Verbreitung und
+muteten oder am wahrscheinlichsten beteiligten Un-             Häufigkeit der Brutvögel sowie zum Status außerhalb der
+terarten aufgeführt und hinter dem wissenschaftlichen          Brutzeit gemacht. Die Liste soll als Referenz für Systematik,
+Namen mit (?) gekennzeichnet.– If only one subspecies          wissenschaftliche, deutsche und englische Namen sowie für
+of a bird species occurs in Germany the status informa-        die Einordnung von Nachweisen dienen.
+                                                               In Deutschland wurden seit dem Jahr 1800 527 Vogelarten
+tion given for the species in the line above applies to this
+                                                               nachgewiesen (Kategorien A, B und C), seit 1950 nur 486. 287
+subspecies. For species that fall into several subspecies,     Vogelarten haben seit 1800 in Deutschland gebrütet, doch
+deviations from the general status information for the         sind nur 254 von ihnen als Bestandteil der rezenten Brutvo-
+species are specified in columns 5 and 6 in the rows for       gelwelt einzustufen. Bei sieben von ihnen handelt es sich um
+the subspecies. If within a polytypical species one of the     ursprünglich nicht autochthone, sondern ausgesetzte und
+listed subspecies was only exceptionally recorded before       offenbar fest etablierte Arten (Kategorie C).
+1950 it is marked with s (B). For some rarities it is not      In den Anhängen 1 (Kategorie D, Arten, deren Zuordnung in
+yet certain which subspecies have been recorded in Ger-        eine Kategorie derzeit nicht mit hinreichender Sicherheit
+many. In these cases, the most suspected or most likely        möglich ist) und 2 (Kategorie E, mit hoher Wahrscheinlichkeit
+involved subspecies are listed and indicated with (?) after    oder sicher entflogen, ausgesetzt, auf Schiffen nach Deutsch-
+                                                               land gelangt etc., teilweise auch brütend) aufgeführte Arten
+the scientific name.
+                                                               sind nicht Bestandteil der nationalen Artenliste.
+                                                               Erläuterungen zu Veränderungen gegenüber der letzten Ar-
+Spalte 7: Englischer Name – English name                       tenliste finden sich bei Barthel et al. (2018).
+Die englischsprachigen Namen folgen der internationa-
+len IOC-Liste von Gill & Donsker (2018).– English names
+follow the international IOC list (Gill & Donsker 2018).
+                                                               Literatur
+                                                               Association of European Records and Rarities Committees
+Anhänge                                                          1999: Guidelines for Rarities Committees. Compilation of
+Anhang 1: Arten der Kategorie D – Species of Catego-             the Texel Guidelines and the Helgoland-, Kecskemét-, Bla-
+ry D                                                             hova- and Lednice Minutes. http://aerc.eu/guidelines.html
+Bei diesen fünf Arten in Kategorie D bestehen noch               (letzter Zugriff am 22.8.2018).
+Zweifel, ob sie auf natürliche Weise nach Deutschland          Barthel PH 1993: Artenliste der Vögel Deutschlands. J. Orni-
+                                                                 thol. 134: 113-135.
+gelangt bzw. als reproduzierende Neozoen tatsächlich           Barthel PH & Helbig AJ 2005: Artenliste der Vögel Deutsch-
+eingebürgert sind. Sie sind nicht Bestandteil der deut-          lands. Limicola 19: 89-141.
+schen Artenliste.– See definition of Category D above.         Barthel PH, Bezzel E, Krüger T, Päckert M & Steinheimer FD
+                                                                 2018: Artenliste der Vögel Deutschlands 2018: Aktualisie-
+Anhang 2: Ausgewählte Arten der Kategorie E – Selected           rung und Änderungen. Vogelwarte 56: 205-224.
+species of Category E                                          Deutsche Ornithologen-Gesellschaft 2018: Kommission
+  Nur einige Arten werden aufgeführt, die als wahr-              „Deutsche Namen für die Vögel der Erde“. http://www.do-g.
+scheinliche oder sichere Gefangenschaftsflüchtlinge              de/die-do-g/kommission-deutsche-namen-voegel-der-
+festgestellt wurden, teilweise schon gebrütet haben und          erde/?L=0 %2F (letzter Zugriff am 22.8.2018).
+auch in Listen anderer europäischer Länder geführt             Gedeon K, Grüneberg C, Mitschke A, Sudfeldt C, Eikhorst
+                                                                 W, Fischer S, Flade M, Frick S, Geiersberger I, Koop B,
+werden, dort manchmal in Kategorie A oder D.– See                Kramer M, Krüger T, Roth N, Ryslavy T, Stübing S, Sud-
+definition of Category E above.                                  mann SR, Steffens R, Vökler F & Witt K 2014: Atlas Deut-
+                                                                 scher Brutvogelarten. Stiftung Vogelmonitoring Deutsch-
+Dank                                                             land und Dachverband Deutscher Avifaunisten, Münster.
+Für kritische und hilfreiche Kommentare danken wir             Gill F & Donsker D (Hrsg) 2018: IOC World Bird List (v 8.2).
+Jochen Dierschke, für die freundliche Überarbeitung              doi: 10.14344/IOC.ML.8.2. http://www.worldbirdnames.
+der englischen Textpassagen Timothy Coppack.                     org (letzter Zugriff am 22.8.2018).
+                                                               Grüneberg G, Bauer H-G, Haupt H, Hüppop O, Ryslavy T &
+                                                                 Südbeck P 2015: Rote Liste der Brutvögel Deutschlands. 5.
+                                                                 Fassung, 30. November 2015. Ber. Vogelschutz 52: 19-67.
+176                                                                      P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+ENTENVÖGEL                      ORDNUNG ANSERIFORMES
+
+
+Entenverwandte                  Familie Anatidae                                                             Ducks, Geese and Swans
+Ringelgans                      Branta bernicla         (Linnaeus, 1758)            A            ZW                     Brant Goose
+  „Pazifische Ringelgans“         B. b. nigricans       (Lawrence, 1846)                             zw
+  „Dunkelbäuchige Ringelgans“     B. b. bernicla        (Linnaeus, 1758)                             ZW
+  „Hellbäuchige Ringelgans“       B. b. hrota           (Müller, OF, 1776)                           zw
+Rothalsgans                     Branta ruficollis       (Pallas, 1769)              A    VE      zw              Red-breasted Goose
+Kanadagans                      Branta canadensis       (Linnaeus, 1758)           C1    N3      JW                   Canada Goose
+                                  B. c. parvipes        (Cassin, 1852)                           S (E)
+                                  B. c. canadensis      (Linnaeus, 1758)
+Weißwangengans                  Branta leucopsis        (Bechstein, 1803)           A    R2      ZW                  Barnacle Goose
+Streifengans                    Anser indicus           (Latham, 1790)             C5    L1E     jw               Bar-headed Goose
+Graugans                        Anser anser             (Linnaeus, 1758)            A    N4      JZW                  Greylag Goose
+  „Westliche Graugans“            A. a. anser           (Linnaeus, 1758)
+  „Östliche Graugans“             A. a. rubrirostris    Swinhoe, 1871                                 S
+Waldsaatgans                    Anser fabalis           (Latham, 1787)              A            ZW                Taiga Bean Goose
+                                  A. f. fabalis         (Latham, 1787)
+Kurzschnabelgans                Anser brachyrhynchus    Baillon, 1834               A    VE      ZW               Pink-footed Goose
+Tundrasaatgans                  Anser serrirostris      Gould, 1852                 A    VE      ZW              Tundra Bean Goose
+                                  A. s. rossicus        Buturlin, 1933
+Blässgans                       Anser albifrons         (Scopoli, 1769)             A    VE      ZW            Greater White-fronted
+                                                                                                                              Goose
+  „Grönländische Blässgans“       A. a. flavirostris    Dalgety & Scott, PM,                          S
+                                                        1948
+                                  A. a. albifrons       (Scopoli, 1769)
+Zwerggans                       Anser erythropus        (Linnaeus, 1758)            A            zw       Lesser White-fronted Goose
+Höckerschwan                    Cygnus olor             (Gmelin, JF, 1789)          A    N4      JZW                     Mute Swan
+Zwergschwan                     Cygnus columbianus      (Ord, 1815)                 A            ZW                    Tundra Swan
+  „Pfeifschwan“                   C. c. columbianus     (Ord, 1815)                                   s
+                                  C. c. bewickii        Yarrell, 1830
+Singschwan                      Cygnus cygnus           (Linnaeus, 1758)            A    R1      JZW                 Whooper Swan
+Nilgans                         Alopochen aegyptiaca    (Linnaeus, 1766)           C1    N3      J                   Egyptian Goose
+Brandgans                       Tadorna tadorna         (Linnaeus, 1758)            A    R3      JZW              Common Shelduck
+Rostgans                        Tadorna ferruginea      (Pallas, 1764)            BC1 N2         Jw                  Ruddy Shelduck
+Mandarinente                    Aix galericulata        (Linnaeus, 1758)           C1    N2      J                   Mandarin Duck
+Knäkente                        Spatula querquedula     (Linnaeus, 1758)            A    N3      Z                         Garganey
+Blauflügelente                  Spatula discors         (Linnaeus, 1766)            A            S                  Blue-winged Teal
+Löffelente                      Spatula clypeata        (Linnaeus, 1758)            A    N3      JZW              Northern Shoveler
+Schnatterente                   Mareca strepera         (Linnaeus, 1758)            A    N3      JZW                        Gadwall
+                                  M. s. strepera        (Linnaeus, 1758)
+Pfeifente                       Mareca penelope         (Linnaeus, 1758)            A    R1      JZW                Eurasian Wigeon
+Kanadapfeifente                 Mareca americana        (Gmelin, JF, 1789)          A            S                 American Wigeon
+Stockente                       Anas platyrhynchos      Linnaeus, 1758              A    N5      JZW                        Mallard
+                                  A. p. platyrhynchos   Linnaeus, 1758
+Spießente                       Anas acuta              Linnaeus, 1758              A    R1      JZW                Northern Pintail
+Vogelwarte 56 (2018)                                                                                                       177
+
+
+
+Krickente                  Anas crecca                 Linnaeus, 1758            A    N3        JZW             Eurasian Teal
+Carolinakrickente          Anas carolinensis           Gmelin, JF, 1789          A              S         Green-winged Teal
+Marmelente                 Marmaronetta angustirostris (Ménétriés, 1832)         BE             s              Marbled Duck
+Kolbenente                 Netta rufina                (Pallas, 1773)            A    R3        JZW      Red-crested Pochard
+Tafelente                  Aythya ferina               (Linnaeus, 1758)          A    N3        JZW        Common Pochard
+Moorente                   Aythya nyroca               (Güldenstädt, 1770)       A    L1        jzw        Ferruginous Duck
+Ringschnabelente           Aythya collaris             (Donovan, 1809)           A              S          Ring-necked Duck
+Reiherente                 Aythya fuligula             (Linnaeus, 1758)          A    N4        JZW              Tufted Duck
+Bergente                   Aythya marila               (Linnaeus, 1761)          A    L1        JZW            Greater Scaup
+                             A. m. marila              (Linnaeus, 1761)
+Kanadabergente             Aythya affinis              (Eyton, 1838)             A    VE        s                Lesser Scaup
+Scheckente                 Polysticta stelleri         (Pallas, 1769)            A              S               Steller’s Eider
+Prachteiderente            Somateria spectabilis       (Linnaeus, 1758)          A              S                  King Eider
+Eiderente                  Somateria mollissima        (Linnaeus, 1758)          A    R3        JZW           Common Eider
+                             S. m. mollissima          (Linnaeus, 1758)
+Kragenente                 Histrionicus histrionicus   (Linnaeus, 1758)          BD             s            Harlequin Duck
+Brillenente                Melanitta perspicillata     (Linnaeus, 1758)          A              s                 Surf Scoter
+Samtente                   Melanitta fusca             (Linnaeus, 1758)          A              ZW              Velvet Scoter
+Höckersamtente             Melanitta deglandi          (Bonaparte, 1850)         A              s       White-winged Scoter
+  „Kamtschatkasamtente“      M. d. stejnegeri          (Ridgway, 1887)
+Trauerente                 Melanitta nigra             (Linnaeus, 1758)          A              ZW           Common Scoter
+Pazifiktrauerente          Melanitta americana         (Swainson, 1832)          A              s                Black Scoter
+Eisente                    Clangula hyemalis           (Linnaeus, 1758)          A              ZW          Long-tailed Duck
+Schellente                 Bucephala clangula          (Linnaeus, 1758)          A    R3        ZW       Common Goldeneye
+                             B. c. clangula            (Linnaeus, 1758)
+Spatelente                 Bucephala islandica         (Gmelin, JF, 1789)        BE             s         Barrow’s Goldeneye
+Zwergsäger                 Mergellus albellus          (Linnaeus, 1758)          A    VE        ZW                      Smew
+Gänsesäger                 Mergus merganser            Linnaeus, 1758            A    R3        ZW       Common Merganser
+                             M. m. merganser           Linnaeus, 1758
+Mittelsäger                Mergus serrator             Linnaeus, 1758            A    R2        ZW    Red-breasted Merganser
+Schwarzkopf-Ruderente      Oxyura jamaicensis          (Gmelin, JF, 1789)        C5   V         j                Ruddy Duck
+Weißkopf-Ruderente         Oxyura leucocephala         (Scopoli, 1769)           BD             S        White-headed Duck
+
+
+
+
+HÜHNERVÖGEL                ORDNUNG GALLIFORMES
+
+
+Glatt- und Raufußhühner    Familie Phasianidae                                                            Pheasants and allies
+Haselhuhn                  Tetrastes bonasia           (Linnaeus, 1758)          A    R3        J               Hazel Grouse
+  „Westliches Haselhuhn“     T. b. rhenanus            (Kleinschmidt, O, 1917)             R1
+                             T. b. styriacus           (Jordans & Schiebel,                R2
+                                                       1944)
+                             T. b. rupestris           (Brehm, CL, 1831)                   R2
+Auerhuhn                   Tetrao urogallus            Linnaeus, 1758            A    R2        J        Western Capercaillie
+                             T. u. crassirostris       Brehm, CL, 1831
+Birkhuhn                   Lyrurus tetrix              (Linnaeus, 1758)          A    R3        J               Black Grouse
+                             L. t. tetrix              (Linnaeus, 1758)
+178                                                                P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Alpenschneehuhn         Lagopus muta               (Montin, 1781)             A    R2       J                 Rock Ptarmigan
+                          L. m. helvetica          (Thienemann, 1829)
+Steinhuhn               Alectoris graeca           (Meisner, 1804)            A    L1       j                  Rock Partridge
+                          A. g. saxatilis          (Bechstein, 1805)
+Rebhuhn                 Perdix perdix              (Linnaeus, 1758)           A    N4       J                  Grey Partridge
+                          P. p. perdix             (Linnaeus, 1758)
+  „Heiderebhuhn“          P. p. sphagnetorum †     (Altum, 1894)                        0
+Wachtel                 Coturnix coturnix          (Linnaeus, 1758)           A    N4       Z                 Common Quail
+                          C. c. coturnix           (Linnaeus, 1758)
+Jagdfasan               Phasianus colchicus        Linnaeus, 1758            C1    N5       J              Common Pheasant
+                          P. c. colchicus          Linnaeus, 1758
+
+
+
+
+SEETAUCHER              ORDNUNG GAVIIFORMES
+
+
+Seetaucher              Familie Gaviidae                                                                                Loons
+Sterntaucher            Gavia stellata             (Pontoppidan, 1763)        A             ZW             Red-throated Loon
+Prachttaucher           Gavia arctica              (Linnaeus, 1758)           A             ZW            Black-throated Loon
+                          G. a. arctica            (Linnaeus, 1758)
+Eistaucher              Gavia immer                (Brünnich, 1764)           A             zw                 Common Loon
+Gelbschnabeltaucher     Gavia adamsii              (Gray, GR, 1859)           A             S              Yellow-billed Loon
+
+
+
+
+RÖHRENNASEN             ORDNUNG PROCELLARIIFORMES
+
+
+Südsturmschwalben       Familie Oceanitidae                                                              Austral Storm Petrels
+Buntfuß-Sturmschwalbe   Oceanites oceanicus        (Kuhl, 1820)               A             s            Wilson’s Storm Petrel
+                          O. o. oceanicus          (Kuhl, 1820)
+
+
+Albatrosse              Familie Diomedeidae                                                                        Albatrosses
+Schwarzbrauenalbatros   Thalassarche melanophris   (Temminck, 1828)           A             s         Black-browed Albatross
+
+
+Sturmschwalben          Familie Hydrobatidae                                                           Northern Storm Petrels
+Sturmschwalbe           Hydrobates pelagicus       (Linnaeus, 1758)           A             S           European Storm Petrel
+                          H. p. pelagicus          (Linnaeus, 1758)
+Wellenläufer            Oceanodroma leucorhoa      (Vieillot, 1818)           A             z             Leach’s Storm Petrel
+                          O. l. leucorhoa          (Vieillot, 1818)
+
+
+Sturmvögel              Familie Procellariidae                                                            Petrels, Shearwaters
+Eissturmvogel           Fulmarus glacialis         (Linnaeus, 1761)           A    L1       JZW              Northern Fulmar
+                          F. g. glacialis          (Linnaeus, 1761)                              S
+                          F. g. auduboni           Bonaparte, 1857
+Sepiasturmtaucher       Calonectris diomedea       (Scopoli, 1769)            B                           Scopoli’s Shearwater
+Corysturmtaucher        Calonectris borealis       (Cory, 1881)               A             s               Cory’s Shearwater
+Dunkelsturmtaucher      Ardenna grisea             (Gmelin, JF, 1789)         A             z                Sooty Shearwater
+Vogelwarte 56 (2018)                                                                                          179
+
+
+
+Kappensturmtaucher      Ardenna gravis              (O’Reilly, 1818)          A         s       Great Shearwater
+Atlantiksturmtaucher    Puffinus puffinus           (Brünnich, 1764)          A         S       Manx Shearwater
+Balearensturmtaucher    Puffinus mauretanicus       Lowe, PR, 1921            A         S     Balearic Shearwater
+Barolosturmtaucher      Puffinus baroli             (Bonaparte, 1857)         A         s      Barolo Shearwater
+Bulwersturmvogel        Bulweria bulwerii           (Jardine & Selby, 1828)   A         s          Bulwer’s Petrel
+
+
+
+
+LAPPENTAUCHER           ORDNUNG PODICIPEDIFORMES
+
+
+Lappentaucher           Familie Podicipedidae                                                             Grebes
+Zwergtaucher            Tachybaptus ruficollis      (Pallas, 1764)            A   N4    JZW          Little Grebe
+                          T. r. ruficollis          (Pallas, 1764)
+Bindentaucher           Podilymbus podiceps         (Linnaeus, 1758)          A         s       Pied-billed Grebe
+                          P. p. podiceps            (Linnaeus, 1758)
+Rothalstaucher          Podiceps grisegena          (Boddaert, 1783)          A   R3    JZW    Red-necked Grebe
+                          P. g. grisegena           (Boddaert, 1783)
+Haubentaucher           Podiceps cristatus          (Linnaeus, 1758)          A   N4    JZW   Great Crested Grebe
+                          P. c. cristatus           (Linnaeus, 1758)
+Ohrentaucher            Podiceps auritus            (Linnaeus, 1758)          A   0     ZW         Horned Grebe
+                          P. a. auritus             (Linnaeus, 1758)
+Schwarzhalstaucher      Podiceps nigricollis        Brehm, CL, 1831           A   N3    JZW   Black-necked Grebe
+                          P. n. nigricollis         Brehm, CL, 1831
+
+
+
+
+FLAMINGOS               ORDNUNG PHOENICOPTERIFORMES
+
+
+Flamingos               Familie Phoenicopteridae                                                       Flamingos
+Rosaflamingo            Phoenicopterus roseus       Pallas, 1811              A   L1E   z       Greater Flamingo
+
+
+
+
+STORCHENVÖGEL           ORDNUNG CICONIIFORMES
+
+
+Störche                 Familie Ciconiidae                                                                 Storks
+Schwarzstorch           Ciconia nigra               (Linnaeus, 1758)          A   N2    Z             Black Stork
+Weißstorch              Ciconia ciconia             (Linnaeus, 1758)          A   N3    ZJ           White Stork
+                          C. c. ciconia             (Linnaeus, 1758)
+
+
+
+
+SCHREIT- UND PELIKAN-   ORDNUNG PELECANIFORMES
+VÖGEL
+
+
+Ibisse                  Familie Threskiornithidae                                               Ibises, Spoonbills
+Sichler                 Plegadis falcinellus        (Linnaeus, 1766)          A         S             Glossy Ibis
+Löffler                 Platalea leucorodia         Linnaeus, 1758            A   R2    Z      Eurasian Spoonbill
+                          P. l. leucorodia          Linnaeus, 1758
+180                                                                      P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Reiher                      Familie Ardeidae                                                                        Herons, Bitterns
+Rohrdommel                  Botaurus stellaris          (Linnaeus, 1758)            A    R2      JZW                Eurasian Bittern
+                              B. s. stellaris           (Linnaeus, 1758)
+Zwergdommel                 Ixobrychus minutus          (Linnaeus, 1766)            A    R2      Z                      Little Bittern
+                              I. m. minutus             (Linnaeus, 1766)
+Nachtreiher                 Nycticorax nycticorax       (Linnaeus, 1758)            A    L1      z        Black-crowned Night Heron
+                              N. n. nycticorax          (Linnaeus, 1758)
+Rallenreiher                Ardeola ralloides           (Scopoli, 1769)             A            S                   Squacco Heron
+Kuhreiher                   Bubulcus ibis               (Linnaeus, 1758)            A    L1E     j              Western Cattle Egret
+Graureiher                  Ardea cinerea               Linnaeus, 1758              A    N4      JZW                    Grey Heron
+                              A. c. cinerea             Linnaeus, 1758
+Purpurreiher                Ardea purpurea              Linnaeus, 1766              A    L1      z                     Purple Heron
+                              A. p. purpurea            Linnaeus, 1766
+Silberreiher                Ardea alba                  Linnaeus, 1758              A    L1      JZW                     Great Egret
+                              A. a. alba                Linnaeus, 1758
+Seidenreiher                Egretta garzetta            (Linnaeus, 1766)            A    V       z                       Little Egret
+                              E. g. garzetta            (Linnaeus, 1766)
+
+
+Pelikane                    Familie Pelecanidae                                                                              Pelicans
+Rosapelikan                 Pelecanus onocrotalus       Linnaeus, 1758             BD            S               Great White Pelican
+Krauskopfpelikan            Pelecanus crispus           Bruch, 1832                 A            s                Dalmatian Pelican
+
+
+
+
+RUDERFÜSSER                 ORDNUNG SULIFORMES
+
+
+Tölpel                      Familie Sulidae                                                                        Gannets, Boobies
+Basstölpel                  Morus bassanus              (Linnaeus, 1758)            A    L2      JZW               Northern Gannet
+Weißbauchtölpel             Sula leucogaster            (Boddaert, 1783)            A            s                     Brown Booby
+                              S. l. leucogaster (?)     (Boddaert, 1783)
+
+
+Scharben                    Familie Phalacrocoracidae                                                             Cormorants, Shags
+Zwergscharbe                Microcarbo pygmaeus         (Pallas, 1773)              A            S                Pygmy Cormorant
+Krähenscharbe               Phalacrocorax aristotelis   (Linnaeus, 1761)            A            j                   European Shag
+                              P. a. aristotelis         (Linnaeus, 1761)
+Kormoran                    Phalacrocorax carbo         (Linnaeus, 1758)            A    N4      JZW               Great Cormorant
+  „Atlantischer Kormoran“     P. c. carbo               (Linnaeus, 1758)                             ZW
+                              P. c. sinensis            (Staunton, 1796)
+
+
+
+
+GREIFVÖGEL                  ORDNUNG ACCIPITRIFORMES
+
+
+Fischadler                  Familie Pandionidae                                                                              Ospreys
+Fischadler                  Pandion haliaetus           (Linnaeus, 1758)            A    R2      Z                  Western Osprey
+                              P. h. haliaetus           (Linnaeus, 1758)
+Vogelwarte 56 (2018)                                                                                             181
+
+
+
+Habichtverwandte       Familie Accipitridae                                                  Kites, Hawks and Eagles
+Gleitaar               Elanus caeruleus        (Desfontaines, 1789)   A            S              Black-winged Kite
+                         E. c. caeruleus       (Desfontaines, 1789)
+Bartgeier              Gypaetus barbatus       (Linnaeus, 1758)       BE           S                Bearded Vulture
+                         G. b. barbatus        (Linnaeus, 1758)
+Schmutzgeier           Neophron percnopterus   (Linnaeus, 1758)       A            S               Egyptian Vulture
+                         N. p. percnopterus    (Linnaeus, 1758)
+Wespenbussard          Pernis apivorus         (Linnaeus, 1758)       A    N3      Z        European Honey Buzzard
+Gänsegeier             Gyps fulvus             (Hablizl, 1783)        A            S                 Griffon Vulture
+                         G. f. fulvus          (Hablizl, 1783)
+Mönchsgeier            Aegypius monachus       (Linnaeus, 1766)       BE           s              Cinereous Vulture
+Schlangenadler         Circaetus gallicus      (Gmelin, JF, 1788)     A    0 (B)   z          Short-toed Snake Eagle
+                         C. g. gallicus        (Gmelin, JF, 1788)
+Schreiadler            Clanga pomarina         (Brehm, CL, 1831)      A    R1      Z            Lesser Spotted Eagle
+Schelladler            Clanga clanga           (Pallas, 1811)         A    V       S           Greater Spotted Eagle
+Zwergadler             Hieraaetus pennatus     (Gmelin, JF, 1788)     A    V       S                   Booted Eagle
+Steppenadler           Aquila nipalensis       Hodgson, 1833          A            s                    Steppe Eagle
+                         A. n. orientalis      Cabanis, 1854
+Kaiseradler            Aquila heliaca          Savigny, 1809          A            s          Eastern Imperial Eagle
+Steinadler             Aquila chrysaetos       (Linnaeus, 1758)       A    R1      J                   Golden Eagle
+                         A. c. chrysaetos      (Linnaeus, 1758)
+Habichtsadler          Aquila fasciata         Vieillot, 1822         A            s                  Bonelli’s Eagle
+                         A. f. fasciata        Vieillot, 1822
+Sperber                Accipiter nisus         (Linnaeus, 1758)       A    N4      JZW        Eurasian Sparrowhawk
+                         A. n. nisus           (Linnaeus, 1758)
+Habicht                Accipiter gentilis      (Linnaeus, 1758)       A    N4      JZW           Northern Goshawk
+                         A. g. buteoides       (Menzbier, 1882)                    s (B)
+                         A. g. gentilis        (Linnaeus, 1758)
+Rohrweihe              Circus aeruginosus      (Linnaeus, 1758)       A    N3      Z          Western Marsh Harrier
+                         C. a. aeruginosus     (Linnaeus, 1758)
+Kornweihe              Circus cyaneus          (Linnaeus, 1766)       A    R1      JZW                  Hen Harrier
+Steppenweihe           Circus macrourus        (Gmelin, SG, 1770)     A    V       z                  Pallid Harrier
+Wiesenweihe            Circus pygargus         (Linnaeus, 1758)       A    N2      Z              Montagu’s Harrier
+Rotmilan               Milvus milvus           (Linnaeus, 1758)       A    N4      JZW                     Red Kite
+                         M. m. milvus          (Linnaeus, 1758)
+Schwarzmilan           Milvus migrans          (Boddaert, 1783)       A    N3      Z                      Black Kite
+                         M. m. migrans         (Boddaert, 1783)
+Seeadler               Haliaeetus albicilla    (Linnaeus, 1758)       A    R2      JW             White-tailed Eagle
+                         H. a. albicilla       (Linnaeus, 1758)
+Raufußbussard          Buteo lagopus           (Pontoppidan, 1763)    A    V       W          Rough-legged Buzzard
+                         B. l. lagopus         (Pontoppidan, 1763)
+Adlerbussard           Buteo rufinus           (Cretzschmar, 1829)    A            S           Long-legged Buzzard
+                         B. r. rufinus         (Cretzschmar, 1829)
+Mäusebussard           Buteo buteo             (Linnaeus, 1758)       A    N4      JZW            Common Buzzard
+                         B. b. buteo           (Linnaeus, 1758)
+  „Falkenbussard“        B. b. vulpinus        (Gloger, 1833)                           s
+182                                                              P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+TRAPPEN               ORDNUNG OTIDIFORMES
+
+
+Trappen               Familie Otididae                                                                              Bustards
+Großtrappe            Otis tarda                Linnaeus, 1758              A    L1      J                    Great Bustard
+                        O. t. tarda             Linnaeus, 1758
+Steppenkragentrappe   Chlamydotis macqueenii    (Gray, JE, 1832)            A            s               Macqueen’s Bustard
+Zwergtrappe           Tetrax tetrax             (Linnaeus, 1758)            A    0 (B)   S                     Little Bustard
+
+
+
+
+KRANICHVÖGEL          ORDNUNG GRUIFORMES
+
+
+Rallen                Familie Rallidae                                                               Rails, Crakes and Coots
+Wasserralle           Rallus aquaticus          Linnaeus, 1758              A    N4      JZW                      Water Rail
+                        R. a. aquaticus         Linnaeus, 1758
+Wachtelkönig          Crex crex                 (Linnaeus, 1758)            A    N3      Z                      Corn Crake
+Kleinsumpfhuhn        Porzana parva             (Scopoli, 1769)             A    R2      Z                       Little Crake
+Zwergsumpfhuhn        Porzana pusilla           (Pallas, 1776)              A    L1      S                    Baillon’s Crake
+                        P. p. intermedia        (Hermann, 1804)
+Tüpfelsumpfhuhn       Porzana porzana           (Linnaeus, 1766)            A    N3      Z                    Spotted Crake
+Purpurhuhn            Porphyrio porphyrio       (Linnaeus, 1758)           BD            s              Western Swamphen
+Graukopf-Purpurhuhn   Porphyrio poliocephalus   (Latham, 1801)              A            s          Grey-headed Swamphen
+                        P. p. seistanicus       Zarudny & Härms, 1911
+Bronzesultanshuhn     Porphyrio alleni          Thomson, 1842              BD            s                  Allen’s Gallinule
+Teichhuhn             Gallinula chloropus       (Linnaeus, 1758)            A    N4      JZW             Common Moorhen
+                        G. c. chloropus         (Linnaeus, 1758)
+Blässhuhn             Fulica atra               Linnaeus, 1758              A    N4      JZW                  Eurasian Coot
+                        F. a. atra              Linnaeus, 1758
+
+
+Kraniche              Familie Gruidae                                                                                Cranes
+Kanadakranich         Antigone canadensis       (Linnaeus, 1758)            A            s                   Sandhill Crane
+                        A. c. canadensis        (Linnaeus, 1758)
+Jungfernkranich       Grus virgo                (Linnaeus, 1758)           BD            S                Demoiselle Crane
+Kranich               Grus grus                 (Linnaeus, 1758)            A    N3      JZW                Common Crane
+
+
+
+
+WAT-, ALKEN- UND      ORDNUNG CHARADRIIFORMES
+MÖWENVÖGEL
+
+
+Triele                Familie Burhinidae                                                                      Stone-curlews
+Triel                 Burhinus oedicnemus       (Linnaeus, 1758)            A    L1      z            Eurasian Stone-curlew
+                        B. o. oedicnemus        (Linnaeus, 1758)
+
+
+Austernfischer        Familie Haematopodidae                                                                 Oystercatchers
+Austernfischer        Haematopus ostralegus     Linnaeus, 1758              A    R4      JZW         Eurasian Oystercatcher
+                        H. o. ostralegus        Linnaeus, 1758
+Vogelwarte 56 (2018)                                                                                                          183
+
+
+
+Säbelschnäblerverwandte        Familie Recurvirostridae                                                            Stilts, Avocets
+Stelzenläufer                  Himantopus himantopus      (Linnaeus, 1758)         A    N1      z             Black-winged Stilt
+Säbelschnäbler                 Recurvirostra avosetta     Linnaeus, 1758           A    R3      JZW                  Pied Avocet
+
+
+Regenpfeiferverwandte          Familie Charadriidae                                                                       Plovers
+Kiebitz                        Vanellus vanellus          (Linnaeus, 1758)         A    N4      Z             Northern Lapwing
+Steppenkiebitz                 Vanellus gregarius         (Pallas, 1771)           A            S              Sociable Lapwing
+Weißschwanzkiebitz             Vanellus leucurus          (Lichtenstein, MHC,      A            S          White-tailed Lapwing
+                                                          1823)
+Goldregenpfeifer               Pluvialis apricaria        (Linnaeus, 1758)         A    L1      Z        European Golden Plover
+Tundra-Goldregenpfeifer        Pluvialis fulva            (Gmelin, JF, 1789)       A            S          Pacific Golden Plover
+Prärie-Goldregenpfeifer        Pluvialis dominica         (Statius Müller, 1776)   A            S        American Golden Plover
+Kiebitzregenpfeifer            Pluvialis squatarola       (Linnaeus, 1758)         A            Z                    Grey Plover
+                                 P. s. squatarola         (Linnaeus, 1758)
+Sandregenpfeifer               Charadrius hiaticula       Linnaeus, 1758           A    R3      Z        Common Ringed Plover
+                                 C. h. hiaticula          Linnaeus, 1758
+  „Tundra-Sandregenpfeifer“      C. h. tundrae            (Lowe, PR, 1915)                          Z
+Flussregenpfeifer              Charadrius dubius          Scopoli, 1786            A    N3      Z            Little Ringed Plover
+                                 C. d. curonicus          Gmelin, JF, 1789
+Seeregenpfeifer                Charadrius alexandrinus    Linnaeus, 1758           A    R2      Z                 Kentish Plover
+                                 C. a. alexandrinus       Linnaeus, 1758
+Wüstenregenpfeifer             Charadrius leschenaultii   Lesson, 1826             A            S            Greater Sand Plover
+                                 C. l. columbinus (?)     Wagler, 1829                               s
+                                 C. l. scythicus (?)      Carlos, Roselaar &                         s
+                                                          Voisin, 2012
+Wermutregenpfeifer             Charadrius asiaticus       Pallas, 1773             B                             Caspian Plover
+Mornellregenpfeifer            Charadrius morinellus      Linnaeus, 1758           A    V (B)   Z              Eurasian Dotterel
+
+
+Schnepfenverwandte             Familie Scolopacidae                                                           Sandpipers, Snipes
+Prärieläufer                   Bartramia longicauda       (Bechstein, 1812)        B                          Upland Sandpiper
+Regenbrachvogel                Numenius phaeopus          (Linnaeus, 1758)         A    VE      Z                     Whimbrel
+                                 N. p. phaeopus           (Linnaeus, 1758)
+Dünnschnabel-Brachvogel        Numenius tenuirostris      Vieillot, 1817           B                       Slender-billed Curlew
+Brachvogel                     Numenius arquata           (Linnaeus, 1758)         A    R3      Z               Eurasian Curlew
+                                 N. a. arquata            (Linnaeus, 1758)
+Pfuhlschnepfe                  Limosa lapponica           (Linnaeus, 1758)         A            Z              Bar-tailed Godwit
+                                 L. l. lapponica          (Linnaeus, 1758)
+Uferschnepfe                   Limosa limosa              (Linnaeus, 1758)         A    R3      Z            Black-tailed Godwit
+  „Isländische Uferschnepfe“     L. l. islandica          Brehm, CL, 1831                           zw
+                                 L. l. limosa             (Linnaeus, 1758)
+Steinwälzer                    Arenaria interpres         (Linnaeus, 1758)         A    0       ZW             Ruddy Turnstone
+                                 A. i. interpres          (Linnaeus, 1758)
+Anadyrknutt                    Calidris tenuirostris      (Horsfield, 1821)        Ao           s                    Great Knot
+Knutt                          Calidris canutus           (Linnaeus, 1758)         A            ZW                     Red Knot
+                                 C. c. canutus            (Linnaeus, 1758)
+                                 C. c. islandica          (Linnaeus, 1767)
+184                                                                         P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Kampfläufer                     Calidris pugnax           (Linnaeus, 1758)             A    R1        Z                             Ruff
+Sumpfläufer                     Calidris falcinellus      (Pontoppidan, 1763)          A              Z          Broad-billed Sandpiper
+                                  C. f. falcinellus       (Pontoppidan, 1763)
+Spitzschwanz-Strandläufer       Calidris acuminata        (Horsfield, 1821)            A              s          Sharp-tailed Sandpiper
+Bindenstrandläufer              Calidris himantopus       (Bonaparte, 1826)            A              s                  Stilt Sandpiper
+Sichelstrandläufer              Calidris ferruginea       (Pontoppidan, 1763)          A              Z              Curlew Sandpiper
+Temminckstrandläufer            Calidris temminckii       (Leisler, 1812)              A              Z               Temminck’s Stint
+Langzehen-Strandläufer          Calidris subminuta        (Middendorff, 1853)          A              s                 Long-toed Stint
+Rotkehl-Strandläufer            Calidris ruficollis       (Pallas, 1776)              Ao              s               Red-necked Stint
+Sanderling                      Calidris alba             (Pallas, 1764)               A              ZW                     Sanderling
+                                  C. a. alba              (Pallas, 1764)
+Alpenstrandläufer               Calidris alpina           (Linnaeus, 1758)             A    R1        ZW                        Dunlin
+  „Kleiner Alpenstrandläufer“     C. a. schinzii          (Brehm, CL &                           R1        Z
+                                                          Schilling, 1822)
+                                  C. a. alpina            (Linnaeus, 1758)                                ZW
+Meerstrandläufer                Calidris maritima         (Brünnich, 1764)             A              ZW              Purple Sandpiper
+Bairdstrandläufer               Calidris bairdii          (Coues, 1861)                A              S               Baird’s Sandpiper
+Zwergstrandläufer               Calidris minuta           (Leisler, 1812)              A              Z                      Little Stint
+Wiesenstrandläufer              Calidris minutilla        (Vieillot, 1819)             A              s                Least Sandpiper
+Weißbürzel-Strandläufer         Calidris fuscicollis      (Vieillot, 1819)             A              S        White-rumped Sandpiper
+Grasläufer                      Calidris subruficollis    (Vieillot, 1819)             A              S         Buff-breasted Sandpiper
+Graubrust-Strandläufer          Calidris melanotos        (Vieillot, 1819)             A              z              Pectoral Sandpiper
+Sandstrandläufer                Calidris pusilla          (Linnaeus, 1766)             A              s        Semipalmated Sandpiper
+Tundraschlammläufer             Limnodromus scolopaceus   (Say, 1822)                  A              S          Long-billed Dowitcher
+Moorschlammläufer               Limnodromus griseus       (Gmelin, JF, 1789)          Ao              s          Short-billed Dowitcher
+                                  L. g. griseus (?)       (Gmelin, JF, 1789)
+Waldschnepfe                    Scolopax rusticola        Linnaeus, 1758               A    N4        JZW           Eurasian Woodcock
+Zwergschnepfe                   Lymnocryptes minimus      (Brünnich, 1764)             A    V         ZW                     Jack Snipe
+                                                                                            (B)
+Doppelschnepfe                  Gallinago media           (Latham, 1787)               A    0 (B)     S                     Great Snipe
+Bekassine                       Gallinago gallinago       (Linnaeus, 1758)             A    N3        ZW                Common Snipe
+                                  G. g. faeroeensis       (Brehm, CL, 1831)                           s (B)
+                                  G. g. gallinago         (Linnaeus, 1758)
+Terekwasserläufer               Xenus cinereus            (Güldenstädt, 1775)          A              S                Terek Sandpiper
+Wilsonwassertreter              Phalaropus tricolor       (Vieillot, 1819)             A              S              Wilson’s Phalarope
+Odinshühnchen                   Phalaropus lobatus        (Linnaeus, 1758)             A              Z          Red-necked Phalarope
+Thorshühnchen                   Phalaropus fulicarius     (Linnaeus, 1758)             A              z                  Red Phalarope
+Flussuferläufer                 Actitis hypoleucos        (Linnaeus, 1758)             A    N2        Z            Common Sandpiper
+Drosseluferläufer               Actitis macularius        (Linnaeus, 1766)             A              S              Spotted Sandpiper
+Waldwasserläufer                Tringa ochropus           Linnaeus, 1758               A    R3        ZW               Green Sandpiper
+Gelbschenkel                    Tringa flavipes           (Gmelin, JF, 1789)           A              S               Lesser Yellowlegs
+Rotschenkel                     Tringa totanus            (Linnaeus, 1758)             A    R3        JZW          Common Redshank
+  „Isländischer Rotschenkel“      T. t. robusta           (Schiøler, 1919)                                ZW
+                                  T. t. totanus           (Linnaeus, 1758)
+Teichwasserläufer               Tringa stagnatilis        (Bechstein, 1803)            A    V         z               Marsh Sandpiper
+Bruchwasserläufer               Tringa glareola           Linnaeus, 1758               A    L1        Z                Wood Sandpiper
+Vogelwarte 56 (2018)                                                                                                       185
+
+
+
+Dunkelwasserläufer            Tringa erythropus            (Pallas, 1764)           A        Z              Spotted Redshank
+Grünschenkel                  Tringa nebularia             (Gunnerus, 1767)         A   V    Z          Common Greenshank
+
+
+Brachschwalbenverwandte       Familie Glareolidae                                                        Coursers, Pratincoles
+Rennvogel                     Cursorius cursor             (Latham, 1787)           A        s        Cream-colored Courser
+                                C. c. cursor               (Latham, 1787)
+Rotflügel-Brachschwalbe       Glareola pratincola          (Linnaeus, 1766)         A        S            Collared Pratincole
+                                G. p. pratincola           (Linnaeus, 1766)
+Schwarzflügel-Brachschwalbe   Glareola nordmanni           Fischer von Waldheim,    A   V    S        Black-winged Pratincole
+                                                           1842
+
+
+Möwenverwandte                Familie Laridae                                                                     Gulls, Terns
+Noddi                         Anous stolidus               (Linnaeus, 1758)         B                           Brown Noddy
+Dreizehenmöwe                 Rissa tridactyla             (Linnaeus, 1758)         A   L3   JZW       Black-legged Kittiwake
+                                R. t. tridactyla           (Linnaeus, 1758)
+Elfenbeinmöwe                 Pagophila eburnea            (Phipps, 1774)           A        S                     Ivory Gull
+Schwalbenmöwe                 Xema sabini                  (Sabine, 1819)           A        z                   Sabine’s Gull
+Dünnschnabelmöwe              Chroicocephalus genei        (Brème, 1839)            A        s             Slender-billed Gull
+Bonapartemöwe                 Chroicocephalus philadelphia (Ord, 1815)              A        s               Bonaparte’s Gull
+Lachmöwe                      Chroicocephalus ridibundus   (Linnaeus, 1766)         A   N5   JZW           Black-headed Gull
+Zwergmöwe                     Hydrocoloeus minutus         (Pallas, 1776)           A   L1   Z                     Little Gull
+Rosenmöwe                     Rhodostethia rosea           (MacGillivray, W, 1824) A         S                     Ross’s Gull
+Aztekenmöwe                   Leucophaeus atricilla        (Linnaeus, 1758)         A        S                 Laughing Gull
+                                L. a. megalopterus         (Bruch, 1855)
+Präriemöwe                    Leucophaeus pipixcan         (Wagler, 1831)           A        S                 Franklin’s Gull
+Korallenmöwe                  Ichthyaetus audouinii        (Payraudeau, 1826)       A        S                 Audouin’s Gull
+Schwarzkopfmöwe               Ichthyaetus melanocephalus   (Temminck, 1820)         A   N2   Zw           Mediterranean Gull
+Fischmöwe                     Ichthyaetus ichthyaetus      (Pallas, 1773)           A        S                    Pallas’s Gull
+Sturmmöwe                     Larus canus                  Linnaeus, 1758           A   R4   JZW                    Mew Gull
+                                L. c. canus                Linnaeus, 1758
+                                L. c. heinei               Homeyer, 1853                         W
+Ringschnabelmöwe              Larus delawarensis           Ord, 1815                A        S                Ring-billed Gull
+Mantelmöwe                    Larus marinus                Linnaeus, 1758           A   R1   JZW      Great Black-backed Gull
+Eismöwe                       Larus hyperboreus            Gunnerus, 1767           A        w                 Glaucous Gull
+                                L. h. hyperboreus          Gunnerus, 1767
+Polarmöwe                     Larus glaucoides             Meyer, B, 1822           A        w                   Iceland Gull
+                                L. g. glaucoides           Meyer, B, 1822
+  „Kumlienmöwe“                 L. g. kumlieni             Brewster, 1883                         s
+Silbermöwe                    Larus argentatus             Pontoppidan, 1763        A   R4   JZW       European Herring Gull
+                                L. a. argenteus            Brehm, CL & Schilling,
+                                                           1822
+                                L. a. argentatus           Pontoppidan, 1763
+Kanadamöwe                    Larus smithsonianus          Coues, 1862              A        s        American Herring Gull
+Steppenmöwe                   Larus cachinnans             Pallas, 1811             A   R1   ZW                  Caspian Gull
+Mittelmeermöwe                Larus michahellis            Naumann, JF, 1840        A   R2   ZW            Yellow-legged Gull
+                                L. m. michahellis          Naumann, JF, 1840
+186                                                                     P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Heringsmöwe                 Larus fuscus               Linnaeus, 1758              A    R4        ZW       Lesser Black-backed Gull
+  „Westliche Heringsmöwe“     L. f. graellsii          Brehm, AE, 1857                                 z
+                              L. f. intermedius        Schiøler, 1922                        R4       ZW
+  „Baltische Heringsmöwe“     L. f. fuscus             Linnaeus, 1758                         0        Z
+  „Tundramöwe“                L. f. heuglini           Bree, 1876                                      S
+Lachseeschwalbe             Gelochelidon nilotica      (Gmelin, JF, 1789)          A    L1        z                Gull-billed Tern
+                              G. n. nilotica           (Gmelin, JF, 1789)
+Raubseeschwalbe             Hydroprogne caspia         (Pallas, 1770)              A    L1        Z                   Caspian Tern
+Rüppellseeschwalbe          Thalasseus bengalensis     (Lesson, 1831)              A              s             Lesser Crested Tern
+                              T. b. bengalensis        (Lesson, 1831)
+Brandseeschwalbe            Thalasseus sandvicensis    (Latham, 1787)              A    R3        Z                 Sandwich Tern
+Schmuckseeschwalbe          Thalasseus elegans         (Gambel, 1849)              A              s                    Elegant Tern
+Zwergseeschwalbe            Sternula albifrons         (Pallas, 1764)              A    R2        Z                      Little Tern
+                              S. a. albifrons          (Pallas, 1764)
+Zügelseeschwalbe            Onychoprion anaethetus     (Scopoli, 1786)             A              s                    Bridled Tern
+                              O. a. anaethetus         (Scopoli, 1786)
+Rußseeschwalbe              Onychoprion fuscatus       (Linnaeus, 1766)            A              s                     Sooty Tern
+                              O. f. fuscatus           (Linnaeus, 1766)
+Rosenseeschwalbe            Sterna dougallii           Montagu, 1813               A    0 (B)     S                   Roseate Tern
+                              S. d. dougallii          Montagu, 1813
+Flussseeschwalbe            Sterna hirundo             Linnaeus, 1758              A    N3        Z                 Common Tern
+                              S. h. hirundo            Linnaeus, 1758
+Küstenseeschwalbe           Sterna paradisaea          Pontoppidan, 1763           A    R3        Z                     Arctic Tern
+Weißbart-Seeschwalbe        Chlidonias hybrida         (Pallas, 1811)              A    R1        z                Whiskered Tern
+                              C. h. hybrida            (Pallas, 1811)
+Weißflügel-Seeschwalbe      Chlidonias leucopterus     (Temminck, 1815)            A    R1        z             White-winged Tern
+Trauerseeschwalbe           Chlidonias niger           (Linnaeus, 1758)            A    R2        Z                      Black Tern
+                              C. n. niger              (Linnaeus, 1758)
+
+
+Raubmöwen                   Familie Stercorariidae                                                                           Skuas
+Skua                        Stercorarius skua          (Brünnich, 1764)            A              z                     Great Skua
+Spatelraubmöwe              Stercorarius pomarinus     (Temminck, 1815)            A              z                Pomarine Jaeger
+Schmarotzerraubmöwe         Stercorarius parasiticus   (Linnaeus, 1758)            A              Z                 Parasitic Jaeger
+Falkenraubmöwe              Stercorarius longicaudus   Vieillot, 1819              A              z              Long-tailed Jaeger
+                              S. l. longicaudus        Vieillot, 1819
+
+
+Alke                        Familie Alcidae                                                                                   Auks
+Krabbentaucher              Alle alle                  (Linnaeus, 1758)            A              Zw                     Little Auk
+                              A. a. alle               (Linnaeus, 1758)
+Dickschnabellumme           Uria lomvia                (Linnaeus, 1758)            A              s             Thick-billed Murre
+                              U. l. lomvia             (Linnaeus, 1758)
+Trottellumme                Uria aalge                 (Pontoppidan, 1763)         A    L3        JZW              Common Murre
+                              U. a. aalge              (Pontoppidan, 1763)                            W
+                              U. a. hyperborea         Salomonsen, 1932                                s
+                              U. a. albionis           Witherby, 1923                        L3        J
+Vogelwarte 56 (2018)                                                                                                   187
+
+
+
+Tordalk                  Alca torda                   Linnaeus, 1758        A    L1      JZW                     Razorbill
+                           A. t. torda                Linnaeus, 1758                         ZW
+                           A. t. islandica            Brehm, CL, 1831
+Gryllteiste              Cepphus grylle               (Linnaeus, 1758)      A    V       zw               Black Guillemot
+                           C. g. arcticus             (Brehm, CL, 1824)
+                           C. g. grylle               (Linnaeus, 1758)                        w
+Papageitaucher           Fratercula arctica           (Linnaeus, 1758)      A    0 (B)   Z                  Atlantic Puffin
+
+
+
+
+FLUGHÜHNER               ORDNUNG PTEROCLIFORMES
+
+
+Flughühner               Familie Pteroclidae                                                                   Sandgrouse
+Steppenflughuhn          Syrrhaptes paradoxus         (Pallas, 1773)        A    V       s             Pallas’s Sandgrouse
+                                                                                 (B)
+Sandflughuhn             Pterocles orientalis         (Linnaeus, 1758)      B                     Black-bellied Sandgrouse
+                           P. o. arenarius            (Pallas, 1775)
+
+
+
+
+TAUBEN                   ORDNUNG COLUMBIFORMES
+
+
+Tauben                   Familie Columbidae                                                                Pigeons, Doves
+Straßentaube             Columba livia f. domestica   Gmelin, JF, 1789      C4   N5      J                Feral Rock Dove
+Hohltaube                Columba oenas                Linnaeus, 1758        A    N4      Z                     Stock Dove
+                           C. o. oenas                Linnaeus, 1758
+Ringeltaube              Columba palumbus             Linnaeus, 1758        A    N6      JZW       Common Wood Pigeon
+                           C. p. palumbus             Linnaeus, 1758
+Turteltaube              Streptopelia turtur          (Linnaeus, 1758)      A    N4      Z          European Turtle Dove
+                           S. t. turtur               (Linnaeus, 1758)
+Orientturteltaube        Streptopelia orientalis      (Latham, 1790)        A            s            Oriental Turtle Dove
+                           S. o. meena                (Sykes, 1832)
+Türkentaube              Streptopelia decaocto        (Frivaldszky, 1838)   A    N5      J         Eurasian Collared Dove
+                           S. d. decaocto             (Frivaldszky, 1838)
+Carolinataube            Zenaida macroura             (Linnaeus, 1758)      A            s                Mourning Dove
+                           Z. m. carolinensis (?)     (Linnaeus, 1766)
+
+
+
+
+KUCKUCKE                 ORDNUNG CUCULIFORMES
+
+
+Kuckucke                 Familie Cuculidae                                                                        Cuckoos
+Häherkuckuck             Clamator glandarius          (Linnaeus, 1758)      A            S          Great Spotted Cuckoo
+Schwarzschnabelkuckuck   Coccyzus erythropthalmus     (Wilson, A, 1811)     A            s            Black-billed Cuckoo
+Kuckuck                  Cuculus canorus              Linnaeus, 1758        A    N4      Z              Common Cuckoo
+                           C. c. canorus              Linnaeus, 1758
+188                                                             P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+EULEN                    ORDNUNG STRIGIFORMES
+
+
+Schleiereulen            Familie Tytonidae                                                                       Barn Owls
+Schleiereule             Tyto alba               (Scopoli, 1769)           A    N4      J                Western Barn Owl
+                           T. a. alba            (Scopoli, 1769)                             s
+                           T. a. guttata         (Brehm, CL, 1831)
+
+
+Eulen                    Familie Strigidae                                                                            Owls
+Zwergohreule             Otus scops              (Linnaeus, 1758)          A    V       S              Eurasian Scops Owl
+                           O. s. scops           (Linnaeus, 1758)
+Schneeeule               Bubo scandiacus         (Linnaeus, 1758)          A            S                       Snowy Owl
+Uhu                      Bubo bubo               (Linnaeus, 1758)          A    N3      J              Eurasian Eagle-Owl
+                           B. b. bubo            (Linnaeus, 1758)
+Waldkauz                 Strix aluco             Linnaeus, 1758            A    N4      J                       Tawny Owl
+                           S. a. aluco           Linnaeus, 1758
+Habichtskauz             Strix uralensis         Pallas, 1771              BE   L1E     j                         Ural Owl
+                           S. u. macroura        Wolf, 1810
+                           S. u. liturata        Lindroth, 1788                          s (B)
+Sperbereule              Surnia ulula            (Linnaeus, 1758)          A            S             Northern Hawk-Owl
+                           S. u. ulula           (Linnaeus, 1758)
+Sperlingskauz            Glaucidium passerinum   (Linnaeus, 1758)          A    N3      J             Eurasian Pygmy Owl
+                           G. p. passerinum      (Linnaeus, 1758)
+Steinkauz                Athene noctua           (Scopoli, 1769)           A    N3      J                        Little Owl
+                           A. n. noctua          (Scopoli, 1769)
+Raufußkauz               Aegolius funereus       (Linnaeus, 1758)          A    N3      J                       Boreal Owl
+                           A. f. funereus        (Linnaeus, 1758)
+Waldohreule              Asio otus               (Linnaeus, 1758)          A    N4      JZW                Long-eared Owl
+                           A. o. otus            (Linnaeus, 1758)
+Sumpfohreule             Asio flammeus           (Pontoppidan, 1763)       A    R1      ZW                 Short-eared Owl
+                           A. f. flammeus        (Pontoppidan, 1763)
+
+
+
+
+SCHWALMVÖGEL             ORDNUNG CAPRIMULGIFORMES
+
+
+Nachtschwalben           Familie Caprimulgidae                                                                    Nightjars
+Nachtschwalbe            Caprimulgus europaeus   Linnaeus, 1758            A    N3      Z                European Nightjar
+                           C. e. europaeus       Linnaeus, 1758
+Pharaonennachtschwalbe   Caprimulgus aegyptius   Lichtenstein, MHC,        B                             Egyptian Nightjar
+                                                 1823
+                           C. a. aegyptius       Lichtenstein, MHC, 1823
+Vogelwarte 56 (2018)                                                                                   189
+
+
+
+SEGLER                 ORDNUNG APODIFORMES
+
+
+Segler                 Familie Apodidae                                                             Swifts
+Alpensegler            Tachymarptis melba         (Linnaeus, 1758)   A   L2   Z               Alpine Swift
+                         T. m. melba              (Linnaeus, 1758)
+Mauersegler            Apus apus                  (Linnaeus, 1758)   A   N5   Z            Common Swift
+                         A. a. apus               (Linnaeus, 1758)
+Fahlsegler             Apus pallidus              (Shelley, 1870)    A        S                Pallid Swift
+                         A. p. brehmorum (?)      Hartert, E, 1901
+Pazifiksegler          Apus pacificus             (Latham, 1801)     A        s               Pacific Swift
+                         A. p. pacificus          (Latham, 1801)
+Haussegler             Apus affinis               (Gray, JE, 1830)   A        s                Little Swift
+                         A. a. galilejensis (?)   (Antinori, 1855)
+
+
+
+
+RACKENVÖGEL            ORDNUNG CORACIIFORMES
+
+
+Racken                 Familie Coraciidae                                                          Rollers
+Blauracke              Coracias garrulus          Linnaeus, 1758     A   0    S           European Roller
+                         C. g. garrulus           Linnaeus, 1758
+
+
+Eisvögel               Familie Alcedinidae                                                     Kingfishers
+Eisvogel               Alcedo atthis              (Linnaeus, 1758)   A   N4   JZW     Common Kingfisher
+                         A. a. ispida             Linnaeus, 1758
+
+
+Spinte                 Familie Meropidae                                                        Bee-eaters
+Blauwangenspint        Merops persicus            Pallas, 1773       A        S     Blue-cheeked Bee-eater
+                         M. p. persicus           Pallas, 1773
+Bienenfresser          Merops apiaster            Linnaeus, 1758     A   N3   Z        European Bee-eater
+
+
+
+
+HOPF- UND HORNVÖGEL    ORDNUNG BUCEROTIFORMES
+
+
+Wiedehopfe             Familie Upupidae                                                          Hoopoes
+Wiedehopf              Upupa epops                Linnaeus, 1758     A   R2   Z          Eurasian Hoopoe
+                         U. e. epops              Linnaeus, 1758
+
+
+
+
+SPECHTVÖGEL            ORDNUNG PICIFORMES
+
+
+Spechte                Familie Picidae                                                       Woodpeckers
+Wendehals              Jynx torquilla             Linnaeus, 1758     A   N4   Z         Eurasian Wryneck
+                         J. t. torquilla          Linnaeus, 1758
+190                                                        P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Dreizehenspecht    Picoides tridactylus   (Linnaeus, 1758)            A    R2       J        Eurasian Three-toed
+                                                                                             Woodpecker
+                     P. t. alpinus        Brehm, CL, 1831
+Mittelspecht       Dendrocoptes medius    (Linnaeus, 1758)            A    N4       J        Middle Spotted Woodpecker
+                     D. m. medius         (Linnaeus, 1758)
+Kleinspecht        Dryobates minor        (Linnaeus, 1758)            A    N4       JW       Lesser Spotted Woodpecker
+                     D. m. minor          (Linnaeus, 1758)                               S
+                     D. m. hortorum       (Brehm, CL, 1831)
+Blutspecht         Dendrocopos syriacus   (Hemprich & Ehren-          A             s                Syrian Woodpecker
+                                          berg, 1833)
+                     D. s. syriacus       (Hemprich & Ehren-
+                                          berg, 1833)
+Buntspecht         Dendrocopos major      (Linnaeus, 1758)            A    N5       JZW       Great Spotted Woodpecker
+                     D. m. major          (Linnaeus, 1758)                     N5        J
+                     D. m. pinetorum      (Brehm, CL, 1831)                             ZW
+Weißrückenspecht   Dendrocopos leucotos   (Bechstein, 1802)           A    R2       J        White-backed Woodpecker
+                     D. l. leucotos       (Bechstein, 1802)
+Schwarzspecht      Dryocopus martius      (Linnaeus, 1758)            A    N4       J                Black Woodpecker
+                     D. m. martius        (Linnaeus, 1758)
+Grünspecht         Picus viridis          Linnaeus, 1758              A    N4       J         European Green Woodpe-
+                                                                                                                cker
+                     P. v. viridis        Linnaeus, 1758
+Grauspecht         Picus canus            Gmelin, JF, 1788            A    N4       J         Grey-headed Woodpecker
+                     P. c. canus          Gmelin, JF, 1788
+
+
+
+
+FALKEN             ORDNUNG FALCONIFORMES
+
+
+Falken             Familie Falconidae                                                                              Falcons
+Rötelfalke         Falco naumanni         Fleischer, JG, 1818         A             S                     Lesser Kestrel
+Turmfalke          Falco tinnunculus      Linnaeus, 1758              A    N4       JZW                Common Kestrel
+                     F. t. tinnunculus    Linnaeus, 1758
+Rotfußfalke        Falco vespertinus      Linnaeus, 1766              A    V        z                 Red-footed Falcon
+Eleonorenfalke     Falco eleonorae        Gené, 1839                  A             s                  Eleonora’s Falcon
+Merlin             Falco columbarius      Linnaeus, 1758              A             ZW                             Merlin
+                     F. c. subaesalon     Brehm, CL, 1827                                s
+                     F. c. aesalon        Tunstall, 1771
+Baumfalke          Falco subbuteo         Linnaeus, 1758              A    N3       Z                   Eurasian Hobby
+                     F. s. subbuteo       Linnaeus, 1758
+Würgfalke          Falco cherrug          Gray, JE, 1834              A    0        S                      Saker Falcon
+                     F. c. cherrug        Gray, JE, 1834
+Gerfalke           Falco rusticolus       Linnaeus, 1758              A             S                         Gyrfalcon
+Wanderfalke        Falco peregrinus       Tunstall, 1771              A    N3       JZW                Peregrine Falcon
+                     F. p. peregrinus     Tunstall, 1771
+                     F. p. calidus        Latham, 1790                                   z
+Vogelwarte 56 (2018)                                                                                               191
+
+
+
+PAPAGEIEN                     ORDNUNG PSITTACIFORMES
+
+
+Altweltpapageien              Familie Psittaculidae                                                 Old World Parrots
+Halsbandsittich               Psittacula krameri        (Scopoli, 1769)      C1   R3   J          Rose-ringed Parakeet
+                                P. k. borealis          (Neumann, 1915)
+
+
+
+
+SPERLINGSVÖGEL                ORDNUNG PASSERIFORMES
+
+
+Würger                        Familie Laniidae                                                                 Shrikes
+Braunwürger                   Lanius cristatus          Linnaeus, 1758       A         s                 Brown Shrike
+                                L. c. cristatus         Linnaeus, 1758
+Neuntöter                     Lanius collurio           Linnaeus, 1758       A    N5   Z            Red-backed Shrike
+Isabellwürger                 Lanius isabellinus        Hemprich & Ehren-    A         S              Isabelline Shrike
+                                                        berg, 1833
+                                L. i. isabellinus       Hemprich & Ehren-
+                                                        berg, 1833
+Rotschwanzwürger              Lanius phoenicuroides     (Schalow, 1875)      A         s             Red-tailed Shrike
+Schwarzstirnwürger            Lanius minor              Gmelin, JF, 1788     A    0    S            Lesser Grey Shrike
+Raubwürger                    Lanius excubitor          Linnaeus, 1758       A    N3   JZW           Great Grey Shrike
+                                L. e. excubitor         Linnaeus, 1758
+                                L. e. homeyeri          Cabanis, 1873                  s (B)
+Rotkopfwürger                 Lanius senator            Linnaeus, 1758       A    0    z              Woodchat Shrike
+                                L. s. senator           Linnaeus, 1758
+Maskenwürger                  Lanius nubicus            Lichtenstein, MHC,   A         s                Masked Shrike
+                                                        1823
+
+
+Vireos                        Familie Vireonidae                                                                Vireos
+Gelbkehlvireo                 Vireo flavifrons          Vieillot, 1808       Ao        s         Yellow-throated Vireo
+Rotaugenvireo                 Vireo olivaceus           (Linnaeus, 1766)     A         s               Red-eyed Vireo
+                                V. o. olivaceus         (Linnaeus, 1766)
+
+
+Pirole                        Familie Oriolidae                                                                Orioles
+Pirol                         Oriolus oriolus           (Linnaeus, 1758)     A    N4   Z        Eurasian Golden Oriole
+
+
+Krähenverwandte               Familie Corvidae                                                             Crows, Jays
+Eichelhäher                   Garrulus glandarius       (Linnaeus, 1758)     A    N5   JZW                Eurasian Jay
+                                G. g. glandarius        (Linnaeus, 1758)
+Elster                        Pica pica                 (Linnaeus, 1758)     A    N5   J              Eurasian Magpie
+                                P. p. pica              (Linnaeus, 1758)
+Tannenhäher                   Nucifraga caryocatactes   (Linnaeus, 1758)     A    R3   JZW          Spotted Nutcracker
+                                N. c. caryocatactes     (Linnaeus, 1758)
+  „Sibirischer Tannenhäher“     N. c. macrorhynchos     Brehm, CL, 1823                    zw
+Alpenkrähe                    Pyrrhocorax pyrrhocorax   (Linnaeus, 1758)     B                      Red-billed Chough
+                                P. p. erythroramphos    (Vieillot, 1817)
+192                                                         P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Alpendohle         Pyrrhocorax graculus    (Linnaeus, 1766)            A    R2       J                  Alpine Chough
+                     P. g. graculus        (Linnaeus, 1766)
+Dohle              Coloeus monedula        (Linnaeus, 1758)            A    N5       JZW              Western Jackdaw
+                     C. m. monedula        (Linnaeus, 1758)                               W
+                     C. m. spermologus     (Vieillot, 1817)                   N5          J
+ „Halsbanddohle“     C. m. soemmerringii   (Fischer von Waldheim,                         w
+                                           1811)
+Saatkrähe          Corvus frugilegus       Linnaeus, 1758              A    N4       JZW                          Rook
+                     C. f. frugilegus      Linnaeus, 1758
+Rabenkrähe         Corvus corone           Linnaeus, 1758              A    R5       JZW                 Carrion Crow
+                     C. c. corone          Linnaeus, 1758
+Nebelkrähe         Corvus cornix           Linnaeus, 1758              A    R4       JZW                 Hooded Crow
+                     C. c. cornix          Linnaeus, 1758
+Kolkrabe           Corvus corax            Linnaeus, 1758              A    N4       J                 Northern Raven
+                     C. c. corax           Linnaeus, 1758
+
+
+Seidenschwänze     Familie Bombycillidae                                                                     Waxwings
+Seidenschwanz      Bombycilla garrulus     (Linnaeus, 1758)            A             ZW            Bohemian Waxwing
+                     B. g. garrulus        (Linnaeus, 1758)
+
+
+Meisen             Familie Paridae                                                                                 Tits
+Tannenmeise        Periparus ater          (Linnaeus, 1758)            A    N6       JZW                       Coal Tit
+                     P. a. ater            (Linnaeus, 1758)
+Haubenmeise        Lophophanes cristatus   (Linnaeus, 1758)            A    N5       J            European Crested Tit
+                     L. c. mitratus        (Brehm, CL, 1831)
+Sumpfmeise         Poecile palustris       (Linnaeus, 1758)            A    N5       J                       Marsh Tit
+                     P. p. palustris       (Linnaeus, 1758)
+Weidenmeise        Poecile montanus        (Conrad, 1827)              A    N5       J                       Willow Tit
+                     P. m. rhenanus        (Kleinschmidt, O, 1900)             R4
+ „Alpenmeise“        P. m. montanus        (Conrad, 1827)                      R4
+                     P. m. salicarius      (Brehm, CL, 1831)                   R4
+Blaumeise          Cyanistes caeruleus     (Linnaeus, 1758)            A    N6       JZW              Eurasian Blue Tit
+                     C. c. caeruleus       (Linnaeus, 1758)
+Lasurmeise         Cyanistes cyanus        (Pallas, 1770)              A             s                        Azure Tit
+                     C. c. cyanus          (Pallas, 1770)
+Kohlmeise          Parus major             Linnaeus, 1758              A    N6       JZW                      Great Tit
+                     P. m. major           Linnaeus, 1758
+
+
+Beutelmeisen       Familie Remizidae                                                                     Penduline Tits
+Beutelmeise        Remiz pendulinus        (Linnaeus, 1758)            A    N3       Z          Eurasian Penduline Tit
+                     R. p. pendulinus      (Linnaeus, 1758)
+
+
+Bartmeisen         Familie Panuridae                                                                  Bearded Reedling
+Bartmeise          Panurus biarmicus       (Linnaeus, 1758)            A    N3       JZ               Bearded Reedling
+                     P. b. biarmicus       (Linnaeus, 1758)
+                     P. b. russicus        (Brehm, CL, 1831)                     V        s
+Vogelwarte 56 (2018)                                                                                                     193
+
+
+
+Lerchen                         Familie Alaudidae                                                                      Larks
+Heidelerche                     Lullula arborea              (Linnaeus, 1758)      A   N4   Z                      Woodlark
+                                  L. a. arborea              (Linnaeus, 1758)
+Weißflügellerche                Alauda leucoptera            Pallas, 1811          B                      White-winged Lark
+Feldlerche                      Alauda arvensis              Linnaeus, 1758        A   N6   JZW             Eurasian Skylark
+                                  A. a. arvensis             Linnaeus, 1758
+Haubenlerche                    Galerida cristata            (Linnaeus, 1758)      A   N3   J                   Crested Lark
+                                  G. c. cristata             (Linnaeus, 1758)
+Ohrenlerche                     Eremophila alpestris         (Linnaeus, 1758)      A        ZW                  Horned Lark
+                                  E. a. flava                (Gmelin, JF, 1789)
+Kurzzehenlerche                 Calandrella brachydactyla    (Leisler, 1814)       A        S        Greater Short-toed Lark
+                                  C. b. brachydactyla        (Leisler, 1814)
+                                  C. b. longipennis          (Eversmann, 1848)
+Kalanderlerche                  Melanocorypha calandra       (Linnaeus, 1766)      A        S                  Calandra Lark
+                                  M. c. calandra             (Linnaeus, 1766)
+Schwarzsteppenlerche            Melanocorypha yeltoniensis   (Forster, JR, 1768)   B                              Black Lark
+Stummellerche                   Alaudala rufescens           (Vieillot, 1819)      B                  Lesser Short-toed Lark
+                                  A. r. heinei               (Homeyer, 1873)
+
+
+Schwalben                       Familie Hirundinidae                                                       Swallows, Martins
+Uferschwalbe                    Riparia riparia              (Linnaeus, 1758)      A   N5   Z                   Sand Martin
+                                  R. r. riparia              (Linnaeus, 1758)
+Rauchschwalbe                   Hirundo rustica              Linnaeus, 1758        A   N5   Z                  Barn Swallow
+                                  H. r. rustica              Linnaeus, 1758
+Felsenschwalbe                  Ptyonoprogne rupestris       (Scopoli, 1769)       A   R1   Z          Eurasian Crag Martin
+Mehlschwalbe                    Delichon urbicum             (Linnaeus, 1758)      A   N5   Z        Common House Martin
+                                  D. u. urbicum              (Linnaeus, 1758)
+Rötelschwalbe                   Cecropis daurica             (Laxmann, 1769)       A        S           Red-rumped Swallow
+                                  C. d. rufula               (Temminck, 1835)
+
+
+Buschsänger                     Familie Cettiidae                                                       Cettia Bush Warblers
+Seidensänger                    Cettia cetti                 (Temminck, 1820)      A   V    S                 Cetti’s Warbler
+                                  C. c. cetti                (Temminck, 1820)
+
+
+Schwanzmeisen                   Familie Aegithalidae                                                                 Bushtits
+Schwanzmeise                    Aegithalos caudatus          (Linnaeus, 1758)      A   N5   JZW               Long-tailed Tit
+  „Weißkopf-Schwanzmeise“         A. c. caudatus             (Linnaeus, 1758)                   w
+  „Streifenkopf-Schwanzmeise“     A. c. europaeus            (Hermann, 1804)
+
+
+Laubsänger                      Familie Phylloscopidae                                                         Leaf Warblers
+Waldlaubsänger                  Phylloscopus sibilatrix      (Bechstein, 1793)     A   N5   Z                 Wood Warbler
+Berglaubsänger                  Phylloscopus bonelli         (Vieillot, 1819)      A   R3   Z       Western Bonelli’s Warbler
+Tienschan-Laubsänger            Phylloscopus humei           (Brooks, WE, 1878)    A        S           Hume’s Leaf Warbler
+                                  P. h. humei                (Brooks, WE, 1878)
+Gelbbrauen-Laubsänger           Phylloscopus inornatus       (Blyth, 1842)         A        z         Yellow-browed Warbler
+194                                                                     P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Goldhähnchen-Laubsänger   Phylloscopus proregulus      (Pallas, 1811)              A            S              Pallas’s Leaf Warbler
+Bartlaubsänger            Phylloscopus schwarzi        (Radde, 1863)               A            S                  Radde’s Warbler
+Dunkellaubsänger          Phylloscopus fuscatus        (Blyth, 1842)               A            S                    Dusky Warbler
+                            P. f. fuscatus             (Blyth, 1842)
+Fitis                     Phylloscopus trochilus       (Linnaeus, 1758)            A    N6      Z                   Willow Warbler
+                            P. t. trochilus            (Linnaeus, 1758)
+                            P. t. acredula             (Linnaeus, 1758)                             z
+Zilpzalp                  Phylloscopus collybita       (Vieillot, 1817)            A    N6      Z               Common Chiffchaff
+                            P. c. abietinus            (Nilsson, 1819)                              Z
+                            P. c. collybita            (Vieillot, 1817)
+  „Taigazilpzalp“           P. c. tristis              Blyth, 1843                                  S
+Iberienzilpzalp           Phylloscopus ibericus        Ticehurst, 1937             A            S                 Iberian Chiffchaff
+Kronenlaubsänger          Phylloscopus coronatus       (Temminck & Schlegel, A                  s         Eastern Crowned Warbler
+                                                       1847)
+Wacholderlaubsänger       Phylloscopus nitidus         Blyth, 1843                 A            s                    Green Warbler
+Middendorff-Laubsänger    Phylloscopus plumbeitarsus   Swinhoe, 1861               A            s              Two-barred Warbler
+Grünlaubsänger            Phylloscopus trochiloides    (Sundevall, 1837)           A    L1      z                 Greenish Warbler
+                            P. t. viridanus            Blyth, 1843
+Wanderlaubsänger          Phylloscopus borealis        (Blasius, JH, 1858)         A            S                    Arctic Warbler
+
+
+Rohrsängerverwandte       Familie Acrocephalidae                                                           Reed Warblers and allies
+Drosselrohrsänger         Acrocephalus arundinaceus    (Linnaeus, 1758)            A    N4      Z               Great Reed Warbler
+                            A. a. arundinaceus         (Linnaeus, 1758)
+Mariskenrohrsänger        Acrocephalus melanopogon     (Temminck, 1823)            A            S              Moustached Warbler
+                            A. m. melanopogon          (Temminck, 1823)
+Seggenrohrsänger          Acrocephalus paludicola      (Vieillot, 1817)            A    L1      z                  Aquatic Warbler
+Schilfrohrsänger          Acrocephalus schoenobaenus (Linnaeus, 1758)              A    N4      Z                    Sedge Warbler
+Feldrohrsänger            Acrocephalus agricola        (Jerdon, 1845)              A            S               Paddyfield Warbler
+                            A. a. agricola (?)         (Jerdon, 1845)
+                            A. a. septimus (?)         Gavrilenko, 1954
+Buschrohrsänger           Acrocephalus dumetorum       Blyth, 1849                 A    V       S              Blyth’s Reed Warbler
+Teichrohrsänger           Acrocephalus scirpaceus      (Hermann, 1804)             A    N5      Z            Eurasian Reed Warbler
+                            A. s. scirpaceus           (Hermann, 1804)
+Sumpfrohrsänger           Acrocephalus palustris       (Bechstein, 1798)           A    N5      Z                    Marsh Warbler
+Buschspötter              Iduna caligata               (Lichtenstein, MHC,         A            s                   Booted Warbler
+                                                       1823)
+Steppenspötter            Iduna rama                   (Sykes, 1832)               A            s                   Sykes’s Warbler
+Blassspötter              Iduna pallida                (Hemprich & Ehren-          A            s       Eastern Olivaceous Warbler
+                                                       berg, 1833)
+                            I. p. elaeica              (Lindermayer, 1843)
+Orpheusspötter            Hippolais polyglotta         (Vieillot, 1817)            A    R2      Z               Melodious Warbler
+Gelbspötter               Hippolais icterina           (Vieillot, 1817)            A    N5      Z                  Icterine Warbler
+
+
+Schwirlverwandte          Familie Locustellidae                                                                          Grassbirds
+Streifenschwirl           Helopsaltes certhiola        (Pallas, 1811)              B                    Pallas’s Grasshopper Warbler
+                            H. c. rubescens            Blyth, 1845
+Vogelwarte 56 (2018)                                                                                                        195
+
+
+
+Strichelschwirl                 Locustella lanceolata        (Temminck, 1840)        A        s            Lanceolated Warbler
+                                  L. l. lanceolata           (Temminck, 1840)
+Feldschwirl                     Locustella naevia            (Boddaert, 1783)        A   N4   Z         Common Grasshopper
+                                                                                                                   Warbler
+                                  L. n. naevia               (Boddaert, 1783)
+Schlagschwirl                   Locustella fluviatilis       (Wolf, 1810)            A   R3   Z                  River Warbler
+Rohrschwirl                     Locustella luscinioides      (Savi, 1824)            A   N3   Z                  Savi’s Warbler
+                                  L. l. luscinioides         (Savi, 1824)
+
+
+Halmsänger                      Familie Cisticolidae                                                                 Cisticolas
+Zistensänger                    Cisticola juncidis           (Rafinesque, 1810)      A        S                Zitting Cisticola
+                                  C. j. cisticola (?)        (Temminck, 1820)
+                                  C. j. juncidis (?)         (Rafinesque, 1810)
+
+
+Grasmückenverwandte             Familie Sylviidae                                                              Sylviid Babblers
+Mönchsgrasmücke                 Sylvia atricapilla           (Linnaeus, 1758)        A   N6   Z              Eurasian Blackcap
+                                  S. a. atricapilla          (Linnaeus, 1758)
+Gartengrasmücke                 Sylvia borin                 (Boddaert, 1783)        A   N6   Z                Garden Warbler
+                                  S. b. borin                (Boddaert, 1783)
+Sperbergrasmücke                Sylvia nisoria               (Bechstein, 1792)       A   R3   Z                Barred Warbler
+                                  S. n. nisoria              (Bechstein, 1792)
+Klappergrasmücke                Sylvia curruca               (Linnaeus, 1758)        A   N5   Z             Lesser Whitethroat
+                                  S. c. curruca              (Linnaeus, 1758)
+  „Östliche Klappergrasmücke“     S. c. blythi               Ticehurst & Whistler,                s
+                                                             1933
+Orpheusgrasmücke                Sylvia hortensis             (Gmelin, JF, 1789)      A        s       Western Orphean Warbler
+                                  S. h. hortensis            (Gmelin, JF, 1789)
+Wüstengrasmücke                 Sylvia nana                  (Hemprich & Ehren-      A        s           Asian Desert Warbler
+                                                             berg, 1833)
+Dorngrasmücke                   Sylvia communis              Latham, 1787            A   N5   Z          Common Whitethroat
+                                  S. c. communis             Latham, 1787
+Provencegrasmücke               Sylvia undata                (Boddaert, 1783)        A        s              Dartford Warbler
+                                  S. u. dartfordiensis (?)   Latham, 1787
+                                  S. u. undata (?)           (Boddaert, 1783)
+Brillengrasmücke                Sylvia conspicillata         Temminck, 1820          A   V    S             Spectacled Warbler
+                                  S. c. conspicillata        Temminck, 1820
+Weißbart-Grasmücke              Sylvia cantillans            (Pallas, 1764)          A        S              Subalpine Warbler
+  „Balkan-Bartgrasmücke“          S. c. albistriata          (Brehm, CL, 1855)                    S
+  „Iberien-Bartgrasmücke“         S. c. iberiae              Svensson, 2013                       s
+Ligurien-Bartgrasmücke          Sylvia subalpina             Temminck, 1820          A        s              Moltoni’s Warbler
+Samtkopf-Grasmücke              Sylvia melanocephala         (Gmelin, JF, 1789)      A        S              Sardinian Warbler
+                                  S. m. melanocephala        (Gmelin, JF, 1789)
+
+
+Goldhähnchen                    Familie Regulidae                                                                   Goldcrests
+Sommergoldhähnchen              Regulus ignicapilla          (Temminck, 1820)        A   N6   Z             Common Firecrest
+                                  R. i. ignicapilla          (Temminck, 1820)
+196                                                                  P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Wintergoldhähnchen        Regulus regulus           (Linnaeus, 1758)            A    N6      JZW                       Goldcrest
+                            R. r. regulus           (Linnaeus, 1758)
+
+
+Zaunkönige                Familie Troglodytidae                                                                           Wrens
+Zaunkönig                 Troglodytes troglodytes   (Linnaeus, 1758)            A    N6      JZW                 Eurasian Wren
+                            T. t. troglodytes       (Linnaeus, 1758)
+
+
+Kleiber                   Familie Sittidae                                                                           Nuthatches
+Kleiber                   Sitta europaea            Linnaeus, 1758              A    N6      JZW              Eurasian Nuthatch
+                            S. e. caesia            Wolf, 1810
+                            S. e. europaea          Linnaeus, 1758                                s
+
+
+Mauerläufer               Familie Tichodromidae                                                                     Wallcreeper
+Mauerläufer               Tichodroma muraria        (Linnaeus, 1766)            A    R2      J                      Wallcreeper
+                            T. m. muraria           (Linnaeus, 1766)
+
+
+Baumläufer                Familie Certhiidae                                                                        Treecreepers
+Waldbaumläufer            Certhia familiaris        Linnaeus, 1758              A    N5      J             Eurasian Treecreeper
+                            C. f. macrodactyla      Brehm, CL, 1831
+                            C. f. familiaris        Linnaeus, 1758                               ZW
+Gartenbaumläufer          Certhia brachydactyla     Brehm, CL, 1820             A    N5      J           Short-toed Treecreeper
+                            C. b. megarhynchos      Brehm, CL, 1831                     R5
+                            C. b. brachydactyla     Brehm, CL, 1820                     R5
+
+
+Spottdrosseln             Familie Mimidae                                                              Mockingbirds, Thrashers
+Katzenspottdrossel        Dumetella carolinensis    (Linnaeus, 1766)            B                                  Grey Catbird
+
+
+Starenverwandte           Familie Sturnidae                                                                             Starlings
+Rosenstar                 Pastor roseus             (Linnaeus, 1758)            A            S                     Rosy Starling
+Star                      Sturnus vulgaris          Linnaeus, 1758              A    N6      JZ               Common Starling
+                            S. v. vulgaris          Linnaeus, 1758
+
+
+Drosseln                  Familie Turdidae                                                                             Thrushes
+Schieferdrossel           Geokichla sibirica        (Pallas, 1776)              A            s                  Siberian Thrush
+                            G. s. sibirica          (Pallas, 1776)
+Erddrossel                Zoothera aurea            (Holandre, 1825)            A            S                   White’s Thrush
+                            Z. a. aurea             (Holandre, 1825)
+Grauwangen-Musendrossel   Catharus minimus          (Lafresnaye, 1848)          B                          Grey-cheeked Thrush
+                            C. m. minimus           (Lafresnaye, 1848)
+Zwergmusendrossel         Catharus ustulatus        (Nuttall, 1840)             A            s                Swainson’s Thrush
+                            C. u. swainsoni         (Tschudi, 1845)
+Einsiedler-Musendrossel   Catharus guttatus         (Pallas, 1811)              B                                Hermit Thrush
+                            C. g. faxoni            (Bangs & Penard, TE,
+                                                    1921)
+Einfarbdrossel            Turdus unicolor           Tickell, 1833               B                                Tickell’s Thrush
+Vogelwarte 56 (2018)                                                                                                   197
+
+
+
+Ringdrossel                      Turdus torquatus          Linnaeus, 1758       A   R3   Z                      Ring Ouzel
+  „Nördliche Ringdrossel“          T. t. torquatus         Linnaeus, 1758                     Z
+  „Alpenringdrossel“               T. t. alpestris         (Brehm, CL, 1831)
+Amsel                            Turdus merula             Linnaeus, 1758       A   N6   JZW            Common Blackbird
+                                   T. m. merula            Linnaeus, 1758
+Weißbrauendrossel                Turdus obscurus           Gmelin, JF, 1789     A        S               Eyebrowed Thrush
+Schwarzkehldrossel               Turdus atrogularis        Jarocki, 1819        A        S           Black-throated Thrush
+Rotkehldrossel                   Turdus ruficollis         Pallas, 1776         A        s             Red-throated Thrush
+Rostschwanzdrossel               Turdus naumanni           Temminck, 1820       A        s               Naumann’s Thrush
+Rostflügeldrossel                Turdus eunomus            Temminck, 1831       A        s                   Dusky Thrush
+Wacholderdrossel                 Turdus pilaris            Linnaeus, 1758       A   N5   JZW                      Fieldfare
+Rotdrossel                       Turdus iliacus            Linnaeus, 1758       A   V    ZW                       Redwing
+  „Isländische Rotdrossel“         T. i. coburni           Sharpe, 1901                       z
+                                   T. i. iliacus           Linnaeus, 1758
+Singdrossel                      Turdus philomelos         Brehm, CL, 1831      A   N6   Z                    Song Thrush
+                                   T. p. clarkei           Hartert, E, 1909                   z
+                                   T. p. philomelos        Brehm, CL, 1831
+Misteldrossel                    Turdus viscivorus         Linnaeus, 1758       A   N5   JZ                  Mistle Thrush
+                                   T. v. viscivorus        Linnaeus, 1758
+Wanderdrossel                    Turdus migratorius        Linnaeus, 1766       A        s                 American Robin
+                                   T. m. migratorius       Linnaeus, 1766
+
+
+Schnäpperverwandte               Familie Muscicapidae                                                Old World Flycatchers
+Heckensänger                     Cercotrichas galactotes   (Temminck, 1820)     A        S        Rufous-tailed Scrub Robin
+                                   C. g. galactotes        (Temminck, 1820)                   s
+                                   C. g. syriaca           (Hemprich & Ehren-                 s
+                                                           berg, 1833)
+Grauschnäpper                    Muscicapa striata         (Pallas, 1764)       A   N5   Z               Spotted Flycatcher
+                                   M. s. striata           (Pallas, 1764)
+Rotkehlchen                      Erithacus rubecula        (Linnaeus, 1758)     A   N6   JZW               European Robin
+                                   E. r. rubecula          (Linnaeus, 1758)
+Blaukehlchen                     Luscinia svecica          (Linnaeus, 1758)     A   N4   Z                       Bluethroat
+  „Rotsterniges Blaukehlchen“      L. s. svecica           (Linnaeus, 1758)                   z
+  „Weißsterniges Blaukehlchen“     L. s. cyanecula         (Meisner, 1804)
+Sprosser                         Luscinia luscinia         (Linnaeus, 1758)     A   R4   Z              Thrush Nightingale
+Nachtigall                       Luscinia megarhynchos     Brehm, CL, 1831      A   N5   Z            Common Nightingale
+                                   L. m. megarhynchos      Brehm, CL, 1831
+Rubinkehlchen                    Calliope calliope         (Pallas, 1776)       A        s              Siberian Rubythroat
+                                   C. c. calliope          (Pallas, 1776)
+Blauschwanz                      Tarsiger cyanurus         (Pallas, 1773)       A        S             Red-flanked Bluetail
+Trauerschnäpper                  Ficedula hypoleuca        (Pallas, 1764)       A   N4   Z        European Pied Flycatcher
+                                   F. h. hypoleuca         (Pallas, 1764)
+Halsbandschnäpper                Ficedula albicollis       (Temminck, 1815)     A   R3   Z              Collared Flycatcher
+Zwergschnäpper                   Ficedula parva            (Bechstein, 1792)    A   R3   Z          Red-breasted Flycatcher
+198                                                                            P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Hausrotschwanz                      Phoenicurus ochruros      (Gmelin, SG, 1774)          A    N5      Z                    Black Redstart
+                                      P. o. gibraltariensis   (Gmelin, JF, 1789)
+  „Östlicher Hausrotschwanz“          P. o. phoenicuroides    (Moore, F, 1854)                              s
+Gartenrotschwanz                    Phoenicurus phoenicurus   (Linnaeus, 1758)            A    N4      Z                Common Redstart
+                                      P. p. phoenicurus       (Linnaeus, 1758)
+                                      P. p. samamisicus       (Hablizl, 1783)                               s
+Steinrötel                          Monticola saxatilis       (Linnaeus, 1766)            A    L1      S           Common Rock Thrush
+Blaumerle                           Monticola solitarius      (Linnaeus, 1758)            A            s                Blue Rock Thrush
+                                      M. s. solitarius        (Linnaeus, 1758)
+Braunkehlchen                       Saxicola rubetra          (Linnaeus, 1758)            A    N4      Z                        Whinchat
+Schwarzkehlchen                     Saxicola rubicola         (Linnaeus, 1766)            A    N4      Z              European Stonechat
+                                      S. r. rubicola          (Linnaeus, 1766)
+Pallasschwarzkehlchen               Saxicola maurus           (Pallas, 1773)              A            S                Siberian Stonechat
+                                      S. m. maurus            (Pallas, 1773)
+Steinschmätzer                      Oenanthe oenanthe         (Linnaeus, 1758)            A    N3      Z               Northern Wheatear
+  „Grönländischer Steinschmätzer“     O. o. leucorhoa         (Gmelin, JF, 1789)                            Z
+                                      O. o. oenanthe          (Linnaeus, 1758)
+Isabellsteinschmätzer               Oenanthe isabellina       (Temminck, 1829)            A            S               Isabelline Wheatear
+Wüstensteinschmätzer                Oenanthe deserti          (Temminck, 1825)            A            S                 Desert Wheatear
+                                      O. d. deserti           (Temminck, 1825)
+Mittelmeer-Steinschmätzer           Oenanthe hispanica        (Linnaeus, 1758)            A            S            Black-eared Wheatear
+  „Maurensteinschmätzer“              O. h. hispanica         (Linnaeus, 1758)                              S
+  „Balkansteinschmätzer“              O. h. melanoleuca       (Güldenstädt, 1775)                           S
+Zypernsteinschmätzer                Oenanthe cypriaca         (Homeyer, 1884)             B                              Cyprus Wheatear
+Nonnensteinschmätzer                Oenanthe pleschanka       (Lepechin, 1770)            A            S                    Pied Wheatear
+
+
+Wasseramseln                        Familie Cinclidae                                                                             Dippers
+Wasseramsel                         Cinclus cinclus           (Linnaeus, 1758)            A    R4      JW          White-throated Dipper
+  „Nordische Wasseramsel“             C. c. cinclus           (Linnaeus, 1758)                              w
+                                      C. c. aquaticus         (Bechstein, 1797)
+
+
+Sperlinge                           Familie Passeridae                                                               Old World Sparrows,
+Haussperling                        Passer domesticus         (Linnaeus, 1758)            A    N6      J                   House Sparrow
+                                      P. d. domesticus        (Linnaeus, 1758)
+Feldsperling                        Passer montanus           (Linnaeus, 1758)            A    N5      J            Eurasian Tree Sparrow
+                                      P. m. montanus          (Linnaeus, 1758)
+Steinsperling                       Petronia petronia         (Linnaeus, 1766)            B    0 (B)                        Rock Sparrow
+                                      P. p. petronia          (Linnaeus, 1766)
+Schneesperling                      Montifringilla nivalis    (Linnaeus, 1766)            A    R2      J         White-winged Snowfinch
+                                      M. n. nivalis           (Linnaeus, 1766)
+
+
+Braunellen                          Familie Prunellidae                                                                         Accentors
+Alpenbraunelle                      Prunella collaris         (Scopoli, 1769)             A    R2      JZ                 Alpine Accentor
+                                      P. c. collaris          (Scopoli, 1769)
+Bergbraunelle                       Prunella montanella       (Pallas, 1776)              A            s                Siberian Accentor
+                                      P. m. montanella        (Pallas, 1776)
+Vogelwarte 56 (2018)                                                                                                    199
+
+
+
+Schwarzkehlbraunelle       Prunella atrogularis         (Brandt, JF, 1843)    A            s       Black-throated Accentor
+                             P. a. atrogularis          (Brandt, JF, 1843)
+Heckenbraunelle            Prunella modularis           (Linnaeus, 1758)      A   N6       JZW                   Dunnock
+                             P. m. modularis            (Linnaeus, 1758)
+
+
+Stelzenverwandte           Familie Motacillidae                                                            Wagtails, Pipits
+Schafstelze                Motacilla flava              Linnaeus, 1758        A   N5       Z       Western Yellow Wagtail
+  „Gelbkopf-Schafstelze“     M. f. flavissima           (Blyth, 1834)                  V       z
+  „Wiesenschafstelze“        M. f. flava                Linnaeus, 1758                N5       Z
+  „Aschkopf-Schafstelze“     M. f. cinereocapilla       Savi, 1831                     V       S
+  „Maskenschafstelze“        M. f. feldegg              Michahelles, 1830                      S
+  „Thunbergschafstelze“      M. f. thunbergi            Billberg, 1828                         Z
+Zitronenstelze             Motacilla citreola           Pallas, 1776          A   V        S               Citrine Wagtail
+                             M. c. citreola             Pallas, 1776
+Gebirgsstelze              Motacilla cinerea            Tunstall, 1771        A   N4       JZW                Grey Wagtail
+                             M. c. cinerea              Tunstall, 1771
+Bachstelze                 Motacilla alba               Linnaeus, 1758        A   N5       Z                White Wagtail
+  „Trauerbachstelze“         M. a. yarrellii            Gould, 1837                    V       z
+                             M. a. alba                 Linnaeus, 1758
+Spornpieper                Anthus richardi              Vieillot, 1818        A            z                Richard’s Pipit
+Steppenpieper              Anthus godlewskii            (Taczanowski, 1876)   A            S                   Blyth’s Pipit
+Brachpieper                Anthus campestris            (Linnaeus, 1758)      A   R3       Z                   Tawny Pipit
+Wiesenpieper               Anthus pratensis             (Linnaeus, 1758)      A   N4       ZW                Meadow Pipit
+Baumpieper                 Anthus trivialis             (Linnaeus, 1758)      A   N5       Z                     Tree Pipit
+                             A. t. trivialis            (Linnaeus, 1758)
+Waldpieper                 Anthus hodgsoni              Richmond, 1907        A            S            Olive-backed Pipit
+                             A. h. yunnanensis          Uchida & Kuroda,
+                                                        Nagamichi, 1916
+Petschorapieper            Anthus gustavi               Swinhoe, 1863         A            s                 Pechora Pipit
+                             A. g. gustavi              Swinhoe, 1863
+Rotkehlpieper              Anthus cervinus              (Pallas, 1811)        A            Z            Red-throated Pipit
+Pazifikpieper              Anthus rubescens             (Tunstall, 1771)      A            s              Buff-bellied Pipit
+                             A. r. rubescens            (Tunstall, 1771)
+Bergpieper                 Anthus spinoletta            (Linnaeus, 1758)      A   R3       JZW                  Water Pipit
+                             A. s. spinoletta           (Linnaeus, 1758)
+Strandpieper               Anthus petrosus              (Montagu, 1798)       A   V        ZW          Eurasian Rock Pipit
+                             A. p. littoralis           Brehm, CL, 1823
+
+
+Finken                     Familie Fringillidae                                                                    Finches
+Buchfink                   Fringilla coelebs            Linnaeus, 1758        A   N6       JZW         Common Chaffinch
+                             F. c. coelebs              Linnaeus, 1758
+Bergfink                   Fringilla montifringilla     Linnaeus, 1758        A   V        ZW                   Brambling
+Kernbeißer                 Coccothraustes coccothraustes (Linnaeus, 1758)     A   N5       JZW                   Hawfinch
+                             C. c. coccothraustes       (Linnaeus, 1758)
+Hakengimpel                Pinicola enucleator          (Linnaeus, 1758)      A            S                Pine Grosbeak
+                             P. e. enucleator           (Linnaeus, 1758)
+200                                                                         P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Gimpel                            Pyrrhula pyrrhula        (Linnaeus, 1758)            A    N5      JZW              Eurasian Bullfinch
+                                    P. p. pyrrhula         (Linnaeus, 1758)                             W
+                                    P. p. europaea         Vieillot, 1816
+Wüstengimpel                      Bucanetes githagineus    (Lichtenstein, MHC, 1823) A              s                 Trumpeter Finch
+                                    B. g. zedlitzi         (Neumann, 1907)
+Karmingimpel                      Carpodacus erythrinus    (Pallas, 1770)              A    R2      Z              Common Rosefinch
+                                    C. e. erythrinus       (Pallas, 1770)
+Grünfink                          Chloris chloris          (Linnaeus, 1758)            A    N6      JZW           European Greenfinch
+                                    C. c. chloris          (Linnaeus, 1758)
+Berghänfling                      Linaria flavirostris     (Linnaeus, 1758)            A    V       W                             Twite
+                                    L. f. flavirostris     (Linnaeus, 1758)
+Bluthänfling                      Linaria cannabina        (Linnaeus, 1758)            A    N5      JZW               Common Linnet
+                                    L. c. cannabina        (Linnaeus, 1758)
+Taigabirkenzeisig                 Acanthis flammea         (Linnaeus, 1758)            A            W                Common Redpoll
+                                    A. f. flammea          (Linnaeus, 1758)
+  „Grönländischer Birkenzeisig“     A. f. rostrata         (Coues, 1861)                             s (B)
+Alpenbirkenzeisig                 Acanthis cabaret         (Statius Müller, 1776)      A    N4      JZW                  Lesser Redpoll
+Polarbirkenzeisig                 Acanthis hornemanni      (Holbøll, 1843)             A            S                    Arctic Redpoll
+                                    A. h. exilipes         (Coues, 1862)                                S
+                                    A. h. hornemanni       (Holbøll, 1843)                               s
+Kiefernkreuzschnabel              Loxia pytyopsittacus     Borkhausen, 1793            A    V       S                   Parrot Crossbill
+Fichtenkreuzschnabel              Loxia curvirostra        Linnaeus, 1758              A    N4      JZW                   Red Crossbill
+                                    L. c. curvirostra      Linnaeus, 1758
+Bindenkreuzschnabel               Loxia leucoptera         Gmelin, JF, 1789            A    VE      S             Two-barred Crossbill
+                                    L. l. bifasciata       (Brehm, CL, 1827)
+Stieglitz                         Carduelis carduelis      (Linnaeus, 1758)            A    N5      JZW            European Goldfinch
+                                    C. c. carduelis        (Linnaeus, 1758)
+Zitronenzeisig                    Carduelis citrinella     (Pallas, 1764)              A    R2      J                       Citril Finch
+Girlitz                           Serinus serinus          (Linnaeus, 1766)            A    N5      Z                   European Serin
+Erlenzeisig                       Spinus spinus            (Linnaeus, 1758)            A    N4      JZW                 Eurasian Siskin
+
+
+Tundraammern                      Familie Calcariidae                                                        Longspurs, Snow Buntings
+Spornammer                        Calcarius lapponicus     (Linnaeus, 1758)            A            ZW               Lapland Longspur
+                                    C. l. lapponicus       (Linnaeus, 1758)
+Schneeammer                       Plectrophenax nivalis    (Linnaeus, 1758)            A            ZW                   Snow Bunting
+                                    P. n. nivalis          (Linnaeus, 1758)
+  „Isländische Schneeammer“         P. n. insulae          Salomonsen, 1931                             W
+
+
+Ammern                            Familie Emberizidae                                                                         Buntings
+Grauammer                         Emberiza calandra        Linnaeus, 1758              A    N4      JZW                  Corn Bunting
+                                    E. c. calandra         Linnaeus, 1758
+Goldammer                         Emberiza citrinella      Linnaeus, 1758              A    N6      JZW                 Yellowhammer
+                                    E. c. citrinella       Linnaeus, 1758
+Fichtenammer                      Emberiza leucocephalos   Gmelin, SG, 1771            A            S                     Pine Bunting
+                                    E. l. leucocephalos    Gmelin, SG, 1771
+Vogelwarte 56 (2018)                                                                                          201
+
+
+
+Zippammer               Emberiza cia             Linnaeus, 1766          A    R2   JZ                Rock Bunting
+                          E. c. cia              Linnaeus, 1766
+Steinortolan            Emberiza buchanani       Blyth, 1845             A         s         Grey-necked Bunting
+                          E. b. neobscura (?)    Paynter 1970
+Türkenammer             Emberiza cineracea       Brehm, CL, 1855         B                      Cinereous Bunting
+                          E. c. cineracea        Brehm, CL, 1855
+Ortolan                 Emberiza hortulana       Linnaeus, 1758          A    R4   Z              Ortolan Bunting
+Grauortolan             Emberiza caesia          Cretzschmar, 1827       A         s        Cretzschmar’s Bunting
+Zaunammer               Emberiza cirlus          Linnaeus, 1766          A    R2   JZ                 Cirl Bunting
+Zwergammer              Emberiza pusilla         Pallas, 1776            A         S                Little Bunting
+Waldammer               Emberiza rustica         Pallas, 1776            A         S                Rustic Bunting
+Weidenammer             Emberiza aureola         Pallas, 1773            A         S       Yellow-breasted Bunting
+                          E. a. aureola          Pallas, 1773
+Kappenammer             Emberiza melanocephala   Scopoli, 1769           A    V    S         Black-headed Bunting
+Braunkopfammer          Emberiza bruniceps       Brandt, JF, 1841        BD        S          Red-headed Bunting
+Maskenammer             Emberiza spodocephala    Pallas, 1776            A         s          Black-faced Bunting
+                          E. s. spodocephala     Pallas, 1776
+Rohrammer               Emberiza schoeniclus     (Linnaeus, 1758)        A    N5   Z       Common Reed Bunting
+                          E. s. schoeniclus      (Linnaeus, 1758)
+                          E. s. tschusii         Reiser & Almásy, 1898             s (B)
+
+
+Waldsänger              Familie Parulidae                                                     New World Warblers
+Meisenwaldsänger        Setophaga americana      (Linnaeus, 1758)        Ao        s              Northern Parula
+Grünmantel-Waldsänger   Setophaga virens         (Gmelin, JF, 1789)      B                   Black-throated Green
+                                                                                                          Warbler
+202                                                                           P. H. Barthel & T. Krüger: Artenliste der Vögel Deutschlands
+
+
+
+Anhang 1: Kategorie D
+
+
+Gluckente                         Sibirionetta formosa       (Georgi, 1775)              D            s                        Baikal Teal
+Sichelente                        Mareca falcata             (Georgi, 1775)              D            S                    Falcated Duck
+Chileflamingo                     Phoenicopterus chilensis   Molina, 1782                D    L1E     z                Chilean Flamingo
+Schmuckreiher                     Egretta thula              (Molina, 1782)              D            s                      Snowy Egret
+Singammer                         Melospiza melodia          (Wilson, A, 1810)           D            s                     Song Sparrow
+
+
+
+
+Anhang 2: Kategorie E (Auswahl)
+
+
+Nandu                         Rhea americana                 (Linnaeus, 1758)            E    L1E     j                     Greater Rhea
+Zwergkanadagans               Branta hutchinsii              (Richardson, 1832)          E            S                   Cackling Goose
+Zwergschneegans               Anser rossii                   Cassin, 1861                E            S                      Ross’s Goose
+Schneegans                    Anser caerulescens             (Linnaeus, 1758)            E    L1E     Jz                     Snow Goose
+Höckergans                    Anser cygnoid f. domestica     (Linnaeus, 1758)            E    L1E     J                      Swan Goose
+Schwarzschwan                 Cygnus atratus                 (Latham, 1790)              E    L1E     J                       Black Swan
+Moschusente                   Cairina moschata               (Linnaeus, 1758)            E    VE      j                   Muscovy Duck
+Brautente                     Aix sponsa                     (Linnaeus, 1758)            E    L1E     J                       Wood Duck
+Rotschulterente               Callonetta leucophrys          (Vieillot, 1816)            E    VE      S                       Ringed Teal
+Indien-Fleckschnabelente      Anas poecilorhyncha            Forster, JR, 1781           E    VE      S          Indian Spot-billed Duck
+Dunkelente                    Anas rubripes                  Brewster, 1902              E            s            American Black Duck
+Bahamaente                    Anas bahamensis                Linnaeus, 1758              E    VE      S            White-cheeked Pintail
+Riesentafelente               Aythya valisineria             (Wilson, A, 1814)           E            s                       Canvasback
+Rotkopfente                   Aythya americana               (Eyton, 1838)               E            s                          Redhead
+Büffelkopfente                Bucephala albeola              (Linnaeus, 1758)            E            S                        Bufflehead
+Kappensäger                   Lophodytes cucullatus          (Linnaeus, 1758)            E            S               Hooded Merganser
+Truthuhn                      Meleagris gallopavo            Linnaeus, 1758              E    L1E     j                      Wild Turkey
+Rothuhn                       Alectoris rufa                 (Linnaeus, 1758)            E    VE      S             Red-legged Partridge
+Kubaflamingo                  Phoenicopterus ruber           Linnaeus, 1758              E    L1E     z              American Flamingo
+Zwergflamingo                 Phoeniconaias minor            (Geoffroy Saint-Hilaire, E               S                  Lesser Flamingo
+                                                             É, 1798)
+Pharaonenibis                 Threskiornis aethiopicus       (Latham, 1790)              E    VE      S               African Sacred Ibis
+Waldrapp                      Geronticus eremita             (Linnaeus, 1758)            E    L1E     S               Northern Bald Ibis
+Rotgesichtlöffler             Platalea alba                  Scopoli, 1786               E            s                African Spoonbill
+Schwarzhalsreiher             Ardea melanocephala            Children & Vigors, 1826 E                s              Black-headed Heron
+Dreifarbenreiher              Egretta tricolor               (Statius Müller, 1776)      E            s                 Tricolored Heron
+Küstenreiher                  Egretta gularis                (Bosc, 1792)                E            S              Western Reef Heron
+Rötelpelikan                  Pelecanus rufescens            Gmelin, JF, 1789            E            S              Pink-backed Pelican
+Ohrenscharbe                  Phalacrocorax auritus          (Lesson, R, 1831)           E            s       Double-crested Cormorant
+Sperbergeier                  Gyps rueppelli                 (Brehm, AE, 1852)           E            s                 Rüppell’s Vulture
+Bindenseeadler                Haliaeetus leucoryphus         (Pallas, 1771)              E            s                 Pallas’s Fish Eagle
+Weißkopf-Seeadler             Haliaeetus leucocephalus       (Linnaeus, 1766)            E            s                        Bald Eagle
+Vogelwarte 56 (2018)                                                                                           203
+
+
+
+Riesenseeadler           Haliaeetus pelagicus       (Pallas, 1811)        E         s           Steller’s Sea Eagle
+Spornkiebitz             Vanellus spinosus          (Linnaeus, 1758)      E         s       Spur-winged Lapwing
+Spießflughuhn            Pterocles alchata          (Linnaeus, 1766)      E         s       Pin-tailed Sandgrouse
+Palmtaube                Spilopelia senegalensis    (Linnaeus, 1766)      E         s             Laughing Dove
+Virginiauhu              Bubo virginianus           (Gmelin, JF, 1788)    E         s          Great Horned Owl
+Buntfalke                Falco sparverius           Linnaeus, 1758        E         S           American Kestrel
+Lannerfalke              Falco biarmicus            Temminck, 1825        E         s              Lanner Falcon
+Gelbkopfamazone          Amazona oratrix            Ridgway, 1887         E   L1E   j      Yellow-headed Amazon
+Blaustirnamazone         Amazona aestiva            (Linnaeus, 1758)      E   VE    j   Turquoise-fronted Amazon
+Alexandersittich         Psittacula eupatria        (Linnaeus, 1766)      E   L1E   j        Alexandrine Parakeet
+Azurelster               Cyanopica cyanus           (Pallas, 1776)        E         s       Azure-winged Magpie
+Elsterdohle              Coloeus dauuricus          (Pallas, 1776)        E         s            Daurian Jackdaw
+Bergkalanderlerche       Melanocorypha bimaculata   (Ménétriés, 1832)     E         s           Bimaculated Lark
+Hirtenmaina              Acridotheres tristis       (Linnaeus, 1766)      E   VE    S             Common Myna
+Mongolenstar             Agropsar sturninus         (Pallas, 1776)        E         s            Daurian Starling
+Amurdrossel              Turdus hortulorum          Sclater, PL, 1863     E         s        Grey-backed Thrush
+Fahldrossel              Turdus pallidus            Gmelin, JF, 1789      E         s                Pale Thrush
+Rußschnäpper             Muscicapa sibirica         Gmelin, JF, 1789      E         s       Dark-sided Flycatcher
+Saharasteinschmätzer     Oenanthe leucopyga         (Brehm, CL, 1855)     E         s    White-crowned Wheatear
+Meisengimpel             Carpodacus sibiricus       (Pallas, 1773)        E         S       Long-tailed Rosefinch
+Wiesenammer              Emberiza cioides           Brandt, JF, 1843      E         s           Meadow Bunting
+Gelbkehlammer            Emberiza elegans           Temminck, 1836        E         s     Yellow-throated Bunting
+Fuchsammer               Passerella iliaca          (Merrem, 1786)        E         s            Red Fox Sparrow
+Dachsammer               Zonotrichia leucophrys     (Forster, JR, 1772)   E         s     White-crowned Sparrow
+Weißkehlammer            Zonotrichia albicollis     (Gmelin, JF, 1789)    E   VE    s     White-throated Sparrow
+Braunkopf-Kuhstärling    Molothrus ater             (Boddaert, 1783)      E         s     Brown-headed Cowbird
+Rosenbrust-Kernknacker   Pheucticus ludovicianus    (Linnaeus, 1766)      E         s     Rose-breasted Grosbeak
+Indigofink               Passerina cyanea           (Linnaeus, 1766)      E         s             Indigo Bunting
+Lazulifink               Passerina amoena           (Say, 1822)           E         s              Lazuli Bunting
+
