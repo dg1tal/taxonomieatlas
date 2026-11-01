@@ -1,0 +1,56 @@
+{
+  "columnMap": {
+    "sequence": ["#"],
+    "rank": ["RANK"],
+    "order": ["ORDER"],
+    "family": ["FAMILY"],
+    "familyEn": ["FAMILY: ENGLISH NAME"],
+    "sciName": ["SCIENTIFIC NAME"],
+    "authority": ["AUTHORITY"],
+    "citation": ["BIBLIOGRAPHIC DETAILS"],
+    "name": ["ENGLISH NAME: AVILIST"],
+    "nameClements": ["ENGLISH NAME: CLEMENTS {clementsVersion}"],
+    "nameBirdLife": ["ENGLISH NAME: BIRDLIFE {birdLifeVersion}"],
+    "proposalNumber": ["PROPOSAL NUMBER"],
+    "decisionSummary": ["DECISION SUMMARY"],
+    "range": ["RANGE"],
+    "extinct": ["EXTINCTION STATUS"],
+    "iucn": ["IUCN RED LIST CATEGORY"],
+    "birdLifeUrl": ["BIRDLIFE DATAZONE URL"],
+    "cornellCode": ["SPECIES CODE CORNELL LAB"],
+    "bowUrl": ["BIRDS OF THE WORLD URL"],
+    "avibaseId": ["AVIBASE ID"],
+    "genusGender": ["GENDER OF GENUS"],
+    "typeSpecies": ["TYPE SPECIES OF GENUS"],
+    "typeLocality": ["TYPE LOCALITY"],
+    "originalDescriptionTitle": ["TITLE OF ORIGINAL DESCRIPTION"],
+    "originalDescriptionUrl": ["ORIGINAL DESCRIPTION URL"],
+    "protonym": ["PROTONYM"]
+  },
+  "versions": [
+    {
+      "id": "2025b",
+      "label": "v2025b",
+      "released": "11 Jun 2026",
+      "extendedXlsx": "xlsx/AviList-v2025b-10Jun2026-extended.xlsx",
+      "sheet": "AviList v2025b extended",
+      "clementsVersion": "v2025",
+      "birdLifeVersion": "v10",
+      "citation": "AviList Core Team. 2026. AviList: The Global Avian Checklist, v2025b. https://doi.org/10.2173/avilist.v2025b",
+      "license": "AviList: The Global Avian Checklist © 2026 by AviList Core Team is licensed under CC BY 4.0",
+      "contributors": "Les Christidis, Frank E. Rheindt, Marshall J. Iliff, Denis Lepage, Pamela C. Rasmussen, Paul Donald, Per Alström, Juan Ignacio Areta, Frederik Brammer, Terry Chesser, David Donsker, Bob Dowsett, Jeffrey Gerbracht, Max Kirsch, Marek Kuziemko, Markus Lagerqvist, Richard Littauer, Wayne Longmore, Janette Norman, Alan Peterson, Richard Schodde, Tom Schulenberg, Martin Stervander"
+    },
+    {
+      "id": "2026",
+      "label": "v2026",
+      "released": "20 Oct 2026",
+      "extendedXlsx": "xlsx/AviList-v2026-20Oct2026-extended.xlsx",
+      "sheet": "AviList v2026",
+      "clementsVersion": "v2026",
+      "birdLifeVersion": "v10",
+      "citation": "AviList Core Team. 2026. AviList: The Global Avian Checklist, v2026. https://doi.org/10.2173/avilist.v2026",
+      "license": "AviList: The Global Avian Checklist © 2026 by AviList Core Team is licensed under CC BY 4.0",
+      "contributors": "Les Christidis, Frank E. Rheindt, Marshall J. Iliff, Praveen J, Denis Lepage, Paul Donald, Pamela C. Rasmussen, Tom Schulenberg, Juan Ignacio Areta, Gustav Asplund, Frederik Brammer, Terry Chesser, Santiago Claramunt, J. Ryan Doherty, David Donsker, Jeffrey Gerbracht, Adam Jackson, Gabriel Jamie, Anna Kearns, Michael Mills, Janette Norman, Alan Peterson, Vitor Piacentini, Keren Sadanandan, Richard Schodde, Manuel Schweizer, Martin Stervander"
+    }
+  ]
+}

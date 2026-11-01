@@ -1,0 +1,204 @@
+{
+  "reviewed_at": "2026-11-01",
+  "reviewer": "Codex source-bound review requested by repository owner",
+  "rights_assessment": {
+    "scope": "Only these seven short factual taxonomic name assignments; no expressive text, media or entire-database license.",
+    "provider_statement": "Taxonomic information should not represent creative work and thus may not be subject to intellectual property restrictions in many jurisdictions.",
+    "source": "https://www.inaturalist.org/taxa/inaturalist-taxonomy.dwca.zip",
+    "metadata": "sources/rights/inaturalist-taxonomy-eml-2026-10-01.xml",
+    "terms": "https://www.inaturalist.org/pages/terms",
+    "decision": "Accept these attributed factual name records under the provider taxonomic-facts statement. No CC0 or unrestricted database license is asserted. Terms default to CC BY-NC for copyrightable user content; restrictions of the combined data package remain."
+  },
+  "decisions": [
+    {
+      "genus": "Emberiza",
+      "inaturalist_id": 9186,
+      "decision": "accept",
+      "before_sha256": "d0f33cba5097ec427cccbacbd697507efd233713368b5ef06c103b9c0a3ecc0b",
+      "after_sha256": "a832cea7575e2f68195d6f118e7dc58668a10ca5866c3920570dcf278519ecc5",
+      "evidence": "Accept source-specific label Emberiza buntings. All 15 AviList species are present in the current source genus; the source also contains prehistoric Emberiza alcoveri, outside this checklist. No taxonomic transfer.",
+      "source_url": "https://www.inaturalist.org/taxa/9186",
+      "species_evidence": {
+        "url": "https://api.inaturalist.org/v1/taxa?taxon_id=9186&rank=species&per_page=200&is_active=true",
+        "total": 16,
+        "species": [
+          "Emberiza alcoveri",
+          "Emberiza buchanani",
+          "Emberiza caesia",
+          "Emberiza calandra",
+          "Emberiza cia",
+          "Emberiza cineracea",
+          "Emberiza cioides",
+          "Emberiza cirlus",
+          "Emberiza citrinella",
+          "Emberiza fucata",
+          "Emberiza godlewskii",
+          "Emberiza hortulana",
+          "Emberiza jankowskii",
+          "Emberiza koslowi",
+          "Emberiza leucocephalos",
+          "Emberiza stewarti"
+        ]
+      },
+      "avilist_species": [
+        "Emberiza buchanani",
+        "Emberiza caesia",
+        "Emberiza calandra",
+        "Emberiza cia",
+        "Emberiza cineracea",
+        "Emberiza cioides",
+        "Emberiza cirlus",
+        "Emberiza citrinella",
+        "Emberiza fucata",
+        "Emberiza godlewskii",
+        "Emberiza hortulana",
+        "Emberiza jankowskii",
+        "Emberiza koslowi",
+        "Emberiza leucocephalos",
+        "Emberiza stewarti"
+      ]
+    },
+    {
+      "genus": "Eurocephalus",
+      "inaturalist_id": 12058,
+      "decision": "accept",
+      "before_sha256": "e397b2cab1d14387a9b83427ee20acb1bcf2a4095693c3327ca21ced1fa5c5c2",
+      "after_sha256": "d705f005badda1cc09c1991dd0d15bed0b14dd492120e67daa4dd4131e54634d",
+      "evidence": "Accept source usage White-crowned Shrikes. Both source species anguitimens and ruppelli match the existing AviList genus; German label unchanged.",
+      "source_url": "https://www.inaturalist.org/taxa/12058",
+      "species_evidence": {
+        "url": "https://api.inaturalist.org/v1/taxa?taxon_id=12058&rank=species&per_page=200&is_active=true",
+        "total": 2,
+        "species": [
+          "Eurocephalus anguitimens",
+          "Eurocephalus ruppelli"
+        ]
+      },
+      "avilist_species": [
+        "Eurocephalus anguitimens",
+        "Eurocephalus ruppelli"
+      ]
+    },
+    {
+      "genus": "Fringillaria",
+      "inaturalist_id": 1720251,
+      "decision": "accept",
+      "before_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "after_sha256": "59710ff42352c284f8794792e080664aefc2ed72f7637dc499fce39511885f73",
+      "evidence": "Accept African buntings as a source vernacular label. All eleven source species match the existing AviList genus; no new taxa created.",
+      "source_url": "https://www.inaturalist.org/taxa/1720251",
+      "species_evidence": {
+        "url": "https://api.inaturalist.org/v1/taxa?taxon_id=1720251&rank=species&per_page=200&is_active=true",
+        "total": 11,
+        "species": [
+          "Fringillaria affinis",
+          "Fringillaria cabanisi",
+          "Fringillaria capensis",
+          "Fringillaria flaviventris",
+          "Fringillaria goslingi",
+          "Fringillaria impetuani",
+          "Fringillaria poliopleura",
+          "Fringillaria sahari",
+          "Fringillaria socotrana",
+          "Fringillaria striolata",
+          "Fringillaria tahapisi"
+        ]
+      },
+      "avilist_species": [
+        "Fringillaria affinis",
+        "Fringillaria cabanisi",
+        "Fringillaria capensis",
+        "Fringillaria flaviventris",
+        "Fringillaria goslingi",
+        "Fringillaria impetuani",
+        "Fringillaria poliopleura",
+        "Fringillaria sahari",
+        "Fringillaria socotrana",
+        "Fringillaria striolata",
+        "Fringillaria tahapisi"
+      ]
+    },
+    {
+      "genus": "Nannus",
+      "inaturalist_id": 1720017,
+      "decision": "accept",
+      "before_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "after_sha256": "04708c8a0e645b036dcdddf311c9b492dcdee3e7e2ce5a65b1c52c8c1802b497",
+      "evidence": "Accept Holarctic wrens as a source vernacular label. All three source species match the existing AviList genus.",
+      "source_url": "https://www.inaturalist.org/taxa/1720017",
+      "species_evidence": {
+        "url": "https://api.inaturalist.org/v1/taxa?taxon_id=1720017&rank=species&per_page=200&is_active=true",
+        "total": 3,
+        "species": [
+          "Nannus hiemalis",
+          "Nannus pacificus",
+          "Nannus troglodytes"
+        ]
+      },
+      "avilist_species": [
+        "Nannus hiemalis",
+        "Nannus pacificus",
+        "Nannus troglodytes"
+      ]
+    },
+    {
+      "genus": "Pinarostola",
+      "inaturalist_id": 1721047,
+      "decision": "accept",
+      "before_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "after_sha256": "24b3a49312b58605f0bc5e5ec18c9bcd8e85f7cb61795d6103685178e7038c32",
+      "evidence": "Accept Drab honeyeaters for the existing Pinarostola genus only: cinerea and ixoides match both sources. No occurrence evidence transferred.",
+      "source_url": "https://www.inaturalist.org/taxa/1721047",
+      "species_evidence": {
+        "url": "https://api.inaturalist.org/v1/taxa?taxon_id=1721047&rank=species&per_page=200&is_active=true",
+        "total": 2,
+        "species": [
+          "Pinarostola cinerea",
+          "Pinarostola ixoides"
+        ]
+      },
+      "avilist_species": [
+        "Pinarostola cinerea",
+        "Pinarostola ixoides"
+      ]
+    },
+    {
+      "genus": "Pycnopygius",
+      "inaturalist_id": 12588,
+      "decision": "accept",
+      "before_sha256": "2b5f1db024806322cf071c106240ee6796ac1e23b0b62fb5847a809fbb98183a",
+      "after_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "evidence": "Remove the withdrawn English source label Drab Honeyeaters. Both sources now contain only stictocephalus. Previous immutable releases retain the historical label.",
+      "source_url": "https://www.inaturalist.org/taxa/12588",
+      "species_evidence": {
+        "url": "https://api.inaturalist.org/v1/taxa?taxon_id=12588&rank=species&per_page=200&is_active=true",
+        "total": 1,
+        "species": [
+          "Pycnopygius stictocephalus"
+        ]
+      },
+      "avilist_species": [
+        "Pycnopygius stictocephalus"
+      ]
+    },
+    {
+      "genus": "Sapayoa",
+      "inaturalist_id": 14797,
+      "decision": "accept",
+      "before_sha256": "b9f1e74b10bc215bc0b935fa12bc8e6607538192b18f9c44f1d65998d1533b90",
+      "after_sha256": "fcadffbbbca4825391afc1571899b1a13bc12f71e4374b9636ca537d57907137",
+      "evidence": "Correct source spelling Sapoyoas to Sapayoas for the same genus ID; both sources contain only Sapayoa aenigma.",
+      "source_url": "https://www.inaturalist.org/taxa/14797",
+      "species_evidence": {
+        "url": "https://api.inaturalist.org/v1/taxa?taxon_id=14797&rank=species&per_page=200&is_active=true",
+        "total": 1,
+        "species": [
+          "Sapayoa aenigma"
+        ]
+      },
+      "avilist_species": [
+        "Sapayoa aenigma"
+      ]
+    }
+  ]
+}

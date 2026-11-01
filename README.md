@@ -227,32 +227,55 @@ MEZ / 06:37 Uhr MESZ) und lässt sich unter Actions → Daily bird data check
 manuell starten. GitHub kann geplante Läufe verzögern. `dry_run` prüft alle
 Quellen und erstellt Berichte, ohne etwas zu veröffentlichen.
 
-Geprüft werden die archivierte AviList-Exceldatei, die drei DOG-PDFs,
-Publikations-/Versionslinks auf den offiziellen AviList-/DOG-Seiten sowie die
-für das Gattungsnamenssupplement relevanten Wikidata-/iNaturalist-Namen.
-`sources/watch.json` enthält die festen URLs und den geprüften Linkstand.
+Geprüft werden die vollständigen Exportdaten, die Versions-/Lizenzdatei und das
+Literaturverzeichnis des offiziellen [AviList-Explorers](https://explore.avilist.org/),
+die drei DOG-PDFs und deren Publikationslinks sowie die für das
+Gattungsnamenssupplement relevanten Wikidata-/iNaturalist-Namen.
+`sources/watch.json` enthält die festen öffentlichen URLs. Der Explorer wird
+von AviList selbst angeboten und ist ohne die Browserprüfung der Hauptwebsite
+abrufbar. Die dort aufgeführte relative XLSX-Adresse liefert derzeit 404;
+deshalb wird ausdrücklich der tatsächliche JSON-Export geprüft. Es gibt
+keine Umgehung der Cloudflare-Prüfung und keinen stillen Rückgriff auf alte
+lokale Daten bei einem fehlgeschlagenen Live-Abruf.
+
+Die erste Explorer-Basis wurde für alle **33.698 Taxa** in allen 25 gemeinsamen
+Feldern gegen die originale Exceldatei geprüft; das 26. Feld ist der aus dem
+Excel-Familiennamen abgeleitete englische Familienname. Rich-Text-Formatierung
+und die äquivalenten OOXML-/JSON-Darstellungen eines Steuerzeichens in zwei
+Typuslokalitäten werden beim Vergleich normalisiert. Das nur in Excel
+vorhandene Feld „v2026 CHANGES“ und die zusätzlichen Excel-Arbeitsblätter
+werden über den Explorer nicht überwacht. Die Originaldatei bleibt erhalten:
+`source.sha256` bezeichnet sie, `source.explorer` enthält die getrennten
+Prüfsummen des aktuellen JSON-Exports, der Versionsdatei und Bibliografie.
+`sources/avilist-explorer.json.gz` ist eine verlustfreie Kopie der Rohantwort.
+
+**Automatisch freigegeben** werden nur englische AviList-Namens- und
+Cornell-Codekorrekturen bei unveränderten übrigen Exportfeldern, Reihenfolgen,
+Versionen, Lizenzangaben und Literaturverzeichnis. Die sieben einzeln geprüften
+iNaturalist-Namensänderungen vom 1. November 2026 sind in
+`sources/inaturalist-name-review.json` mit Vorher-/Nachher-Prüfsummen,
+Artzuordnungen und begrenzter Rechtebewertung hinterlegt. Nur genau diese
+geprüften Übergänge darf der Workflow anwenden; neue abweichende Änderungen
+werden angehalten. Es gibt keine pauschale CC0-Freigabe für iNaturalist.
+Taxon-IDs, Hierarchie, Deutschlandstatus und deutsche Namen bleiben durch
+beide Wege unverändert.
+
 Die kleinen manuell kuratierten Einzelbelege (LBV, ITIS, USFWS, Avibase,
-FU Berlin) und der Stiller-Artikel bleiben separat betreut; ihre Inhalte
+FU Berlin) und der Stiller-Artikel bleiben separat betreut. Ihre Inhalte
 werden nicht automatisch aktualisiert.
 
-**Automatisch freigegeben** werden ausschließlich Änderungen bestehender,
-eindeutig zugeordneter englischer AviList-Namen und Cornell-Codes sowie rein
-technische Änderungen der XLSX-Dateiverpackung. Dafür müssen alle anderen
-Zellen, Blätter, Zeilenreihenfolgen und ergänzenden Quellen unverändert sein.
-Es werden keine Änderungen an deutschen Namen, Taxon-IDs, Hierarchie,
-Artkonzepten, Verbreitung, Deutschlandstatus oder Lizenzangaben freigegeben.
-Auch ein neuer Versions-/Downloadlink erfordert zunächst Prüfung.
-
-Ein zweiter Job wiederholt den Zellvergleich gegen beide Originaldateien,
-prüft den vollständigen Kandidaten auf zusätzliche Änderungen und nutzt
-`scripts/release.mjs` mit einem an die Quellenprüfsummen gebundenen Review.
-Erst nach der gesamten Testsuite werden Quelle, öffentlicher Datenbestand,
-unveränderliches Releasepaket, Releaseverzeichnis und Review gemeinsam auf
-`main` committed. Ist `main` inzwischen weitergelaufen, wird abgebrochen.
-Anschließend startet der Workflow den Pages-Workflow ausdrücklich, weil ein
-Push mit `GITHUB_TOKEN` allein keinen weiteren Push-Workflow auslöst.
-Damit sind veröffentlichte Updates dauerhaft im Repository und für alle
-Besucher verfügbar; sie hängen nicht vom Browserspeicher ab.
+Ein zweiter Job wiederholt alle Vergleiche gegen die tatsächlichen Quelldateien,
+rekonstruiert den Kandidaten einschließlich der geprüften Namensänderungen und
+nutzt `scripts/release.mjs` mit einem quellengebundenen Review. Erst nach der
+gesamten Testsuite werden Datenbestand, Quellen, unveränderliches Releasepaket,
+Releaseverzeichnis, Namensbericht und Review gemeinsam auf `main` committed.
+Neue iNaturalist-Snapshots enthalten ausschließlich erforderliche Taxonomiefelder,
+keine Medien- oder Nutzermetadaten. Ein Update kann auch dann veröffentlicht
+werden, wenn nur geprüfte Namensbelege geändert wurden und AviList selbst
+unverändert ist. Ist `main` inzwischen weitergelaufen, wird abgebrochen.
+Anschließend startet der Workflow Pages ausdrücklich, weil ein Push mit
+`GITHUB_TOKEN` allein keinen weiteren Push-Workflow auslöst. Veröffentlichte
+Updates sind damit dauerhaft in Git und für alle Besucher verfügbar.
 
 Abruffehler, unvollständige API-Ergebnisse oder nicht automatisch freigebbare
 Änderungen führen zu einem fehlgeschlagenen Lauf **ohne Veröffentlichung**.

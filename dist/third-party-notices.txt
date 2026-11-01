@@ -25,7 +25,14 @@ gesamte Datenpaket.
   weitere importierte Attribute in den Datenpaketen.
 - **Bearbeitung:** Auswahl von Spalten, Konvertierung nach JSON, interne IDs,
   Verknüpfung mit separat belegten Namen und Deutschlanddaten. Die optionale
-  Kladenansicht ist eine eigene Ergänzung.
+  Kladenansicht ist eine eigene Ergänzung. Die tägliche Prüfung verwendet den
+  [offiziellen Explorer](https://explore.avilist.org/) mit denselben zugänglichen
+  Exportfeldern. Der erstmalige Abgleich prüft 33.698 Taxa gegen das archivierte
+  XLSX. Die Original-XLSX-Prüfsumme bleibt unter `source.sha256`; die jeweils
+  aktuellen Explorer-Prüfsummen stehen getrennt unter `source.explorer`.
+  Die Rohdaten werden verlustfrei als `sources/avilist-explorer.json.gz`
+  archiviert; Versions-/Lizenzangaben und Literaturverzeichnis sind ebenfalls
+  als eigene Quelldateien erhalten.
 - **Weitergabe:** Urheber, Quelle und Lizenz nennen, Lizenz verlinken und
   Änderungen kennzeichnen; vorhandene Rechtehinweise erhalten. Dies gilt
   auch bei kommerzieller Nutzung. Keine Unterstützung durch AviList behaupten.
@@ -80,20 +87,38 @@ gesamte Datenpaket.
 
 ## iNaturalist
 
-- **Quelle:** [iNaturalist](https://www.inaturalist.org/),
+- **Quelle:** [iNaturalist und seine Mitwirkenden](https://www.inaturalist.org/),
   [API](https://api.inaturalist.org/v1/docs/),
+  [Entwicklerseite mit offiziellem Taxonomiearchiv](https://www.inaturalist.org/pages/developers),
   [Nutzungsbedingungen](https://www.inaturalist.org/pages/terms).
-- **Verwendet:** `sources/inat-bird-genera.json`, gültige lokalisierte
-  Gattungsnamen und Quellenlinks im Supplement; Abruf am 23. Oktober 2026.
-- **Bedingungen:** Die Nutzungsbedingungen sehen für Nutzerinhalte ohne
-  abweichende Angabe grundsätzlich CC BY-NC vor. Eine spezifische offene
-  Lizenz für die hier abgerufenen Taxonnamen/API-Antworten ist im Snapshot
-  nicht dokumentiert. Deshalb wird weder CC0 noch eine andere pauschale
-  Freigabe behauptet. Vor Weiterverwendung sind die einschlägigen Rechte
-  zu klären. Lizenzen für Beobachtungen, Fotos und Tonaufnahmen dürfen nicht
-  ungeprüft auf Taxonnamen übertragen werden. Der archivierte API-Snapshot
-  kann zusätzliche Medienmetadaten und Verweise enthalten; verlinkte Medien
-  sind nicht Teil einer Freigabe durch dieses Projekt.
+- **Verwendet:** Kurze taxonomische Namensangaben, Taxon-IDs und Quellenlinks;
+  keine Fotos, Audioaufnahmen, Beobachtungsdaten oder Artikeltexte. Der aktuelle
+  Snapshot `sources/inat-bird-genera.json` enthält nur die dafür erforderlichen
+  Taxonomiefelder. Frühere unveränderte Releases haben eigene ältere Snapshots.
+- **Rechteprüfung vom 1. November 2026:** Die `intellectualRights`-Angabe im
+  offiziellen [Taxonomiearchiv](https://www.inaturalist.org/taxa/inaturalist-taxonomy.dwca.zip)
+  beschreibt taxonomische Informationen als grundsätzlich nicht schöpferisch
+  und deshalb in vielen Rechtsordnungen möglicherweise nicht durch Rechte des
+  geistigen Eigentums beschränkt. Der konkrete Nachweis vom 1. Oktober 2026
+  ist unter `sources/rights/inaturalist-taxonomy-eml-2026-10-01.xml` archiviert.
+  Dies ist **keine CC0-Erklärung und keine pauschale Datenbanklizenz**.
+  Für schutzfähige Nutzerinhalte nennen die Nutzungsbedingungen grundsätzlich
+  CC BY-NC, sofern keine andere Angabe vorliegt. Bild-/Beobachtungslizenzen
+  werden nicht auf Taxonnamen übertragen.
+- **Begrenzte Entscheidung:** Die sieben Änderungen für Emberiza,
+  Eurocephalus, Fringillaria, Nannus, Pinarostola, Pycnopygius und Sapayoa wurden
+  einzeln als kurze, quellenbelegte taxonomische Fakten geprüft. Rang, aktive
+  Taxon-ID, Vogelzugehörigkeit und aktuelle Artzuordnungen wurden mit AviList
+  verglichen; die zusätzliche prähistorische Emberiza alcoveri in iNaturalist
+  wird nicht in den Atlas übernommen. Begründungen, exakte Vorher-/Nachher-
+  Prüfsummen und Einzelbelege stehen in `sources/inaturalist-name-review.json`.
+  Diese Entscheidung erlaubt keine beliebige Übernahme anderer Inhalte.
+  Die Herkunft bleibt angegeben; für den gesamten Datenbestand wird weiterhin
+  keine uneingeschränkte kommerzielle Nachnutzung zugesagt.
+- **Künftige Änderungen:** Eine technische API-Validierung allein ist keine
+  neue fachliche oder rechtliche Freigabe. Abweichende Namensänderungen werden
+  bis zu einer gesonderten Prüfung zurückgehalten. Fremdmaterial in älteren
+  Rohantworten und verlinkte Medien sind nicht durch dieses Projekt freigegeben.
 
 ## Einzelne ergänzende Namensbelege
 
@@ -130,7 +155,7 @@ erkennbar bleiben, welche Quelle welche Felder liefert. Ein bloßer Verweis
 auf MIT reicht für Datenexporte nicht aus.
 
 Offene Rechtefragen betreffen insbesondere die DOG-Publikationen und
-Extraktionen, die iNaturalist-Taxonnamen sowie die nicht offen lizenzierten
+Extraktionen, die Nachnutzung größerer iNaturalist-Datenbestände sowie die nicht offen lizenzierten
 Einzelbelege. Diese Aufstellung dokumentiert die vorgefundenen Bedingungen;
 sie ersetzt keine fehlende Erlaubnis. Vor einer entsprechend betroffenen
 Weiterverbreitung oder kommerziellen Nutzung Rechte einholen oder die

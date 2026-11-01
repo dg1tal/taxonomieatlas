@@ -5,6 +5,7 @@ Never writes published files. A separate job validates/releases a candidate.
 import argparse
 import copy
 import hashlib
+import gzip
 import json
 import os
 import re
@@ -21,6 +22,7 @@ from zipfile import ZipFile
 import openpyxl
 from enrich_genus_names import enrich
 import fetch_genus_names as feeds
+from explorer_sources import build_candidate, inspect_explorer, inspect_names
 
 ROOT = Path(__file__).resolve().parents[1]
 AUTO_FIELDS = {'ENGLISH NAME: AVILIST': 'en', 'SPECIES CODE CORNELL LAB': 'code'}
@@ -184,6 +186,22 @@ def check(out, config):
     report = {'checked_at': datetime.now(timezone.utc).isoformat(), 'sources': [],
               'blocked': [], 'errors': [], 'publish': False, 'patches': []}
     avi_download = None
+    if config.get('avilist_explorer'):
+        report['mode'] = 'explorer'
+        for name, url in config['avilist_explorer'].items():
+            try:
+                print('Checking ' + name, flush=True)
+                content = download(url, 'application/json')
+                json.loads(content)
+                (out / name).write_bytes(gzip.compress(content, mtime=0) if name.endswith('.gz') else content)
+            except Exception as error:
+                report['errors'].append(name + ': ' + str(error))
+        if not report['errors']:
+            try:
+                patches, metadata = inspect_explorer(ROOT, out, bundle)
+                report['sources'].append({'id': 'AviList Explorer', **metadata})
+            except Exception as error:
+                report['blocked'].append('AviList Explorer: ' + str(error))
     for entry in config['documents']:
         try:
             print('Checking ' + entry['id'], flush=True)
@@ -257,12 +275,30 @@ def check(out, config):
         actual = digest(canonical(names))
         report['sources'].append({'id': 'iNaturalist', 'before': baseline_names_sha, 'after': actual})
         if actual != baseline_names_sha:
-            report['blocked'].append('iNaturalist genus names changed; source/rights review required')
+            if report.get('mode') == 'explorer':
+                try:
+                    _, _, _, decisions = inspect_names(ROOT, out, bundle, report['checked_at'])
+                    report['sources'][-1]['reviewed_changes'] = decisions
+                except Exception as error:
+                    report['blocked'].append(str(error))
+            else:
+                report['blocked'].append('iNaturalist genus names changed; source/rights review required')
     except Exception as error:
         report['errors'].append('iNaturalist: ' + str(error))
     if wd is not None and inat is not None:
         _, names = enrich(copy.deepcopy(bundle), wd, inat)
         (out / 'genus-names-candidate.json').write_bytes(canonical(names))
+    if report.get('mode') == 'explorer' and not report['blocked'] and not report['errors']:
+        try:
+            next_bundle, evidence, names_report, changed = build_candidate(ROOT, out, bundle, report['checked_at'])
+            report.update(evidence)
+            report['from_sha256'] = report['to_sha256'] = bundle['source']['sha256']
+            report['publish'] = changed
+            if changed:
+                (out / 'candidate.json').write_text(json.dumps(next_bundle, ensure_ascii=False, separators=(',', ':')))
+                (out / 'genus-names-candidate.json').write_text(json.dumps(names_report, ensure_ascii=False, indent=2))
+        except Exception as error:
+            report['blocked'].append(str(error))
     if avi_download and not report['blocked'] and not report['errors']:
         report['publish'] = True
         (out / 'candidate.json').write_text(json.dumps(candidate(bundle, report['to_sha256'], report['patches'], report['checked_at']), ensure_ascii=False, separators=(',', ':')))

@@ -2,11 +2,6 @@
   "baseline_recorded": "2026-11-01",
   "documents": [
     {
-      "id": "avilist.xlsx",
-      "local": "sources/avilist-2026.xlsx",
-      "url": "https://www.avilist.org/wp-content/uploads/2026/10/AviList-v2026-20Oct2026-extended-version.xlsx"
-    },
-    {
       "id": "germany-2018.pdf",
       "local": "sources/germany-2018.pdf",
       "url": "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2018_Artenliste_Deutschland.pdf"
@@ -23,18 +18,6 @@
     }
   ],
   "publication_pages": [
-    {
-      "id": "avilist-current.html",
-      "url": "https://www.avilist.org/checklist/v2026/",
-      "links": [
-        "https://www.avilist.org/checklist/v2025/",
-        "https://www.avilist.org/checklist/v2025b/",
-        "https://www.avilist.org/checklist/v2026/",
-        "https://www.avilist.org/wp-content/uploads/2025/06/AviList_v2025_metadata_11Jun.pdf",
-        "https://www.avilist.org/wp-content/uploads/2026/10/AviList-v2026-20Oct2026-extended-version.xlsx",
-        "https://www.avilist.org/wp-content/uploads/2026/10/AviList-v2026-20Oct2026-short-version.xlsx"
-      ]
-    },
     {
       "id": "dog-country.html",
       "url": "https://www.do-g.de/dog/kommission-artenliste",
@@ -58,5 +41,10 @@
         "https://www.do-g.de/fileadmin/Ablage/DOG/Selbstorganisation/Dokumente/Satzung-DOG-2025.pdf"
       ]
     }
-  ]
+  ],
+  "avilist_explorer": {
+    "avilist-explorer.json.gz": "https://explore.avilist.org/data/avilist-2026.json",
+    "avilist-versions.json": "https://explore.avilist.org/versions.json",
+    "avilist-references.json": "https://explore.avilist.org/data/avilist-2026-references.json"
+  }
 }

@@ -94,8 +94,8 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git switch -c source-release
-          git add dist/data.json dist/releases.json dist/releases/ sources/avilist-2026.xlsx sources/reviews/
-          git commit -m 'Publish automatically verified AviList source correction'
+          git add dist/data.json dist/releases.json dist/releases/ sources/avilist-2026.xlsx sources/avilist-explorer.json.gz sources/avilist-versions.json sources/avilist-references.json sources/inat-bird-genera.json sources/genus-name-supplement.json sources/reviews/
+          git commit -m 'Publish source-verified bird data update'
           git push origin HEAD:main
           # GITHUB_TOKEN pushes do not trigger push workflows; dispatch explicitly.
           gh workflow run pages.yml --ref main

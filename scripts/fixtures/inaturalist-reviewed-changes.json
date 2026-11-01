@@ -1,0 +1,185 @@
+{
+  "retrieved": "2026-11-01",
+  "total_results": 7,
+  "results": [
+    {
+      "id": 9186,
+      "name": "Emberiza",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        7251,
+        559249,
+        9186
+      ],
+      "names": [
+        {
+          "name": "Emberiza buntings",
+          "locale": "en",
+          "position": 0,
+          "is_valid": true
+        },
+        {
+          "name": "Ammern",
+          "locale": "de",
+          "position": 16,
+          "is_valid": true
+        }
+      ]
+    },
+    {
+      "id": 12058,
+      "name": "Eurocephalus",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        7251,
+        12015,
+        12058
+      ],
+      "names": [
+        {
+          "name": "White-crowned Shrikes",
+          "locale": "en",
+          "position": 0,
+          "is_valid": true
+        },
+        {
+          "name": "White-crowned and White-rumped Shrikes",
+          "locale": "en",
+          "position": 1,
+          "is_valid": true
+        },
+        {
+          "name": "Rüppellwürger (Gatt.)",
+          "locale": "de",
+          "position": 3,
+          "is_valid": true
+        }
+      ]
+    },
+    {
+      "id": 12588,
+      "name": "Pycnopygius",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        7251,
+        12160,
+        12588
+      ],
+      "names": []
+    },
+    {
+      "id": 14797,
+      "name": "Sapayoa",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        7251,
+        200967,
+        14797
+      ],
+      "names": [
+        {
+          "name": "Sapayoas",
+          "locale": "en",
+          "position": 5,
+          "is_valid": true
+        }
+      ]
+    },
+    {
+      "id": 1720017,
+      "name": "Nannus",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        7251,
+        15964,
+        1720017
+      ],
+      "names": [
+        {
+          "name": "Holarctic wrens",
+          "locale": "en",
+          "position": 1,
+          "is_valid": true
+        }
+      ]
+    },
+    {
+      "id": 1720251,
+      "name": "Fringillaria",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        7251,
+        559249,
+        1720251
+      ],
+      "names": [
+        {
+          "name": "African buntings",
+          "locale": "en",
+          "position": 1,
+          "is_valid": true
+        }
+      ]
+    },
+    {
+      "id": 1721047,
+      "name": "Pinarostola",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        7251,
+        12160,
+        1721047
+      ],
+      "names": [
+        {
+          "name": "Drab honeyeaters",
+          "locale": "en",
+          "position": 1,
+          "is_valid": true
+        }
+      ]
+    }
+  ]
+}
