@@ -1,0 +1,363 @@
+{
+  "review": {
+    "from_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+    "to_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+    "approved": true,
+    "reviewer": "Daily source workflow: official Explorer and source-bound name review",
+    "evidence": "Official Explorer dataset, full 26-field row comparison, unchanged version/license/bibliography, replayed checks against pinned source files and individually reviewed iNaturalist names. Original workbook SHA-256 remains the archived provenance; source.explorer records the live source checksums. 2026-11-01T17:56:53.273276+00:00",
+    "change_reviews": []
+  },
+  "diff": {
+    "added": [],
+    "removed": [],
+    "renamed": [],
+    "moved": [],
+    "labels": [
+      {
+        "before": {
+          "id": "7a617c00-3ada-4e8c-8efd-f9f891f9e439",
+          "parent": "d979f4f0-bb8f-4436-86ef-135b4de2980d",
+          "rank": "genus",
+          "name": "Sapayoa",
+          "en": "Sapoyoas",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "en": [
+              {
+                "name": "Sapoyoas",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/14797",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "after": {
+          "id": "7a617c00-3ada-4e8c-8efd-f9f891f9e439",
+          "parent": "d979f4f0-bb8f-4436-86ef-135b4de2980d",
+          "rank": "genus",
+          "name": "Sapayoa",
+          "en": "Sapayoas",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "en": [
+              {
+                "name": "Sapayoas",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/14797",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-11-01"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "before": {
+          "id": "368ecb16-4158-4f7e-b60b-98b9663ca987",
+          "parent": "642dd4f0-7735-4702-891a-5c2d2efa49d4",
+          "rank": "genus",
+          "name": "Pinarostola"
+        },
+        "after": {
+          "id": "368ecb16-4158-4f7e-b60b-98b9663ca987",
+          "parent": "642dd4f0-7735-4702-891a-5c2d2efa49d4",
+          "rank": "genus",
+          "name": "Pinarostola",
+          "en": "Drab honeyeaters",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "en": [
+              {
+                "name": "Drab honeyeaters",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/1721047",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-11-01"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "before": {
+          "id": "267ed14b-96f1-4590-956d-365bcce27c0d",
+          "parent": "642dd4f0-7735-4702-891a-5c2d2efa49d4",
+          "rank": "genus",
+          "name": "Pycnopygius",
+          "en": "Drab Honeyeaters",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "en": [
+              {
+                "name": "Drab Honeyeaters",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/12588",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "after": {
+          "id": "267ed14b-96f1-4590-956d-365bcce27c0d",
+          "parent": "642dd4f0-7735-4702-891a-5c2d2efa49d4",
+          "rank": "genus",
+          "name": "Pycnopygius"
+        }
+      },
+      {
+        "before": {
+          "id": "f383a29f-2bf8-413c-8a00-9809de3473a7",
+          "parent": "f974fd73-e532-4914-9f19-1e69fcd53cb3",
+          "rank": "genus",
+          "name": "Eurocephalus",
+          "de": "Rüppellwürger (Gatt.)",
+          "de_source": "iNaturalist",
+          "de_match": "supplemental_genus_name",
+          "en": "White-crowned and White-rumped Shrikes",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "de": [
+              {
+                "name": "Rüppellwürger (Gatt.)",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/12058",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ],
+            "en": [
+              {
+                "name": "White-crowned and White-rumped Shrikes",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/12058",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "after": {
+          "id": "f383a29f-2bf8-413c-8a00-9809de3473a7",
+          "parent": "f974fd73-e532-4914-9f19-1e69fcd53cb3",
+          "rank": "genus",
+          "name": "Eurocephalus",
+          "de": "Rüppellwürger (Gatt.)",
+          "de_source": "iNaturalist",
+          "de_match": "supplemental_genus_name",
+          "en": "White-crowned Shrikes",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "de": [
+              {
+                "name": "Rüppellwürger (Gatt.)",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/12058",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ],
+            "en": [
+              {
+                "name": "White-crowned Shrikes",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/12058",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-11-01"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "before": {
+          "id": "84ac5e69-9057-4e2c-896b-b5c3fb46c02d",
+          "parent": "258efa9b-396d-4d0a-b079-8fcaf93e510d",
+          "rank": "genus",
+          "name": "Nannus"
+        },
+        "after": {
+          "id": "84ac5e69-9057-4e2c-896b-b5c3fb46c02d",
+          "parent": "258efa9b-396d-4d0a-b079-8fcaf93e510d",
+          "rank": "genus",
+          "name": "Nannus",
+          "en": "Holarctic wrens",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "en": [
+              {
+                "name": "Holarctic wrens",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/1720017",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-11-01"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "before": {
+          "id": "543e7845-0ff6-453d-b17a-4ddee4f6ce52",
+          "parent": "8c708c1d-59d8-434f-a2a7-022743939b3b",
+          "rank": "genus",
+          "name": "Fringillaria"
+        },
+        "after": {
+          "id": "543e7845-0ff6-453d-b17a-4ddee4f6ce52",
+          "parent": "8c708c1d-59d8-434f-a2a7-022743939b3b",
+          "rank": "genus",
+          "name": "Fringillaria",
+          "en": "African buntings",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "en": [
+              {
+                "name": "African buntings",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/1720251",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-11-01"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "before": {
+          "id": "48c8643a-9ce7-4a42-9b40-fe7e9fad999e",
+          "parent": "8c708c1d-59d8-434f-a2a7-022743939b3b",
+          "rank": "genus",
+          "name": "Emberiza",
+          "de": "Ammern",
+          "de_source": "iNaturalist",
+          "de_match": "supplemental_genus_name",
+          "en": "Old World Buntings",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "de": [
+              {
+                "name": "Ammern",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/9186",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ],
+            "en": [
+              {
+                "name": "Old World Buntings",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/9186",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "after": {
+          "id": "48c8643a-9ce7-4a42-9b40-fe7e9fad999e",
+          "parent": "8c708c1d-59d8-434f-a2a7-022743939b3b",
+          "rank": "genus",
+          "name": "Emberiza",
+          "de": "Ammern",
+          "de_source": "iNaturalist",
+          "de_match": "supplemental_genus_name",
+          "en": "Emberiza buntings",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "de": [
+              {
+                "name": "Ammern",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/9186",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ],
+            "en": [
+              {
+                "name": "Emberiza buntings",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/9186",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-11-01"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "identityErrors": [],
+    "germanyChanged": false,
+    "sourceChanged": false
+  }
+}

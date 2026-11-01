@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "Ergänzende Gattungsnamen",
-    "retrieved": "2026-10-23",
+    "retrieved": "2026-11-01",
     "scope": "Vernacular labels only; no classification imported",
     "sources": [
       {
@@ -28,8 +28,8 @@
     ],
     "counts": {
       "de": 1297,
-      "en": 1648,
-      "either": 1950
+      "en": 1650,
+      "either": 1952
     },
     "structure_sha256": "b283e11d492cc80d7fe963898efb1dd1a3fafbdcd777c243a18fff9319935431"
   },
@@ -26515,13 +26515,13 @@
     "Sapayoa": {
       "en": [
         {
-          "name": "Sapoyoas",
+          "name": "Sapayoas",
           "evidence": [
             {
               "source": "iNaturalist",
               "url": "https://www.inaturalist.org/taxa/14797",
               "field": "preferred valid locale name",
-              "retrieved": "2026-10-23"
+              "retrieved": "2026-11-01"
             }
           ]
         }
@@ -32896,6 +32896,21 @@
         }
       ]
     },
+    "Pinarostola": {
+      "en": [
+        {
+          "name": "Drab honeyeaters",
+          "evidence": [
+            {
+              "source": "iNaturalist",
+              "url": "https://www.inaturalist.org/taxa/1721047",
+              "field": "preferred valid locale name",
+              "retrieved": "2026-11-01"
+            }
+          ]
+        }
+      ]
+    },
     "Sugomel": {
       "de": [
         {
@@ -32949,21 +32964,6 @@
             {
               "source": "iNaturalist",
               "url": "https://www.inaturalist.org/taxa/12605",
-              "field": "preferred valid locale name",
-              "retrieved": "2026-10-23"
-            }
-          ]
-        }
-      ]
-    },
-    "Pycnopygius": {
-      "en": [
-        {
-          "name": "Drab Honeyeaters",
-          "evidence": [
-            {
-              "source": "iNaturalist",
-              "url": "https://www.inaturalist.org/taxa/12588",
               "field": "preferred valid locale name",
               "retrieved": "2026-10-23"
             }
@@ -36670,13 +36670,13 @@
       ],
       "en": [
         {
-          "name": "White-crowned and White-rumped Shrikes",
+          "name": "White-crowned Shrikes",
           "evidence": [
             {
               "source": "iNaturalist",
               "url": "https://www.inaturalist.org/taxa/12058",
               "field": "preferred valid locale name",
-              "retrieved": "2026-10-23"
+              "retrieved": "2026-11-01"
             }
           ]
         }
@@ -43045,6 +43045,21 @@
               "url": "https://www.inaturalist.org/taxa/7467",
               "field": "preferred valid locale name",
               "retrieved": "2026-10-23"
+            }
+          ]
+        }
+      ]
+    },
+    "Nannus": {
+      "en": [
+        {
+          "name": "Holarctic wrens",
+          "evidence": [
+            {
+              "source": "iNaturalist",
+              "url": "https://www.inaturalist.org/taxa/1720017",
+              "field": "preferred valid locale name",
+              "retrieved": "2026-11-01"
             }
           ]
         }
@@ -50296,6 +50311,21 @@
         }
       ]
     },
+    "Fringillaria": {
+      "en": [
+        {
+          "name": "African buntings",
+          "evidence": [
+            {
+              "source": "iNaturalist",
+              "url": "https://www.inaturalist.org/taxa/1720251",
+              "field": "preferred valid locale name",
+              "retrieved": "2026-11-01"
+            }
+          ]
+        }
+      ]
+    },
     "Emberiza": {
       "de": [
         {
@@ -50312,13 +50342,13 @@
       ],
       "en": [
         {
-          "name": "Old World Buntings",
+          "name": "Emberiza buntings",
           "evidence": [
             {
               "source": "iNaturalist",
               "url": "https://www.inaturalist.org/taxa/9186",
               "field": "preferred valid locale name",
-              "retrieved": "2026-10-23"
+              "retrieved": "2026-11-01"
             }
           ]
         }

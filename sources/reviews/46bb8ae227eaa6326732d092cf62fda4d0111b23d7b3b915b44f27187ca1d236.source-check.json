@@ -1,0 +1,602 @@
+{
+  "checked_at": "2026-11-01T17:56:53.273276+00:00",
+  "sources": [
+    {
+      "id": "AviList Explorer",
+      "url": "https://explore.avilist.org/data/avilist-2026.json",
+      "sha256": "0f00995c819903e35eaee65cf5313193868362f1a6383e05949fe3d3600a8b39",
+      "versions_url": "https://explore.avilist.org/versions.json",
+      "versions_sha256": "d66a12a9ee76f74f2473d9769dcc068a1b6ea7a9dcbef0214c0cae5cc0a0590f",
+      "references_sha256": "73231efe867292b1cb09b878f8d1214b43e15d0d6a1f4ccfc570f890f48438d8",
+      "fields": [
+        "sequence",
+        "rank",
+        "order",
+        "family",
+        "familyEn",
+        "sciName",
+        "authority",
+        "citation",
+        "name",
+        "nameClements",
+        "nameBirdLife",
+        "proposalNumber",
+        "decisionSummary",
+        "range",
+        "extinct",
+        "iucn",
+        "birdLifeUrl",
+        "cornellCode",
+        "bowUrl",
+        "avibaseId",
+        "genusGender",
+        "typeSpecies",
+        "typeLocality",
+        "originalDescriptionTitle",
+        "originalDescriptionUrl",
+        "protonym"
+      ]
+    },
+    {
+      "id": "germany-2018.pdf",
+      "url": "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2018_Artenliste_Deutschland.pdf",
+      "before": "286249605a4fdcc8637ca2bda23f8e9d52be6b4e9ad8f42470e22e50dcdffb72",
+      "after": "286249605a4fdcc8637ca2bda23f8e9d52be6b4e9ad8f42470e22e50dcdffb72"
+    },
+    {
+      "id": "germany-2019.pdf",
+      "url": "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2019_Liste_der_V%C3%B6gel_Deutschlands_3.2.pdf",
+      "before": "f86f1b809ec0454566db1556f4b33646a997caf039c0f023761b90bd7467136a",
+      "after": "f86f1b809ec0454566db1556f4b33646a997caf039c0f023761b90bd7467136a"
+    },
+    {
+      "id": "names-dog-2022.pdf",
+      "url": "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Aktuell_Die_V%C3%B6gel_der_Erde_DO-G_2022._Aufl.pdf",
+      "before": "207f8145a35e0f833090faed963f712f3d8c575cc11bb87f62c379a3cb4b3151",
+      "after": "207f8145a35e0f833090faed963f712f3d8c575cc11bb87f62c379a3cb4b3151"
+    },
+    {
+      "id": "dog-country.html",
+      "url": "https://www.do-g.de/dog/kommission-artenliste",
+      "links": [
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/2025-09-10_Kommission-Artenliste-Richtlinien_PHB.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_1993_J._Ornithol._134.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Helbig_2005_Limicola_19.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2018_Artenliste_Deutschland.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2019_Liste_der_V%C3%B6gel_Deutschlands_3.2.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Selbstorganisation/Dokumente/Satzung-DOG-2025.pdf"
+      ]
+    },
+    {
+      "id": "dog-names.html",
+      "url": "https://www.do-g.de/dog/kommission-vogelnamen",
+      "links": [
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Aktuell_Die_V%C3%B6gel_der_Erde_DO-G_2022._Aufl.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Die_V%C3%B6gel_der_Erde__DO-G_2021_doi.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Kommission-Vogelnamen-DOG.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Vogelwarte_58_2020-1__DO-G_Dt_Namen_Voegel_d_Erde.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Selbstorganisation/Dokumente/Satzung-DOG-2025.pdf"
+      ]
+    },
+    {
+      "id": "Wikidata",
+      "before": "832f221b1f858cfa5cc24d36894324ccd21e836066a536948c3a974cf9289d00",
+      "after": "832f221b1f858cfa5cc24d36894324ccd21e836066a536948c3a974cf9289d00"
+    },
+    {
+      "id": "iNaturalist",
+      "before": "832f221b1f858cfa5cc24d36894324ccd21e836066a536948c3a974cf9289d00",
+      "after": "a97a904e963da0f190485469fb12e836423f7367ab61f94c2b587e20f2e39cf1",
+      "reviewed_changes": [
+        {
+          "genus": "Emberiza",
+          "decision": "accept",
+          "evidence": "Accept source-specific label Emberiza buntings. All 15 AviList species are present in the current source genus; the source also contains prehistoric Emberiza alcoveri, outside this checklist. No taxonomic transfer."
+        },
+        {
+          "genus": "Eurocephalus",
+          "decision": "accept",
+          "evidence": "Accept source usage White-crowned Shrikes. Both source species anguitimens and ruppelli match the existing AviList genus; German label unchanged."
+        },
+        {
+          "genus": "Fringillaria",
+          "decision": "accept",
+          "evidence": "Accept African buntings as a source vernacular label. All eleven source species match the existing AviList genus; no new taxa created."
+        },
+        {
+          "genus": "Nannus",
+          "decision": "accept",
+          "evidence": "Accept Holarctic wrens as a source vernacular label. All three source species match the existing AviList genus."
+        },
+        {
+          "genus": "Pinarostola",
+          "decision": "accept",
+          "evidence": "Accept Drab honeyeaters for the existing Pinarostola genus only: cinerea and ixoides match both sources. No occurrence evidence transferred."
+        },
+        {
+          "genus": "Pycnopygius",
+          "decision": "accept",
+          "evidence": "Remove the withdrawn English source label Drab Honeyeaters. Both sources now contain only stictocephalus. Previous immutable releases retain the historical label."
+        },
+        {
+          "genus": "Sapayoa",
+          "decision": "accept",
+          "evidence": "Correct source spelling Sapoyoas to Sapayoas for the same genus ID; both sources contain only Sapayoa aenigma."
+        }
+      ]
+    }
+  ],
+  "blocked": [],
+  "errors": [],
+  "publish": true,
+  "patches": [],
+  "mode": "explorer",
+  "explorer": {
+    "url": "https://explore.avilist.org/data/avilist-2026.json",
+    "sha256": "0f00995c819903e35eaee65cf5313193868362f1a6383e05949fe3d3600a8b39",
+    "versions_url": "https://explore.avilist.org/versions.json",
+    "versions_sha256": "d66a12a9ee76f74f2473d9769dcc068a1b6ea7a9dcbef0214c0cae5cc0a0590f",
+    "references_sha256": "73231efe867292b1cb09b878f8d1214b43e15d0d6a1f4ccfc570f890f48438d8",
+    "fields": [
+      "sequence",
+      "rank",
+      "order",
+      "family",
+      "familyEn",
+      "sciName",
+      "authority",
+      "citation",
+      "name",
+      "nameClements",
+      "nameBirdLife",
+      "proposalNumber",
+      "decisionSummary",
+      "range",
+      "extinct",
+      "iucn",
+      "birdLifeUrl",
+      "cornellCode",
+      "bowUrl",
+      "avibaseId",
+      "genusGender",
+      "typeSpecies",
+      "typeLocality",
+      "originalDescriptionTitle",
+      "originalDescriptionUrl",
+      "protonym"
+    ]
+  },
+  "genus_patches": [
+    {
+      "id": "48c8643a-9ce7-4a42-9b40-fe7e9fad999e",
+      "before": {
+        "id": "48c8643a-9ce7-4a42-9b40-fe7e9fad999e",
+        "parent": "8c708c1d-59d8-434f-a2a7-022743939b3b",
+        "rank": "genus",
+        "name": "Emberiza",
+        "de": "Ammern",
+        "de_source": "iNaturalist",
+        "de_match": "supplemental_genus_name",
+        "en": "Old World Buntings",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "de": [
+            {
+              "name": "Ammern",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/9186",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ],
+          "en": [
+            {
+              "name": "Old World Buntings",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/9186",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "id": "48c8643a-9ce7-4a42-9b40-fe7e9fad999e",
+        "parent": "8c708c1d-59d8-434f-a2a7-022743939b3b",
+        "rank": "genus",
+        "name": "Emberiza",
+        "de": "Ammern",
+        "de_source": "iNaturalist",
+        "de_match": "supplemental_genus_name",
+        "en": "Emberiza buntings",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "de": [
+            {
+              "name": "Ammern",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/9186",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ],
+          "en": [
+            {
+              "name": "Emberiza buntings",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/9186",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-11-01"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "f383a29f-2bf8-413c-8a00-9809de3473a7",
+      "before": {
+        "id": "f383a29f-2bf8-413c-8a00-9809de3473a7",
+        "parent": "f974fd73-e532-4914-9f19-1e69fcd53cb3",
+        "rank": "genus",
+        "name": "Eurocephalus",
+        "de": "Rüppellwürger (Gatt.)",
+        "de_source": "iNaturalist",
+        "de_match": "supplemental_genus_name",
+        "en": "White-crowned and White-rumped Shrikes",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "de": [
+            {
+              "name": "Rüppellwürger (Gatt.)",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/12058",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ],
+          "en": [
+            {
+              "name": "White-crowned and White-rumped Shrikes",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/12058",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "id": "f383a29f-2bf8-413c-8a00-9809de3473a7",
+        "parent": "f974fd73-e532-4914-9f19-1e69fcd53cb3",
+        "rank": "genus",
+        "name": "Eurocephalus",
+        "de": "Rüppellwürger (Gatt.)",
+        "de_source": "iNaturalist",
+        "de_match": "supplemental_genus_name",
+        "en": "White-crowned Shrikes",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "de": [
+            {
+              "name": "Rüppellwürger (Gatt.)",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/12058",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ],
+          "en": [
+            {
+              "name": "White-crowned Shrikes",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/12058",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-11-01"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "543e7845-0ff6-453d-b17a-4ddee4f6ce52",
+      "before": {
+        "id": "543e7845-0ff6-453d-b17a-4ddee4f6ce52",
+        "parent": "8c708c1d-59d8-434f-a2a7-022743939b3b",
+        "rank": "genus",
+        "name": "Fringillaria"
+      },
+      "after": {
+        "id": "543e7845-0ff6-453d-b17a-4ddee4f6ce52",
+        "parent": "8c708c1d-59d8-434f-a2a7-022743939b3b",
+        "rank": "genus",
+        "name": "Fringillaria",
+        "en": "African buntings",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "en": [
+            {
+              "name": "African buntings",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/1720251",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-11-01"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "84ac5e69-9057-4e2c-896b-b5c3fb46c02d",
+      "before": {
+        "id": "84ac5e69-9057-4e2c-896b-b5c3fb46c02d",
+        "parent": "258efa9b-396d-4d0a-b079-8fcaf93e510d",
+        "rank": "genus",
+        "name": "Nannus"
+      },
+      "after": {
+        "id": "84ac5e69-9057-4e2c-896b-b5c3fb46c02d",
+        "parent": "258efa9b-396d-4d0a-b079-8fcaf93e510d",
+        "rank": "genus",
+        "name": "Nannus",
+        "en": "Holarctic wrens",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "en": [
+            {
+              "name": "Holarctic wrens",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/1720017",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-11-01"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "368ecb16-4158-4f7e-b60b-98b9663ca987",
+      "before": {
+        "id": "368ecb16-4158-4f7e-b60b-98b9663ca987",
+        "parent": "642dd4f0-7735-4702-891a-5c2d2efa49d4",
+        "rank": "genus",
+        "name": "Pinarostola"
+      },
+      "after": {
+        "id": "368ecb16-4158-4f7e-b60b-98b9663ca987",
+        "parent": "642dd4f0-7735-4702-891a-5c2d2efa49d4",
+        "rank": "genus",
+        "name": "Pinarostola",
+        "en": "Drab honeyeaters",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "en": [
+            {
+              "name": "Drab honeyeaters",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/1721047",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-11-01"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "267ed14b-96f1-4590-956d-365bcce27c0d",
+      "before": {
+        "id": "267ed14b-96f1-4590-956d-365bcce27c0d",
+        "parent": "642dd4f0-7735-4702-891a-5c2d2efa49d4",
+        "rank": "genus",
+        "name": "Pycnopygius",
+        "en": "Drab Honeyeaters",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "en": [
+            {
+              "name": "Drab Honeyeaters",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/12588",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "id": "267ed14b-96f1-4590-956d-365bcce27c0d",
+        "parent": "642dd4f0-7735-4702-891a-5c2d2efa49d4",
+        "rank": "genus",
+        "name": "Pycnopygius"
+      }
+    },
+    {
+      "id": "7a617c00-3ada-4e8c-8efd-f9f891f9e439",
+      "before": {
+        "id": "7a617c00-3ada-4e8c-8efd-f9f891f9e439",
+        "parent": "d979f4f0-bb8f-4436-86ef-135b4de2980d",
+        "rank": "genus",
+        "name": "Sapayoa",
+        "en": "Sapoyoas",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "en": [
+            {
+              "name": "Sapoyoas",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/14797",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "id": "7a617c00-3ada-4e8c-8efd-f9f891f9e439",
+        "parent": "d979f4f0-bb8f-4436-86ef-135b4de2980d",
+        "rank": "genus",
+        "name": "Sapayoa",
+        "en": "Sapayoas",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "en": [
+            {
+              "name": "Sapayoas",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/14797",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-11-01"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "name_sources": [
+    {
+      "name": "Barthel et al. 2022, Die Vögel der Erde, 3. Auflage, doi:10.17617/2.3418299",
+      "url": "https://www.do-g.de/dog/kommission-vogelnamen",
+      "sha256": "207f8145a35e0f833090faed963f712f3d8c575cc11bb87f62c379a3cb4b3151",
+      "scope": "German order/family/species labels matched by scientific name; not a concept or occurrence validation."
+    },
+    {
+      "name": "Ergänzende Gattungsnamen",
+      "retrieved": "2026-11-01",
+      "scope": "Vernacular labels only; no classification imported",
+      "sources": [
+        {
+          "name": "Wikidata",
+          "url": "https://www.wikidata.org/",
+          "license": "CC0 1.0"
+        },
+        {
+          "name": "iNaturalist",
+          "url": "https://www.inaturalist.org/"
+        },
+        {
+          "name": "LBV",
+          "url": "https://www.lbv.de/"
+        },
+        {
+          "name": "ITIS",
+          "url": "https://www.itis.gov/"
+        },
+        {
+          "name": "USFWS",
+          "url": "https://www.fws.gov/"
+        }
+      ],
+      "counts": {
+        "de": 1297,
+        "en": 1650,
+        "either": 1952
+      },
+      "structure_sha256": "b283e11d492cc80d7fe963898efb1dd1a3fafbdcd777c243a18fff9319935431"
+    }
+  ],
+  "name_decisions": [
+    {
+      "genus": "Emberiza",
+      "decision": "accept",
+      "evidence": "Accept source-specific label Emberiza buntings. All 15 AviList species are present in the current source genus; the source also contains prehistoric Emberiza alcoveri, outside this checklist. No taxonomic transfer."
+    },
+    {
+      "genus": "Eurocephalus",
+      "decision": "accept",
+      "evidence": "Accept source usage White-crowned Shrikes. Both source species anguitimens and ruppelli match the existing AviList genus; German label unchanged."
+    },
+    {
+      "genus": "Fringillaria",
+      "decision": "accept",
+      "evidence": "Accept African buntings as a source vernacular label. All eleven source species match the existing AviList genus; no new taxa created."
+    },
+    {
+      "genus": "Nannus",
+      "decision": "accept",
+      "evidence": "Accept Holarctic wrens as a source vernacular label. All three source species match the existing AviList genus."
+    },
+    {
+      "genus": "Pinarostola",
+      "decision": "accept",
+      "evidence": "Accept Drab honeyeaters for the existing Pinarostola genus only: cinerea and ixoides match both sources. No occurrence evidence transferred."
+    },
+    {
+      "genus": "Pycnopygius",
+      "decision": "accept",
+      "evidence": "Remove the withdrawn English source label Drab Honeyeaters. Both sources now contain only stictocephalus. Previous immutable releases retain the historical label."
+    },
+    {
+      "genus": "Sapayoa",
+      "decision": "accept",
+      "evidence": "Correct source spelling Sapoyoas to Sapayoas for the same genus ID; both sources contain only Sapayoa aenigma."
+    }
+  ],
+  "dataset_revision": "2026-11-01.auto-798103b642d3",
+  "from_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+  "to_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d"
+}
