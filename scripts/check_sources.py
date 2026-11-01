@@ -13,7 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlencode, urljoin, urlparse
 from urllib.request import Request, urlopen
 from zipfile import ZipFile
 
@@ -34,12 +34,12 @@ def canonical(value):
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()
 
 
-def download(url):
+def download(url, accept="*/*"):
     if urlparse(url).scheme != 'https':
         raise ValueError('Only HTTPS sources are accepted')
     for attempt in range(3):
         try:
-            with urlopen(Request(url, headers={'User-Agent': UA}), timeout=45) as response:
+            with urlopen(Request(url, headers={'User-Agent': UA, 'Accept': accept}), timeout=45) as response:
                 if urlparse(response.url).scheme != 'https':
                     raise ValueError('Insecure source redirect')
                 content = response.read(40 * 1024 * 1024 + 1)
@@ -50,6 +50,42 @@ def download(url):
             if attempt == 2:
                 raise
             time.sleep(2 ** attempt)
+
+
+def fetch_json(url):
+    # A 200 response can still be truncated by the upstream query service.
+    for attempt in range(3):
+        try:
+            return json.loads(download(url, 'application/json'))
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            if attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
+
+
+def fetch_wikidata(genera, get_json=fetch_json):
+    # Bound the query to the genera we use: the global ancestry query can time
+    # out mid-response. No LIMIT that could silently truncate matching taxa.
+    bindings = []
+    names = sorted(set(genera))
+    for offset in range(0, len(names), 100):
+        values = ' '.join(json.dumps(name) for name in names[offset:offset + 100])
+        query = ('SELECT ?item ?scientific ?de ?en ?common ?deArticle ?enArticle WHERE { '
+                 'VALUES ?scientific { ' + values + ' } '
+                 '?item wdt:P225 ?scientific; wdt:P105 wd:Q34740; wdt:P171* wd:Q5113. '
+                 'OPTIONAL { ?item rdfs:label ?de FILTER(LANG(?de)="de") } '
+                 'OPTIONAL { ?item rdfs:label ?en FILTER(LANG(?en)="en") } '
+                 'OPTIONAL { ?item wdt:P1843 ?common FILTER(LANG(?common) IN ("de","en")) } '
+                 'OPTIONAL { ?deArticle schema:about ?item; schema:isPartOf <https://de.wikipedia.org/> } '
+                 'OPTIONAL { ?enArticle schema:about ?item; schema:isPartOf <https://en.wikipedia.org/> } }')
+        result = get_json('https://query.wikidata.org/sparql?' + urlencode({'query': query, 'format': 'json'}))
+        rows = result['results']['bindings']
+        if not isinstance(rows, list):
+            raise ValueError('Invalid Wikidata response structure')
+        bindings.extend(rows)
+    if not bindings:
+        raise ValueError('Empty Wikidata results')
+    return {'results': {'bindings': bindings}}
 
 
 class Links(HTMLParser):
@@ -139,6 +175,7 @@ def check(out, config):
     avi_download = None
     for entry in config['documents']:
         try:
+            print('Checking ' + entry['id'], flush=True)
             content = download(entry['url'])
             (out / entry['id']).write_bytes(content)
             actual = digest(content)
@@ -158,6 +195,7 @@ def check(out, config):
             report['errors'].append(entry['id'] + ': ' + str(error))
     for entry in config['publication_pages']:
         try:
+            print('Checking ' + entry['id'], flush=True)
             content = download(entry['url'])
             (out / entry['id']).write_bytes(content)
             links = publication_links(content, entry['url'])
@@ -170,10 +208,15 @@ def check(out, config):
             report['errors'].append(entry['id'] + ': ' + str(error))
     # The same enrichment logic compares only imported names, not API timestamps,
     # unrelated genera, images or observation metadata. Never replaces their sources.
+    stage = 'Wikidata'
     try:
-        feeds.get = lambda url: json.loads(download(url))
-        wd = feeds.wikidata()
+        print('Checking Wikidata (batches of 100 existing genera)', flush=True)
+        feeds.get = fetch_json
+        wd = fetch_wikidata(n['name'] for n in bundle['nodes'] if n['rank'] == 'genus')
         wd['results']['bindings'].sort(key=lambda row: canonical(row))
+        (out / 'wikidata.json').write_bytes(canonical(wd))
+        stage = 'iNaturalist'
+        print('Checking iNaturalist (complete paginated genera)', flush=True)
         first = feeds.inat(1)
         total = first['total_results']
         if not isinstance(total, int) or not 1 <= total <= 10000:
@@ -199,7 +242,7 @@ def check(out, config):
         if old_sha != new_sha:
             report['blocked'].append('Gattungsnamen changed; source/rights review required')
     except Exception as error:
-        report['errors'].append('Wikidata/iNaturalist: ' + str(error))
+        report['errors'].append(stage + ': ' + str(error))
     if avi_download and not report['blocked'] and not report['errors']:
         report['publish'] = True
         (out / 'candidate.json').write_text(json.dumps(candidate(bundle, report['to_sha256'], report['patches'], report['checked_at']), ensure_ascii=False, separators=(',', ':')))

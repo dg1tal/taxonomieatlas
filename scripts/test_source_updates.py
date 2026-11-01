@@ -10,7 +10,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from check_sources import ROOT, avi_patches, candidate, check, digest, publication_links
+from check_sources import ROOT, avi_patches, candidate, check, digest, fetch_json, fetch_wikidata, publication_links
 import openpyxl
 
 
@@ -103,6 +103,18 @@ class PolicyTests(unittest.TestCase):
             self.assertEqual(digest(paths[0].read_bytes()), new_sha)
             self.assertTrue((root / 'sources/reviews' / (manifest['sha256'] + '.json')).is_file())
             self.assertTrue((root / 'sources/reviews' / (manifest['sha256'] + '.source-check.json')).is_file())
+
+    def test_batched_queries_and_retry_truncated_json(self):
+        urls = []
+        def get_json(url):
+            urls.append(url)
+            return {'results': {'bindings': [{'scientific': {'value': 'Test'}}]}}
+        result = fetch_wikidata(['Genus' + str(i) for i in range(201)], get_json)
+        self.assertEqual(len(urls), 3)
+        self.assertEqual(len(result['results']['bindings']), 3)
+        self.assertTrue(all('VALUES' in url and 'LIMIT' not in url for url in urls))
+        with patch('check_sources.download', side_effect=[b'{truncated', b'{"ok":true}']), patch('check_sources.time.sleep'):
+            self.assertEqual(fetch_json('https://example.test/api'), {'ok': True})
 
     def test_upstream_failure_preserves_report_and_never_publishes(self):
         config = {'documents': [{'id': 'avilist.xlsx', 'url': 'https://invalid.test/data', 'local': 'unused'}], 'publication_pages': []}
