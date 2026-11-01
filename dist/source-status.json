@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-01T18:26:55.677Z",
+  "updated_at": "2026-11-01T18:35:32.252Z",
   "last_successful_check": {
-    "at": "2026-11-01T17:56:53.273276+00:00",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41334012861"
+    "at": "2026-11-01T18:35:21.498008+00:00",
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41337005420"
   },
   "latest_check": {
-    "at": "2026-11-01T17:56:53.273276+00:00",
+    "at": "2026-11-01T18:35:21.498008+00:00",
     "outcome": "success",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41334012861"
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41337005420"
   },
   "published_update": {
     "revision": "2026-11-01.auto-798103b642d3",
@@ -18,11 +18,11 @@
     "summary": "7 Gattungsnamen aktualisiert",
     "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41334012861"
   },
-  "publication_pending": true,
+  "publication_pending": false,
   "manual_review": {
     "update_state": "clear",
     "update_items": [],
-    "as_of": "2026-11-01T17:56:53.273276+00:00",
+    "as_of": "2026-11-01T18:35:21.498008+00:00",
     "carried_forward": false,
     "incomplete": false,
     "dataset": {
