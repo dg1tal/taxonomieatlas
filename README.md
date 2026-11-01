@@ -6,12 +6,9 @@ First working release, 23 October 2026. Buildless ES modules; `dist/` is the dep
 
 The complete version 33 source is tracked here. `.github/workflows/pages.yml` checks the JavaScript and runs the existing regression tests on every push to `main`, then publishes only `dist/`. The app uses relative asset and data URLs, so it also works at the repository path `/taxonomieatlas/`.
 
-The Pages workflow also supports manual runs. It uses the checked-in source
-snapshots and data packages; neither the checks nor deployment fetch fresh
-AviList, DOG, Wikidata or iNaturalist data. There is no scheduled daily source
-refresh. `scripts/fetch_genus_names.py` is a separate, manually invoked source
-acquisition script and is not called by this workflow. Source updates require
-the documented import, review and release process before publication.
+The Pages workflow also supports manual runs and publishes checked-in data only.
+External acquisition is handled separately by the daily source workflow described
+below.
 
 In the GitHub repository settings, select **Pages → Build and deployment → GitHub Actions**. The published address is `https://dg1tal.github.io/taxonomieatlas/`. The original ChatGPT Site remains available independently at `https://vogel-taxonomie-atlas.wurstinnovation.chatgpt.site`.
 
@@ -61,7 +58,7 @@ To prepare a public release:
 node scripts/release.mjs NEXT.json REVIEW.json
 ```
 
-The review binds old and new original-source checksums, requires reviewer/evidence/approval, and individual evidenced decisions for added, removed, renamed or reparented taxa. Changes to German records require germany_review. The script writes an immutable package and finally updates the manifest; publish the complete dist directory through Sites. No background external-source polling or scheduled updates are configured yet. There is no protected web admin area yet.
+The review binds old and new original-source checksums, requires reviewer/evidence/approval, and individual evidenced decisions for added, removed, renamed or reparented taxa. Changes to German records require germany_review. The script writes an immutable package and finally updates the manifest; publish the complete dist directory through Sites. Daily external-source checks are configured as described below; taxonomic migrations still require expert review. There is no protected web admin area yet.
 
 ## Implemented
 
@@ -115,7 +112,7 @@ python scripts/enrich_genus_names.py
 node scripts/test-genus-names.mjs
 ```
 
-Source snapshots and the enrichment report are retained under sources/. For fully offline reproduction use the retained snapshots and run only enrich_genus_names.py. No visitor-side source scraping and no background automatic refresh are configured. Browser/touch QA remains unverified under the prior browser-origin denial. Existing engine/layout tests and the new source/provenance/alias/update tests pass.
+Source snapshots and the enrichment report are retained under sources/. For fully offline reproduction use the retained snapshots and run only enrich_genus_names.py. No visitor-side source scraping is configured. The daily workflow checks these source snapshots for changes; supplemental-name changes require review. Browser/touch QA remains unverified under the prior browser-origin denial. Existing engine/layout tests and the new source/provenance/alias/update tests pass.
 
 
 ## Order multi-select (sixth release)
@@ -221,3 +218,61 @@ Beim Wechsel zu „Schrittweise“ wird die aktuelle Auswahl jedes Mal übernomm
 Die elf Befunde der erneuten visuellen Prüfung sind in `UI_UX_BROWSER_FIXES.md` mit Umsetzung und Prüfstatus dokumentiert. Erstklick auf Listenzeilen korrigiert; Listenhöhe 120 px; einklappbare Filter und kompakter Kopfbereich; gleiche Position der Pfad-/Ansichtsnavigation; kompakte Sprungliste und Kartenraster in Schrittweise; gemeinsamer Hauptscrollbereich; lokale oder globale und vergrößerbare Übersicht; eigene Detailspalte auf breiten Fenstern; Suchtreffer erhalten ihre Darstellung; redundante Alle-Aktion ausgeblendet; technische Quellenangaben nachgeordnet.
 
 Automatische Regressionen: Navigation (einschließlich Fokus/Erstklick), UX (einschließlich Suchrückkehr in alle drei Modi), Baumgeometrie, Theme und Ordnungsfilter. Desktop-Browserprüfung abgeschlossen, echte schmale Mobil-/Touch-/Screenreaderprüfung bleibt ausdrücklich offen. Datenbestand unverändert.
+
+
+## Tägliche Quellenprüfung und öffentliche Datenupdates
+
+`.github/workflows/update-data.yml` läuft täglich um **04:37 UTC** (05:37 Uhr
+MEZ / 06:37 Uhr MESZ) und lässt sich unter Actions → Daily bird data check
+manuell starten. GitHub kann geplante Läufe verzögern. `dry_run` prüft alle
+Quellen und erstellt Berichte, ohne etwas zu veröffentlichen.
+
+Geprüft werden die archivierte AviList-Exceldatei, die drei DOG-PDFs,
+Publikations-/Versionslinks auf den offiziellen AviList-/DOG-Seiten sowie die
+für das Gattungsnamenssupplement relevanten Wikidata-/iNaturalist-Namen.
+`sources/watch.json` enthält die festen URLs und den geprüften Linkstand.
+Die kleinen manuell kuratierten Einzelbelege (LBV, ITIS, USFWS, Avibase,
+FU Berlin) und der Stiller-Artikel bleiben separat betreut; ihre Inhalte
+werden nicht automatisch aktualisiert.
+
+**Automatisch freigegeben** werden ausschließlich Änderungen bestehender,
+eindeutig zugeordneter englischer AviList-Namen und Cornell-Codes sowie rein
+technische Änderungen der XLSX-Dateiverpackung. Dafür müssen alle anderen
+Zellen, Blätter, Zeilenreihenfolgen und ergänzenden Quellen unverändert sein.
+Es werden keine Änderungen an deutschen Namen, Taxon-IDs, Hierarchie,
+Artkonzepten, Verbreitung, Deutschlandstatus oder Lizenzangaben freigegeben.
+Auch ein neuer Versions-/Downloadlink erfordert zunächst Prüfung.
+
+Ein zweiter Job wiederholt den Zellvergleich gegen beide Originaldateien,
+prüft den vollständigen Kandidaten auf zusätzliche Änderungen und nutzt
+`scripts/release.mjs` mit einem an die Quellenprüfsummen gebundenen Review.
+Erst nach der gesamten Testsuite werden Quelle, öffentlicher Datenbestand,
+unveränderliches Releasepaket, Releaseverzeichnis und Review gemeinsam auf
+`main` committed. Ist `main` inzwischen weitergelaufen, wird abgebrochen.
+Anschließend startet der Workflow den Pages-Workflow ausdrücklich, weil ein
+Push mit `GITHUB_TOKEN` allein keinen weiteren Push-Workflow auslöst.
+Damit sind veröffentlichte Updates dauerhaft im Repository und für alle
+Besucher verfügbar; sie hängen nicht vom Browserspeicher ab.
+
+Abruffehler, unvollständige API-Ergebnisse oder nicht automatisch freigebbare
+Änderungen führen zu einem fehlgeschlagenen Lauf **ohne Veröffentlichung**.
+Die Laufübersicht enthält den Befund; das Artefakt `bird-source-check-RUN_ID`
+enthält Bericht, heruntergeladene Quellen und ggf. Kandidaten (90 Tage).
+Wiederholte unveränderte Prüfungen erzeugen keine Commits und kein Deployment.
+Die Aufbewahrung von Prüfkandidaten ist damit zeitlich begrenzt; Quellen und
+Reviews veröffentlichter Updates bleiben dagegen dauerhaft in Git.
+
+Bei einem fachlich offenen Update: Artefakt prüfen, Quellen-/Lizenzhinweise
+und ggf. Importer sowie fachliche Tests aktualisieren, betroffene Taxa und
+Deutschlandzuordnungen einzeln belegen und den vorhandenen betreuten
+Releaseprozess verwenden. `sources/watch.json` erst nach dieser Prüfung auf
+den akzeptierten Quellenstand bringen. Eine fehlgeschlagene Quellenprüfung
+wird niemals durch eine automatisch erfundene fachliche Freigabe ersetzt.
+
+Der Workflow benötigt `contents: write` zum Committen und `actions: write`
+zum Starten von Pages, aber keinen persönlichen Zugriffstoken. Branchschutz
+kann den Bot-Push verhindern; der Lauf schlägt dann sichtbar fehl. Scheitert
+nur der anschließende Pages-Start oder das Deployment, den vorhandenen
+Pages-Workflow manuell erneut starten; die geprüften Daten sind bereits in
+Git gesichert. GitHub kann Zeitpläne öffentlicher Repositories nach längerer
+Inaktivität deaktivieren; den Aktivstatus bei längeren Betriebspausen prüfen.

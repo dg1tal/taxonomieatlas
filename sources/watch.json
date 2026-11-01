@@ -1,0 +1,62 @@
+{
+  "baseline_recorded": "2026-11-01",
+  "documents": [
+    {
+      "id": "avilist.xlsx",
+      "local": "sources/avilist-2026.xlsx",
+      "url": "https://www.avilist.org/wp-content/uploads/2026/10/AviList-v2026-20Oct2026-extended-version.xlsx"
+    },
+    {
+      "id": "germany-2018.pdf",
+      "local": "sources/germany-2018.pdf",
+      "url": "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2018_Artenliste_Deutschland.pdf"
+    },
+    {
+      "id": "germany-2019.pdf",
+      "local": "sources/germany-2019.pdf",
+      "url": "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2019_Liste_der_V%C3%B6gel_Deutschlands_3.2.pdf"
+    },
+    {
+      "id": "names-dog-2022.pdf",
+      "local": "sources/names-dog-2022.pdf",
+      "url": "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Aktuell_Die_V%C3%B6gel_der_Erde_DO-G_2022._Aufl.pdf"
+    }
+  ],
+  "publication_pages": [
+    {
+      "id": "avilist-current.html",
+      "url": "https://www.avilist.org/checklist/v2026/",
+      "links": [
+        "https://www.avilist.org/checklist/v2025/",
+        "https://www.avilist.org/checklist/v2025b/",
+        "https://www.avilist.org/checklist/v2026/",
+        "https://www.avilist.org/wp-content/uploads/2025/06/AviList_v2025_metadata_11Jun.pdf",
+        "https://www.avilist.org/wp-content/uploads/2026/10/AviList-v2026-20Oct2026-extended-version.xlsx",
+        "https://www.avilist.org/wp-content/uploads/2026/10/AviList-v2026-20Oct2026-short-version.xlsx"
+      ]
+    },
+    {
+      "id": "dog-country.html",
+      "url": "https://www.do-g.de/dog/kommission-artenliste",
+      "links": [
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/2025-09-10_Kommission-Artenliste-Richtlinien_PHB.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_1993_J._Ornithol._134.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Helbig_2005_Limicola_19.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2018_Artenliste_Deutschland.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2019_Liste_der_V%C3%B6gel_Deutschlands_3.2.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Selbstorganisation/Dokumente/Satzung-DOG-2025.pdf"
+      ]
+    },
+    {
+      "id": "dog-names.html",
+      "url": "https://www.do-g.de/dog/kommission-vogelnamen",
+      "links": [
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Aktuell_Die_V%C3%B6gel_der_Erde_DO-G_2022._Aufl.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Die_V%C3%B6gel_der_Erde__DO-G_2021_doi.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Kommission-Vogelnamen-DOG.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Vogelwarte_58_2020-1__DO-G_Dt_Namen_Voegel_d_Erde.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Selbstorganisation/Dokumente/Satzung-DOG-2025.pdf"
+      ]
+    }
+  ]
+}

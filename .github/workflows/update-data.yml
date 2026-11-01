@@ -1,0 +1,101 @@
+name: Daily bird data check
+
+on:
+  schedule:
+    - cron: '37 4 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Check and archive candidates without publishing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-bird-data
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      publish: ${{ steps.sources.outputs.publish }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: python3 -m pip install -r scripts/update-requirements.txt
+      - name: Test publication policy
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_source_updates.py'
+          node scripts/test-source-updates.mjs
+      - name: Check upstream sources and prepare candidate
+        id: sources
+        run: python3 scripts/check_sources.py
+      - name: Preserve source check and candidates
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bird-source-check-${{ github.run_id }}
+          path: source-update/
+          retention-days: 90
+          if-no-files-found: error
+
+  publish:
+    needs: check
+    if: needs.check.outputs.publish == 'true' && inputs.dry_run != true
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: python3 -m pip install -r scripts/update-requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: bird-source-check-${{ github.run_id }}
+          path: source-update
+      - name: Replay source checks and prepare immutable release
+        run: node scripts/prepare_source_release.mjs source-update
+      - name: Run all publication checks
+        run: |
+          cmp LICENSE dist/license.txt
+          cmp THIRD_PARTY_NOTICES.md dist/third-party-notices.txt
+          python3 -m unittest discover -s scripts -p 'test_source_updates.py'
+          for file in dist/*.mjs dist/*.js scripts/*.mjs; do node --check "$file"; done
+          for test in scripts/test-*.mjs; do node "$test"; done
+      - name: Persist verified release and deploy Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          EXPECTED_HEAD: ${{ github.sha }}
+        run: |
+          # Refuse stale publication if main advanced during acquisition/tests.
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$EXPECTED_HEAD"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c source-release
+          git add dist/data.json dist/releases.json dist/releases/ sources/avilist-2026.xlsx sources/reviews/
+          git commit -m 'Publish automatically verified AviList source correction'
+          git push origin HEAD:main
+          # GITHUB_TOKEN pushes do not trigger push workflows; dispatch explicitly.
+          gh workflow run pages.yml --ref main
