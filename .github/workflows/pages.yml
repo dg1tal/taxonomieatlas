@@ -19,6 +19,8 @@ jobs:
       - uses: actions/checkout@v6
       - name: Check JavaScript and data
         run: |
+          cmp LICENSE dist/license.txt
+          cmp THIRD_PARTY_NOTICES.md dist/third-party-notices.txt
           for file in dist/*.mjs dist/*.js scripts/*.mjs; do node --check "$file"; done
           for test in scripts/test-*.mjs; do node "$test"; done
       - name: Upload static site

@@ -1,5 +1,5 @@
 // Optional, source-specific view. This is not part of the AviList import.
-export const CLADE_SOURCE={citation:'Stiller et al. (2024), Nature 629, 690–697',url:'https://doi.org/10.1038/s41586-024-07323-1'};
+export const CLADE_SOURCE={citation:'Stiller et al. (2024), Nature 629, 851–860',url:'https://doi.org/10.1038/s41586-024-07323-1'};
 export const CLADE_GROUPS=[
  {id:'phylo:palaeognathae',name:'Palaeognathae',de:'Urkiefervögel',en:'Palaeognaths',parent:'Aves',orders:['Struthioniformes','Casuariiformes','Apterygiformes','Rheiformes','Tinamiformes']},
  {id:'phylo:neognathae',name:'Neognathae',de:'Neukiefervögel',en:'Neognaths',parent:'Aves'},

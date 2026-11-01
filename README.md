@@ -6,9 +6,28 @@ First working release, 23 October 2026. Buildless ES modules; `dist/` is the dep
 
 The complete version 33 source is tracked here. `.github/workflows/pages.yml` checks the JavaScript and runs the existing regression tests on every push to `main`, then publishes only `dist/`. The app uses relative asset and data URLs, so it also works at the repository path `/taxonomieatlas/`.
 
+The Pages workflow also supports manual runs. It uses the checked-in source
+snapshots and data packages; neither the checks nor deployment fetch fresh
+AviList, DOG, Wikidata or iNaturalist data. There is no scheduled daily source
+refresh. `scripts/fetch_genus_names.py` is a separate, manually invoked source
+acquisition script and is not called by this workflow. Source updates require
+the documented import, review and release process before publication.
+
 In the GitHub repository settings, select **Pages → Build and deployment → GitHub Actions**. The published address is `https://dg1tal.github.io/taxonomieatlas/`. The original ChatGPT Site remains available independently at `https://vogel-taxonomie-atlas.wurstinnovation.chatgpt.site`.
 
-The repository includes third-party source data and documents with their own attribution and license terms; see the Data section and the app's Quellen panel. No software license is granted by this repository at this time.
+## Lizenz und Drittdaten
+
+Der eigene Programmcode und die eigene Dokumentation stehen unter der
+[MIT-Lizenz](LICENSE). Sie erlaubt Nutzung, Änderung und Weitergabe, auch
+kommerziell, unter Beibehaltung des Copyright- und Lizenzhinweises.
+
+**Die MIT-Lizenz gilt nicht für eingebundene Drittdaten und Publikationen.**
+Quellen, Bearbeitungen, Lizenzen, Einschränkungen und noch offene Rechtefragen
+sind in [Drittdaten und Nutzungsbedingungen](THIRD_PARTY_NOTICES.md) aufgeführt.
+Das betrifft auch `sources/`, die JSON-Datenpakete und daraus erzeugte Exporte.
+Insbesondere die DOG-Namensliste 2022 hat kommerzielle Einschränkungen;
+der gesamte angereicherte Datenbestand ist nicht pauschal frei lizenziert.
+Die Hinweise sind auch über den App-Fußbereich erreichbar.
 
 ## Data
 
