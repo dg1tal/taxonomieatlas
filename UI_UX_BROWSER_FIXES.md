@@ -81,3 +81,36 @@ Browserzoom nicht (Viewport und Pixeldichte blieben unverändert).
 **Echter 200-%-Browserzoom bleibt daher ungeprüft.** Echte Touchgeräte und
 Screenreader wurden nicht getestet; synthetische Gestentests und schmale
 Browserfenster sind kein Ersatz dafür.
+
+## Korrektur: verlorene Baumklicks bei Layoutübergängen
+
+Die vorherigen Prüfungen erfassten keine schnelle Folge aus Aufklappen und
+einem weiteren Mausklick während des laufenden Übergangs. Dabei gab es zwei
+Fehler: Die Animation ersetzte SVG-Knoten zwischen `pointerdown` und `click`,
+und neue Kinderkarten starteten über der Elternkarte und überdeckten deren
+Klickfläche.
+
+Korrektur: SVG-Elemente bleiben während eines gedrückten Zeigers und bis zur
+Klickauswertung erhalten. Layoutübergänge pausieren dabei; Ziehen kann weiterhin
+den Ausschnitt aktualisieren. Unverändertes Markup wird nicht neu eingesetzt.
+Neue Kinder erscheinen an ihren eigenen Positionen; bestehende Knoten können
+weiterhin animiert verschoben werden. Eine während des Übergangs ausgewählte
+Karte erhält einen eigenen Kameraanker. Abgebrochene Zeigerfolgen und fehlende
+Klickereignisse geben die Pause wieder frei; Listener, Timer und Frames werden
+beim Verlassen entfernt.
+
+Nachweis im Browser mit nativen Koordinatenklicks und 250 ms gedrückter
+Maustaste, ohne automatisches Scrollen der Locator-Hilfe: Dieselbe Folge
+„Casuariiformes öffnen, sofort am selben Plus/Minus wieder schließen“ lässt
+in der unveränderten Vorversion 47 sichtbare Knoten und den Zweig offen;
+in der korrigierten Version verbleiben erwartungsgemäß 46 Knoten und der
+Zweig ist geschlossen. Das Aufklappen über Casuariidae und Casuarius bis zur
+Art Casuarius casuarius sowie deren Auswahl und Erhalt beim Wechsel zwischen
+Baum, Schrittweise und Liste wurden ebenfalls geprüft.
+
+Neue Regressionen prüfen den unveränderten SVG-Knoten während gedrückter
+Maustaste einschließlich der Zeit zwischen `pointerup` und `click`, die
+Fortsetzung des Übergangs sowie die Startposition neuer Kinder und das
+Ausbleiben unnötiger DOM-Ersetzungen. Der Test für den gedrückten Knoten
+schlug vor der Korrektur fehl. Alle JavaScript-Prüfungen und Regressionstests
+bestehen. Native Touch-/Screenreaderprüfung bleibt weiterhin offen.

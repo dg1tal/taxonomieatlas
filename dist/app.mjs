@@ -3,7 +3,7 @@ import {safeRead,safeWrite,readStoredView,storeView,viewHash,parseViewHash,recon
 import {ViewHistory,siblingTaxa} from './navigation.mjs';
 import {RANKS,validate,compare,index,taxonCountLabel,GERMANY_SUBSPECIES_STATUS} from './engine.mjs';
 import {CLADE_SOURCE,remapCladeView} from './clades.mjs';
-import {layoutTree,expandSubtree,graphMarkup,attachCamera,vernacular} from './tree.mjs?v=3';
+import {layoutTree,expandSubtree,graphMarkup,attachCamera,vernacular} from './tree.mjs?v=5';
 let cladeView=false,subspeciesView=false;
 let searchOrigin=null,searchRank='all',persistTimer=null,layerCleanup=null,layerKey='',detailLarge=false;
 let siblingQuery='',listActiveId=null;const viewHistory=new ViewHistory();
@@ -148,7 +148,7 @@ function branchActionTarget(){return idx.byid.get(selectedId)||idx.byid.get(focu
 function branchActions(){const n=branchActionTarget(),has=n.children.some(id=>idx.byid.get(id)?.count);return `<div class="branch-actions" role="group" aria-label="Baumaktionen für ${esc(label(n))}"><span>Aktionen für <strong>${esc(label(n))}</strong></span><div><button class="btn" id="branch-toggle" ${has?'':'disabled'} aria-expanded="${has&&open.has(n.id)}">Untergruppen ${open.has(n.id)?'schließen':'öffnen'}</button><button class="btn" id="branch-explore" ${n.id===focusId?'disabled':''}>Teilbaum erkunden</button><button class="btn" id="branch-isolate" ${n.id===focusId?'disabled':''}>Andere Zweige schließen</button></div></div>`;}
 function selectGraphTaxon(id){
  if(!idx.byid.get(id)?.count)return;const changed=selectedId!==id;if(changed)rememberView();
- selectedId=id;graphState.activeNode=id;redrawResults();graphCamera?.ensureVisible(id);graphCamera?.paint();
+ selectedId=id;graphState.activeNode=id;graphAnchor=id;redrawResults();graphCamera?.ensureVisible(id);graphCamera?.paint();
  $('#branch-canvas')?.querySelector(`[data-node-toggle="${CSS.escape(id)}"]`)?.focus({preventScroll:true});
  if(changed)finishNavigation();
 }

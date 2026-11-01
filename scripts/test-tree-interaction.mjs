@@ -35,6 +35,7 @@ const doc=emitter({activeElement:null,querySelector(){return null;}});globalThis
 const step=time=>{clock=time;const callbacks=[...frames.values()];frames.clear();for(const fn of callbacks)fn(time);};
 function widget(layout,state={},extra={}){
  const scene=emitter({innerHTML:'',querySelector(){return null;}}),box=emitter(),miniScene=emitter(),mini=emitter({innerHTML:'',querySelector:s=>s==='.mini-scene'?miniScene:s==='.mini-viewport'?box:null,getBoundingClientRect:()=>({left:0,top:0,width:220,height:140})});
+ let contents='';scene.writes=0;Object.defineProperty(scene,'innerHTML',{get:()=>contents,set:value=>{contents=value;scene.writes++;}});
  const host={getBoundingClientRect:()=>({left:0,top:0,width:1000,height:620}),closest:()=>null,querySelector:s=>s==='#mini-map'?mini:null};
  const svg=emitter({parentElement:host,querySelector:()=>scene,setPointerCapture(){this.captures=(this.captures||0)+1;},closest(){return null;}});
  const camera=attachCamera(svg,layout,state,{anchorId:extra.anchorId,options:{...opts,now:()=>clock,...extra}});
@@ -70,3 +71,23 @@ const overview=widget(small,{camera:{x:0,y:0,z:.2}});
 const labelClick=overview.svg.emit('click',{target:{closest:s=>s==='[data-node-toggle]'?{}:null}});
 assert.equal(labelClick.stopped,false);assert.equal(overview.state.camera.z,.2);overview.camera.destroy();
 console.log('PASS: Overview labels keep the same selection activation as cards and keyboard; only unlabelled diagram areas zoom.');
+
+// A native click needs the same SVG node from pointerdown through click.
+// Layout RAFs and resize paints must not replace that node while it is pressed.
+clock=0;const pressed=widget(next,{camera:{x:80-p.x,y:210-p.y,z:1},positions:shallow.positions},{anchorId:passer.id,animate:true,expanded:openPasser});
+const beforePress=pressed.scene.innerHTML,beforeWrites=pressed.scene.writes;
+const cardTarget={closest:()=>({})};pressed.svg.emit('pointerdown',{target:cardTarget});step(90);pressed.camera.paint();
+assert.equal(pressed.scene.writes,beforeWrites,'A pressed SVG node was replaced');
+assert.equal(pressed.scene.innerHTML,beforePress,'An in-flight layout replaced a pressed card before pointerup');
+pressed.svg.emit('pointerup',{target:cardTarget});step(250);
+assert.equal(pressed.scene.innerHTML,beforePress,'Painting between pointerup and click loses the native click target');
+assert.equal(pressed.svg.emit('click',{target:cardTarget}).stopped,false);
+step(260);step(450);assert.notEqual(pressed.scene.innerHTML,beforePress,'Paused layout did not finish after the click');
+pressed.camera.destroy();assert.equal(frames.size,0);
+console.log('PASS: A held native click keeps its SVG target during layout/resize and through pointerup; transitions resume only after click dispatch.');
+
+clock=0;const entering=widget(next,{camera:{x:80-p.x,y:210-p.y,z:1},positions:shallow.positions},{anchorId:passer.id,animate:true,expanded:openPasser});
+for(const n of next.nodes)if(!shallow.positions.has(n.id)){assert.equal(entering.state.renderedPositions.get(n.id).x,n.x);assert.equal(entering.state.renderedPositions.get(n.id).y,n.y);}
+entering.camera.destroy();
+const idle=widget(small);const idleWrites=idle.scene.writes;idle.camera.paint();idle.camera.paint();assert.equal(idle.scene.writes,idleWrites);idle.camera.destroy();
+console.log('PASS: New children never originate on top of their parent; unchanged paints preserve existing SVG elements.');

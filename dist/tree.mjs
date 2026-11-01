@@ -85,6 +85,7 @@ export function minimapGeometry(layout,camera,width,height,mapWidth=220,mapHeigh
 export function attachCamera(svg,layout,state,{anchorId,reset=false,options={}}={}){
  const scene=svg.querySelector('#branch-scene'),host=svg.parentElement,rect=()=>host.getBoundingClientRect();
  let w=rect().width||800,h=rect().height||620,frame=0,disposed=false,activated=false,cameraMotion=null,layoutMotion=null;
+ let lastPaintTime=0,lastMarkup=null,pendingClick=false,clickTimer=null;
  const removers=[],listen=(target,type,handler,config)=>{target?.addEventListener?.(type,handler,config);removers.push(()=>target?.removeEventListener?.(type,handler,config));};
  const now=()=>options.now?.()??globalThis.performance?.now?.()??Date.now();
  const reduce=()=>globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
@@ -97,7 +98,9 @@ export function attachCamera(svg,layout,state,{anchorId,reset=false,options={}}=
  }
  if(animated()&&oldCamera&&previous){
   const dx=(oldCamera.x-camera.x)/camera.z,dy=(oldCamera.y-camera.y)/camera.z,from=new Map();let changed=false;
-  for(const n of layout.nodes){const p=previous.get(n.id)||previous.get(n.parent)||n;const point={x:p.x+dx,y:p.y+dy};from.set(n.id,point);if(Math.abs(point.x-n.x)>.01||Math.abs(point.y-n.y)>.01)changed=true;}
+  // New children appear at their own positions. Flying them out of the parent
+  // overlays its hit area and can turn the next parent click into a child click.
+  for(const n of layout.nodes){const p=previous.get(n.id),point=p?{x:p.x+dx,y:p.y+dy}:{x:n.x,y:n.y};from.set(n.id,point);if(Math.abs(point.x-n.x)>.01||Math.abs(point.y-n.y)>.01)changed=true;}
   if(changed)layoutMotion={from,start:now()};
  }
  state.positions=layout.positions;
@@ -109,7 +112,7 @@ export function attachCamera(svg,layout,state,{anchorId,reset=false,options={}}=
  const ease=t=>t*t*(3-2*t);
  function sample(time){if(cameraMotion){const t=progress(cameraMotion,time),e=ease(t);for(const k of ['x','y','z'])camera[k]=cameraMotion.from[k]+(cameraMotion.to[k]-cameraMotion.from[k])*e;if(t===1)cameraMotion=null;}}
  function rendered(time){
-  if(!layoutMotion)return layout;const t=progress(layoutMotion,time),e=ease(t);if(t===1){layoutMotion=null;return layout;}
+  if(!layoutMotion)return layout;time=layoutMotion.pausedAt??time;const t=progress(layoutMotion,time),e=ease(t);if(t===1){layoutMotion=null;return layout;}
   const nodes=layout.nodes.map(n=>{const p=layoutMotion.from.get(n.id);return {...n,x:p.x+(n.x-p.x)*e,y:p.y+(n.y-p.y)*e};});
   const positions=new Map(nodes.map(n=>[n.id,n]));return {...layout,nodes,positions,root:positions.get(layout.root.id)};
  }
@@ -121,11 +124,16 @@ export function attachCamera(svg,layout,state,{anchorId,reset=false,options={}}=
   listen(mini,'click',e=>{if(!mapGeometry)return;const r=mini.getBoundingClientRect(),screenScale=Math.min(r.width/mw,r.height/mh),px=(e.clientX-r.left-(r.width-mw*screenScale)/2)/screenScale,py=(e.clientY-r.top-(r.height-mh*screenScale)/2)/screenScale,x=(px-mapGeometry.x)/mapGeometry.scale,y=(py-mapGeometry.y)/mapGeometry.scale;move({x:w/2-x*camera.z,y:h/2-y*camera.z,z:camera.z});});
  }
  function paint(time=now()){
+  // Replacing a pressed SVG node cancels its native click, even if its screen
+  // position is unchanged. Keep the DOM intact until click dispatch completes.
+  if(inputPending())return;
   if(disposed)return;if(reduce()){if(cameraMotion)Object.assign(camera,cameraMotion.to);cameraMotion=null;layoutMotion=null;}sample(time);const current=rendered(time);state.renderedPositions=current.positions;
   const pad=90/camera.z,viewport={left:-camera.x/camera.z-pad,right:(w-camera.x)/camera.z+pad,top:-camera.y/camera.z-pad,bottom:(h-camera.y)/camera.z+pad};
   const focus=document.activeElement?.getAttribute?.('data-node-toggle');
   level=detailLevel(camera.z,level);state.detailLevel=level;
-  scene.innerHTML=graphContents(current,{...options,activeId:state.activeNode,tabStopId:document.activeElement===svg||svg.contains?.(document.activeElement)?state.activeNode:null,detail:level,touchTargets:touchTargets(),labelViewport:{left:-camera.x/camera.z,right:(w-camera.x)/camera.z,top:-camera.y/camera.z,bottom:(h-camera.y)/camera.z}},viewport,false,camera.z);
+  const markup=graphContents(current,{...options,activeId:state.activeNode,tabStopId:document.activeElement===svg||svg.contains?.(document.activeElement)?state.activeNode:null,detail:level,touchTargets:touchTargets(),labelViewport:{left:-camera.x/camera.z,right:(w-camera.x)/camera.z,top:-camera.y/camera.z,bottom:(h-camera.y)/camera.z}},viewport,false,camera.z);
+  if(markup!==lastMarkup){scene.innerHTML=markup;lastMarkup=markup;}
+  lastPaintTime=time;
   scene.setAttribute('transform',`translate(${camera.x} ${camera.y}) scale(${camera.z})`);
   svg.setAttribute('data-detail-level',level);svg.setAttribute('data-gesture-mode',mode());
   if(focus){const target=scene.querySelector(`[data-node-toggle="${CSS.escape(focus)}"]`);target?.setAttribute?.('tabindex','0');target?.focus({preventScroll:true});}
@@ -138,7 +146,7 @@ export function attachCamera(svg,layout,state,{anchorId,reset=false,options={}}=
   const hint=host.closest?.('.branch-panel')?.querySelector('.graph-hint');if(hint)hint.textContent=mode()==='page-scroll'?'Ein Finger scrollt die Seite · Zwei Finger verschieben und zoomen den Baum · Große Ansicht: direkt mit einem Finger verschieben':'Karte: Details · +/−: Untergruppen · ↗: Teilbaum · Fläche ziehen · Mausrad nach Aktivierung';
   options.onCameraChange?.();
  }
- function tick(time){frame=0;if(!Number.isFinite(time)){cameraMotion=null;layoutMotion=null;}paint(Number.isFinite(time)?time:now());if(cameraMotion||layoutMotion)queue();}
+ function tick(time){frame=0;if(!Number.isFinite(time)){cameraMotion=null;layoutMotion=null;}paint(Number.isFinite(time)?time:now());if(!inputPending()&&(cameraMotion||layoutMotion&&layoutMotion.pausedAt===undefined))queue();}
  function queue(){if(disposed||frame)return;frame=-1;const id=requestAnimationFrame(tick);if(frame===-1)frame=id;}
  function apply(){sample(now());scene.setAttribute('transform',`translate(${camera.x} ${camera.y}) scale(${camera.z})`);queue();}
  function interrupt(){sample(now());cameraMotion=null;}
@@ -156,10 +164,14 @@ export function attachCamera(svg,layout,state,{anchorId,reset=false,options={}}=
  const zoom=(factor,cx=w/2,cy=h/2)=>{interrupt();const z=Math.max(.00001,Math.min(2,camera.z*factor)),ratio=z/camera.z;camera.x=cx-(cx-camera.x)*ratio;camera.y=cy-(cy-camera.y)*ratio;camera.z=z;apply();};
  const pan=direction=>{interrupt();if(direction==='left')camera.x+=w*.65;if(direction==='right')camera.x-=w*.65;if(direction==='up')camera.y+=h*.65;if(direction==='down')camera.y-=h*.65;apply();};
  const pointers=new Map();let gesture=null,moved=false,touchBlocked=false;
+ function inputPending(){return pendingClick||pointers.size>0&&!moved;}
+ function pauseLayout(){if(layoutMotion&&layoutMotion.pausedAt===undefined)layoutMotion.pausedAt=Math.max(layoutMotion.start,lastPaintTime);}
+ function resumeLayout(){if(layoutMotion?.pausedAt!==undefined){layoutMotion.start+=now()-layoutMotion.pausedAt;delete layoutMotion.pausedAt;}}
+ function finishClick(){clearTimeout(clickTimer);clickTimer=null;pendingClick=false;resumeLayout();queue();}
  listen(svg,'focusin',()=>{activated=true;});listen(svg,'focusout',e=>{if(!svg.contains?.(e.relatedTarget))activated=false;});
  listen(globalThis.document,'pointerdown',e=>{if(e.target!==svg&&!svg.contains?.(e.target))activated=false;},true);
  listen(svg,'pointerdown',e=>{
-  if(e.button!==0||touchBlocked&&e.pointerType==='touch')return;interrupt();if(!pointers.size)moved=false;
+  if(e.button!==0||touchBlocked&&e.pointerType==='touch')return;interrupt();if(!pointers.size){moved=false;clearTimeout(clickTimer);clickTimer=null;pendingClick=false;pauseLayout();}
   pointers.set(e.pointerId,{x:e.clientX,y:e.clientY,touch:e.pointerType==='touch'});
   if(e.pointerType!=='touch')activated=true;
   if(pointers.size===1){gesture={x:e.clientX,y:e.clientY,cx:camera.x,cy:camera.y};if(mode()==='direct'&&!e.target.closest('[role=button]'))svg.setPointerCapture?.(e.pointerId);}
@@ -171,12 +183,15 @@ export function attachCamera(svg,layout,state,{anchorId,reset=false,options={}}=
    if(moved){svg.setPointerCapture?.(e.pointerId);camera.x=gesture.cx+dx;camera.y=gesture.cy+dy;apply();}
   }else if(pointers.size===2&&gesture?.distance){moved=true;const [a,b]=[...pointers.values()],distance=Math.hypot(b.x-a.x,b.y-a.y),z=Math.max(.00001,Math.min(2,gesture.z*distance/gesture.distance)),ratio=z/gesture.z,mx=(a.x+b.x)/2-rect().left,my=(a.y+b.y)/2-rect().top;camera.x=mx-(gesture.midX-gesture.x)*ratio;camera.y=my-(gesture.midY-gesture.y)*ratio;camera.z=z;apply();}
  });
- const release=e=>{pointers.delete(e.pointerId);if(pointers.size===1){const a=[...pointers.values()][0];gesture={x:a.x,y:a.y,cx:camera.x,cy:camera.y};}else if(!pointers.size)gesture=null;};
- listen(svg,'pointerup',release);listen(svg,'pointercancel',e=>{if(e.pointerType==='touch'&&mode()==='page-scroll')touchBlocked=true;pointers.clear();gesture=null;moved=true;});
+ const release=e=>{if(!pointers.has(e.pointerId))return;pointers.delete(e.pointerId);if(pointers.size===1){const a=[...pointers.values()][0];gesture={x:a.x,y:a.y,cx:camera.x,cy:camera.y};}else if(!pointers.size){gesture=null;if(moved)finishClick();else{pendingClick=true;clickTimer=setTimeout(finishClick,400);}}};
+ const cancelPointers=()=>{pointers.clear();gesture=null;moved=true;finishClick();};
+ listen(globalThis.document,'pointerup',release,true);
+ listen(svg,'pointerup',release);listen(svg,'pointercancel',e=>{if(e.pointerType==='touch'&&mode()==='page-scroll')touchBlocked=true;cancelPointers();});
  // Do not reclaim a sequence once the browser has started native page scrolling.
  const twoTouches=e=>{if(mode()==='page-scroll'&&!touchBlocked&&e.touches.length>=2)e.preventDefault();};
- listen(svg,'touchstart',twoTouches,{passive:false});listen(svg,'touchmove',twoTouches,{passive:false});listen(svg,'touchend',e=>{if(!e.touches.length)touchBlocked=false;});listen(svg,'touchcancel',()=>{touchBlocked=false;pointers.clear();gesture=null;});
+ listen(svg,'touchstart',twoTouches,{passive:false});listen(svg,'touchmove',twoTouches,{passive:false});listen(svg,'touchend',e=>{if(!e.touches.length)touchBlocked=false;});listen(svg,'touchcancel',()=>{touchBlocked=false;cancelPointers();});
  listen(svg,'click',e=>{
+  if(pendingClick)finishClick();
   if(moved){e.stopImmediatePropagation();e.preventDefault();moved=false;return;}activated=true;
   if(level==='overview'&&e.detail!==0&&!e.target.closest('[data-node-toggle]')){const x=(e.clientX-rect().left-camera.x)/camera.z,y=(e.clientY-rect().top-camera.y)/camera.z,id=e.target.closest('[data-overview-node]')?.dataset.overviewNode,n=layout.positions.get(id)||layout.nodes.find(n=>x>=n.x&&x<=n.x+NODE_WIDTH&&y>=n.y&&y<=n.y+NODE_HEIGHT);
    if(n){const a=area();move({x:(a.left+a.right)/2-(n.x+NODE_WIDTH/2),y:(a.top+a.bottom)/2-(n.y+NODE_HEIGHT/2),z:1});e.stopImmediatePropagation();}
@@ -186,5 +201,5 @@ export function attachCamera(svg,layout,state,{anchorId,reset=false,options={}}=
  listen(svg,'keydown',e=>{if(!['+','=','-','0'].includes(e.key)&&e.target!==svg)return;const delta=65;if(e.key==='+'||e.key==='=')zoom(1.2);else if(e.key==='-')zoom(1/1.2);else if(e.key==='0')fit();else if(e.key==='ArrowLeft')panKey(delta,0);else if(e.key==='ArrowRight')panKey(-delta,0);else if(e.key==='ArrowUp')panKey(0,delta);else if(e.key==='ArrowDown')panKey(0,-delta);else return;e.preventDefault();});
  function panKey(x,y){interrupt();camera.x+=x;camera.y+=y;apply();}
  const observer=new ResizeObserver(()=>{const r=rect();w=r.width;h=r.height;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);apply();});observer.observe(host);svg.setAttribute('viewBox',`0 0 ${w} ${h}`);paint();if(layoutMotion)queue();
- return {zoom,fit,center,ensureVisible,paint,pan,updateInteraction:()=>paint(),destroy:()=>{sample(now());state.renderedPositions=rendered(now()).positions;disposed=true;observer.disconnect();cancelAnimationFrame(frame);cameraMotion=null;layoutMotion=null;for(const remove of removers)remove();pointers.clear();}};
+ return {zoom,fit,center,ensureVisible,paint,pan,updateInteraction:()=>paint(),destroy:()=>{sample(now());state.renderedPositions=rendered(now()).positions;disposed=true;observer.disconnect();cancelAnimationFrame(frame);clearTimeout(clickTimer);cameraMotion=null;layoutMotion=null;for(const remove of removers)remove();pointers.clear();}};
 }
