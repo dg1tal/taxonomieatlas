@@ -9,6 +9,7 @@ import sys
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from urllib.error import HTTPError
 
 from check_sources import ROOT, avi_patches, candidate, check, digest, fetch_json, fetch_wikidata, publication_links
 import openpyxl
@@ -116,6 +117,14 @@ class PolicyTests(unittest.TestCase):
         with patch('check_sources.download', side_effect=[b'{truncated', b'{"ok":true}']), patch('check_sources.time.sleep'):
             self.assertEqual(fetch_json('https://example.test/api'), {'ok': True})
 
+    def test_permanent_denial_does_not_hammer_source(self):
+        from check_sources import download
+        with patch('check_sources.urlopen', side_effect=HTTPError('https://example.test/', 403, 'Forbidden', {}, None)) as request, patch('check_sources.time.sleep') as sleep:
+            with self.assertRaises(HTTPError):
+                download('https://example.test/')
+            self.assertEqual(request.call_count, 1)
+            sleep.assert_not_called()
+
     def test_upstream_failure_preserves_report_and_never_publishes(self):
         config = {'documents': [{'id': 'avilist.xlsx', 'url': 'https://invalid.test/data', 'local': 'unused'}], 'publication_pages': []}
         with tempfile.TemporaryDirectory() as tmp, patch('check_sources.download', side_effect=OSError('Source unavailable')):
@@ -123,7 +132,8 @@ class PolicyTests(unittest.TestCase):
             self.assertEqual(check(folder, config), 1)
             report = json.loads((folder / 'report.json').read_text())
             self.assertFalse(report['publish'])
-            self.assertTrue(report['errors'])
+            self.assertTrue(any(error.startswith('Wikidata:') for error in report['errors']))
+            self.assertTrue(any(error.startswith('iNaturalist:') for error in report['errors']))
             self.assertFalse((folder / 'candidate.json').exists())
 
 

@@ -14,6 +14,7 @@ from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlencode, urljoin, urlparse
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 from zipfile import ZipFile
 
@@ -46,6 +47,14 @@ def download(url, accept="*/*"):
                 if len(content) > 40 * 1024 * 1024:
                     raise ValueError('Source exceeds 40 MiB limit')
                 return content
+        except HTTPError as error:
+            # Permanent denials are retried tomorrow, not hammered every few seconds.
+            if error.code in (400, 401, 403, 404) or attempt == 2:
+                raise
+            delay = int(error.headers.get('Retry-After', 2 ** attempt)) if error.headers.get('Retry-After', '').isdigit() else 2 ** attempt
+            if delay > 60:
+                raise
+            time.sleep(delay)
         except Exception:
             if attempt == 2:
                 raise
@@ -71,8 +80,10 @@ def fetch_wikidata(genera, get_json=fetch_json):
     for offset in range(0, len(names), 100):
         values = ' '.join(json.dumps(name) for name in names[offset:offset + 100])
         query = ('SELECT ?item ?scientific ?de ?en ?common ?deArticle ?enArticle WHERE { '
+                 'hint:Query hint:optimizer "None". '
                  'VALUES ?scientific { ' + values + ' } '
-                 '?item wdt:P225 ?scientific; wdt:P105 wd:Q34740; wdt:P171* wd:Q5113. '
+                 '?item wdt:P225 ?scientific. ?item wdt:P105 wd:Q34740. '
+                 '?item wdt:P171* wd:Q5113. hint:Prior hint:gearing "forward". '
                  'OPTIONAL { ?item rdfs:label ?de FILTER(LANG(?de)="de") } '
                  'OPTIONAL { ?item rdfs:label ?en FILTER(LANG(?en)="en") } '
                  'OPTIONAL { ?item wdt:P1843 ?common FILTER(LANG(?common) IN ("de","en")) } '
@@ -208,15 +219,27 @@ def check(out, config):
             report['errors'].append(entry['id'] + ': ' + str(error))
     # The same enrichment logic compares only imported names, not API timestamps,
     # unrelated genera, images or observation metadata. Never replaces their sources.
-    stage = 'Wikidata'
+    old_wd = json.loads((ROOT / 'sources/wikidata-bird-genera.json').read_text())
+    old_wd['results']['bindings'].sort(key=lambda row: canonical(row))
+    old_inat = json.loads((ROOT / 'sources/inat-bird-genera.json').read_text())
+    _, old_names = enrich(copy.deepcopy(bundle), old_wd, old_inat)
+    baseline_names_sha = digest(canonical(old_names))
+    wd, inat = None, None
     try:
         print('Checking Wikidata (batches of 100 existing genera)', flush=True)
-        feeds.get = fetch_json
         wd = fetch_wikidata(n['name'] for n in bundle['nodes'] if n['rank'] == 'genus')
         wd['results']['bindings'].sort(key=lambda row: canonical(row))
         (out / 'wikidata.json').write_bytes(canonical(wd))
-        stage = 'iNaturalist'
+        _, names = enrich(copy.deepcopy(bundle), wd, old_inat)
+        actual = digest(canonical(names))
+        report['sources'].append({'id': 'Wikidata', 'before': baseline_names_sha, 'after': actual})
+        if actual != baseline_names_sha:
+            report['blocked'].append('Wikidata genus names changed; source review required')
+    except Exception as error:
+        report['errors'].append('Wikidata: ' + str(error))
+    try:
         print('Checking iNaturalist (complete paginated genera)', flush=True)
+        feeds.get = fetch_json
         first = feeds.inat(1)
         total = first['total_results']
         if not isinstance(total, int) or not 1 <= total <= 10000:
@@ -229,20 +252,17 @@ def check(out, config):
         if len(rows) != total or len({row['id'] for row in rows}) != total:
             raise ValueError('Incomplete/duplicate iNaturalist pagination')
         inat = {'results': sorted(rows, key=lambda row: row['id'])}
-        (out / 'wikidata.json').write_bytes(canonical(wd))
         (out / 'inaturalist.json').write_bytes(canonical(inat))
-        old_wd = json.loads((ROOT / 'sources/wikidata-bird-genera.json').read_text())
-        old_wd['results']['bindings'].sort(key=lambda row: canonical(row))
-        old_inat = json.loads((ROOT / 'sources/inat-bird-genera.json').read_text())
-        _, old_names = enrich(copy.deepcopy(bundle), old_wd, old_inat)
-        _, new_names = enrich(copy.deepcopy(bundle), wd, inat)
-        old_sha, new_sha = digest(canonical(old_names)), digest(canonical(new_names))
-        report['sources'].append({'id': 'supplemental-genus-names', 'before': old_sha, 'after': new_sha})
-        (out / 'genus-names-candidate.json').write_bytes(canonical(new_names))
-        if old_sha != new_sha:
-            report['blocked'].append('Gattungsnamen changed; source/rights review required')
+        _, names = enrich(copy.deepcopy(bundle), old_wd, inat)
+        actual = digest(canonical(names))
+        report['sources'].append({'id': 'iNaturalist', 'before': baseline_names_sha, 'after': actual})
+        if actual != baseline_names_sha:
+            report['blocked'].append('iNaturalist genus names changed; source/rights review required')
     except Exception as error:
-        report['errors'].append(stage + ': ' + str(error))
+        report['errors'].append('iNaturalist: ' + str(error))
+    if wd is not None and inat is not None:
+        _, names = enrich(copy.deepcopy(bundle), wd, inat)
+        (out / 'genus-names-candidate.json').write_bytes(canonical(names))
     if avi_download and not report['blocked'] and not report['errors']:
         report['publish'] = True
         (out / 'candidate.json').write_text(json.dumps(candidate(bundle, report['to_sha256'], report['patches'], report['checked_at']), ensure_ascii=False, separators=(',', ':')))
