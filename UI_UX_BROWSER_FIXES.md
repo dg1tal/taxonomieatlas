@@ -54,3 +54,30 @@ Suchebene ohne Treffer, Deutschland-/Statusfilter, Filterchips, Detailansicht
 und Ansichtswechsel. Dies ersetzt keine Prüfung mit echtem Touchgerät,
 Screenreader oder Nutzertests. Eine vollständige WCAG-Konformitätsprüfung
 ist nicht durchgeführt.
+
+## Interaktive Baumdarstellung – Umsetzung vom 01.11.2026
+
+| Bereich | Umsetzung und Nachweis |
+| --- | --- |
+| Layoutstabilität | Bestehendes Layout unverändert. Der betätigte Knoten bleibt beim Öffnen/Schließen verankert; Sichtbarkeitskorrekturen verschieben die Kamera nur bei Bedarf. Ein deterministischer Kameratest prüft höchstens 1 px Abweichung bei 0, 90 und 180 ms. |
+| Detailstufen | Vollkarten ab 85 %, kompakte Karten ab 50 %, darunter Übersicht; bestehende Stufen erhalten einen Hysteresebereich von 3 Prozentpunkten. Kompakte Texte sind mindestens 12 Bildschirm-Pixel groß und vollständig zugänglich benannt. IDs, Positionen und Zweigzustände ändern sich durch Zoomen nicht. |
+| Orientierung | Auswahlfüllung, gestrichelte Fokuslinie und Vorfahrenpfad sind unterscheidbar. Die Minikarte zeigt Auswahlpunkt, Pfad und gestrichelten Ausschnitt. Übersichtsbeschriftungen priorisieren Fokus und Auswahl vor sichtbaren Vorfahren und Hauptgruppen und vermeiden gegenseitige Überlappungen. |
+| Knotenaktionen | Beschriftete Aktionen für Untergruppen, Teilbaumwechsel und Schließen anderer Zweige; letzteres erhält den gewählten Teilbaum und seinen Vorfahrenpfad. Öffnen/Schließen, Kartenauswahl und weitere strukturelle Aktionen sind über den Verlauf rückgängig. Auswahl per Karte und Tastatur aktualisiert auch den Ansichtslink und bleibt nach Neuladen erhalten (im Browser geprüft). Beim Schließen eines ausgewählten Nachfahren wird der Elternknoten ausgewählt; Rückgängig stellt die alte Auswahl wieder her. „Alles aufklappen“ liegt unter „Weitere Baumaktionen“. |
+| Gesten | Bis 800 px gilt im normalen Baum `touch-action: pan-y`: ein Finger scrollt die Seite, zwei rechtzeitig aufgesetzte Finger bedienen den Baum. Bereits vom Browser übernommene Scrollfolgen werden nicht zurückgeholt. In der großen Ansicht gilt direkte Einfingersteuerung. Zoom-/Richtungstasten bleiben verfügbar; Symbol-Trefferflächen sind auf Touch mindestens 44 × 44 Bildschirm-Pixel. Native Geräteprüfung weiterhin offen. |
+| Tastatur | Home/End bei kompakten Karten und Übersicht im Browser geprüft. Die Details bleiben beim bloßen Fokuswechsel unverändert; ein Tab-Einstieg bleibt auch nach Wechseln der Zoomstufe erhalten. Bestehende Pfeiltasten-, Namenssuch- und Listenregressionen bestehen. |
+| Bewegung und Aufräumen | Layoutänderungen und gezielte Kamerasprünge verwenden unterbrechbare Übergänge von 180 ms. Direkte Gesten steuern die Kamera unmittelbar. Reduzierte Bewegung schaltet Übergänge aus; Kamera-Listener, Beobachter und Animationsframes werden beim Verlassen entfernt. Automatisierte Tests prüfen Unterbrechung, reduzierte Bewegung, Pointer-Abbruch und Cleanup. |
+| Arbeitsfläche | Lange Detailtexte scrollen in der rechten Desktopspalte und vergrößern nicht mehr die Zeichenfläche. „Sichtbaren Baum einpassen“ berücksichtigt alle aufgeklappten Knoten; Zentrieren ändert den Zoom nicht. |
+
+Automatisierte Verifikation: JavaScript-Syntaxprüfungen und alle
+`scripts/test-*.mjs`, einschließlich `test-tree-interaction.mjs` und erweiterten
+UX-/Navigationsregressionen. Keine taxonomischen Daten oder Quellen geändert;
+Ansichtslinks und gespeicherte Ansichten behalten ihr bisheriges Format.
+
+Browser: 1280 × 900 sowie 390 × 844 und 320 × 740; helle und dunkle Darstellung,
+Kohlmeise suchen/öffnen, Teilbaum erkunden, kompakte/Übersichtsdarstellung,
+Tastaturfokus, große Ansicht und Escape sowie Rücknavigation geprüft.
+Der angebotene Browser übernimmt die getestete Tastenkombination zum
+Browserzoom nicht (Viewport und Pixeldichte blieben unverändert).
+**Echter 200-%-Browserzoom bleibt daher ungeprüft.** Echte Touchgeräte und
+Screenreader wurden nicht getestet; synthetische Gestentests und schmale
+Browserfenster sind kein Ersatz dafür.

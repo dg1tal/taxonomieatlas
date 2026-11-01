@@ -311,3 +311,39 @@ body:has(#tree-list-viewport) .virtual-list{min-height:max(520px,70dvh)}
  .tree .reveal-result{min-height:44px}
  .tree .empty{padding:20px 8px}.tree .empty .btn{margin:4px;max-width:100%;white-space:normal}
 }
+
+/* Tree exploration: distinct selection/focus, explicit actions, and native page scroll. */
+.branch-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line);background:#fffefa;flex:none}
+.branch-actions>span{font-size:13px;min-width:0;overflow-wrap:anywhere}.branch-actions>div{display:flex;flex-wrap:wrap;gap:6px}.branch-actions .btn{min-height:44px;padding:7px 10px;font-size:13px}
+.branch-more{position:relative}.branch-more>summary{min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:5px;font-size:13px;cursor:pointer}.branch-more>div{position:absolute;right:0;top:100%;z-index:5;display:grid;gap:6px;padding:8px;background:#fffefa;border:1px solid var(--line);border-radius:6px;box-shadow:0 5px 20px #203c3420;width:max-content;max-width:calc(100vw - 32px)}
+.node-port-target{fill:transparent;stroke:none;pointer-events:all;cursor:pointer}
+.graph-node .node-card{vector-effect:non-scaling-stroke}.node-hit:focus-visible .node-card{stroke:#a06a00;stroke-width:3;stroke-dasharray:7 3}
+.graph-node.selected .node-card{fill:#e1edd7;stroke:#466d42}.semantic-label.selected rect{fill:#e1edd7;stroke:#466d42;stroke-width:2}
+.semantic-label:focus-visible{outline:none}.semantic-label:focus-visible rect{stroke:#a06a00;stroke-width:3;stroke-dasharray:7 3}
+.graph-node .compact-label{font-weight:600}.graph-node .compact-scientific{font-family:Georgia,serif;font-style:italic}.graph-node :is(.compact-scientific,.compact-total){fill:#52664b}
+.mini-path{fill:none;stroke:#315e4b;stroke-width:3;vector-effect:non-scaling-stroke;pointer-events:none}
+.mini-viewport{stroke-dasharray:4 2}.mini-selected{stroke-width:1.5;vector-effect:non-scaling-stroke}
+#branch-canvas[data-gesture-mode=page-scroll]{touch-action:pan-y;cursor:default}
+#branch-canvas[data-gesture-mode=direct]{touch-action:none}
+:root[data-theme=dark] :is(.branch-actions,.branch-more>div){background:var(--dark-surface);color:var(--dark-text)}
+:root[data-theme=dark] .semantic-label.selected rect{fill:var(--dark-selected);stroke:#b6d99d}
+:root[data-theme=dark] :is(.node-hit:focus-visible .node-card,.semantic-label:focus-visible rect){stroke:#efc772}
+:root[data-theme=dark] .graph-node :is(.compact-label,.compact-scientific,.compact-total){fill:var(--dark-text)}
+:root[data-theme=dark] .mini-path{stroke:#b6d99d}
+@media(min-width:1100px){
+ body:has(#branch-canvas) #results>.branch-panel:has(>.detail){grid-template-rows:auto minmax(0,1fr) auto auto auto}
+ .branch-panel:has(>.detail)>.branch-actions{grid-column:1/-1;grid-row:1}
+ .branch-panel:has(>.detail)>.graph-stage{grid-column:1;grid-row:2}
+ .branch-panel:has(>.detail)>.detail{grid-column:2;grid-row:2}
+}
+@media(max-width:800px){
+ .branch-actions{padding:8px;gap:6px}.branch-actions>div{width:100%}.branch-actions .btn{flex:1 1 auto;font-size:12px;padding:7px 8px}
+ .zoom-controls .btn,.pan-controls .btn,.graph-controls>#full-tree{min-height:44px;min-width:44px}
+ .zoom-controls #center-node{display:inline-flex}.graph-hint{font-size:12px;line-height:1.5}
+ .branch-more>summary{font-size:12px}.branch-more>div{right:0}
+}
+/* A long detail record must scroll in its column instead of sizing the canvas. */
+@media(min-width:1100px){
+ body:has(#branch-canvas) #results>.branch-panel:not(.graph-large):has(>.detail){height:max(680px,78dvh);flex:none}
+ body:has(#branch-canvas) .branch-panel:has(>.detail)>.graph-stage{min-height:0}
+}

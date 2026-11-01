@@ -326,3 +326,26 @@ angezeigt. Die App lädt den Status ohne Browsercache beim Start, beim Öffnen v
 „Daten & Updates“ und bei „Bereitgestellte App-Daten prüfen“. Ist der Status nicht
 erreichbar, bleibt die App nutzbar; bereits geladene Angaben werden ausdrücklich
 als älterer Stand gekennzeichnet.
+
+## Interaktive Baumdarstellung: Zoom, Orientierung und Bedienung
+
+Der volle Baum behält Layout und Standardansicht. Er verwendet vollständige
+Karten ab 85 % Zoom, kompakte lesbare Karten ab 50 % und darunter eine
+vereinfachte Übersicht mit priorisierten Fokus-/Auswahlbeschriftungen.
+Drei Prozentpunkte Hysterese verhindern Flackern an den Übergängen. Zoomen
+ändert weder Taxa noch Positionen oder aufgeklappte Zweige.
+
+Beschriftete Baumaktionen öffnen/schließen Untergruppen, erkunden einen
+Teilbaum oder schließen andere Zweige bei erhaltenem Auswahlpfad.
+Strukturelle Änderungen nutzen den Ansichtsverlauf. „Alles aufklappen“ liegt
+unter „Weitere Baumaktionen“. Auswahl, Tastaturfokus und Vorfahrenpfad sind
+unterscheidbar; die Minikarte zeigt auch den Pfad.
+
+Im normalen Baum bis 800 px scrollt ein Finger die Seite. Zwei gleichzeitig
+aufgesetzte Finger verschieben/zoomen den Baum; nach Übernahme durch den
+Browser bleibt der native Scrollvorgang zuständig. In der großen Ansicht
+verschiebt ein Finger den Baum. Tasten bleiben als Alternative verfügbar.
+Mausrad/Trackpad steuern den Baum nach bewusster Aktivierung oder Fokus.
+Übergänge dauern 180 ms, lassen sich unterbrechen und entfallen bei
+reduzierter Bewegung. Prüfstatus und verbleibende Geräte-/Zoomprüfungen
+stehen in `UI_UX_BROWSER_FIXES.md`.
