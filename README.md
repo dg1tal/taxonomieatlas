@@ -281,7 +281,8 @@ Abruffehler, unvollständige API-Ergebnisse oder nicht automatisch freigebbare
 Änderungen führen zu einem fehlgeschlagenen Lauf **ohne Veröffentlichung**.
 Die Laufübersicht enthält den Befund; das Artefakt `bird-source-check-RUN_ID`
 enthält Bericht, heruntergeladene Quellen und ggf. Kandidaten (90 Tage).
-Wiederholte unveränderte Prüfungen erzeugen keine Commits und kein Deployment.
+Unveränderte Prüfungen erzeugen keine neuen Datenreleases. Ihr Ergebnis wird
+über einen eigenen Statuscommit und ein Pages-Deployment sichtbar gehalten.
 Die Aufbewahrung von Prüfkandidaten ist damit zeitlich begrenzt; Quellen und
 Reviews veröffentlichter Updates bleiben dagegen dauerhaft in Git.
 
@@ -299,3 +300,29 @@ nur der anschließende Pages-Start oder das Deployment, den vorhandenen
 Pages-Workflow manuell erneut starten; die geprüften Daten sind bereits in
 Git gesichert. GitHub kann Zeitpläne öffentlicher Repositories nach längerer
 Inaktivität deaktivieren; den Aktivstatus bei längeren Betriebspausen prüfen.
+
+
+## Öffentlicher Quellen- und Updatestatus
+
+Unter „Daten & Updates“ zeigt die App den letzten bestätigten erfolgreichen
+Quellencheck mit Uhrzeit in MEZ/MESZ, die veröffentlichte Datenrevision samt
+Kurzbeschreibung und Prüflauf-Link sowie offene manuelle Updateprüfungen.
+Bekannte fachliche Altfälle im Deutschlandbestand werden getrennt ausgewiesen.
+Eine Browserprüfung des App-Releaseverzeichnisses setzt den globalen
+Quellencheck-Zeitstempel nicht neu.
+
+`dist/source-status.json` wird unabhängig von den unveränderlichen Datenpaketen
+geführt. Bei einem Datenrelease wird der Status zusammen mit den Daten committed.
+Bei unveränderten Quellen oder fehlgeschlagenen bzw. prüfpflichtigen Läufen
+aktualisiert der abschließende Workflow-Job nur den Status. Ein Fehler erhält
+den früheren erfolgreichen Check; fehlende Berichte oder unvollständige Abrufe
+werden als unbekannter Prüfstand behandelt und löschen bekannte offene Fälle
+nicht stillschweigend. `dry_run` veröffentlicht auch keinen Status.
+
+Die Angabe des veröffentlichten Updates wird aus dem tatsächlich bereitgestellten
+Datenpaket und dessen Release-Prüfsumme abgeleitet. Ein geprüfter Kandidat, dessen
+Veröffentlichung gescheitert ist, wird gesondert als noch nicht veröffentlicht
+angezeigt. Die App lädt den Status ohne Browsercache beim Start, beim Öffnen von
+„Daten & Updates“ und bei „Bereitgestellte App-Daten prüfen“. Ist der Status nicht
+erreichbar, bleibt die App nutzbar; bereits geladene Angaben werden ausdrücklich
+als älterer Stand gekennzeichnet.

@@ -83,6 +83,11 @@ jobs:
           python3 -m unittest discover -s scripts -p 'test_source_updates.py'
           for file in dist/*.mjs dist/*.js scripts/*.mjs; do node --check "$file"; done
           for test in scripts/test-*.mjs; do node "$test"; done
+      - name: Record source status with the data release
+        env:
+          SOURCE_CHECK_RESULT: success
+          SOURCE_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node scripts/update-source-status.mjs source-update/report.json
       - name: Persist verified release and deploy Pages
         env:
           GH_TOKEN: ${{ github.token }}
@@ -94,8 +99,50 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git switch -c source-release
-          git add dist/data.json dist/releases.json dist/releases/ sources/avilist-2026.xlsx sources/avilist-explorer.json.gz sources/avilist-versions.json sources/avilist-references.json sources/inat-bird-genera.json sources/genus-name-supplement.json sources/reviews/
+          git add dist/data.json dist/releases.json dist/source-status.json dist/releases/ sources/avilist-2026.xlsx sources/avilist-explorer.json.gz sources/avilist-versions.json sources/avilist-references.json sources/inat-bird-genera.json sources/genus-name-supplement.json sources/reviews/
           git commit -m 'Publish source-verified bird data update'
           git push origin HEAD:main
           # GITHUB_TOKEN pushes do not trigger push workflows; dispatch explicitly.
           gh workflow run pages.yml --ref main
+
+  status:
+    needs: [check, publish]
+    if: always() && needs.publish.result != 'success' && github.ref == 'refs/heads/main' && inputs.dry_run != true
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Read source-check report when available
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: bird-source-check-${{ github.run_id }}
+          path: source-update
+      - name: Record public status, including unchanged or failed checks
+        env:
+          SOURCE_CHECK_RESULT: ${{ needs.check.result }}
+          SOURCE_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          node scripts/update-source-status.mjs source-update/report.json
+          node scripts/test-source-status.mjs
+      - name: Publish source status
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/source-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record latest bird source-check status'
+            git push origin HEAD:main
+            gh workflow run pages.yml --ref main
+          fi

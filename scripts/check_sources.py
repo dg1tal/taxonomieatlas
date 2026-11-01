@@ -302,6 +302,9 @@ def check(out, config):
     if avi_download and not report['blocked'] and not report['errors']:
         report['publish'] = True
         (out / 'candidate.json').write_text(json.dumps(candidate(bundle, report['to_sha256'], report['patches'], report['checked_at']), ensure_ascii=False, separators=(',', ':')))
+    report['completed_at'] = datetime.now(timezone.utc).isoformat()
+    if os.environ.get('GITHUB_REPOSITORY') and os.environ.get('GITHUB_RUN_ID'):
+        report['workflow_url'] = 'https://github.com/' + os.environ['GITHUB_REPOSITORY'] + '/actions/runs/' + os.environ['GITHUB_RUN_ID']
     (out / 'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
     summary = ['# Daily bird source check', '', 'Checked: ' + report['checked_at'],
                '', 'Automatic candidate: ' + str(report['publish']),
