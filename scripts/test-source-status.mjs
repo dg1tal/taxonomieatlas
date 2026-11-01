@@ -25,6 +25,9 @@ const missing=makeSourceStatus({...args,previous:initial,checkResult:'failure',r
 assert.equal(missing.latest_check.outcome,'failed');assert.equal(missing.manual_review.update_state,'unknown');assert.deepEqual(missing.last_successful_check,initial.last_successful_check);
 const pending=makeSourceStatus({...args,report:{...report,publish:true},candidate:{...bundle,dataset_revision:'candidate'}});
 assert.equal(pending.publication_pending,true);
+const historicalReport={...report,publish:true,to_sha256:bundle.source.sha256,dataset_revision:bundle.dataset_revision};
+const recorded=makeSourceStatus({...args,report:historicalReport,releaseReview:{...releaseReview,checked_at:report.checked_at}});assert.equal(recorded.publication_pending,false);
+const unreleased=makeSourceStatus({...args,report:historicalReport,releaseReview:{...releaseReview,checked_at:'2026-10-01T00:00:00Z'}});assert.equal(unreleased.publication_pending,true);
 assert.throws(()=>makeSourceStatus({...args,manifest:{...manifest,sha256:'0'.repeat(64)}}));
 const html=renderSourceStatus({kind:'ready',data:initial});
 for(const text of ['Quellen zuletzt erfolgreich geprüft','13:37','MEZ',bundle.dataset_revision,'7 Gattungsnamen','Keine offenen Updateprüfungen','527','47'])assert.ok(html.includes(text),text);

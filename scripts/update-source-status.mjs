@@ -23,12 +23,13 @@ export function makeSourceStatus({previous=null,report=null,checkResult='failure
  const genus=releaseReview?.genus_patches?.length||0,fields=releaseReview?.patches?.length||0;
  const summary=[genus?`${genus} Gattungsnamen aktualisiert`:null,fields?`${fields} AviList-Namens- oder Codekorrekturen`:null].filter(Boolean).join(' · ')||'Geprüfter Datenstand';
  const sameRelease=previous?.published_update?.sha256===manifest.sha256;
+ const recordedRelease=!!releaseReview&&report?.checked_at===releaseReview.checked_at&&report?.to_sha256===bundle.source.sha256&&(!report.dataset_revision||report.dataset_revision===bundle.dataset_revision);
  const releaseRun=runUrl(releaseReview?.workflow_url)|| (sameRelease?runUrl(previous.published_update.run_url):null)|| (report?.checked_at===releaseReview?.checked_at?runUrl(run):null);
  const dataset={germany_species_concepts:(bundle.germany_source?.records||[]).filter(r=>r.review!=='confirmed').length,
   germany_subspecies_assignments:[...(bundle.germany_subspecies_source?.records||[]),...(bundle.germany_subspecies_source?.later_records||[])].filter(r=>r.mapping_status!=='confirmed').length};
  return {schema_version:1,updated_at:now,last_successful_check:lastSuccess,latest_check:latest,
   published_update:{revision:bundle.dataset_revision||'ohne Revisionskennung',version:bundle.version,sha256:manifest.sha256,path:manifest.path,summary,run_url:releaseRun},
-  publication_pending:!!(valid&&report.publish===true&&(!candidate||sha(candidate)!==manifest.sha256)),
+  publication_pending:!!(valid&&report.publish===true&&(candidate?sha(candidate)!==manifest.sha256:!recordedRelease)),
   manual_review:{update_state:updateState,update_items:items,as_of:carried.length?previous.manual_review.as_of:at,carried_forward:carried.length>0,incomplete,dataset},errors};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
