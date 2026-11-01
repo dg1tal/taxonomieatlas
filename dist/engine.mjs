@@ -101,7 +101,7 @@ export function index(b,scope='global',filter='all',query='',orderIds=null,clade
  return {byid,root:[...byid.values()].find(n=>n.rank==='class'),matches,subspeciesMatches,candidates,overlay,germanySubspecies,germanyOpenCandidates,speciesSubspeciesEvidence};
 }
 
-export function taxonCountLabel(n,num=String){if(n.rank==='subspecies')return '1 Unterart';const base=`${num(n.count)} ${n.count===1?'Art':'Arten'}`;return n.subspeciesCount?`${base} · ${num(n.subspeciesCount)} Unterarten`:base;}
+export function taxonCountLabel(n,num=String){if(n.rank==='subspecies')return '1 Unterart';const base=`${num(n.count)} ${n.count===1?'Art':'Arten'}`;return n.subspeciesCount?`${base} · ${num(n.subspeciesCount)} ${n.subspeciesCount===1?'Unterart':'Unterarten'}`:base;}
 
 export function statusMatches(record,filter){const flags=Array.isArray(record.flags)?record.flags:[record.flags?.breeding||'',record.flags?.nonbreeding||''];if(filter==='all')return true;if(filter==='historic')return record.category.startsWith('B');if(filter==='introduced')return record.category.includes('C')||record.category==='E';if(filter==='breeding')return flags.some(f=>/^[NRL][1-6]/.test(f));if(filter==='winter')return flags.some(f=>/[Ww]/.test(f));if(filter==='migrant')return flags.some(f=>/[Zz]/.test(f));if(filter==='rare')return flags.some(f=>/[Ss]/.test(f));return false;}
 export const GERMANY_SUBSPECIES_STATUS={confirmed:'Für Deutschland belegt',open:'Zuordnung taxonomisch offen',source_uncertain:'Nachweiszuordnung in Quelle unsicher',not_evaluated:'Vorkommen noch nicht ausgewertet'};

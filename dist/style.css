@@ -294,3 +294,20 @@ body:has(#tree-list-viewport) .virtual-list{min-height:max(520px,70dvh)}
 .local-data-actions>.help{margin:4px 0 12px}
 
 .source-status-grid{display:grid;grid-template-columns:minmax(125px,.8fr) minmax(0,1.2fr);gap:12px 16px;font-size:14px;line-height:1.6}.source-status-grid dt{font-weight:600}.source-status-grid dd{margin:0;overflow-wrap:anywhere}.source-status-grid small{display:block;margin-top:4px;color:var(--muted)}@media(max-width:540px){.source-status-grid{grid-template-columns:1fr;gap:3px}.source-status-grid dd{margin-bottom:12px}}
+
+/* Active restrictions remain visible when the filter dialog is closed. */
+.active-restrictions{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 8px}
+.restriction-chip{display:inline-flex;align-items:center;justify-content:space-between;gap:10px;min-height:36px;max-width:100%;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:#edf3e8;color:#294536;font:inherit;font-size:13px;text-align:left;overflow-wrap:anywhere;cursor:pointer}
+.restriction-chip:hover{background:#dce9d4}.restriction-chip:focus-visible{outline:3px solid #b88621;outline-offset:2px}
+:root[data-theme=dark] .restriction-chip{background:var(--dark-raised);color:var(--dark-text)}
+:root[data-theme=dark] .restriction-chip:hover{background:#2b4032}
+@media(max-width:800px){.restriction-chip{min-height:44px}.active-restrictions{gap:5px}}
+/* On narrow screens search names need the full row, with actions beneath. */
+@media(max-width:800px){
+ .tree .row:has(.reveal-result){display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 12px;padding:12px 0}
+ .tree .row:has(.reveal-result)>.toggle{display:none}
+ .tree .row:has(.reveal-result)>.name{grid-column:1/-1;width:100%;padding:0;overflow-wrap:anywhere}
+ .tree .row:has(.reveal-result)>.count{max-width:none;justify-self:start}
+ .tree .reveal-result{min-height:44px}
+ .tree .empty{padding:20px 8px}.tree .empty .btn{margin:4px;max-width:100%;white-space:normal}
+}

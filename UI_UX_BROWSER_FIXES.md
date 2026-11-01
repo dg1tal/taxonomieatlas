@@ -30,3 +30,27 @@ Noch separat offen: echte Touchbedienung und Screenreaderprüfung; schmale Brows
 - Dark Mode: fertiger Zustand geprüft. Daten & Updates: technische Prüfsumme eingeklappt.
 
 Die schmale Darstellung ist implementiert, aber mangels dokumentierter Größenumschaltung der Browseroberfläche nicht als visuell geprüft markiert. Echte Touch- und Screenreaderprüfungen sind nicht durch Maus-/DOM-Tests ersetzt.
+
+## Prüfung anhand der Usability-Prinzipien vom 01.11.2026
+
+Prüfung am lokalen Repositorystand, ohne Änderung des fachlichen Datenbestands.
+
+| Prinzip | Konkreter Befund / Ergebnis |
+| --- | --- |
+| Aufgabenorientierter Einstieg | Namenssuche mit Beispielen vorhanden; Platzhalter macht die Suchfunktion jetzt ausdrücklich erkennbar. Suche nach Kohlmeise und Öffnen im Kontext im Browser geprüft. |
+| Schrittweise Offenlegung | Quellen und Varianten bereits aufklappbar. Beschreibender Unterarthinweis wird nun bei Such-/Rangwechseln aktualisiert und nur bei relevanter Unterartanzeige gezeigt. |
+| Orientierung | Kontext und Pfad vorhanden. Bestand, Status, Ordnungen, Anzeigeoptionen und Suchebene sind jetzt außerhalb des geschlossenen Filterdialogs als einzeln entfernbare Chips sichtbar. Deutschland zählt als aktive Einschränkung. |
+| Vorhersehbare Ansichtswechsel | Auswahl der Kohlmeise beim Wechsel zu Schrittweise im Browser erhalten; vorhandene Tests decken Baum/Liste/Schrittweise und Rücknavigation ab. |
+| Verständliche Filter / leere Ergebnisse | Keine Treffer auf Ebene Familie bei Suche Kohlmeise reproduziert. Direkte Aktionen heben die Suchebene bzw. Status-/Ordnungsfilter auf, ohne den Suchbegriff zu verlieren. Deutschland lässt sich separat auf Weltweit erweitern. |
+| Erkennbare Bedienung | Suche jederzeit explizit beendbar; „Auswahl zentrieren“ benennt das Ziel. Mobile Treffer bei 390 px hatten stark gequetschte Namen: Name nun über volle Breite, Anzahl und Aktion darunter. Auch bei 320 px kein horizontaler Seitenüberlauf im geprüften Suchzustand. |
+| Reversibilität | Einzelne Filteränderungen nutzen den vorhandenen Ansichtsverlauf. Regressionen prüfen Entfernung, Rückgängig, leere Ordnungsauswahl und Suchabschluss. Neue Suchen starten ohne versteckte Rangbeschränkung. Suchbegriff und Suchebene aktualisieren die aktuelle URL; beide bleiben nach Neuladen erhalten (im Browser geprüft). |
+| Datenvertrauen | Historische Deutschlandquelle und ungeprüftes Artkonzept in den Details vorhanden. Quellencheck und fachlicher Prüfstand bleiben getrennt. Keine fachlichen Änderungen. |
+| Tastatur / Touch | Filterbereich jetzt als modaler Dialog mit inaktivem Hintergrund und eingeschlossenem Fokus. Shift+Tab vom ersten zum letzten Element sowie Escape mit Fokus zurück zur Filtertaste im Browser geprüft. Mobile Chips und Trefferaktionen mindestens 44 px hoch. |
+
+Verifikation: alle JavaScript-Syntaxprüfungen und alle `scripts/test-*.mjs`
+erfolgreich; neue Interaktionsregressionen in `test-ux.mjs`.
+Browserprüfung bei 320 und 390 px sowie Desktop, einschließlich Suche,
+Suchebene ohne Treffer, Deutschland-/Statusfilter, Filterchips, Detailansicht
+und Ansichtswechsel. Dies ersetzt keine Prüfung mit echtem Touchgerät,
+Screenreader oder Nutzertests. Eine vollständige WCAG-Konformitätsprüfung
+ist nicht durchgeführt.
