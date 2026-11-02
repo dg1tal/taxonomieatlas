@@ -114,3 +114,55 @@ Fortsetzung des Übergangs sowie die Startposition neuer Kinder und das
 Ausbleiben unnötiger DOM-Ersetzungen. Der Test für den gedrückten Knoten
 schlug vor der Korrektur fehl. Alle JavaScript-Prüfungen und Regressionstests
 bestehen. Native Touch-/Screenreaderprüfung bleibt weiterhin offen.
+
+## Systematische Nachprüfung der Baum-Navigation (2. November 2026)
+
+Erneut im lokalen Chromium-Browser mit nativen Mausaktionen sowie Tastatur
+geprüft. Zwei weitere Fehler wurden reproduziert und korrigiert:
+
+- Unter 1100 px überlagerte das feste Detailblatt in der großen Baumansicht
+  Zoom-, Richtungs- und Schließen-Tasten. Die große Ansicht verwendet jetzt
+  getrennte Rasterzeilen für Aktionen, Zeichenfläche und Steuerung. Das
+  scrollbar begrenzte Detailblatt liegt ausschließlich in der Zeichenfläche;
+  auch vergrößerte Details verdecken keine Navigationstasten. Der zusätzliche
+  Hinweis über der Zeichenfläche entfällt dort, weil er Kartennamen verdeckte.
+- Nach dem Schließen der großen Ansicht mit Escape blieben Symbol und
+  zugänglicher Tastenname auf „Schließen“. Taste und Escape verwenden jetzt
+  dieselbe Zustandsänderung einschließlich Kameramodus und Fokus-Rückgabe.
+  Der bestehende Escape-Regressionstest prüft auch Tastenname und Symbol.
+
+| Browserprüfung | Ergebnis |
+| --- | --- |
+| Kohlmeise suchen, im Baum öffnen, Auswahl zentrieren | bestanden |
+| Zehn native Plus/Minus-Klicks auf Parus | jeder Wechsel korrekt: 4/1 Knoten |
+| Zehn native Plus/Minus-Klicks auf Casuariiformes im Gesamtbaum, abwechselnd sofort/100 ms gehalten | jeder Wechsel korrekt: 47/46 Knoten; tatsächliche Layoutübergänge |
+| Aufklappen und sofort folgende Kartenauswahl mit 250 ms gedrückter Maus | Casuariiformes ausgewählt und weiterhin aufgeklappt |
+| Auswahl, Aufklappen, Teilbaum erkunden und Vorfahrenpfad | bestanden |
+| Zwei Gattungen öffnen, andere Zweige schließen, Zurück | 22 → 19 → 22 Knoten |
+| Zoomtasten über Voll-/Kompakt-/Übersichtsstufe; Auswahl zentrieren; Einpassen | bestanden; Auswahl erhalten |
+| Fläche nativ um 100/60 px ziehen; danach Karte anklicken | Kameraverschiebung exakt 100/60 px; korrekte Auswahl |
+| Mausrad vor Aktivierung / nach bewusstem Klick in den Baum | Seite / Baum verschoben |
+| Minikarte anklicken, Umgebung/Gesamtbaum wechseln, Kamerasprung mit Richtungstaste unterbrechen | bestanden |
+| Pfeile, End und Enter bei Übersichtszoom | Fokuswechsel ohne Detailwechsel; Enter wählt die fokussierte Art |
+| Listenalternative per Namensanfang, Pfeilen und Enter | bestanden |
+| Liste, Schrittweise, Verteilung und voller Baum wechseln | Artauswahl erhalten |
+| Neuladen einer gespeicherten Baumansicht | Auswahl, geöffnete Zweige und Kamera wiederhergestellt |
+| Alles aufklappen und einpassen; letzte Art per End/Enter erreichen | 13.847 Knoten; Stilpnia cayana erreichbar und auswählbar |
+| Große Ansicht öffnen, Details vergrößern, Zoom/Richtungstasten bedienen, schließen und wieder öffnen | bestanden |
+| Escape zuerst für Details, danach große Ansicht; anschließend wieder öffnen | Zustand, Tastenname und Symbol konsistent |
+| 320×740, 390×844 und 1280×900, jeweils hell/dunkel | kein horizontaler Überlauf; Zoom- und Richtungstasten bedienbar; Details überdecken keine Steuerelemente der großen Ansicht |
+| Zusätzliche Tabletprüfung bei 900×800 | Detailblatt bleibt oberhalb der Steuerung |
+| Browserkonsole | keine Fehler oder Warnungen |
+
+Gemessener Abstand zwischen Detailblatt und Steuerung in der großen Ansicht:
+bei 320/390 px jeweils 8 px. Alle bestehenden `scripts/test-*.mjs` bestanden;
+der ergänzte UX-Test wurde nach der Escape-Korrektur erneut erfolgreich
+ausgeführt. Syntaxprüfungen aller Browsermodule und Testskripte sowie
+`git diff --check` bestanden.
+
+Bildnachweise im lokalen Arbeitsartefakt-Verzeichnis:
+`atlas-navigation-390-dark.jpg` und `atlas-navigation-320-light.jpg`.
+Native Ein-/Zweifinger-Gesten auf einem echten Touchgerät, Screenreader und
+200 % Browserzoom wurden in dieser Nachprüfung nicht bestätigt. Die bestehenden
+synthetischen Kamera-/Gestentests einschließlich Pointer-Abbruch und reduzierter
+Bewegung bestehen; sie ersetzen diese Geräteprüfungen nicht.

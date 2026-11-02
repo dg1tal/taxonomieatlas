@@ -347,3 +347,16 @@ body:has(#tree-list-viewport) .virtual-list{min-height:max(520px,70dvh)}
  body:has(#branch-canvas) #results>.branch-panel:not(.graph-large):has(>.detail){height:max(680px,78dvh);flex:none}
  body:has(#branch-canvas) .branch-panel:has(>.detail)>.graph-stage{min-height:0}
 }
+/* Keep fullscreen navigation reachable above the mobile detail sheet. The sheet
+   shares only the canvas row, so wrapped controls never sit underneath it. */
+@media(max-width:1099px){
+ body:has(#branch-canvas) #results>.branch-panel.graph-large{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto auto auto}
+ .branch-panel.graph-large>.branch-actions{grid-column:1;grid-row:1}
+ .branch-panel.graph-large>.graph-stage{grid-column:1;grid-row:2;min-height:0}
+ .branch-panel.graph-large>.graph-controls{grid-column:1;grid-row:3}
+ .branch-panel.graph-large>.pan-controls{grid-column:1;grid-row:4}
+ .branch-panel.graph-large>.graph-hint{grid-column:1;grid-row:5}
+ .branch-panel.graph-large .graph-map-guide{display:none}
+ #results>.branch-panel.graph-large>.detail{position:relative;grid-column:1;grid-row:2;align-self:end;justify-self:center;inset:auto;width:calc(100% - 16px);height:auto;min-height:0;max-height:65%;margin:0 0 8px;z-index:3}
+ #results>.branch-panel.graph-large>.detail.detail-large{max-height:calc(100% - 16px)}
+}
