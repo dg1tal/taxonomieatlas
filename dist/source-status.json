@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-01T18:35:32.252Z",
+  "updated_at": "2026-11-02T12:52:27.852Z",
   "last_successful_check": {
-    "at": "2026-11-01T18:35:21.498008+00:00",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41337005420"
+    "at": "2026-11-02T12:52:13.419087+00:00",
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41447812327"
   },
   "latest_check": {
-    "at": "2026-11-01T18:35:21.498008+00:00",
+    "at": "2026-11-02T12:52:13.419087+00:00",
     "outcome": "success",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41337005420"
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41447812327"
   },
   "published_update": {
     "revision": "2026-11-01.auto-798103b642d3",
@@ -22,7 +22,7 @@
   "manual_review": {
     "update_state": "clear",
     "update_items": [],
-    "as_of": "2026-11-01T18:35:21.498008+00:00",
+    "as_of": "2026-11-02T12:52:13.419087+00:00",
     "carried_forward": false,
     "incomplete": false,
     "dataset": {
