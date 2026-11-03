@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-02T12:52:27.852Z",
+  "updated_at": "2026-11-03T12:20:30.123Z",
   "last_successful_check": {
     "at": "2026-11-02T12:52:13.419087+00:00",
     "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41447812327"
   },
   "latest_check": {
-    "at": "2026-11-02T12:52:13.419087+00:00",
-    "outcome": "success",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41447812327"
+    "at": "2026-11-03T12:20:17.580412+00:00",
+    "outcome": "failed",
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41634517494"
   },
   "published_update": {
     "revision": "2026-11-01.auto-798103b642d3",
@@ -20,15 +20,17 @@
   },
   "publication_pending": false,
   "manual_review": {
-    "update_state": "clear",
+    "update_state": "unknown",
     "update_items": [],
-    "as_of": "2026-11-02T12:52:13.419087+00:00",
+    "as_of": "2026-11-03T12:20:17.580412+00:00",
     "carried_forward": false,
-    "incomplete": false,
+    "incomplete": true,
     "dataset": {
       "germany_species_concepts": 527,
       "germany_subspecies_assignments": 47
     }
   },
-  "errors": []
+  "errors": [
+    "iNaturalist: Incomplete/duplicate iNaturalist pagination"
+  ]
 }
