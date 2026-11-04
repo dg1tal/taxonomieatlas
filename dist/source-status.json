@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-03T12:20:30.123Z",
+  "updated_at": "2026-11-04T12:33:25.243Z",
   "last_successful_check": {
     "at": "2026-11-02T12:52:13.419087+00:00",
     "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41447812327"
   },
   "latest_check": {
-    "at": "2026-11-03T12:20:17.580412+00:00",
-    "outcome": "failed",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41634517494"
+    "at": "2026-11-04T12:33:12.966126+00:00",
+    "outcome": "review_required",
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41829614706"
   },
   "published_update": {
     "revision": "2026-11-01.auto-798103b642d3",
@@ -20,17 +20,17 @@
   },
   "publication_pending": false,
   "manual_review": {
-    "update_state": "unknown",
-    "update_items": [],
-    "as_of": "2026-11-03T12:20:17.580412+00:00",
+    "update_state": "required",
+    "update_items": [
+      "Unreviewed iNaturalist name change: Heterotetrax"
+    ],
+    "as_of": "2026-11-04T12:33:12.966126+00:00",
     "carried_forward": false,
-    "incomplete": true,
+    "incomplete": false,
     "dataset": {
       "germany_species_concepts": 527,
       "germany_subspecies_assignments": 47
     }
   },
-  "errors": [
-    "iNaturalist: Incomplete/duplicate iNaturalist pagination"
-  ]
+  "errors": []
 }
