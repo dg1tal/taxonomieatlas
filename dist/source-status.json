@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T12:28:04.833Z",
+  "updated_at": "2026-11-06T14:18:09.920Z",
   "last_successful_check": {
-    "at": "2026-11-02T12:52:13.419087+00:00",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41447812327"
+    "at": "2026-11-06T14:17:29.593928+00:00",
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42232273920"
   },
   "latest_check": {
-    "at": "2026-11-06T12:27:49.435584+00:00",
-    "outcome": "review_required",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42217560926"
+    "at": "2026-11-06T14:17:29.593928+00:00",
+    "outcome": "success",
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42232273920"
   },
   "published_update": {
     "revision": "2026-11-01.auto-798103b642d3",
@@ -18,13 +18,11 @@
     "summary": "7 Gattungsnamen aktualisiert",
     "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41334012861"
   },
-  "publication_pending": false,
+  "publication_pending": true,
   "manual_review": {
-    "update_state": "required",
-    "update_items": [
-      "Unreviewed iNaturalist name change: Heterotetrax"
-    ],
-    "as_of": "2026-11-06T12:27:49.435584+00:00",
+    "update_state": "clear",
+    "update_items": [],
+    "as_of": "2026-11-06T14:17:29.593928+00:00",
     "carried_forward": false,
     "incomplete": false,
     "dataset": {
