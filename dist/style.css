@@ -359,3 +359,61 @@ body:has(#tree-list-viewport) .virtual-list{min-height:max(520px,70dvh)}
  #results>.branch-panel.graph-large>.detail{position:relative;grid-column:1;grid-row:2;align-self:end;justify-self:center;inset:auto;width:calc(100% - 16px);height:auto;min-height:0;max-height:65%;margin:0 0 8px;z-index:3}
  #results>.branch-panel.graph-large>.detail.detail-large{max-height:calc(100% - 16px)}
 }
+
+/* Search details stay visible beside the results, without moving the hit list. */
+body:has(.search-workspace){overflow-anchor:none}
+.search-workspace{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;align-items:start}
+.search-hit-list{min-width:0}
+.search-rank-group h2,.search-subspecies>summary{font-size:16px;font-weight:650;padding:12px 6px;margin:0}
+.search-subspecies{border-top:1px solid var(--line);margin-top:8px}
+.search-subspecies>summary{cursor:pointer;min-height:44px}
+.search-subspecies>.help{margin:0 6px 12px}
+@media(min-width:801px){
+ .search-workspace:has(>.detail){grid-template-columns:minmax(0,1fr) 330px}
+ .search-workspace>.detail{position:sticky;top:12px;inset-inline:auto;align-self:start;width:auto;max-height:calc(100dvh - 24px);overflow:auto;margin:0;padding:16px}
+ .search-hit-list .row{flex-wrap:wrap}
+ .search-hit-list .row>.name{flex:1 1 240px}
+}
+/* Current group, jump search and cards have a consistent reading order. */
+.step-panel{grid-template-rows:auto minmax(0,1fr)}
+.step-panel>.step-root{grid-column:2;grid-row:1;position:static;margin:12px 16px 0}
+.step-panel>.step-sidebar{grid-column:1;grid-row:1 / span 2}
+.step-panel>.step-main{grid-column:2;grid-row:2}
+.branch-actions{display:block}
+.branch-actions>summary{font-size:13px;min-height:44px;cursor:pointer;padding:10px 0;overflow-wrap:anywhere}
+.branch-actions>div{display:flex;flex-wrap:wrap;gap:6px}
+.branch-actions:not([open])>div{display:none}
+@media(max-width:800px){
+ .step-panel{grid-template-rows:auto auto auto}
+ .step-panel>.step-root{grid-column:1;grid-row:1;margin:12px}
+ .step-panel>.step-sidebar{grid-column:1;grid-row:2}
+ .step-panel>.step-main{grid-column:1;grid-row:3}
+ .step-sidebar>summary{margin:0}
+ .branch-actions{padding:0 8px}
+ .branch-actions>div{padding-bottom:8px}
+ body:has(.workspace) .branch-expand-controls{display:flex;flex-wrap:wrap;gap:6px;width:100%}
+ body:has(.workspace) .branch-expand-controls #open-large-tree{background:var(--green);color:#fffefa;border-color:var(--green)}
+ body:has(.workspace) .branch-expand-controls>.branch-more{margin-left:auto}
+ .branch-expand-controls #whole-tree{font-size:12px;padding-inline:8px}
+ .branch-expand-controls #open-large-tree{padding-inline:9px}
+ .branch-more>summary{padding-inline:8px}
+}
+
+.mobile-action-label{display:none}
+@media(max-width:800px){
+ .desktop-action-label,.branch-expand-controls #whole-tree{display:none}
+ .mobile-action-label{display:inline}
+ .branch-more .btn.mobile-action-label{display:inline-flex}
+ body:has(.workspace) .branch-expand-controls>.branch-more{margin-left:0}
+}
+@media(max-width:360px){
+ body:has(.workspace) header{flex-wrap:nowrap;padding-inline:10px;gap:4px}
+ body:has(.workspace) .brand{font-size:16px;gap:5px;white-space:nowrap}
+ body:has(.workspace) .brand svg{width:24px}
+ body:has(.workspace) .theme-picker{gap:0;padding:2px}
+ body:has(.workspace) .theme-picker button{width:32px}
+}
+
+@media(max-width:800px){
+ :root[data-theme=dark] body:has(.workspace) .branch-expand-controls #open-large-tree{background:#37664c;color:var(--dark-text);border-color:#52795c}
+}

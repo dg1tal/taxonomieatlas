@@ -154,3 +154,29 @@ vm.runInContext("selectGraphTaxon(data.nodes.find(n=>n.name==='Parus cinereus').
 assert.equal(ux.parseViewHash(calls.at(-1)[2]).selectedId,find('Parus cinereus').id);
 vm.runInContext('travelView(-1)',ctx);assert.equal(vm.runInContext('idx.byid.get(selectedId).name',ctx),'Parus major');
 console.log('PASS: Card/keyboard selection updates the view link and supports returning to the previous selection.');
+// Search details share a workspace; ranks remain discoverable without flooding simple queries.
+vm.runInContext(`query='Kohlmeise';searchRank='all';scope='global';filter='all';orderSelection=null;subspeciesView=false;searchSubspeciesOpen=null;refreshIndex();selectedId=data.nodes.find(n=>n.name==='Parus major').id;`,ctx);
+let searchMarkup=vm.runInContext('tree()',ctx);
+assert.ok(searchMarkup.includes('class="search-workspace"'));
+assert.ok(searchMarkup.includes('aria-label="Arten · 3"'));
+assert.ok(searchMarkup.includes('aria-label="Gattungen · 1"'));
+assert.match(searchMarkup, /id="search-subspecies" >\s*<summary>Unterarten · 40 anzeigen/);
+assert.ok(searchMarkup.indexOf('Graukohlmeise')<searchMarkup.indexOf('id="search-subspecies"'));
+vm.runInContext('searchSubspeciesOpen=true',ctx);
+assert.match(vm.runInContext('tree()',ctx),/id="search-subspecies" open>/);
+vm.runInContext("changeSearch('Parus major aphrodite');searchRank='subspecies';",ctx);
+assert.ok(vm.runInContext('tree()',ctx).includes('Parus major aphrodite'));
+assert.ok(!vm.runInContext('tree()',ctx).includes('id="search-subspecies"'));
+// Mobile entry must not inherit a saved, expanded desktop jump list.
+const desktopMedia=ctx.matchMedia;ctx.matchMedia=()=>({matches:true});
+vm.runInContext(`query='';searchRank='all';graphMode='step';stepFocusId=data.nodes.find(n=>n.name==='Passeriformes').id;stepPickerOpen=true;stepPickerMobileOpen=false;refreshIndex();`,ctx);
+const mobileStep=vm.runInContext('stepView()',ctx);
+assert.match(mobileStep, /class="step-sidebar" ><summary>/);
+assert.ok(mobileStep.indexOf('class="step-root"')<mobileStep.indexOf('class="step-sidebar"'));
+assert.ok(mobileStep.indexOf('class="step-sidebar"')<mobileStep.indexOf('class="step-main"'));
+vm.runInContext('branchActionsMobileOpen=false',ctx);
+assert.ok(!vm.runInContext('branchActions()',ctx).includes(' open'));
+vm.runInContext('branchActionsMobileOpen=true',ctx);
+assert.ok(vm.runInContext('branchActions()',ctx).includes(' open'));
+ctx.matchMedia=desktopMedia;
+console.log('PASS: Grouped species/genus/subspecies search, explicit subspecies access, visible detail workspace and independent collapsed mobile navigation.');

@@ -166,3 +166,48 @@ Native Ein-/Zweifinger-Gesten auf einem echten Touchgerät, Screenreader und
 200 % Browserzoom wurden in dieser Nachprüfung nicht bestätigt. Die bestehenden
 synthetischen Kamera-/Gestentests einschließlich Pointer-Abbruch und reduzierter
 Bewegung bestehen; sie ersetzen diese Geräteprüfungen nicht.
+
+
+## Vier Usability-Befunde korrigiert (6. November 2026)
+
+- Suchdetails erscheinen ab 801 px in einer sichtbaren, mitlaufenden Spalte
+  neben den Treffern, darunter im bestehenden Detailblatt. Öffnen fokussiert
+  die Schließen-Taste; Schließen/Escape gibt den Fokus an denselben Treffer
+  zurück. Der Suchtext, die aufgeklappte Unterartgruppe und die Trefferposition
+  bleiben erhalten. Der Scrollanker wird beim Spaltenwechsel ausdrücklich
+  gehalten, statt mit der automatischen Browserverankerung zu konkurrieren.
+- Suchtreffer sind nach Arten, Gattungen und weiteren Ebenen gruppiert.
+  Unterarten sind in der Gesamtsuche bei ausgeschalteter Baum-Unterartenanzeige
+  zunächst eingeklappt. Ihre Anzahl und die Möglichkeit zum Öffnen bleiben
+  sichtbar; der explizite Unterartenfilter zeigt sie unmittelbar. Der Hinweis
+  auf beschreibende Unterartnamen steht bei den betreffenden Treffern.
+- Mobile Baumaktionen sind zunächst eingeklappt. Die große Ansicht ist
+  hervorgehoben; weitere Aktionen einschließlich Gesamtbaum bleiben erreichbar.
+  Der Kopfbereich passt auch bei 320 px in eine Zeile. In der geprüften
+  390×844-Ansicht beginnt die Baumfläche bei 436 statt zuvor etwa 573 px.
+- In Schrittweise steht die aktuelle Gruppe vor Sprungliste und Karten.
+  Die mobile Sprungliste startet geschlossen, unabhängig von einem gespeicherten
+  offenen Desktopzustand. Nach dem Öffnen eines neuen Zweigs wird sie geschlossen
+  und der neue Pfad in den sichtbaren Bereich gebracht. Desktop behält seine
+  eigene Einstellung und die seitliche Sprungliste.
+
+Browsernachprüfung im internen Browser: 1280×900, 900×800, 390×844 und
+320×740, helle und dunkle Darstellung. Kohlmeise suchen, Artdetails öffnen,
+Unterartgruppe öffnen, Unterartdetails, Ebenenfilter, Nichttreffer,
+Fokusrückgabe/Escape, Ansicht übernehmen, mobile Baumaktionen auf-/zuklappen,
+große Ansicht öffnen/Escape sowie lokale Meisensuche und Navigation zu Paridae
+geprüft. Kein horizontaler Überlauf in den geprüften Zuständen. Unterartdetails
+mit nativem Koordinatenklick und Escape geschlossen: Trefferoberkante jeweils
+396,3 px vor/nach dem Schließen. Ein automatisch zum Locator scrollender Klick
+ist für diese Positionsprüfung kein verlässlicher Nachweis. Keine Fehler oder
+Warnungen in den erfassten Browserlogs.
+
+Automatisch: alle 13 `scripts/test-*.mjs`, Syntaxprüfungen der Browsermodule
+und `git diff --check` bestanden. Zusätzliche UX-Regressionen sichern die
+Treffergruppierung, explizite Unterartsuche, gemeinsamen Such-/Detailbereich und
+die unabhängig eingeklappten mobilen Navigationsbereiche. Taxonomie- und
+Quelldaten unverändert. Echte Touchgeräte, Screenreader und 200-%-Browserzoom
+bleiben ungeprüft.
+
+Bildnachweise: `artifacts/usability-2026-11-06/fixed-search-details.jpg`,
+`fixed-mobile-tree.jpg` und `fixed-mobile-step.jpg` im selben Verzeichnis.

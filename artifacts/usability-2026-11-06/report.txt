@@ -1,0 +1,65 @@
+Usability-Prüfung Vogeltaxonomie Atlas – 6. November 2026
+
+Methode und Umfang
+Aufgabenbasierte Expertenprüfung im internen Browser an lokal ausgeliefertem dist/.
+Keine Studie mit externen Testpersonen. Keine Code- oder Datenänderungen.
+Desktop 1280×720 und 1280×900; schmale Browseransichten 390×844 und 320×740.
+Helles und dunkles Theme geprüft. Mobile Ansichten sind keine echten Touchgeräte.
+
+Gesamturteil
+Die Kernfunktionen sind bedienbar. Navigation, Filterrückmeldung, sichtbarer Suchfokus und alternative Ansichten entsprechen verbreiteten Bedienmustern. Ein reproduzierbarer Fehler verhindert jedoch die sichtbare Rückmeldung beim Öffnen von Suchtreffer-Details. Die mobile Informationshierarchie erschwert den Einstieg in den vollen Baum.
+
+B1 – Hoch: Details eines Suchtreffers öffnen außerhalb des Sichtbereichs
+Schritte: Kohlmeise suchen; ersten Treffer am Namen anklicken (nicht In Ansicht öffnen).
+Ergebnis: Die Detailregion wird unter allen 44 Treffern angehängt. Gemessene Oberkante bei 1280×900: 5122 px im Viewportkoordinatensystem; position:relative. Im sichtbaren Bereich erscheint keine Detailansicht. Bei einer früheren Messung 5049 px.
+Auswirkung: Der Klick wirkt wirkungslos, die Artinformationen werden leicht übersehen.
+Erwartung/Empfehlung: Details auch für Suchergebnisse in einer sichtbaren Seitenspalte bzw. einem mobilen Detailblatt öffnen; Fokus sinnvoll dorthin führen und beim Schließen zurückgeben. Trefferliste und Scrollposition erhalten.
+Nachweis: search-details-offscreen.jpg (sichtbarer Zustand direkt nach Namensklick; unsichtbare Region zusätzlich per DOM-Geometrie bestätigt).
+
+B2 – Mittel: Mobile Baumfläche beginnt sehr weit unten
+Schritte: 390×844; voller Baum im Kontext Passeriformes.
+Ergebnis: Navigation, Suche, Ansichtsumschaltung, Pfad und Aktionsblock reichen bis etwa y=573. Die erste Bildschirmhöhe enthält nur einen kleinen Baumausschnitt; untere Zoom-/Bewegungssteuerung liegt außerhalb der sichtbaren Seite. Große Ansicht ist erreichbar und bietet eine besser nutzbare Arbeitsfläche.
+Auswirkung: Hoher Scrollbedarf und schwache Orientierung beim Einstieg.
+Empfehlung: Mobile Baumaktionen zusammenfassen/einklappen, große Ansicht stärker hervorheben oder Schrittweise als mobilen Einstieg anbieten. Gewählte Art beim Größenwechsel im nutzbaren Ausschnitt halten.
+Nachweis: mobile-tree.jpg.
+
+B3 – Mittel: Suche überlädt einfache Artnamensabfragen
+Schritte: Bei ausgeschalteter Unterartenanzeige Kohlmeise suchen.
+Ergebnis: 44 Taxa (3 Arten, 1 Gattung, 40 Unterarten). Unterarten erscheinen trotz ausgeschalteter Baum-Unterartenanzeige und stehen teilweise vor anderen Arttreffern. Der exakte Arttreffer ist korrekt an erster Stelle; Ebenenfilter vorhanden.
+Auswirkung: Hohe Informationsmenge, uneinheitliche Erwartung zwischen Baumfilter und Suche.
+Empfehlung: Treffer nach Ebenen gruppieren; Unterarten zunächst einklappen oder ihre Einbeziehung ausdrücklich anbieten. Den Ebenenfilter erhalten.
+
+B4 – Mittel: Mobile Schrittweise-Ansicht priorisiert die Sprungliste vor dem Kontext
+Schritte: Passeriformes in Schrittweise öffnen; Untergruppen suchen aufgeklappt; 320×740.
+Ergebnis: Globale Suche und lokale Suche sowie die begrenzt scrollbar dargestellte Sprungliste stehen vor dem Gruppenheader und den Karten. Details-Taste im Gruppenheader bei y≈934, somit unterhalb der ersten Bildschirmhöhe. Die 143 Einträge stehen nicht alle hintereinander im äußeren Seitenfluss; die Sprungliste ist höhenbegrenzt.
+Auswirkung: Doppelter Such-/Navigationsbereich und verschachteltes Scrollen erschweren die Orientierung.
+Empfehlung: Auf schmalen Geräten zunächst Gruppenheader und Karten anzeigen; Sprungliste standardmäßig zuklappen oder als gezielte Aktion öffnen.
+
+Bestätigte erfolgreiche Abläufe
+- Kohlmeise: exakter Treffer zuerst; In Ansicht öffnen zeigt die Art im Baum.
+- Auswahl bleibt beim Wechsel voller Baum → Schrittweise → Liste erhalten.
+- Nichttreffer Kohlmiese zeigt verständlichen Hinweis und Suche schließen; Rückkehr zur Ansicht möglich.
+- Deutschland → Wintergäste zeigt aktive Filter und 41 Arten im geprüften Passeriformes-Kontext; Bestand aufheben stellt Weltweit wieder her.
+- Schrittweise: lokale Suche Meisen reduziert 143 auf 9 Untergruppen; Navigation zu Paridae zeigt 62 Arten; Browser-Zurück führt zu Passeriformes zurück.
+- Verteilung zeigt Artenzahlen, Prozentwerte und verständliche Erklärung der Balken.
+- Daten & Updates trennt Quellenprüfung, veröffentlichtes Update und fachliche Prüffälle.
+- Filterdialog: Tab erreicht Bestand und Ordnungen; Escape schließt und gibt Fokus an Filter zurück. Vollständiger Fokusumlauf nicht bestätigt.
+- Liste: Pfeil nach unten setzt aktiven Nachfolger Cotingidae; Enter zeigt dessen Details.
+- Große Baumansicht bei 390×844 geöffnet; Steuerung sichtbar; Escape schließt.
+- Bei den geprüften schmalen Zuständen entspricht die Dokumentbreite der Viewportbreite (390 bzw. 320 px).
+- Keine Warnungen oder Fehler in den während der Sitzung erfassten Browserlogs.
+
+Grenzen
+Keine vollständige WCAG-Konformitätsprüfung, kein Screenreader, kein echter 200-%-Browserzoom, keine echten Ein-/Zweifinger-Gesten. Keine Aussage über alle Taxa, Kombinationen oder langsame Netzverbindungen. Die Befunde sind Experteneinschätzungen; Auswirkungen sollten zusätzlich mit echten Nutzeraufgaben geprüft werden.
+
+
+Nachprüfung nach Korrektur – 6. November 2026
+Alle vier Befunde im lokalen Quellstand behoben und im internen Browser erneut geprüft.
+B1: Sichtbare Suchdetailspalte ab 801 px, mobiles Detailblatt darunter; Fokus beim Öffnen und Rückgabe beim Schließen. Native Maus-/Escapeprüfung: Unterarttreffer bleibt bei y=396,3 px.
+B2: Mobile Baumaktionen zunächst geschlossen, große Ansicht hervorgehoben, Gesamtbaum unter Weitere erreichbar. 390×844: Baumfläche ab y=436 statt ca. 573.
+B3: Arten und Gattungen gruppiert; 40 Unterarten zunächst eingeklappt, jederzeit zugänglich. Expliziter Ebenenfilter zeigt alle 40 Unterarten direkt.
+B4: Aktuelle Gruppe vor Sprungliste/Karten; mobile Sprungliste unabhängig vom gespeicherten Desktopzustand geschlossen. Navigation zeigt den neuen Pfad und klappt die Sprungliste wieder zu.
+Geprüft: 1280×900, 900×800, 390×844, 320×740; beide Themes, Suche/Unterartdetails/Ebenenfilter/Nichttreffer, Maus/Escape/Fokus, Baumaktionen/Großansicht und lokale Schritt-Navigation.
+Kein horizontaler Überlauf in den geprüften Zuständen; keine erfassten Konsolenfehler oder -warnungen. Alle 13 Node-Regressionsskripte bestanden.
+Bilder: fixed-search-details.jpg, fixed-mobile-tree.jpg, fixed-mobile-step.jpg.
+Die oben genannten Grenzen bezüglich echter Geräte, Screenreader und Browserzoom bleiben bestehen.
