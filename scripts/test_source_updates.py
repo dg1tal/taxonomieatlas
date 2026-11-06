@@ -15,6 +15,7 @@ from urllib.error import HTTPError
 from check_sources import ROOT, avi_patches, candidate, check, digest, fetch_json, fetch_wikidata, publication_links
 import openpyxl
 from explorer_sources import FIELDS, FILES, build_candidate, inspect_explorer, inspect_names, verify_workbook_baseline, version_entry
+from fetch_genus_names import fetch_inaturalist, inat
 
 
 class PolicyTests(unittest.TestCase):
@@ -107,7 +108,7 @@ class PolicyTests(unittest.TestCase):
             self.assertTrue((root / 'sources/reviews' / (manifest['sha256'] + '.json')).is_file())
             self.assertTrue((root / 'sources/reviews' / (manifest['sha256'] + '.source-check.json')).is_file())
 
-    def explorer_fixture(self, root):
+    def explorer_fixture(self, root, genus=None):
         for directory in ['scripts', 'sources', 'dist', 'source-update']:
             (root / directory).mkdir()
         for name in ['prepare_source_release.mjs', 'verify_source_workbook.py', 'check_sources.py',
@@ -118,7 +119,7 @@ class PolicyTests(unittest.TestCase):
         for name in ['wikidata-bird-genera.json', 'inat-bird-genera.json', 'inaturalist-name-review.json']:
             shutil.copy(ROOT / 'sources' / name, root / 'sources' / name)
         bundle = json.loads((ROOT / 'dist/data.json').read_text())
-        species = next(n for n in bundle['nodes'] if n['rank'] == 'species' and n.get('en'))
+        species = next(n for n in bundle['nodes'] if n['rank'] == 'species' and n.get('en') and (genus is None or n['name'].startswith(genus + ' ')))
         byid = {n['id']: n for n in bundle['nodes']}
         lineage = [species]
         while lineage[-1]['parent']:
@@ -241,6 +242,114 @@ class PolicyTests(unittest.TestCase):
         self.assertTrue(all('VALUES' in url and 'LIMIT' not in url for url in urls))
         with patch('check_sources.download', side_effect=[b'{truncated', b'{"ok":true}']), patch('check_sources.time.sleep'):
             self.assertEqual(fetch_json('https://example.test/api'), {'ok': True})
+
+    def test_reviewed_german_genus_release_and_replay(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            bundle, _, _ = self.explorer_fixture(root, 'Heterotetrax')
+            folder = root / 'source-update'
+            snapshot = json.loads((folder / 'inaturalist.json').read_text())
+            fixture = json.loads((ROOT / 'scripts/fixtures/inaturalist-heterotetrax-reviewed.json').read_text())
+            snapshot['results'] = [r for r in snapshot['results'] if r['id'] != 1505952] + fixture['results']
+            (folder / 'inaturalist.json').write_text(json.dumps(snapshot))
+            checked_at = '2026-11-06T14:00:00Z'
+            next_bundle, evidence, names, changed = build_candidate(root, folder, bundle, checked_at)
+            self.assertTrue(changed)
+            before = next(n for n in bundle['nodes'] if n['name'] == 'Heterotetrax')
+            after = next(n for n in next_bundle['nodes'] if n['name'] == 'Heterotetrax')
+            self.assertEqual(after['de'], 'Rüppelltrappen')
+            self.assertEqual(after['vernacular_names']['de'][0]['evidence'][0]['retrieved'], '2026-11-06')
+            self.assertEqual(after['vernacular_names']['en'], before['vernacular_names']['en'])
+            self.assertEqual(next_bundle['germany_source'], bundle['germany_source'])
+            report = dict(mode='explorer', checked_at=checked_at, publish=True, errors=[], blocked=[],
+                          from_sha256=bundle['source']['sha256'], to_sha256=bundle['source']['sha256'], **evidence)
+            (root / 'dist/data.json').write_text(json.dumps(bundle, ensure_ascii=False, separators=(',', ':')))
+            for name, value in [('report.json', report), ('candidate.json', next_bundle), ('genus-names-candidate.json', names)]:
+                (folder / name).write_text(json.dumps(value, ensure_ascii=False, separators=(',', ':')))
+            env = dict(os.environ, PATH=str(Path(sys.executable).parent) + os.pathsep + os.environ['PATH'])
+            subprocess.run(['node', 'scripts/prepare_source_release.mjs', 'source-update'], cwd=root, env=env, check=True, capture_output=True, text=True)
+            published = json.loads((root / 'dist/data.json').read_text())
+            self.assertEqual(published, next_bundle)
+            again, _, _, changed = build_candidate(root, folder, published, checked_at)
+            self.assertFalse(changed)
+            self.assertEqual(again, published)
+
+            # Replay against the old baseline must still require the separate
+            # German approval and exact source identity/evidence fingerprints.
+            shutil.copy(ROOT / 'sources/inat-bird-genera.json', root / 'sources/inat-bird-genera.json')
+            review_path = root / 'sources/inaturalist-name-review.json'
+            review = json.loads(review_path.read_text())
+            decision = next(r for r in review['decisions'] if r['genus'] == 'Heterotetrax')
+            decision.pop('reviewed_languages')
+            review_path.write_text(json.dumps(review))
+            with self.assertRaisesRegex(ValueError, 'German name change requires separate review'):
+                inspect_names(root, folder, bundle, checked_at)
+            decision['reviewed_languages'] = ['de']
+            review_path.write_text(json.dumps(review))
+            row = next(r for r in snapshot['results'] if r['name'] == 'Heterotetrax')
+            row['id'] = 999
+            (folder / 'inaturalist.json').write_text(json.dumps(snapshot))
+            with self.assertRaises(ValueError):
+                inspect_names(root, folder, bundle, checked_at)
+            row['id'] = 1505952
+            next(n for n in row['names'] if n['locale'] == 'de')['name'] = 'Unreviewed German label'
+            (folder / 'inaturalist.json').write_text(json.dumps(snapshot))
+            with self.assertRaisesRegex(ValueError, 'Unreviewed iNaturalist'):
+                inspect_names(root, folder, bundle, checked_at)
+
+    def test_additional_reviewed_english_names(self):
+        bundle = json.loads((ROOT / 'dist/data.json').read_text())
+        snapshot = json.loads((ROOT / 'sources/inat-bird-genera.json').read_text())
+        rows = json.loads((ROOT / 'scripts/fixtures/inaturalist-additional-reviewed.json').read_text())['results']
+        ids = {row['id'] for row in rows}
+        snapshot['results'] = [r for r in snapshot['results'] if r['id'] not in ids] + rows
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            (folder / 'inaturalist.json').write_text(json.dumps(snapshot))
+            patches, _, _, _ = inspect_names(ROOT, folder, bundle, '2026-11-06T14:00:00Z')
+            result = {p['after']['name']: p['after'] for p in patches}
+            self.assertEqual(set(result), {'Myioborus', 'Patagona'})
+            self.assertEqual(result['Myioborus']['en'], 'Whitestart')
+            self.assertEqual([n['name'] for n in result['Myioborus']['vernacular_names']['en']], ['Whitestart', 'Whitestarts'])
+            self.assertEqual(result['Patagona']['en'], 'Giant hummingbirds')
+            for p in patches:
+                self.assertEqual(p['after'].get('de'), p['before'].get('de'))
+                self.assertEqual(p['after']['parent'], p['before']['parent'])
+
+    def test_inaturalist_uses_stable_order(self):
+        from urllib.parse import urlparse, parse_qs
+        urls = []
+        inat(2, lambda url: urls.append(url))
+        query = parse_qs(urlparse(urls[0]).query)
+        self.assertEqual(query['order_by'], ['id'])
+        self.assertEqual(query['order'], ['asc'])
+        self.assertEqual(query['is_active'], ['true'])
+        self.assertEqual(query['page'], ['2'])
+
+    def test_inaturalist_restarts_inconsistent_snapshot(self):
+        first = {'total_results': 201, 'results': [{'id': i} for i in range(1, 201)]}
+        last = {'total_results': 201, 'results': [{'id': 201}]}
+        for bad in [dict(last, total_results=202), dict(last, results=[]), dict(last, results=[{'id': 200}])]:
+            calls = []
+            responses = iter([first, bad, first, last])
+            def page(number):
+                calls.append(number)
+                return next(responses)
+            with patch('fetch_genus_names.time.sleep'):
+                result = fetch_inaturalist(page)
+            self.assertEqual(calls, [1, 2, 1, 2])
+            self.assertEqual(len(result['results']), 201)
+            self.assertEqual(result['results'][-1]['id'], 201)
+
+    def test_inaturalist_retries_are_bounded_and_never_accept_partial_data(self):
+        with patch('fetch_genus_names.time.sleep'), patch('fetch_genus_names.inat', return_value={'total_results': 201, 'results': []}) as page:
+            with self.assertRaisesRegex(ValueError, 'Incomplete'):
+                fetch_inaturalist()
+            self.assertEqual(page.call_count, 3)
+        with patch('fetch_genus_names.inat', side_effect=HTTPError('https://example.test/', 403, 'Forbidden', {}, None)) as page:
+            with self.assertRaises(HTTPError):
+                fetch_inaturalist()
+            self.assertEqual(page.call_count, 1)
 
     def test_permanent_denial_does_not_hammer_source(self):
         from check_sources import download

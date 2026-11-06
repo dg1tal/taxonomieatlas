@@ -1,0 +1,59 @@
+{
+  "retrieved": "2026-11-06",
+  "total_results": 2,
+  "results": [
+    {
+      "id": 9446,
+      "name": "Myioborus",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        7251,
+        71349
+      ],
+      "names": [
+        {
+          "name": "Whitestarts",
+          "locale": "en",
+          "position": 0,
+          "is_valid": true
+        },
+        {
+          "name": "Neotropical Redstarts",
+          "locale": "en",
+          "position": 1,
+          "is_valid": true
+        }
+      ]
+    },
+    {
+      "id": 6254,
+      "name": "Patagona",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        1583761,
+        5562,
+        1542289
+      ],
+      "names": [
+        {
+          "name": "Giant hummingbirds",
+          "locale": "en",
+          "position": 7,
+          "is_valid": true
+        }
+      ]
+    }
+  ]
+}

@@ -19,3 +19,24 @@ for(const mutate of [
 ]){const bad=structuredClone(candidate);mutate(bad);assert.throws(()=>verifyCandidate(old,bad,report));}
 for(const change of [{publish:false},{errors:['timeout']},{blocked:['new edition']},{from_sha256:'a'.repeat(64)},{patches:[...report.patches,...report.patches]}])assert.throws(()=>verifyCandidate(old,candidate,{...report,...change}));
 console.log('PASS: source-bound auto-release; reject taxonomy, country, German names, licenses, version, extra fields, duplicate patches and failed source checks.');
+
+// German genus labels require a separate, genus-specific review. The publish
+// command independently replays its fingerprints against the source files.
+const genus=old.nodes.find(n=>n.name==='Heterotetrax');
+const after=structuredClone(genus);
+after.de='Rüppelltrappen';after.de_source='iNaturalist';after.de_match='supplemental_genus_name';
+after.vernacular_names.de=[{name:after.de,evidence:[{source:'iNaturalist',url:'https://www.inaturalist.org/taxa/1505952',field:'preferred valid locale name',retrieved:'2026-11-06'}]}];
+const germanReport={publish:true,errors:[],blocked:[],patches:[],mode:'explorer',from_sha256:old.source.sha256,to_sha256:old.source.sha256,explorer:old.source.explorer,name_sources:old.name_sources,dataset_revision:'2026-11-06.reviewed',genus_patches:[{id:genus.id,before:genus,after}],name_decisions:[{genus:'Heterotetrax',decision:'accept',evidence:'Source-bound German review',reviewed_languages:['de']}]};
+const germanCandidate=structuredClone(old);
+Object.assign(germanCandidate.nodes.find(n=>n.id===genus.id),after);
+germanCandidate.dataset_revision=germanReport.dataset_revision;
+assert.equal(verifyCandidate(old,germanCandidate,germanReport).approved,true);
+for(const decisions of [[],[{genus:'Other',decision:'accept',evidence:'review',reviewed_languages:['de']}],[{genus:'Heterotetrax',decision:'accept',evidence:'review',reviewed_languages:['en']}]]){
+ assert.throws(()=>verifyCandidate(old,germanCandidate,{...germanReport,name_decisions:decisions}));
+}
+for(const mutate of [n=>n.parent='other',n=>n.name='Other',n=>n.range='Unreviewed range']){
+ const badReport=structuredClone(germanReport),badCandidate=structuredClone(germanCandidate);
+ mutate(badReport.genus_patches[0].after);mutate(badCandidate.nodes.find(n=>n.id===genus.id));
+ assert.throws(()=>verifyCandidate(old,badCandidate,badReport));
+}
+console.log('PASS: separately reviewed German genus label; reject missing/wrong-language review and taxonomy changes.');

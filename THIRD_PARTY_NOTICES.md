@@ -25,7 +25,7 @@ gesamte Datenpaket.
   weitere importierte Attribute in den Datenpaketen.
 - **Bearbeitung:** Auswahl von Spalten, Konvertierung nach JSON, interne IDs,
   Verknüpfung mit separat belegten Namen und Deutschlanddaten. Die optionale
-  Kladenansicht ist eine eigene Ergänzung. Die tägliche Prüfung verwendet den
+  Kladenansicht ist eine eigene Ergänzung. Die wöchentliche Prüfung verwendet den
   [offiziellen Explorer](https://explore.avilist.org/) mit denselben zugänglichen
   Exportfeldern. Der erstmalige Abgleich prüft 33.698 Taxa gegen das archivierte
   XLSX. Die Original-XLSX-Prüfsumme bleibt unter `source.sha256`; die jeweils

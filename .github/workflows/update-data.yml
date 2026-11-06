@@ -1,8 +1,8 @@
-name: Daily bird data check
+name: Weekly bird data check
 
 on:
   schedule:
-    - cron: '37 4 * * *'
+    - cron: '37 4 * * 1'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -14,7 +14,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: daily-bird-data
+  group: weekly-bird-data
   cancel-in-progress: false
 
 jobs:

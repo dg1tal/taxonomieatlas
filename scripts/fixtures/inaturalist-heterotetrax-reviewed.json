@@ -1,0 +1,35 @@
+{
+  "retrieved": "2026-11-06",
+  "total_results": 1,
+  "results": [
+    {
+      "id": 1505952,
+      "name": "Heterotetrax",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        71266,
+        75
+      ],
+      "names": [
+        {
+          "name": "Brown Bustards",
+          "locale": "en",
+          "position": 0,
+          "is_valid": true
+        },
+        {
+          "name": "Rüppelltrappen",
+          "locale": "de",
+          "position": 5,
+          "is_valid": true
+        }
+      ]
+    }
+  ]
+}

@@ -179,9 +179,10 @@ def inspect_names(root, folder, bundle, checked_at):
             raise ValueError('Reviewed iNaturalist taxon identity changed: ' + genus)
         node = copy.deepcopy(fresh[genus])
         for lang in ['de', 'en']:
-            # Only the changed English evidence gets a new receipt date.
+            # German changes require an explicit language-specific review in
+            # addition to the exact before/after evidence fingerprints.
             if fingerprint((before or {}).get(lang)) != fingerprint((after or {}).get(lang)):
-                if lang != 'en':
+                if lang != 'en' and lang not in approval.get('reviewed_languages', []):
                     raise ValueError('German name change requires separate review')
                 for name in node.get('vernacular_names', {}).get(lang, []):
                     for evidence in name['evidence']:
@@ -198,7 +199,10 @@ def inspect_names(root, folder, bundle, checked_at):
                 if lang in original[genus].get('vernacular_names', {}):
                     node.setdefault('vernacular_names', {})[lang] = copy.deepcopy(original[genus]['vernacular_names'][lang])
         patches.append(dict(id=node['id'], before=original[genus], after=node))
-        decisions.append(dict(genus=genus, decision='accept', evidence=approval['evidence']))
+        decision = dict(genus=genus, decision='accept', evidence=approval['evidence'])
+        if approval.get('reviewed_languages'):
+            decision['reviewed_languages'] = approval['reviewed_languages']
+        decisions.append(decision)
     name_sources = copy.deepcopy(bundle.get('name_sources', []))
     if patches:
         for metadata in name_sources:

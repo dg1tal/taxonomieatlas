@@ -1,4 +1,4 @@
-"""Daily read-only acquisition and conservative, source-bound AviList candidate builder.
+"""Weekly read-only acquisition and conservative, source-bound AviList candidate builder.
 
 Never writes published files. A separate job validates/releases a candidate.
 """
@@ -10,7 +10,6 @@ import json
 import os
 import re
 import time
-from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -26,7 +25,7 @@ from explorer_sources import build_candidate, inspect_explorer, inspect_names
 
 ROOT = Path(__file__).resolve().parents[1]
 AUTO_FIELDS = {'ENGLISH NAME: AVILIST': 'en', 'SPECIES CODE CORNELL LAB': 'code'}
-UA = 'BirdTaxonomyAtlas/1.0 (+https://github.com/dg1tal/taxonomieatlas; daily source check)'
+UA = 'BirdTaxonomyAtlas/1.0 (+https://github.com/dg1tal/taxonomieatlas; weekly source check)'
 
 
 def digest(data):
@@ -257,19 +256,7 @@ def check(out, config):
         report['errors'].append('Wikidata: ' + str(error))
     try:
         print('Checking iNaturalist (complete paginated genera)', flush=True)
-        feeds.get = fetch_json
-        first = feeds.inat(1)
-        total = first['total_results']
-        if not isinstance(total, int) or not 1 <= total <= 10000:
-            raise ValueError('Unexpected iNaturalist result count')
-        with ThreadPoolExecutor(max_workers=2) as pool:
-            parts = list(pool.map(feeds.inat, range(2, (total + 199) // 200 + 1)))
-        if any(part['total_results'] != total for part in parts):
-            raise ValueError('iNaturalist result count changed during pagination')
-        rows = first['results'] + [row for part in parts for row in part['results']]
-        if len(rows) != total or len({row['id'] for row in rows}) != total:
-            raise ValueError('Incomplete/duplicate iNaturalist pagination')
-        inat = {'results': sorted(rows, key=lambda row: row['id'])}
+        inat = feeds.fetch_inaturalist(lambda page: feeds.inat(page, fetch_json))
         (out / 'inaturalist.json').write_bytes(canonical(inat))
         _, names = enrich(copy.deepcopy(bundle), old_wd, inat)
         actual = digest(canonical(names))
@@ -306,7 +293,7 @@ def check(out, config):
     if os.environ.get('GITHUB_REPOSITORY') and os.environ.get('GITHUB_RUN_ID'):
         report['workflow_url'] = 'https://github.com/' + os.environ['GITHUB_REPOSITORY'] + '/actions/runs/' + os.environ['GITHUB_RUN_ID']
     (out / 'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
-    summary = ['# Daily bird source check', '', 'Checked: ' + report['checked_at'],
+    summary = ['# Weekly bird source check', '', 'Checked: ' + report['checked_at'],
                '', 'Automatic candidate: ' + str(report['publish']),
                '', '## Review required', *['- ' + reason for reason in report['blocked']],
                '', '## Errors', *['- ' + reason for reason in report['errors']],

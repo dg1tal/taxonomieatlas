@@ -1,8 +1,8 @@
 {
-  "reviewed_at": "2026-11-01",
+  "reviewed_at": "2026-11-06",
   "reviewer": "Codex source-bound review requested by repository owner",
   "rights_assessment": {
-    "scope": "Only these seven short factual taxonomic name assignments; no expressive text, media or entire-database license.",
+    "scope": "Only the individually reviewed short factual taxonomic name assignments below; no expressive text, media or entire-database license.",
     "provider_statement": "Taxonomic information should not represent creative work and thus may not be subject to intellectual property restrictions in many jurisdictions.",
     "source": "https://www.inaturalist.org/taxa/inaturalist-taxonomy.dwca.zip",
     "metadata": "sources/rights/inaturalist-taxonomy-eml-2026-10-01.xml",
@@ -198,6 +198,103 @@
       },
       "avilist_species": [
         "Sapayoa aenigma"
+      ]
+    },
+    {
+      "genus": "Heterotetrax",
+      "inaturalist_id": 1505952,
+      "decision": "accept",
+      "reviewed_at": "2026-11-06",
+      "reviewed_languages": [
+        "de"
+      ],
+      "before_sha256": "08baa4d660068926e0f3324d7325376eba363dae676f04cc692255f794ee933f",
+      "after_sha256": "4a9d3c7579f7da6e149761118df755cf48ba595a8632e891319e0079a84e5520",
+      "evidence": "Accept the iNaturalist German genus label Rüppelltrappen as an attributed source vernacular name. The active genus retains taxon ID 1505952, rank genus and Aves ancestry. All three active source species (humilis, rueppelii, vigorsii) match the existing AviList genus. English Brown Bustards is unchanged. This is a genus label, not a replacement of German species names or an official DOG name; no taxonomy or occurrence evidence is transferred.",
+      "source_url": "https://www.inaturalist.org/taxa/1505952",
+      "species_evidence": {
+        "url": "https://api.inaturalist.org/v1/taxa?taxon_id=1505952&rank=species&per_page=200&is_active=true&order_by=id&order=asc",
+        "total": 3,
+        "species": [
+          "Heterotetrax humilis",
+          "Heterotetrax rueppelii",
+          "Heterotetrax vigorsii"
+        ]
+      },
+      "avilist_species": [
+        "Heterotetrax humilis",
+        "Heterotetrax rueppelii",
+        "Heterotetrax vigorsii"
+      ]
+    },
+    {
+      "genus": "Myioborus",
+      "inaturalist_id": 9446,
+      "decision": "accept",
+      "reviewed_at": "2026-11-06",
+      "reviewed_languages": [
+        "en"
+      ],
+      "before_sha256": "4b7cad6e69c40c9e0a7411458f68e1c57a5d88c2e644365b3086db9a6e10f652",
+      "after_sha256": "569b420d3bb69ec6ffcda793f8af2f592485631b13122223d2ce50cb8814aa61",
+      "evidence": "Accept iNaturalist preferred English alias Whitestarts replacing Neotropical Redstarts. All 12 active source species match the existing AviList genus. The displayed Wikidata-preferred Whitestart remains unchanged; only the attributed iNaturalist alternative changes. No taxonomy or occurrence evidence is transferred.",
+      "source_url": "https://www.inaturalist.org/taxa/9446",
+      "species_evidence": {
+        "url": "https://api.inaturalist.org/v1/taxa?taxon_id=9446&rank=species&per_page=200&is_active=true&order_by=id&order=asc",
+        "total": 12,
+        "species": [
+          "Myioborus albifacies",
+          "Myioborus albifrons",
+          "Myioborus brunniceps",
+          "Myioborus cardonai",
+          "Myioborus castaneocapilla",
+          "Myioborus flavivertex",
+          "Myioborus melanocephalus",
+          "Myioborus miniatus",
+          "Myioborus ornatus",
+          "Myioborus pariae",
+          "Myioborus pictus",
+          "Myioborus torquatus"
+        ]
+      },
+      "avilist_species": [
+        "Myioborus albifacies",
+        "Myioborus albifrons",
+        "Myioborus brunniceps",
+        "Myioborus cardonai",
+        "Myioborus castaneocapilla",
+        "Myioborus flavivertex",
+        "Myioborus melanocephalus",
+        "Myioborus miniatus",
+        "Myioborus ornatus",
+        "Myioborus pariae",
+        "Myioborus pictus",
+        "Myioborus torquatus"
+      ]
+    },
+    {
+      "genus": "Patagona",
+      "inaturalist_id": 6254,
+      "decision": "accept",
+      "reviewed_at": "2026-11-06",
+      "reviewed_languages": [
+        "en"
+      ],
+      "before_sha256": "c3ab8cd3a1569c0596de07ac9a9ac1e840d1596059cf1216b8630a202d256620",
+      "after_sha256": "86349b4c1c6e5c51b47f5e773c0882327570e8e9d9484841ba44a2214ad5e3d8",
+      "evidence": "Accept the iNaturalist English genus label Giant hummingbirds. Both active source species gigas and peruviana match the existing AviList genus. The German Wikidata label remains unchanged. No species split, taxonomy or occurrence evidence is imported.",
+      "source_url": "https://www.inaturalist.org/taxa/6254",
+      "species_evidence": {
+        "url": "https://api.inaturalist.org/v1/taxa?taxon_id=6254&rank=species&per_page=200&is_active=true&order_by=id&order=asc",
+        "total": 2,
+        "species": [
+          "Patagona gigas",
+          "Patagona peruviana"
+        ]
+      },
+      "avilist_species": [
+        "Patagona gigas",
+        "Patagona peruviana"
       ]
     }
   ]

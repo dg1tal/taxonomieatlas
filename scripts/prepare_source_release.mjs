@@ -18,9 +18,10 @@ export function verifyCandidate(old,next,report){
   if(report.from_sha256!==report.to_sha256||!report.explorer?.url?.startsWith('https://explore.avilist.org/data/'))throw Error('Invalid Explorer provenance');
   for(const p of report.genus_patches||[]){
    const node=nodes.get(p.id);if(!node||node.rank!=='genus'||JSON.stringify(node)!==JSON.stringify(p.before))throw Error('Genus review baseline mismatch');
-   const allowed=new Set(['en','en_source','en_match','vernacular_names']);
+   const germanReviewed=report.name_decisions?.some(r=>r.genus===node.name&&r.decision==='accept'&&r.evidence&&r.reviewed_languages?.includes('de'));
+   const allowed=new Set(['en','en_source','en_match','vernacular_names',...(germanReviewed?['de','de_source','de_match']:[])]);
    for(const key of new Set([...Object.keys(node),...Object.keys(p.after)]))if(!allowed.has(key)&&JSON.stringify(node[key])!==JSON.stringify(p.after[key]))throw Error('Unreviewed genus field: '+key);
-   if(JSON.stringify(node.vernacular_names?.de)!==JSON.stringify(p.after.vernacular_names?.de))throw Error('German genus evidence changed');
+   if(!germanReviewed&&JSON.stringify(node.vernacular_names?.de)!==JSON.stringify(p.after.vernacular_names?.de))throw Error('German genus evidence changed without separate review');
    for(const key of Object.keys(node))delete node[key];Object.assign(node,p.after);
   }
   expected.source.explorer=report.explorer;expected.name_sources=report.name_sources;expected.dataset_revision=report.dataset_revision;
@@ -31,7 +32,7 @@ export function verifyCandidate(old,next,report){
  if(Buffer.byteLength(JSON.stringify(next))>20*1024*1024)throw Error('Candidate exceeds client update size limit');
  const errors=validate(next);if(errors.length)throw Error(errors.join('\n'));
  return {from_sha256:report.from_sha256,to_sha256:report.to_sha256,approved:true,
-  reviewer:report.mode==='explorer'?'Daily source workflow: official Explorer and source-bound name review':'Daily source workflow: conservative cell-by-cell AviList verification',
+  reviewer:report.mode==='explorer'?'Weekly source workflow: official Explorer and source-bound name review':'Weekly source workflow: conservative cell-by-cell AviList verification',
   evidence:report.mode==='explorer'?'Official Explorer dataset, full 26-field row comparison, unchanged version/license/bibliography, replayed checks against pinned source files and individually reviewed iNaturalist names. Original workbook SHA-256 remains the archived provenance; source.explorer records the live source checksums. '+report.checked_at:'Same workbook sheets, schema, row order and every non-allowlisted cell. Only existing AviList English labels/Cornell codes or workbook packaging changed. All taxonomy, German labels, country records, licenses and other sources unchanged. Source check: '+report.checked_at,
   change_reviews:[]};
 }

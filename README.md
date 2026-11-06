@@ -7,7 +7,7 @@ First working release, 23 October 2026. Buildless ES modules; `dist/` is the dep
 The complete version 33 source is tracked here. `.github/workflows/pages.yml` checks the JavaScript and runs the existing regression tests on every push to `main`, then publishes only `dist/`. The app uses relative asset and data URLs, so it also works at the repository path `/taxonomieatlas/`.
 
 The Pages workflow also supports manual runs and publishes checked-in data only.
-External acquisition is handled separately by the daily source workflow described
+External acquisition is handled separately by the weekly source workflow described
 below.
 
 In the GitHub repository settings, select **Pages → Build and deployment → GitHub Actions**. The published address is `https://dg1tal.github.io/taxonomieatlas/`. The original ChatGPT Site remains available independently at `https://vogel-taxonomie-atlas.wurstinnovation.chatgpt.site`.
@@ -58,7 +58,7 @@ To prepare a public release:
 node scripts/release.mjs NEXT.json REVIEW.json
 ```
 
-The review binds old and new original-source checksums, requires reviewer/evidence/approval, and individual evidenced decisions for added, removed, renamed or reparented taxa. Changes to German records require germany_review. The script writes an immutable package and finally updates the manifest; publish the complete dist directory through Sites. Daily external-source checks are configured as described below; taxonomic migrations still require expert review. There is no protected web admin area yet.
+The review binds old and new original-source checksums, requires reviewer/evidence/approval, and individual evidenced decisions for added, removed, renamed or reparented taxa. Changes to German records require germany_review. The script writes an immutable package and finally updates the manifest; publish the complete dist directory through Sites. Weekly external-source checks are configured as described below; taxonomic migrations still require expert review. There is no protected web admin area yet.
 
 ## Implemented
 
@@ -112,7 +112,7 @@ python scripts/enrich_genus_names.py
 node scripts/test-genus-names.mjs
 ```
 
-Source snapshots and the enrichment report are retained under sources/. For fully offline reproduction use the retained snapshots and run only enrich_genus_names.py. No visitor-side source scraping is configured. The daily workflow checks these source snapshots for changes; supplemental-name changes require review. Browser/touch QA remains unverified under the prior browser-origin denial. Existing engine/layout tests and the new source/provenance/alias/update tests pass.
+Source snapshots and the enrichment report are retained under sources/. For fully offline reproduction use the retained snapshots and run only enrich_genus_names.py. No visitor-side source scraping is configured. The weekly workflow checks these source snapshots for changes; supplemental-name changes require review. Browser/touch QA remains unverified under the prior browser-origin denial. Existing engine/layout tests and the new source/provenance/alias/update tests pass.
 
 
 ## Order multi-select (sixth release)
@@ -220,10 +220,10 @@ Die elf Befunde der erneuten visuellen Prüfung sind in `UI_UX_BROWSER_FIXES.md`
 Automatische Regressionen: Navigation (einschließlich Fokus/Erstklick), UX (einschließlich Suchrückkehr in alle drei Modi), Baumgeometrie, Theme und Ordnungsfilter. Desktop-Browserprüfung abgeschlossen, echte schmale Mobil-/Touch-/Screenreaderprüfung bleibt ausdrücklich offen. Datenbestand unverändert.
 
 
-## Tägliche Quellenprüfung und öffentliche Datenupdates
+## Wöchentliche Quellenprüfung und öffentliche Datenupdates
 
-`.github/workflows/update-data.yml` läuft täglich um **04:37 UTC** (05:37 Uhr
-MEZ / 06:37 Uhr MESZ) und lässt sich unter Actions → Daily bird data check
+`.github/workflows/update-data.yml` läuft montags um **04:37 UTC** (05:37 Uhr
+MEZ / 06:37 Uhr MESZ) und lässt sich unter Actions → Weekly bird data check
 manuell starten. GitHub kann geplante Läufe verzögern. `dry_run` prüft alle
 Quellen und erstellt Berichte, ohne etwas zu veröffentlichen.
 
@@ -257,8 +257,26 @@ iNaturalist-Namensänderungen vom 1. November 2026 sind in
 Artzuordnungen und begrenzter Rechtebewertung hinterlegt. Nur genau diese
 geprüften Übergänge darf der Workflow anwenden; neue abweichende Änderungen
 werden angehalten. Es gibt keine pauschale CC0-Freigabe für iNaturalist.
-Taxon-IDs, Hierarchie, Deutschlandstatus und deutsche Namen bleiben durch
-beide Wege unverändert.
+Die deutsche Gattungsbezeichnung **Rüppelltrappen** für Heterotetrax wurde am
+6. November 2026 separat geprüft: aktive iNaturalist-Gattung 1505952, dieselben
+drei Arten wie in AviList (humilis, rueppelii, vigorsii), englischer Name
+unverändert. Sie wird als iNaturalist-Gattungsname belegt, nicht als offizieller
+DOG-Name oder als Ersatz deutscher Artnamen. Der genaue Übergang ist ebenfalls
+mit Prüfsummen und expliziter Freigabe der Sprache `de` hinterlegt. Andere
+deutsche Änderungen bleiben gesperrt. Taxon-IDs, Hierarchie und
+Deutschlandstatus bleiben unverändert.
+
+Beim vollständigen Wiederholen wurden am selben Tag zwei weitere Übergänge
+geprüft und mit exakten Prüfsummen freigegeben: der iNaturalist-Alias
+„Whitestarts“ für Myioborus (12 übereinstimmende Arten; bevorzugte Anzeige
+„Whitestart“ unverändert) und „Giant hummingbirds“ für Patagona (gigas und
+peruviana stimmen überein; deutscher Name unverändert).
+
+iNaturalist wird seitenweise nach aufsteigender Taxon-ID abgefragt. Jede Seite
+muss die erwartete Anzahl enthalten; Gesamtzahl und streng aufsteigende,
+eindeutige IDs werden geprüft. Bei widersprüchlichen Ergebnissen beginnt der
+gesamte Abruf erneut bei Seite 1, höchstens dreimal. Bleibt er unvollständig,
+wird keine Datenfreigabe erzeugt.
 
 Die kleinen manuell kuratierten Einzelbelege (LBV, ITIS, USFWS, Avibase,
 FU Berlin) und der Stiller-Artikel bleiben separat betreut. Ihre Inhalte
