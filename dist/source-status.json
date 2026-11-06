@@ -1,28 +1,28 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T14:18:09.920Z",
+  "updated_at": "2026-11-06T14:24:14.635Z",
   "last_successful_check": {
-    "at": "2026-11-06T14:17:29.593928+00:00",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42232273920"
+    "at": "2026-11-06T14:23:28.541433+00:00",
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42233028848"
   },
   "latest_check": {
-    "at": "2026-11-06T14:17:29.593928+00:00",
+    "at": "2026-11-06T14:23:28.541433+00:00",
     "outcome": "success",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42232273920"
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42233028848"
   },
   "published_update": {
-    "revision": "2026-11-01.auto-798103b642d3",
+    "revision": "2026-11-06.auto-31b0cf63a5a2",
     "version": "2026",
-    "sha256": "46bb8ae227eaa6326732d092cf62fda4d0111b23d7b3b915b44f27187ca1d236",
-    "path": "releases/46bb8ae227eaa6326732d092cf62fda4d0111b23d7b3b915b44f27187ca1d236.json",
-    "summary": "7 Gattungsnamen aktualisiert",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/41334012861"
+    "sha256": "dc47b731ec1cdb91cd8cca0c9d719a020a876ad3d6129f2651186b3149f61e97",
+    "path": "releases/dc47b731ec1cdb91cd8cca0c9d719a020a876ad3d6129f2651186b3149f61e97.json",
+    "summary": "3 Gattungsnamen aktualisiert",
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42233028848"
   },
-  "publication_pending": true,
+  "publication_pending": false,
   "manual_review": {
     "update_state": "clear",
     "update_items": [],
-    "as_of": "2026-11-06T14:17:29.593928+00:00",
+    "as_of": "2026-11-06T14:23:28.541433+00:00",
     "carried_forward": false,
     "incomplete": false,
     "dataset": {

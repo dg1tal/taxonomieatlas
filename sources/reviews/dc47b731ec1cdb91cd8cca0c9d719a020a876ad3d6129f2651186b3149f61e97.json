@@ -1,0 +1,276 @@
+{
+  "review": {
+    "from_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+    "to_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+    "approved": true,
+    "reviewer": "Weekly source workflow: official Explorer and source-bound name review",
+    "evidence": "Official Explorer dataset, full 26-field row comparison, unchanged version/license/bibliography, replayed checks against pinned source files and individually reviewed iNaturalist names. Original workbook SHA-256 remains the archived provenance; source.explorer records the live source checksums. 2026-11-06T14:20:47.287758+00:00",
+    "change_reviews": []
+  },
+  "diff": {
+    "added": [],
+    "removed": [],
+    "renamed": [],
+    "moved": [],
+    "labels": [
+      {
+        "before": {
+          "id": "69d26919-82c5-41bd-a4c5-763ff4e624eb",
+          "parent": "ed0779d9-fcfc-4c45-b8a4-91e49b4519ba",
+          "rank": "genus",
+          "name": "Heterotetrax",
+          "en": "Brown Bustards",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "en": [
+              {
+                "name": "Brown Bustards",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/1505952",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "after": {
+          "id": "69d26919-82c5-41bd-a4c5-763ff4e624eb",
+          "parent": "ed0779d9-fcfc-4c45-b8a4-91e49b4519ba",
+          "rank": "genus",
+          "name": "Heterotetrax",
+          "de": "Rüppelltrappen",
+          "de_source": "iNaturalist",
+          "de_match": "supplemental_genus_name",
+          "en": "Brown Bustards",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "de": [
+              {
+                "name": "Rüppelltrappen",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/1505952",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-11-06"
+                  }
+                ]
+              }
+            ],
+            "en": [
+              {
+                "name": "Brown Bustards",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/1505952",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "before": {
+          "id": "20e1deec-3d76-4b04-9880-2792b99f3ee1",
+          "parent": "bed7b081-43c3-4bc7-a9f1-57fdf5079b6a",
+          "rank": "genus",
+          "name": "Patagona",
+          "de": "Riesenkolibri",
+          "de_source": "Wikidata",
+          "de_match": "supplemental_genus_name",
+          "en": "Giant Hummingbird",
+          "en_source": "Wikidata",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "de": [
+              {
+                "name": "Riesenkolibri",
+                "evidence": [
+                  {
+                    "source": "Wikidata",
+                    "url": "https://www.wikidata.org/wiki/Q10804328",
+                    "field": "P1843",
+                    "retrieved": "2026-10-23",
+                    "license": "CC0 1.0"
+                  }
+                ]
+              }
+            ],
+            "en": [
+              {
+                "name": "Giant Hummingbird",
+                "evidence": [
+                  {
+                    "source": "Wikidata",
+                    "url": "https://www.wikidata.org/wiki/Q10804328",
+                    "field": "P1843",
+                    "retrieved": "2026-10-23",
+                    "license": "CC0 1.0"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "after": {
+          "id": "20e1deec-3d76-4b04-9880-2792b99f3ee1",
+          "parent": "bed7b081-43c3-4bc7-a9f1-57fdf5079b6a",
+          "rank": "genus",
+          "name": "Patagona",
+          "de": "Riesenkolibri",
+          "de_source": "Wikidata",
+          "de_match": "supplemental_genus_name",
+          "en": "Giant hummingbirds",
+          "en_source": "iNaturalist",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "de": [
+              {
+                "name": "Riesenkolibri",
+                "evidence": [
+                  {
+                    "source": "Wikidata",
+                    "url": "https://www.wikidata.org/wiki/Q10804328",
+                    "field": "P1843",
+                    "retrieved": "2026-10-23",
+                    "license": "CC0 1.0"
+                  }
+                ]
+              }
+            ],
+            "en": [
+              {
+                "name": "Giant hummingbirds",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/6254",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-11-06"
+                  }
+                ]
+              },
+              {
+                "name": "Giant Hummingbird",
+                "evidence": [
+                  {
+                    "source": "Wikidata",
+                    "url": "https://www.wikidata.org/wiki/Q10804328",
+                    "field": "P1843",
+                    "retrieved": "2026-10-23",
+                    "license": "CC0 1.0"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "before": {
+          "id": "e6bf5dcb-4471-475f-9957-79833001139f",
+          "parent": "79c0a9a2-c6e4-45ef-85b7-c7ed5bb4b34b",
+          "rank": "genus",
+          "name": "Myioborus",
+          "en": "Whitestart",
+          "en_source": "Wikidata · Wikipedia-Verknüpfung",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "en": [
+              {
+                "name": "Whitestart",
+                "evidence": [
+                  {
+                    "source": "Wikidata · Wikipedia-Verknüpfung",
+                    "url": "https://www.wikidata.org/wiki/Q134909",
+                    "field": "sitelink title",
+                    "retrieved": "2026-10-23",
+                    "license": "CC0 1.0",
+                    "article_url": "https://en.wikipedia.org/wiki/Whitestart"
+                  },
+                  {
+                    "source": "Wikidata",
+                    "url": "https://www.wikidata.org/wiki/Q134909",
+                    "field": "rdfs:label",
+                    "retrieved": "2026-10-23",
+                    "license": "CC0 1.0",
+                    "article_url": "https://en.wikipedia.org/wiki/Whitestart"
+                  }
+                ]
+              },
+              {
+                "name": "Neotropical Redstarts",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/9446",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-10-23"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "after": {
+          "id": "e6bf5dcb-4471-475f-9957-79833001139f",
+          "parent": "79c0a9a2-c6e4-45ef-85b7-c7ed5bb4b34b",
+          "rank": "genus",
+          "name": "Myioborus",
+          "en": "Whitestart",
+          "en_source": "Wikidata · Wikipedia-Verknüpfung",
+          "en_match": "supplemental_genus_name",
+          "vernacular_names": {
+            "en": [
+              {
+                "name": "Whitestart",
+                "evidence": [
+                  {
+                    "source": "Wikidata · Wikipedia-Verknüpfung",
+                    "url": "https://www.wikidata.org/wiki/Q134909",
+                    "field": "sitelink title",
+                    "retrieved": "2026-10-23",
+                    "license": "CC0 1.0",
+                    "article_url": "https://en.wikipedia.org/wiki/Whitestart"
+                  },
+                  {
+                    "source": "Wikidata",
+                    "url": "https://www.wikidata.org/wiki/Q134909",
+                    "field": "rdfs:label",
+                    "retrieved": "2026-10-23",
+                    "license": "CC0 1.0",
+                    "article_url": "https://en.wikipedia.org/wiki/Whitestart"
+                  }
+                ]
+              },
+              {
+                "name": "Whitestarts",
+                "evidence": [
+                  {
+                    "source": "iNaturalist",
+                    "url": "https://www.inaturalist.org/taxa/9446",
+                    "field": "preferred valid locale name",
+                    "retrieved": "2026-11-06"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "identityErrors": [],
+    "germanyChanged": false,
+    "sourceChanged": false
+  }
+}

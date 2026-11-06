@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "Ergänzende Gattungsnamen",
-    "retrieved": "2026-11-01",
+    "retrieved": "2026-11-06",
     "scope": "Vernacular labels only; no classification imported",
     "sources": [
       {
@@ -27,7 +27,7 @@
       }
     ],
     "counts": {
-      "de": 1297,
+      "de": 1298,
       "en": 1650,
       "either": 1952
     },
@@ -5046,6 +5046,19 @@
       ]
     },
     "Heterotetrax": {
+      "de": [
+        {
+          "name": "Rüppelltrappen",
+          "evidence": [
+            {
+              "source": "iNaturalist",
+              "url": "https://www.inaturalist.org/taxa/1505952",
+              "field": "preferred valid locale name",
+              "retrieved": "2026-11-06"
+            }
+          ]
+        }
+      ],
       "en": [
         {
           "name": "Brown Bustards",
@@ -16089,6 +16102,17 @@
         }
       ],
       "en": [
+        {
+          "name": "Giant hummingbirds",
+          "evidence": [
+            {
+              "source": "iNaturalist",
+              "url": "https://www.inaturalist.org/taxa/6254",
+              "field": "preferred valid locale name",
+              "retrieved": "2026-11-06"
+            }
+          ]
+        },
         {
           "name": "Giant Hummingbird",
           "evidence": [
@@ -52403,13 +52427,13 @@
           ]
         },
         {
-          "name": "Neotropical Redstarts",
+          "name": "Whitestarts",
           "evidence": [
             {
               "source": "iNaturalist",
               "url": "https://www.inaturalist.org/taxa/9446",
               "field": "preferred valid locale name",
-              "retrieved": "2026-10-23"
+              "retrieved": "2026-11-06"
             }
           ]
         }

@@ -1,0 +1,491 @@
+{
+  "checked_at": "2026-11-06T14:20:47.287758+00:00",
+  "sources": [
+    {
+      "id": "AviList Explorer",
+      "url": "https://explore.avilist.org/data/avilist-2026.json",
+      "sha256": "0f00995c819903e35eaee65cf5313193868362f1a6383e05949fe3d3600a8b39",
+      "versions_url": "https://explore.avilist.org/versions.json",
+      "versions_sha256": "d66a12a9ee76f74f2473d9769dcc068a1b6ea7a9dcbef0214c0cae5cc0a0590f",
+      "references_sha256": "73231efe867292b1cb09b878f8d1214b43e15d0d6a1f4ccfc570f890f48438d8",
+      "fields": [
+        "sequence",
+        "rank",
+        "order",
+        "family",
+        "familyEn",
+        "sciName",
+        "authority",
+        "citation",
+        "name",
+        "nameClements",
+        "nameBirdLife",
+        "proposalNumber",
+        "decisionSummary",
+        "range",
+        "extinct",
+        "iucn",
+        "birdLifeUrl",
+        "cornellCode",
+        "bowUrl",
+        "avibaseId",
+        "genusGender",
+        "typeSpecies",
+        "typeLocality",
+        "originalDescriptionTitle",
+        "originalDescriptionUrl",
+        "protonym"
+      ]
+    },
+    {
+      "id": "germany-2018.pdf",
+      "url": "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2018_Artenliste_Deutschland.pdf",
+      "before": "286249605a4fdcc8637ca2bda23f8e9d52be6b4e9ad8f42470e22e50dcdffb72",
+      "after": "286249605a4fdcc8637ca2bda23f8e9d52be6b4e9ad8f42470e22e50dcdffb72"
+    },
+    {
+      "id": "germany-2019.pdf",
+      "url": "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2019_Liste_der_V%C3%B6gel_Deutschlands_3.2.pdf",
+      "before": "f86f1b809ec0454566db1556f4b33646a997caf039c0f023761b90bd7467136a",
+      "after": "f86f1b809ec0454566db1556f4b33646a997caf039c0f023761b90bd7467136a"
+    },
+    {
+      "id": "names-dog-2022.pdf",
+      "url": "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Aktuell_Die_V%C3%B6gel_der_Erde_DO-G_2022._Aufl.pdf",
+      "before": "207f8145a35e0f833090faed963f712f3d8c575cc11bb87f62c379a3cb4b3151",
+      "after": "207f8145a35e0f833090faed963f712f3d8c575cc11bb87f62c379a3cb4b3151"
+    },
+    {
+      "id": "dog-country.html",
+      "url": "https://www.do-g.de/dog/kommission-artenliste",
+      "links": [
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/2025-09-10_Kommission-Artenliste-Richtlinien_PHB.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_1993_J._Ornithol._134.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Helbig_2005_Limicola_19.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2018_Artenliste_Deutschland.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Artenliste/Dokumente/Barthel_Kr%C3%BCger_2019_Liste_der_V%C3%B6gel_Deutschlands_3.2.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Selbstorganisation/Dokumente/Satzung-DOG-2025.pdf"
+      ]
+    },
+    {
+      "id": "dog-names.html",
+      "url": "https://www.do-g.de/dog/kommission-vogelnamen",
+      "links": [
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Aktuell_Die_V%C3%B6gel_der_Erde_DO-G_2022._Aufl.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Die_V%C3%B6gel_der_Erde__DO-G_2021_doi.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Kommission-Vogelnamen-DOG.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Fachkommissionen/Kommission_Vogelnamen/Dokumente/Vogelwarte_58_2020-1__DO-G_Dt_Namen_Voegel_d_Erde.pdf",
+        "https://www.do-g.de/fileadmin/Ablage/DOG/Selbstorganisation/Dokumente/Satzung-DOG-2025.pdf"
+      ]
+    },
+    {
+      "id": "Wikidata",
+      "before": "a97a904e963da0f190485469fb12e836423f7367ab61f94c2b587e20f2e39cf1",
+      "after": "a97a904e963da0f190485469fb12e836423f7367ab61f94c2b587e20f2e39cf1"
+    },
+    {
+      "id": "iNaturalist",
+      "before": "a97a904e963da0f190485469fb12e836423f7367ab61f94c2b587e20f2e39cf1",
+      "after": "2ce3d677bfad21296f1f912e2e91fa5b2fcd89431c573fcf848259a981bddf34",
+      "reviewed_changes": [
+        {
+          "genus": "Heterotetrax",
+          "decision": "accept",
+          "evidence": "Accept the iNaturalist German genus label Rüppelltrappen as an attributed source vernacular name. The active genus retains taxon ID 1505952, rank genus and Aves ancestry. All three active source species (humilis, rueppelii, vigorsii) match the existing AviList genus. English Brown Bustards is unchanged. This is a genus label, not a replacement of German species names or an official DOG name; no taxonomy or occurrence evidence is transferred.",
+          "reviewed_languages": [
+            "de"
+          ]
+        },
+        {
+          "genus": "Myioborus",
+          "decision": "accept",
+          "evidence": "Accept iNaturalist preferred English alias Whitestarts replacing Neotropical Redstarts. All 12 active source species match the existing AviList genus. The displayed Wikidata-preferred Whitestart remains unchanged; only the attributed iNaturalist alternative changes. No taxonomy or occurrence evidence is transferred.",
+          "reviewed_languages": [
+            "en"
+          ]
+        },
+        {
+          "genus": "Patagona",
+          "decision": "accept",
+          "evidence": "Accept the iNaturalist English genus label Giant hummingbirds. Both active source species gigas and peruviana match the existing AviList genus. The German Wikidata label remains unchanged. No species split, taxonomy or occurrence evidence is imported.",
+          "reviewed_languages": [
+            "en"
+          ]
+        }
+      ]
+    }
+  ],
+  "blocked": [],
+  "errors": [],
+  "publish": true,
+  "patches": [],
+  "mode": "explorer",
+  "explorer": {
+    "url": "https://explore.avilist.org/data/avilist-2026.json",
+    "sha256": "0f00995c819903e35eaee65cf5313193868362f1a6383e05949fe3d3600a8b39",
+    "versions_url": "https://explore.avilist.org/versions.json",
+    "versions_sha256": "d66a12a9ee76f74f2473d9769dcc068a1b6ea7a9dcbef0214c0cae5cc0a0590f",
+    "references_sha256": "73231efe867292b1cb09b878f8d1214b43e15d0d6a1f4ccfc570f890f48438d8",
+    "fields": [
+      "sequence",
+      "rank",
+      "order",
+      "family",
+      "familyEn",
+      "sciName",
+      "authority",
+      "citation",
+      "name",
+      "nameClements",
+      "nameBirdLife",
+      "proposalNumber",
+      "decisionSummary",
+      "range",
+      "extinct",
+      "iucn",
+      "birdLifeUrl",
+      "cornellCode",
+      "bowUrl",
+      "avibaseId",
+      "genusGender",
+      "typeSpecies",
+      "typeLocality",
+      "originalDescriptionTitle",
+      "originalDescriptionUrl",
+      "protonym"
+    ]
+  },
+  "genus_patches": [
+    {
+      "id": "69d26919-82c5-41bd-a4c5-763ff4e624eb",
+      "before": {
+        "id": "69d26919-82c5-41bd-a4c5-763ff4e624eb",
+        "parent": "ed0779d9-fcfc-4c45-b8a4-91e49b4519ba",
+        "rank": "genus",
+        "name": "Heterotetrax",
+        "en": "Brown Bustards",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "en": [
+            {
+              "name": "Brown Bustards",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/1505952",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "id": "69d26919-82c5-41bd-a4c5-763ff4e624eb",
+        "parent": "ed0779d9-fcfc-4c45-b8a4-91e49b4519ba",
+        "rank": "genus",
+        "name": "Heterotetrax",
+        "de": "Rüppelltrappen",
+        "de_source": "iNaturalist",
+        "de_match": "supplemental_genus_name",
+        "en": "Brown Bustards",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "de": [
+            {
+              "name": "Rüppelltrappen",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/1505952",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-11-06"
+                }
+              ]
+            }
+          ],
+          "en": [
+            {
+              "name": "Brown Bustards",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/1505952",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "e6bf5dcb-4471-475f-9957-79833001139f",
+      "before": {
+        "id": "e6bf5dcb-4471-475f-9957-79833001139f",
+        "parent": "79c0a9a2-c6e4-45ef-85b7-c7ed5bb4b34b",
+        "rank": "genus",
+        "name": "Myioborus",
+        "en": "Whitestart",
+        "en_source": "Wikidata · Wikipedia-Verknüpfung",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "en": [
+            {
+              "name": "Whitestart",
+              "evidence": [
+                {
+                  "source": "Wikidata · Wikipedia-Verknüpfung",
+                  "url": "https://www.wikidata.org/wiki/Q134909",
+                  "field": "sitelink title",
+                  "retrieved": "2026-10-23",
+                  "license": "CC0 1.0",
+                  "article_url": "https://en.wikipedia.org/wiki/Whitestart"
+                },
+                {
+                  "source": "Wikidata",
+                  "url": "https://www.wikidata.org/wiki/Q134909",
+                  "field": "rdfs:label",
+                  "retrieved": "2026-10-23",
+                  "license": "CC0 1.0",
+                  "article_url": "https://en.wikipedia.org/wiki/Whitestart"
+                }
+              ]
+            },
+            {
+              "name": "Neotropical Redstarts",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/9446",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-10-23"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "id": "e6bf5dcb-4471-475f-9957-79833001139f",
+        "parent": "79c0a9a2-c6e4-45ef-85b7-c7ed5bb4b34b",
+        "rank": "genus",
+        "name": "Myioborus",
+        "en": "Whitestart",
+        "en_source": "Wikidata · Wikipedia-Verknüpfung",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "en": [
+            {
+              "name": "Whitestart",
+              "evidence": [
+                {
+                  "source": "Wikidata · Wikipedia-Verknüpfung",
+                  "url": "https://www.wikidata.org/wiki/Q134909",
+                  "field": "sitelink title",
+                  "retrieved": "2026-10-23",
+                  "license": "CC0 1.0",
+                  "article_url": "https://en.wikipedia.org/wiki/Whitestart"
+                },
+                {
+                  "source": "Wikidata",
+                  "url": "https://www.wikidata.org/wiki/Q134909",
+                  "field": "rdfs:label",
+                  "retrieved": "2026-10-23",
+                  "license": "CC0 1.0",
+                  "article_url": "https://en.wikipedia.org/wiki/Whitestart"
+                }
+              ]
+            },
+            {
+              "name": "Whitestarts",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/9446",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-11-06"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "20e1deec-3d76-4b04-9880-2792b99f3ee1",
+      "before": {
+        "id": "20e1deec-3d76-4b04-9880-2792b99f3ee1",
+        "parent": "bed7b081-43c3-4bc7-a9f1-57fdf5079b6a",
+        "rank": "genus",
+        "name": "Patagona",
+        "de": "Riesenkolibri",
+        "de_source": "Wikidata",
+        "de_match": "supplemental_genus_name",
+        "en": "Giant Hummingbird",
+        "en_source": "Wikidata",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "de": [
+            {
+              "name": "Riesenkolibri",
+              "evidence": [
+                {
+                  "source": "Wikidata",
+                  "url": "https://www.wikidata.org/wiki/Q10804328",
+                  "field": "P1843",
+                  "retrieved": "2026-10-23",
+                  "license": "CC0 1.0"
+                }
+              ]
+            }
+          ],
+          "en": [
+            {
+              "name": "Giant Hummingbird",
+              "evidence": [
+                {
+                  "source": "Wikidata",
+                  "url": "https://www.wikidata.org/wiki/Q10804328",
+                  "field": "P1843",
+                  "retrieved": "2026-10-23",
+                  "license": "CC0 1.0"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "id": "20e1deec-3d76-4b04-9880-2792b99f3ee1",
+        "parent": "bed7b081-43c3-4bc7-a9f1-57fdf5079b6a",
+        "rank": "genus",
+        "name": "Patagona",
+        "de": "Riesenkolibri",
+        "de_source": "Wikidata",
+        "de_match": "supplemental_genus_name",
+        "en": "Giant hummingbirds",
+        "en_source": "iNaturalist",
+        "en_match": "supplemental_genus_name",
+        "vernacular_names": {
+          "de": [
+            {
+              "name": "Riesenkolibri",
+              "evidence": [
+                {
+                  "source": "Wikidata",
+                  "url": "https://www.wikidata.org/wiki/Q10804328",
+                  "field": "P1843",
+                  "retrieved": "2026-10-23",
+                  "license": "CC0 1.0"
+                }
+              ]
+            }
+          ],
+          "en": [
+            {
+              "name": "Giant hummingbirds",
+              "evidence": [
+                {
+                  "source": "iNaturalist",
+                  "url": "https://www.inaturalist.org/taxa/6254",
+                  "field": "preferred valid locale name",
+                  "retrieved": "2026-11-06"
+                }
+              ]
+            },
+            {
+              "name": "Giant Hummingbird",
+              "evidence": [
+                {
+                  "source": "Wikidata",
+                  "url": "https://www.wikidata.org/wiki/Q10804328",
+                  "field": "P1843",
+                  "retrieved": "2026-10-23",
+                  "license": "CC0 1.0"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "name_sources": [
+    {
+      "name": "Barthel et al. 2022, Die Vögel der Erde, 3. Auflage, doi:10.17617/2.3418299",
+      "url": "https://www.do-g.de/dog/kommission-vogelnamen",
+      "sha256": "207f8145a35e0f833090faed963f712f3d8c575cc11bb87f62c379a3cb4b3151",
+      "scope": "German order/family/species labels matched by scientific name; not a concept or occurrence validation."
+    },
+    {
+      "name": "Ergänzende Gattungsnamen",
+      "retrieved": "2026-11-06",
+      "scope": "Vernacular labels only; no classification imported",
+      "sources": [
+        {
+          "name": "Wikidata",
+          "url": "https://www.wikidata.org/",
+          "license": "CC0 1.0"
+        },
+        {
+          "name": "iNaturalist",
+          "url": "https://www.inaturalist.org/"
+        },
+        {
+          "name": "LBV",
+          "url": "https://www.lbv.de/"
+        },
+        {
+          "name": "ITIS",
+          "url": "https://www.itis.gov/"
+        },
+        {
+          "name": "USFWS",
+          "url": "https://www.fws.gov/"
+        }
+      ],
+      "counts": {
+        "de": 1298,
+        "en": 1650,
+        "either": 1952
+      },
+      "structure_sha256": "b283e11d492cc80d7fe963898efb1dd1a3fafbdcd777c243a18fff9319935431"
+    }
+  ],
+  "name_decisions": [
+    {
+      "genus": "Heterotetrax",
+      "decision": "accept",
+      "evidence": "Accept the iNaturalist German genus label Rüppelltrappen as an attributed source vernacular name. The active genus retains taxon ID 1505952, rank genus and Aves ancestry. All three active source species (humilis, rueppelii, vigorsii) match the existing AviList genus. English Brown Bustards is unchanged. This is a genus label, not a replacement of German species names or an official DOG name; no taxonomy or occurrence evidence is transferred.",
+      "reviewed_languages": [
+        "de"
+      ]
+    },
+    {
+      "genus": "Myioborus",
+      "decision": "accept",
+      "evidence": "Accept iNaturalist preferred English alias Whitestarts replacing Neotropical Redstarts. All 12 active source species match the existing AviList genus. The displayed Wikidata-preferred Whitestart remains unchanged; only the attributed iNaturalist alternative changes. No taxonomy or occurrence evidence is transferred.",
+      "reviewed_languages": [
+        "en"
+      ]
+    },
+    {
+      "genus": "Patagona",
+      "decision": "accept",
+      "evidence": "Accept the iNaturalist English genus label Giant hummingbirds. Both active source species gigas and peruviana match the existing AviList genus. The German Wikidata label remains unchanged. No species split, taxonomy or occurrence evidence is imported.",
+      "reviewed_languages": [
+        "en"
+      ]
+    }
+  ],
+  "dataset_revision": "2026-11-06.auto-31b0cf63a5a2",
+  "from_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+  "to_sha256": "df031d392b766673ce8a9eb37b8e57a91baabf9576b6b2bcfd6cf9aa4902797d",
+  "completed_at": "2026-11-06T14:23:28.541433+00:00",
+  "workflow_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42233028848"
+}
