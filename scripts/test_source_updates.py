@@ -16,9 +16,20 @@ from check_sources import ROOT, avi_patches, candidate, check, digest, fetch_jso
 import openpyxl
 from explorer_sources import FIELDS, FILES, build_candidate, inspect_explorer, inspect_names, verify_workbook_baseline, version_entry
 from fetch_genus_names import fetch_inaturalist, inat
+from enrich_genus_names import enrich
 
 
 class PolicyTests(unittest.TestCase):
+    def pin_name_baseline(self, root, bundle, genera):
+        """Use historical source facts even after the live release is published."""
+        baseline = json.loads((ROOT / 'scripts/fixtures/inaturalist-name-review-baseline.json').read_text())
+        snapshot_path = root / 'sources/inat-bird-genera.json'
+        snapshot = json.loads(snapshot_path.read_text())
+        snapshot['results'] = [r for r in snapshot['results'] if r['name'] not in genera] + [r for r in baseline['results'] if r['name'] in genera]
+        snapshot_path.write_text(json.dumps(snapshot))
+        wd = json.loads((root / 'sources/wikidata-bird-genera.json').read_text())
+        return enrich(copy.deepcopy(bundle), wd, snapshot)[0]
+
     def setUp(self):
         self.bundle = {'source': {'sha256': 'a' * 64}, 'germany_source': {'records': []},
                        'nodes': [{'id': 'bird', 'rank': 'species', 'name': 'Parus major', 'en': 'Great Tit', 'de': 'Kohlmeise', 'code': 'gretit1'}]}
@@ -247,8 +258,10 @@ class PolicyTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             bundle, _, _ = self.explorer_fixture(root, 'Heterotetrax')
+            bundle = self.pin_name_baseline(root, bundle, {'Heterotetrax'})
+            baseline = (root / 'sources/inat-bird-genera.json').read_text()
             folder = root / 'source-update'
-            snapshot = json.loads((folder / 'inaturalist.json').read_text())
+            snapshot = json.loads(baseline)
             fixture = json.loads((ROOT / 'scripts/fixtures/inaturalist-heterotetrax-reviewed.json').read_text())
             snapshot['results'] = [r for r in snapshot['results'] if r['id'] != 1505952] + fixture['results']
             (folder / 'inaturalist.json').write_text(json.dumps(snapshot))
@@ -276,7 +289,7 @@ class PolicyTests(unittest.TestCase):
 
             # Replay against the old baseline must still require the separate
             # German approval and exact source identity/evidence fingerprints.
-            shutil.copy(ROOT / 'sources/inat-bird-genera.json', root / 'sources/inat-bird-genera.json')
+            (root / 'sources/inat-bird-genera.json').write_text(baseline)
             review_path = root / 'sources/inaturalist-name-review.json'
             review = json.loads(review_path.read_text())
             decision = next(r for r in review['decisions'] if r['genus'] == 'Heterotetrax')
@@ -304,9 +317,15 @@ class PolicyTests(unittest.TestCase):
         ids = {row['id'] for row in rows}
         snapshot['results'] = [r for r in snapshot['results'] if r['id'] not in ids] + rows
         with tempfile.TemporaryDirectory() as tmp:
-            folder = Path(tmp)
+            root = Path(tmp)
+            (root / 'sources').mkdir()
+            for name in ['inat-bird-genera.json', 'wikidata-bird-genera.json', 'inaturalist-name-review.json']:
+                shutil.copy(ROOT / 'sources' / name, root / 'sources' / name)
+            bundle = self.pin_name_baseline(root, bundle, {'Myioborus', 'Patagona'})
+            folder = root / 'source-update'
+            folder.mkdir()
             (folder / 'inaturalist.json').write_text(json.dumps(snapshot))
-            patches, _, _, _ = inspect_names(ROOT, folder, bundle, '2026-11-06T14:00:00Z')
+            patches, _, _, _ = inspect_names(root, folder, bundle, '2026-11-06T14:00:00Z')
             result = {p['after']['name']: p['after'] for p in patches}
             self.assertEqual(set(result), {'Myioborus', 'Patagona'})
             self.assertEqual(result['Myioborus']['en'], 'Whitestart')

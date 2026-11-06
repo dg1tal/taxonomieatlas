@@ -1,0 +1,78 @@
+{
+  "retrieved": "2026-11-01",
+  "total_results": 3,
+  "results": [
+    {
+      "id": 6254,
+      "name": "Patagona",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        1583761,
+        5562,
+        1542289,
+        6254
+      ],
+      "names": []
+    },
+    {
+      "id": 9446,
+      "name": "Myioborus",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        7251,
+        71349,
+        9446
+      ],
+      "names": [
+        {
+          "name": "Neotropical Redstarts",
+          "locale": "en",
+          "position": 0,
+          "is_valid": true
+        },
+        {
+          "name": "Whitestarts",
+          "locale": "en",
+          "position": 1,
+          "is_valid": true
+        }
+      ]
+    },
+    {
+      "id": 1505952,
+      "name": "Heterotetrax",
+      "rank": "genus",
+      "is_active": true,
+      "ancestor_ids": [
+        48460,
+        1,
+        2,
+        355675,
+        3,
+        71266,
+        75,
+        1505952
+      ],
+      "names": [
+        {
+          "name": "Brown Bustards",
+          "locale": "en",
+          "position": 0,
+          "is_valid": true
+        }
+      ]
+    }
+  ]
+}
