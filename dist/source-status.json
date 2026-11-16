@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-09T13:21:44.692Z",
+  "updated_at": "2026-11-16T13:08:54.654Z",
   "last_successful_check": {
     "at": "2026-11-06T14:23:28.541433+00:00",
     "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42233028848"
   },
   "latest_check": {
-    "at": "2026-11-09T13:21:32.725348+00:00",
+    "at": "2026-11-16T13:08:40.599510+00:00",
     "outcome": "review_required",
-    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/42624453580"
+    "run_url": "https://github.com/dg1tal/taxonomieatlas/actions/runs/43872642313"
   },
   "published_update": {
     "revision": "2026-11-06.auto-31b0cf63a5a2",
@@ -22,9 +22,10 @@
   "manual_review": {
     "update_state": "required",
     "update_items": [
+      "Wikidata genus names changed; source review required",
       "Unreviewed iNaturalist name change: Tunchiornis"
     ],
-    "as_of": "2026-11-09T13:21:32.725348+00:00",
+    "as_of": "2026-11-16T13:08:40.599510+00:00",
     "carried_forward": false,
     "incomplete": false,
     "dataset": {
